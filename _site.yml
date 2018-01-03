@@ -1,0 +1,21 @@
+name: "name"
+output_dir: "."
+navbar:
+  title: "CLASS TITLE"
+  left:
+    - text: "Schedule"
+      icon: fa-database
+      href: http://example.com 
+
+      
+  right:
+    - text: "Syllabus"
+      icon: fa-info-circle
+      href: syllabus.html
+
+      
+output:
+  html_document:
+    theme: yeti
+    highlight: tango
+ 

@@ -1,0 +1,6 @@
+---
+title: "Class page"
+output: html_document
+---
+
+Hello world
