@@ -4,8 +4,11 @@ navbar:
   title: "CLASS TITLE"
   left:
     - text: "Schedule"
-      icon: fa-database
-      href: http://example.com 
+      icon: fa-calendar
+      href: schedule.html
+    - text: "Notes"
+      icon: fa-book
+      href: notes.html
 
       
   right:
