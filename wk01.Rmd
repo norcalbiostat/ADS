@@ -3,6 +3,7 @@ output:
   html_document:
     toc: yes
     toc_float: yes
+    css: style.css
 title: "Week 1: Jan 23 - Jan 29"
 ---
 
@@ -19,51 +20,71 @@ _Last Updated: `r format(Sys.time(), "%a %b %d %X")` _
 raw <- read_excel("schedule_485.xlsx")
 week.w <- filter(raw, Week==1)
 
-topics <- str_split(week.w$Topics, ",", simplify=TRUE)
 SLO    <- t(str_split(week.w$SLO, "\r\n", simplify=TRUE))
 prep   <- t(str_split(week.w$Prepare, "\r\n", simplify=TRUE))
-mats   <- t(str_split(week.w$Materials, "\r\n", simplify=TRUE))
+refs   <- t(str_split(week.w$References, "\r\n", simplify=TRUE))
 hw     <- t(str_split(week.w$Assignments, "\r\n", simplify=TRUE))
-tue    <- t(str_split(week.w$Tuesday, "\r\n", simplify=TRUE))
-thu    <- t(str_split(week.w$Thursday, "\r\n", simplify=TRUE))
+topic1 <- t(str_split(week.w$Topic1, "\r\n", simplify=TRUE))
+topic2 <- t(str_split(week.w$Topic2, "\r\n", simplify=TRUE))
 ```
 
 ----
 
 # Learning Objectives
 ```{r}
-kable(SLO) %>% kable_styling(bootstrap_options = "striped", full_width = F, position="left")
+kable(SLO) %>% kable_styling(bootstrap_options = c("striped","condensed"))
 ```
 
-# How to Prepare
+----
+
+# Prepare
 ```{r}
-kable(prep) %>% kable_styling(bootstrap_options = "striped", full_width = F, position="left")
+kable(prep) %>% kable_styling(bootstrap_options = c("striped","condensed"))
 ```
 
-# Materials
+The Slack phone app is technically optional, but really really helpful/handy. Students historically have stated it's much easier to work with. If you opt out of the phone app, make sure the program is installed onto your laptop. You need to be connected throughout the semester, not just when you remember to log in. 
+
+----
+
+# References
 ```{r}
-kable(mats) %>% kable_styling(bootstrap_options = "striped", full_width = F, position="left")
+kable(refs) %>% kable_styling(bootstrap_options = c("striped","condensed"))
 ```
+
+Additional resources to learn git
+
+* http://happygitwithr.com/
+* https://www.atlassian.com/git/tutorials/what-is-version-control 
+* http://kbroman.org/github_tutorial/ 
+    - You'll be peer reviewing each others code by [using this forking technique](http://kbroman.org/github_tutorial/pages/fork.html)
+
+----
+
+# Topics
+
+```{r}
+kable(topic1) %>% kable_styling(bootstrap_options = c("striped","condensed"))
+```
+
+
+```{r}
+if(length(topic2)>0){
+  kable(topic2) %>% kable_styling(bootstrap_options = c("striped","condensed"))
+}
+```
+
+
+----
 
 # Assignments
 ```{r}
-kable(hw) %>% kable_styling(bootstrap_options = "striped", full_width = F, position="left")
+kable(hw) %>% kable_styling(bootstrap_options = c("striped","condensed"))
 ```
 
-----
 
-# Tuesday: `r topics[1]`
 
-```{r}
-kable(tue) %>% kable_styling(bootstrap_options = "striped", full_width = F, position="left")
-```
 
-----
 
-# Thursday: `r topics[2]`
 
-```{r}
-kable(thu) %>% kable_styling(bootstrap_options = "striped", full_width = F, position="left")
-```
 
 

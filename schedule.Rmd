@@ -10,7 +10,7 @@ _Last Updated: `r format(Sys.time(), "%a %b %d %X")` _
 <br>
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
 rawdat <- read_excel("schedule_485.xlsx")
-cdat   <- rawdat %>% select(-c(SLO:Thursday)) %>% 
+cdat   <- rawdat %>% select(-c(SLO:Topic2)) %>% 
                      mutate(wknum=Week,
                             wknum = str_pad(wknum, width=2, side="left", pad="0"),
                             link = paste0("wk", wknum, ".html"), 
@@ -21,7 +21,7 @@ cdat$Link[c(9,17)] <- c("Spring Break", "Finals")
 
 # parse assignments
 evallist <- which(!is.na(cdat$Assignments))
-cdat$Assignments[evallist] <- paste0("<ul><li>", cdat$Assignments[evallist], "</li></ul>")
+cdat$Assignments[evallist] <- paste0("<ul>", cdat$Assignments[evallist], "</ul>")
 cdat$Assignments[evallist] <- gsub("(+.)\\*", "</li><li>", cdat$Assignments[evallist])
 ```
 

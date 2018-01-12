@@ -1,0 +1,23 @@
+
+
+hr {
+    height: 5px;
+    background-color: #4d0000;
+}
+
+h5 {
+    color: blue;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* Overall background color */ 
+.navbar {
+  background-color: #4d0000;
+}
+
+/* Background class title text name */ 
+.navbar .navbar-brand {
+  color: #ffffff;
+}
+
