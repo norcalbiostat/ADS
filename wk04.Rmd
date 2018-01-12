@@ -4,11 +4,7 @@ output:
     toc: yes
     toc_float: yes
     css: style.css
-params:
-    w: 1
-    d1: '010118'
-    d2: '010118'
-title: "Week `r params$w`: `r format(params$d1, '%b %d')` - `r format(params$d2, '%b %d')`"
+title: "Week 4: Feb 13 - Feb 19"
 ---
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
@@ -22,7 +18,7 @@ _Last Updated: `r format(Sys.time(), "%a %b %d %X")` _
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
 raw <- read_excel("schedule_485.xlsx")
-week.w <- filter(raw, Week==params$w)
+week.w <- filter(raw, Week==4)
 
 SLO    <- t(str_split(week.w$SLO, "\r\n", simplify=TRUE))
 prep   <- t(str_split(week.w$Prepare, "\r\n", simplify=TRUE))
@@ -62,11 +58,29 @@ kable(topic1) %>% kable_styling(bootstrap_options = c("striped","condensed"))
 ```
 
 
-```{r}
-if(length(topic2)>0){
-  kable(topic2) %>% kable_styling(bootstrap_options = c("striped","condensed"))
-}
-```
+### Method of Least Squares 
+
+Consider the following linear model with $p$ predictors and where $\beta_{1}= \mathbf{1}$ (the $nx1$ intercept vector containing all 1s): 
+
+$$
+y_{ij} = \sum_{i=1}^{n} X_{ij}\beta_{j} \qquad j=1, \ldots, p
+$$
+
+This can also be written as $y_{ij} = \mathbf{X}\beta$. The best fit line is the set of $\beta$'s that minimizes the squared residuals, or distances, between the predicted value $\mathbf{X}\beta$ and observed value $y_{ij}$. That means we need to minimize this: 
+
+$$
+\lVert y-\mathbf{X}\beta \rVert^{2}
+$$
+Given that the columns of $\mathbf{X}$ are linearly independent ($cov(x_{j}, x_{j^{'}})=0$), there is a [[unique solution]](https://en.wikipedia.org/wiki/Linear_least_squares_(mathematics)#Derivation_of_the_normal_equations) to this problem. 
+
+$$
+\hat{\mathbf{\beta}}=(\mathbf{X}^{T}\mathbf{X})^{-1}\mathbf{X}^{T}\mathbf{y} 
+$$
+
+This is why we care about multicollinearity and sparseness. If one variable is an exact linear function of another then $\mathbf{X}^{T}\mathbf{X}$ is not positive definite, and thus not invertable. 
+
+An example of this is in the case of a rare event. The column containing an indicator for that event would be nearly perfectly collinear with the intercept, causing algebraic inversion properties (or quasi-complete separation). 
+
 
 ----
 
