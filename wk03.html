@@ -11,7 +11,7 @@
 
 
 
-<title>Week 3: Feb 13 - Feb 19</title>
+<title>Week 3: Feb 6 - Feb 13</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -267,12 +267,110 @@ div.tocify {
     Schedule
   </a>
 </li>
-<li>
-  <a href="notes.html">
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    <span class="fa fa-folder-open"></span>
+     
+    Weekly
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="wk01.html">Week 01 - Jan 23</a>
+    </li>
+    <li>
+      <a href="wk02.html">Week 02 - Jan 30</a>
+    </li>
+    <li>
+      <a href="wk03.html">Week 03 - Feb 06</a>
+    </li>
+    <li>
+      <a href="wk04.html">Week 04 - Feb 13</a>
+    </li>
+    <li>
+      <a href="wk05.html">Week 05 - Feb 20</a>
+    </li>
+    <li>
+      <a href="wk06.html">Week 06 - Feb 27</a>
+    </li>
+    <li>
+      <a href="wk07.html">Week 07 - Mar 06</a>
+    </li>
+    <li>
+      <a href="wk08.html">Week 08 - Mar 13</a>
+    </li>
+    <li>
+      <a href="wk09.html">Week 09 - Mar 27</a>
+    </li>
+    <li>
+      <a href="wk10.html">Week 10 - Apr 03</a>
+    </li>
+    <li>
+      <a href="wk11.html">Week 11 - Apr 10</a>
+    </li>
+    <li>
+      <a href="wk12.html">Week 12 - Apr 17</a>
+    </li>
+    <li>
+      <a href="wk13.html">Week 13 - Apr 24</a>
+    </li>
+    <li>
+      <a href="wk14.html">Week 14 - May 01</a>
+    </li>
+    <li>
+      <a href="wk15.html">Week 15 - May 08</a>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
     <span class="fa fa-book"></span>
      
-    Notes
+    Textboks
+     
+    <span class="caret"></span>
   </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="http://r4ds.had.co.nz/">R for Data Science (R4DS)</a>
+    </li>
+    <li>
+      <a href="http://www-bcf.usc.edu/~gareth/ISL/">Introduction to Statistical Learning (ISLR)</a>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    <span class="fa fa-wrench"></span>
+     
+    Tools
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="https://github.com/">
+        <span class="fa fa-github"></span>
+         
+        GitHub
+      </a>
+    </li>
+    <li>
+      <a href="https://csuc-ads.slack.com/">
+        <span class="fa fa-slack"></span>
+         
+        Slack (class discussions)
+      </a>
+    </li>
+    <li>
+      <a href="https://csuchico.zoom.us/">
+        <span class="fa fa-video-camera"></span>
+         
+        Zoom (video conference)
+      </a>
+    </li>
+  </ul>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -281,6 +379,13 @@ div.tocify {
     <span class="fa fa-info-circle"></span>
      
     Syllabus
+  </a>
+</li>
+<li>
+  <a href="http://www.norcalbiostat.com/">
+    <span class="fa fa-paw"></span>
+     
+    Dr. D's Website
   </a>
 </li>
       </ul>
@@ -292,12 +397,12 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">Week 3: Feb 13 - Feb 19</h1>
+<h1 class="title toc-ignore">Week 3: Feb 6 - Feb 13</h1>
 
 </div>
 
 
-<p><em>Last Updated: Thu Jan 11 10:37:32 PM </em></p>
+<p><em>Last Updated: Wed Jan 17 12:42:53 PM </em></p>
 <hr />
 <div id="learning-objectives" class="section level1">
 <h1>Learning Objectives</h1>
@@ -373,14 +478,13 @@ div.tocify {
 </tr>
 <tr>
 <td style="text-align:left;">
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
+<ul>
+<li><a href="https://raw.githubusercontent.com/swcarpentry/r-novice-gapminder/gh-pages/_episodes_rmd/data/gapminder-FiveYearData.csv">Gapminder data</a> from [Software Carpentries R Novice lesson(<a href="https://swcarpentry.github.io/r-novice-gapminder/05-data-structures-part2/" class="uri">https://swcarpentry.github.io/r-novice-gapminder/05-data-structures-part2/</a>)
 </td>
 </tr>
 </tbody>
 </table></li>
+</ul></li>
 </ul></li>
 </ul></li>
 </ul></li>
@@ -394,7 +498,7 @@ div.tocify {
 <tr>
 <td style="text-align:left;">
 <ul>
-<li>Recap the predictive analytcs life cycle (PAL).
+<li>Recap the predictive analytics life cycle (PAL).
 </td>
 </tr>
 <tr>
@@ -409,8 +513,15 @@ div.tocify {
 <li>We won’t cover how to use the unix shell or how to create make files directly as part of this class. This is something covered in CS 111, which is taken before this course.
 </td>
 </tr>
+<tr>
+<td style="text-align:left;">
+<ul>
+<li>Work through at least one of the three toy pipelines from the <a href="http://stat545.com/automation00_index.html">Stat 545</a> website.
+</td>
+</tr>
 </tbody>
 </table></li>
+</ul></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -431,13 +542,13 @@ div.tocify {
 <tr>
 <td style="text-align:left;">
 <ul>
-<li>Work through at least one of the three toy pipelines from the <a href="http://stat545.com/automation00_index.html">Stat 545</a> website.
+<li>Using the gapminder data set, explore the question “How does life expectancy change over time for each country?” Automate your entire workflow including data acquisition as a separate R file. Write a tutorial/walk through as a separate RMD file. (Due Sat 2/10)
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 <ul>
-<li>Take an old assignment from a previous class. Automate it and write a tutorial/walk through as a blog post. “Tweet” about and link this post in Slack under #assignments.
+<li>Peer review 1 classmates file using github (Due Mon 2/12)
 </td>
 </tr>
 </tbody>

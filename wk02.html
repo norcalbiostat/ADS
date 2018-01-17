@@ -267,12 +267,110 @@ div.tocify {
     Schedule
   </a>
 </li>
-<li>
-  <a href="notes.html">
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    <span class="fa fa-folder-open"></span>
+     
+    Weekly
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="wk01.html">Week 01 - Jan 23</a>
+    </li>
+    <li>
+      <a href="wk02.html">Week 02 - Jan 30</a>
+    </li>
+    <li>
+      <a href="wk03.html">Week 03 - Feb 06</a>
+    </li>
+    <li>
+      <a href="wk04.html">Week 04 - Feb 13</a>
+    </li>
+    <li>
+      <a href="wk05.html">Week 05 - Feb 20</a>
+    </li>
+    <li>
+      <a href="wk06.html">Week 06 - Feb 27</a>
+    </li>
+    <li>
+      <a href="wk07.html">Week 07 - Mar 06</a>
+    </li>
+    <li>
+      <a href="wk08.html">Week 08 - Mar 13</a>
+    </li>
+    <li>
+      <a href="wk09.html">Week 09 - Mar 27</a>
+    </li>
+    <li>
+      <a href="wk10.html">Week 10 - Apr 03</a>
+    </li>
+    <li>
+      <a href="wk11.html">Week 11 - Apr 10</a>
+    </li>
+    <li>
+      <a href="wk12.html">Week 12 - Apr 17</a>
+    </li>
+    <li>
+      <a href="wk13.html">Week 13 - Apr 24</a>
+    </li>
+    <li>
+      <a href="wk14.html">Week 14 - May 01</a>
+    </li>
+    <li>
+      <a href="wk15.html">Week 15 - May 08</a>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
     <span class="fa fa-book"></span>
      
-    Notes
+    Textboks
+     
+    <span class="caret"></span>
   </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="http://r4ds.had.co.nz/">R for Data Science (R4DS)</a>
+    </li>
+    <li>
+      <a href="http://www-bcf.usc.edu/~gareth/ISL/">Introduction to Statistical Learning (ISLR)</a>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    <span class="fa fa-wrench"></span>
+     
+    Tools
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="https://github.com/">
+        <span class="fa fa-github"></span>
+         
+        GitHub
+      </a>
+    </li>
+    <li>
+      <a href="https://csuc-ads.slack.com/">
+        <span class="fa fa-slack"></span>
+         
+        Slack (class discussions)
+      </a>
+    </li>
+    <li>
+      <a href="https://csuchico.zoom.us/">
+        <span class="fa fa-video-camera"></span>
+         
+        Zoom (video conference)
+      </a>
+    </li>
+  </ul>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -281,6 +379,13 @@ div.tocify {
     <span class="fa fa-info-circle"></span>
      
     Syllabus
+  </a>
+</li>
+<li>
+  <a href="http://www.norcalbiostat.com/">
+    <span class="fa fa-paw"></span>
+     
+    Dr. D's Website
   </a>
 </li>
       </ul>
@@ -297,7 +402,7 @@ div.tocify {
 </div>
 
 
-<p><em>Last Updated: Thu Jan 11 7:20:33 PM </em></p>
+<p><em>Last Updated: Wed Jan 17 12:42:51 PM </em></p>
 <hr />
 <div id="learning-objectives" class="section level1">
 <h1>Learning Objectives</h1>
@@ -349,18 +454,11 @@ div.tocify {
 <tr>
 <td style="text-align:left;">
 <ul>
-<li><a href="https://alison.rbind.io/post/up-and-running-with-blogdown/">Alice Hills Tutorial</a>
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-<ul>
 <li><a href="https://www.agorapulse.com/blog/lets-clear-content-creation-vs-content-curation">Curation vs Creation</a>
 </td>
 </tr>
 </tbody>
 </table></li>
-</ul></li>
 </ul></li>
 </ul>
 <hr />
@@ -437,7 +535,7 @@ div.tocify {
 <tr>
 <td style="text-align:left;">
 <ul>
-<li>Each week you will write a post about something in the DS world that you found interseting. It doesn’t have to be a long or involved post.
+<li>Several times throughout the semester you will write a post about something in the DS world that you found interesting. It doesn’t have to be a long or involved post.
 </td>
 </tr>
 <tr>
@@ -458,13 +556,21 @@ div.tocify {
 </ul></li>
 </ul></li>
 </ul>
-<p>Here are some examples that use varying customizations of this approach. That means you can look at the authors github repo and see how they designed their site features. This is how we learn how to do cool things!</p>
+<p>In addition to the book, here are a couple more tutorials on how to use Blogdown</p>
+<ul>
+<li><a href="https://alison.rbind.io/post/up-and-running-with-blogdown/">Alison Hill’s Tutorial</a> (I used this one with success!)</li>
+<li><a href="https://alison.rbind.io/slides/blogdown-workshop-slides.html#1">Slides</a> from a workshop she ran in September. MUCH more detail about Hugo. Use at your own discretion</li>
+</ul>
+<p>Here are some examples that use varying customizations of this approach. That means you can look at the authors github repo and see how they designed their site features. This is how we learn how to do cool things! Don’t get lost in the weeds. Start simple, customization can occur later.</p>
 <ul>
 <li><a href="https://alison.rbind.io/">Alison Hill</a></li>
 <li><a href="datascience.csuchico.edu">CSUC DSI</a></li>
 <li><a href="https://espm-157.carlboettiger.info/">ESPM 157</a></li>
 <li><a href="https://support.rbind.io/">Rbind</a></li>
 <li><a href="https://simplystatistics.org/">Simply Statistics</a></li>
+<li><a href="https://tclavelle.github.io/" class="uri">https://tclavelle.github.io/</a></li>
+<li><a href="https://daijiang.name/" class="uri">https://daijiang.name/</a></li>
+<li><a href="https://statr.me/" class="uri">https://statr.me/</a></li>
 </ul>
 </div>
 <div id="but-the-internet-is-scary-i-value-my-privacy" class="section level3">
@@ -485,7 +591,7 @@ div.tocify {
 <tr>
 <td style="text-align:left;">
 <ul>
-<li>Follow the tutorials provided to build your website using blogdown. Minimum information includes an ‘about’ paragraph.
+<li>Follow the tutorials provided to build your website using blogdown. Minimum information includes an ‘about’ paragraph. (Due Mon 2/5)
 </td>
 </tr>
 <tr>
@@ -497,7 +603,7 @@ div.tocify {
 <tr>
 <td style="text-align:left;">
 <ul>
-<li>Tell us a little bit about your DS sources (blog/podcast/twitter) in #state-of-ds. You won’t start blogging until next week.
+<li>Tell us a little bit about your DS sources (blog/podcast/twitter) in #state-of-ds. (Due Mon 2/5)
 </td>
 </tr>
 </tbody>

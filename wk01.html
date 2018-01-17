@@ -267,12 +267,110 @@ div.tocify {
     Schedule
   </a>
 </li>
-<li>
-  <a href="notes.html">
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    <span class="fa fa-folder-open"></span>
+     
+    Weekly
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="wk01.html">Week 01 - Jan 23</a>
+    </li>
+    <li>
+      <a href="wk02.html">Week 02 - Jan 30</a>
+    </li>
+    <li>
+      <a href="wk03.html">Week 03 - Feb 06</a>
+    </li>
+    <li>
+      <a href="wk04.html">Week 04 - Feb 13</a>
+    </li>
+    <li>
+      <a href="wk05.html">Week 05 - Feb 20</a>
+    </li>
+    <li>
+      <a href="wk06.html">Week 06 - Feb 27</a>
+    </li>
+    <li>
+      <a href="wk07.html">Week 07 - Mar 06</a>
+    </li>
+    <li>
+      <a href="wk08.html">Week 08 - Mar 13</a>
+    </li>
+    <li>
+      <a href="wk09.html">Week 09 - Mar 27</a>
+    </li>
+    <li>
+      <a href="wk10.html">Week 10 - Apr 03</a>
+    </li>
+    <li>
+      <a href="wk11.html">Week 11 - Apr 10</a>
+    </li>
+    <li>
+      <a href="wk12.html">Week 12 - Apr 17</a>
+    </li>
+    <li>
+      <a href="wk13.html">Week 13 - Apr 24</a>
+    </li>
+    <li>
+      <a href="wk14.html">Week 14 - May 01</a>
+    </li>
+    <li>
+      <a href="wk15.html">Week 15 - May 08</a>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
     <span class="fa fa-book"></span>
      
-    Notes
+    Textboks
+     
+    <span class="caret"></span>
   </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="http://r4ds.had.co.nz/">R for Data Science (R4DS)</a>
+    </li>
+    <li>
+      <a href="http://www-bcf.usc.edu/~gareth/ISL/">Introduction to Statistical Learning (ISLR)</a>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    <span class="fa fa-wrench"></span>
+     
+    Tools
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="https://github.com/">
+        <span class="fa fa-github"></span>
+         
+        GitHub
+      </a>
+    </li>
+    <li>
+      <a href="https://csuc-ads.slack.com/">
+        <span class="fa fa-slack"></span>
+         
+        Slack (class discussions)
+      </a>
+    </li>
+    <li>
+      <a href="https://csuchico.zoom.us/">
+        <span class="fa fa-video-camera"></span>
+         
+        Zoom (video conference)
+      </a>
+    </li>
+  </ul>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -281,6 +379,13 @@ div.tocify {
     <span class="fa fa-info-circle"></span>
      
     Syllabus
+  </a>
+</li>
+<li>
+  <a href="http://www.norcalbiostat.com/">
+    <span class="fa fa-paw"></span>
+     
+    Dr. D's Website
   </a>
 </li>
       </ul>
@@ -297,7 +402,7 @@ div.tocify {
 </div>
 
 
-<p><em>Last Updated: Thu Jan 11 7:20:32 PM </em></p>
+<p><em>Last Updated: Wed Jan 17 12:42:50 PM </em></p>
 <hr />
 <div id="learning-objectives" class="section level1">
 <h1>Learning Objectives</h1>
@@ -364,7 +469,7 @@ div.tocify {
 <tr>
 <td style="text-align:left;">
 <ul>
-<li>If you’re new to Git - I recommend using Sourcetree as your external client (yes you have to make an atlassian account, but that’s ok. It opens availability to their other useful software products as well)
+<li>If you’re new to Git - I recommend using Sourcetree as your external client (yes you have to make an Atlassian account, but that’s ok. It opens availability to their other useful software products as well)
 </td>
 </tr>
 <tr>
@@ -396,13 +501,13 @@ div.tocify {
 <tr>
 <td style="text-align:left;">
 <ul>
-<li>Github assignment repo <a href="https://classroom.github.com/a/5I9Qnnbl">link</a>
+<li>GitHub assignment repo <a href="https://classroom.github.com/a/5I9Qnnbl">link</a>
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 <ul>
-<li><a href="http://r4ds.had.co.nz/program-intro.html">r4ds CH 17-21.5</a>
+<li><a href="http://r4ds.had.co.nz/program-intro.html">R4DS CH 17-21.5</a>
 </td>
 </tr>
 </tbody>
@@ -428,7 +533,7 @@ div.tocify {
 <tr>
 <td style="text-align:left;">
 <ul>
-<li>Introduction and orientation to Slack and Github
+<li>Introduction and orientation to Slack and GitHub
 </td>
 </tr>
 <tr>
@@ -472,23 +577,30 @@ div.tocify {
 <tr>
 <td style="text-align:left;">
 <ul>
-<li>Join all visable Slack channels.
+<li>Join all visible Slack channels.
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 <ul>
-<li>Introduce yourself in #introductions (Name/major/year/github handle/other info you want to share). Pin this message to this board.
+<li>Introduce yourself in #introductions (Name/major/year/GitHub handle/other info you want to share). Pin this message to this board. (Due Tue 1/23)
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 <ul>
-<li>r4ds programming assignment
+<li>R4DS HW #1 . Put a link in the #assignments channel when complete. (Due Mon 1/29)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<ul>
+<li>Peer review 1 clasmates work by forking their repo, modify their code, then doing a pull request (Due Wed 1/31)
 </td>
 </tr>
 </tbody>
 </table></li>
+</ul></li>
 </ul></li>
 </ul></li>
 </ul>

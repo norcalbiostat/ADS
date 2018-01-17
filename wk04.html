@@ -267,12 +267,110 @@ div.tocify {
     Schedule
   </a>
 </li>
-<li>
-  <a href="notes.html">
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    <span class="fa fa-folder-open"></span>
+     
+    Weekly
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="wk01.html">Week 01 - Jan 23</a>
+    </li>
+    <li>
+      <a href="wk02.html">Week 02 - Jan 30</a>
+    </li>
+    <li>
+      <a href="wk03.html">Week 03 - Feb 06</a>
+    </li>
+    <li>
+      <a href="wk04.html">Week 04 - Feb 13</a>
+    </li>
+    <li>
+      <a href="wk05.html">Week 05 - Feb 20</a>
+    </li>
+    <li>
+      <a href="wk06.html">Week 06 - Feb 27</a>
+    </li>
+    <li>
+      <a href="wk07.html">Week 07 - Mar 06</a>
+    </li>
+    <li>
+      <a href="wk08.html">Week 08 - Mar 13</a>
+    </li>
+    <li>
+      <a href="wk09.html">Week 09 - Mar 27</a>
+    </li>
+    <li>
+      <a href="wk10.html">Week 10 - Apr 03</a>
+    </li>
+    <li>
+      <a href="wk11.html">Week 11 - Apr 10</a>
+    </li>
+    <li>
+      <a href="wk12.html">Week 12 - Apr 17</a>
+    </li>
+    <li>
+      <a href="wk13.html">Week 13 - Apr 24</a>
+    </li>
+    <li>
+      <a href="wk14.html">Week 14 - May 01</a>
+    </li>
+    <li>
+      <a href="wk15.html">Week 15 - May 08</a>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
     <span class="fa fa-book"></span>
      
-    Notes
+    Textboks
+     
+    <span class="caret"></span>
   </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="http://r4ds.had.co.nz/">R for Data Science (R4DS)</a>
+    </li>
+    <li>
+      <a href="http://www-bcf.usc.edu/~gareth/ISL/">Introduction to Statistical Learning (ISLR)</a>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    <span class="fa fa-wrench"></span>
+     
+    Tools
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="https://github.com/">
+        <span class="fa fa-github"></span>
+         
+        GitHub
+      </a>
+    </li>
+    <li>
+      <a href="https://csuc-ads.slack.com/">
+        <span class="fa fa-slack"></span>
+         
+        Slack (class discussions)
+      </a>
+    </li>
+    <li>
+      <a href="https://csuchico.zoom.us/">
+        <span class="fa fa-video-camera"></span>
+         
+        Zoom (video conference)
+      </a>
+    </li>
+  </ul>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -281,6 +379,13 @@ div.tocify {
     <span class="fa fa-info-circle"></span>
      
     Syllabus
+  </a>
+</li>
+<li>
+  <a href="http://www.norcalbiostat.com/">
+    <span class="fa fa-paw"></span>
+     
+    Dr. D's Website
   </a>
 </li>
       </ul>
@@ -297,7 +402,7 @@ div.tocify {
 </div>
 
 
-<p><em>Last Updated: Thu Jan 11 10:59:27 PM </em></p>
+<p><em>Last Updated: Wed Jan 17 12:42:56 PM </em></p>
 <hr />
 <div id="learning-objectives" class="section level1">
 <h1>Learning Objectives</h1>
@@ -381,7 +486,7 @@ div.tocify {
 </ul>
 <div id="method-of-least-squares" class="section level3">
 <h3>Method of Least Squares</h3>
-<p>The <em>best fit</em> line in a linear model is the <strong>Least Squares</strong> line. Consider the following linear model with <span class="math inline">\(p\)</span> predictors and where <span class="math inline">\(\beta_{1}= \mathbf{1}\)</span> (the <span class="math inline">\(nx1\)</span> intercept vector containing all 1s):</p>
+<p>Consider the following linear model with <span class="math inline">\(p\)</span> predictors and where <span class="math inline">\(\beta_{1}= \mathbf{1}\)</span> (the <span class="math inline">\(nx1\)</span> intercept vector containing all 1s):</p>
 <p><span class="math display">\[
 y_{ij} = \sum_{i=1}^{n} X_{ij}\beta_{j} \qquad j=1, \ldots, p
 \]</span></p>
@@ -404,24 +509,17 @@ y_{ij} = \sum_{i=1}^{n} X_{ij}\beta_{j} \qquad j=1, \ldots, p
 <tr>
 <td style="text-align:left;">
 <ul>
-<li>Add this assignment to your github repo as a new RMD file.
+<li>R4DS HW #2: 23.2.1 (#1, #2) , 23.3.3 (#1, #3, #4), 23.4.5 (#1, #3, #4). Add this assignment to your github repo as a new RMD file. (Due Sat 2/17)
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 <ul>
-<li>All exercises in 23.2.1 (#1, #2) , 23.3.3 (#1, #3, #4), 23.4.5 (#1, #3, #4)
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-<ul>
-<li>Write a blog post about something you found interseting in the DS world this past week.
+<li>Peer Review R4DS HW #2 (Due Mon 2/19)
 </td>
 </tr>
 </tbody>
 </table></li>
-</ul></li>
 </ul></li>
 </ul>
 </div>

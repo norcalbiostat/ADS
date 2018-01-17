@@ -90,13 +90,24 @@ Twitter Users
 kable(topic2) %>% kable_styling(bootstrap_options = c("striped","condensed"))
 ```
 
-Here are some examples that use varying customizations of this approach. That means you can look at the authors github repo and see how they designed their site features. This is how we learn how to do cool things!
+
+In addition to the book, here are a couple more tutorials on how to use Blogdown
+
+* [Alison Hill's Tutorial](https://alison.rbind.io/post/up-and-running-with-blogdown/) (I used this one with success!)
+* [Slides](https://alison.rbind.io/slides/blogdown-workshop-slides.html#1) from a workshop she ran in September. MUCH more detail about Hugo. Use at your own discretion
+
+
+Here are some examples that use varying customizations of this approach. That means you can look at the authors github repo and see how they designed their site features. This is how we learn how to do cool things! Don't get lost in the weeds. Start simple, customization can occur later. 
 
 * [Alison Hill](https://alison.rbind.io/) 
 * [CSUC DSI](datascience.csuchico.edu) 
 * [ESPM 157](https://espm-157.carlboettiger.info/)
 * [Rbind](https://support.rbind.io/)
 * [Simply Statistics](https://simplystatistics.org/)
+* https://tclavelle.github.io/
+* https://daijiang.name/
+* https://statr.me/
+
 
 
 ### But the internet is scary & I value my privacy

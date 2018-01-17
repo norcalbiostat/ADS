@@ -8,5 +8,6 @@ This is the landing page for <span style="color:blue">**Math 485 - Advanced Data
 
 ### Week 1: Welcome! 
 
-* Most of the time spent in class will be 60% your work time and 40% me yammering. Especially during this semester due to the class size. 
+* Class time will be split between discussion of current topics, and you working on assignments. 
+* Often you will be presented with a set of questions to answer while doing the readings, that we will discuss in class. These will be posted on the weekly details. 
 * Explore the website, get your system updated if needed, and check the schedule week 1 to see what new programs you'll need to get and/or update. 
