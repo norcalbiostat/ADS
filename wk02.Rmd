@@ -65,6 +65,8 @@ Here are some cool places to start
 * https://flowingdata.com/ or @flowingdata 
 * https://www.r-bloggers.com/ 
 * Mathbabe https://mathbabe.org/ @mathbabe 
+* https://podtail.com/fi/podcast/healthcare-tech-talk-exploring-how-technology-can-/
+* https://www.techrepublic.com/
 * A curated list of DS blogs https://github.com/rushter/data-science-blogs 
 * Another list of DS blogs https://www.datascienceweekly.org/data-science-resources/data-science-blogs 
 * Partially Derivative http://partiallyderivative.com/ -- over for now, but worth listening to some of the older podcasts. They also promise a triumphant return. 

@@ -73,6 +73,8 @@ if(length(topic2)>0){
 }
 ```
 
+Cool Share: https://www.datacamp.com/community/tutorials/data-science-industry-infographic 
+
 
 ----
 
