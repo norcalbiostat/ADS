@@ -39,13 +39,15 @@ navbar:
       href: wk14.html
     - text: Week 15 - May 08
       href: wk15.html
-  - text: Textboks
+  - text: Textbooks
     icon: fa-book
     menu:
     - text: R for Data Science (R4DS)
       href: http://r4ds.had.co.nz/
     - text: Introduction to Statistical Learning (ISLR)
       href: http://www-bcf.usc.edu/~gareth/ISL/
+    - text: Weapons of Math Destruction
+      href: https://chico-primo.hosted.exlibrisgroup.com/primo-explore/fulldisplay?docid=01CALS_ALMA71420504090002901&context=L&vid=01CALS_CHI&lang=en_US&search_scope=Everything&adaptor=Local%20Search%20Engine&isFrbr=true&tab=everything&query=any,contains,weapons%20of%20math%20destruction&sortby=rank&mode=Basic 
   - text: Tools
     icon: fa-wrench
     menu:
@@ -61,7 +63,7 @@ navbar:
   right:
   - text: Syllabus
     icon: fa-info-circle
-    href: syllabus.html
+    href: syllabus_499.html
   - text: Dr. D's Website
     icon: fa-paw
     href: http://www.norcalbiostat.com/

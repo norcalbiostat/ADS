@@ -60,10 +60,11 @@ kable(topic1) %>% kable_styling(bootstrap_options = c("striped","condensed"))
 ```
 
 Here are some cool places to start
-
 * https://www.pudding.cool/ 
 * https://flowingdata.com/ or @flowingdata 
 * https://www.r-bloggers.com/ 
+* http://simplystatistics.org or @simplystats
+    - Start here: [A non-comprehensive list of awesome things other people did in 2017](https://simplystatistics.org/2017/12/20/a-non-comprehensive-list-of-awesome-things-other-people-did-in-2017/)
 * Mathbabe https://mathbabe.org/ @mathbabe 
 * https://podtail.com/fi/podcast/healthcare-tech-talk-exploring-how-technology-can-/
 * https://www.techrepublic.com/
@@ -75,7 +76,6 @@ Twitter Users
 
 * Calling Bullshit @callin_bull
 * Jenny Bryan @JennyBryan
-* Simply Statistics @simplystats
 
 **Curation vs Creation**
 

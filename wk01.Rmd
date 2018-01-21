@@ -73,8 +73,10 @@ if(length(topic2)>0){
 }
 ```
 
-Cool Share: https://www.datacamp.com/community/tutorials/data-science-industry-infographic 
+**Quick reads**
 
+* Data Scientist profiles: https://www.datacamp.com/community/tutorials/data-science-industry-infographic 
+* The Ten Fallacies of Data Science: https://towardsdatascience.com/the-ten-fallacies-of-data-science-9b2af78a1862
 
 ----
 
