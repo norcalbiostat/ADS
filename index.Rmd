@@ -4,6 +4,10 @@ This is the landing page for <span style="color:blue">**Math 485 - Advanced Data
 
 ----
 
+_This course aims to help students navigate the evolving and murky waters of the Data Science landscape. We do so by not only providing training in advanced programming and technical skills, but also by providing opportunities for collaboration and reflection on how Data Science impacts human socieity. See the [Syllabus](syllabus_499.html) for more details on the topics covered._
+
+----
+
 # Announcements
 
 ### Week 1: Welcome! 

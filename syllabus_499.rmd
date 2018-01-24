@@ -18,11 +18,10 @@ output:
     3. Or instructor permission
 
 ## Course Description
+This course aims to help students navigate the evolving and murky waters of the Data Science landscape. We do so by not only providing training in advanced programming and technical skills, but also by providing opportunities for collaboration and reflection on how Data Science impacts human socieity. 
 
-This course aims to help students become successful Data Scientists by providing guidance and training in both soft, and advanced technical skills. 
-
-* Soft skills: Team collaboration tools, workflow automation. Dissemination of transparent research. Building a professional online presence. Ethics of predictive analytics, protecting privacy in the age of open data. Keeping current with a fast moving field. Critical thinking like a Data Scientist. 
-* Technical skills: Identifying and applying appropriate methods to answer a business or research need. Introduction to advanced statistical analysis techniques (Sample topics include: Non-Parametric techniques, Bayesian methods, Simulation methods, Network analysis, Experimental Design, Predictive modeling using Supervised and Unsupervised Machine Learning techniques, Modeling and mapping of Geospatial data). Introduction to current scalable technologies to handle Big Data. 
+* **Collaborative skills**: Team collaboration tools. Dissemination of transparent research. Building a professional online presence. Ethics of predictive analytics, protecting privacy in the age of open data. Keeping current with a fast moving field and understanding how all the moving parts work together. Critical readings and discussion about current events demonstrating the impact of Data Science, Big Data, Preditive algorithms on humankind. 
+* **Technical skills**: Identifying and applying appropriate methods to answer a business or research need. Introduction to advanced statistical analysis techniques (Sample topics include: Non-Parametric techniques, Bayesian methods, Simulation methods, Network analysis, Experimental Design, Predictive modeling using Supervised and Unsupervised Machine Learning techniques, Modeling and mapping of Geospatial data). Introduction to current scalable technologies to handle and analyze Big Data.
 
 
 # Outline of topics 
