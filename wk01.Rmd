@@ -60,20 +60,19 @@ Additional resources to learn git
 
 ----
 
-# Topics
+# Version control and R Programming
 
 ```{r}
 kable(topic1) %>% kable_styling(bootstrap_options = c("striped","condensed"))
 ```
 
+# Doing Data Science - Readings
 
 ```{r}
-if(length(topic2)>0){
-  kable(topic2) %>% kable_styling(bootstrap_options = c("striped","condensed"))
-}
+kable(topic2) %>% kable_styling(bootstrap_options = c("striped","condensed"))
 ```
 
-**Quick reads**
+**Other Quick reads**
 
 * Data Scientist profiles: https://www.datacamp.com/community/tutorials/data-science-industry-infographic 
 * The Ten Fallacies of Data Science: https://towardsdatascience.com/the-ten-fallacies-of-data-science-9b2af78a1862
