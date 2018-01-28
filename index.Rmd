@@ -10,6 +10,16 @@ _This course aims to help students navigate the evolving and murky waters of the
 
 # Announcements
 
+### Week 2: Finding your place in the DS world
+
+* Your first assignment is due by Monday EOD. The peer review starting order is in the #assignments Slack channel. 
+    - We'll walk through the peer review via pull request $PR^2$ in class. 
+* Tuesday we're going to talk about the DDS readings - be prepared to answer the questions written on [week 1](https://norcalbiostat.github.io/ADS/wk01.html#doing_data_science_-_readings).
+* Then it's all about getting your professional webpage started. 
+  - Start simple. Don't let choice paralysis hit you. 
+
+
+
 ### Week 1: Welcome! 
 
 * Class time will be split between discussion of current topics, and you working on assignments. 
