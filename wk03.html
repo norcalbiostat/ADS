@@ -11,7 +11,7 @@
 
 
 
-<title></title>
+<title>Week 3: Feb 6 - Feb 13</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -19,6 +19,9 @@
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
 
@@ -146,6 +149,101 @@ $(document).ready(function () {
 <!-- code folding -->
 
 
+
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
 
 
 
@@ -305,299 +403,177 @@ $(document).ready(function () {
 
 
 
+<h1 class="title toc-ignore">Week 3: Feb 6 - Feb 13</h1>
 
 </div>
 
 
-<p><br></p>
-<p><em>Last Updated: Thu Mar 01 8:29:27 AM </em> <br></p>
-<table class="table table-hover table-striped table-responsive table-bordered" style="margin-left: auto; margin-right: auto;">
-<thead>
-<tr>
-<th style="text-align:left;">
-Link
-</th>
-<th style="text-align:left;">
-Topics
-</th>
-<th style="text-align:left;">
-Assignments
-</th>
-</tr>
-</thead>
+<p><em>Last Updated: Thu Mar 01 8:29:44 AM </em></p>
+<hr />
+<div id="learning-objectives" class="section level1">
+<h1>Learning Objectives</h1>
+<table class="table table-striped table-condensed" style="margin-left: auto; margin-right: auto;">
 <tbody>
 <tr>
-<td style="text-align:left;width: 15%; ">
-<a href="wk01.html">Week 01: Jan 23</a>
-</td>
-<td style="text-align:left;width: 30%; ">
-Version Control with git, Team collaboration with slack, Intermediate R Programming concepts.
-</td>
-<td style="text-align:left;width: 40%; ">
+<td style="text-align:left;">
 <ul>
-<li>
-Join all visible Slack channels.
-</li>
-<li>
-Introduce yourself in #introductions. Include things like name/major/year/GitHub handle/other info you want to share. Pin this message to this board. (<b>Due Thu 1/25</b>)
-</li>
-<li>
-R4DS HW #1 . Put a link in the #assignments channel when complete. (<b>Due Mon 1/29</b>)
-</li>
-<li>
-Read DDS CH 1&amp; 2 (<b>Due Tue 1/30</b>)
-</li>
-<li>
-Peer review 1 clasmates work by forking their repo, modify their code, then doing a pull request (<b>Due Wed 1/31</b>)
-</li>
-</ul>
+<li>Create a reproducible data analytics workflow using a make file.
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 15%; ">
-<a href="wk02.html">Week 02: Jan 30</a>
-</td>
-<td style="text-align:left;width: 30%; ">
-Social Media for Data Scientists
-</td>
-<td style="text-align:left;width: 40%; ">
+<td style="text-align:left;">
 <ul>
-<li>
-Follow the tutorials provided to build your website using blogdown. Minimum information includes an ‘about’ paragraph. (<b>Due Mon 2/5</b>)
-</li>
-<li>
-Edit your pinned slack introduction message to include the link to your website.
-</li>
-<li>
-Tell us a little bit about your DS sources, i.e. blog/podcast/twitter, in #state-of-ds. (<b>Due Mon 2/5</b>)
-</li>
-<li>
-Skim the TOC of DDS and pick a case study you want to read (<b>Ch 4-14</b>) . Post your selection in #readings by (<b>Sun 2/4</b>). Be prepared to share an overview of this case study next Thursday.
-</li>
-</ul>
+<li>Practice writing instructions to others by writing a tutorial.
 </td>
 </tr>
+</tbody>
+</table></li>
+</ul></li>
+</ul>
+<hr />
+</div>
+<div id="prepare" class="section level1">
+<h1>Prepare</h1>
+<table class="table table-striped table-condensed" style="margin-left: auto; margin-right: auto;">
+<tbody>
 <tr>
-<td style="text-align:left;width: 15%; ">
-<a href="wk03.html">Week 03: Feb 06</a>
-</td>
-<td style="text-align:left;width: 30%; ">
-Data Analytics Lifecycle: Get, Clean, Explore. Then automate all the things!
-</td>
-<td style="text-align:left;width: 40%; ">
+<td style="text-align:left;">
 <ul>
-<li>
-Using the gapminder data set, explore the question “How does life expectancy change over time for each country?” Automate your entire workflow including data acquisition as a separate R file. Write a tutorial/walk through as a separate RMD file. (<b>Due Sat 2/10</b>)
-</li>
-<li>
-Peer review 1 classmates file using github (<b>Due Mon 2/12</b>)
-</li>
-<li>
-Pick a new case study to share next thursday (<b>Post in #readings by Sun 2/10</b>).
-</li>
-</ul>
+<li>Review the <a href="notes.html">notes</a> on the data analytics lifecycle. (Recap from IDS)
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 15%; ">
-<a href="wk04.html">Week 04: Feb 13</a>
-</td>
-<td style="text-align:left;width: 30%; ">
-Data Analytics Lifecycle: Model (Basics), Algorithms
-</td>
-<td style="text-align:left;width: 40%; ">
+<td style="text-align:left;">
 <ul>
-<li>
-R4DS HW #2: 23.2.1 #1, #2 , 23.3.3 #1, #3, #4, 23.4.5 #1, #3, #4. Add this assignment to your github repo as a new RMD file. (<b>Due Sat 2/17</b>)
-</li>
-<li>
-Peer Review R4DS HW #2 (<b>Due Mon 2/19</b>)
-</li>
-</ul>
+<li>Review the notes from <a href="http://stat545.com/automation01_slides/index.html">Stat 545</a> on automation
 </td>
 </tr>
+</tbody>
+</table></li>
+</ul></li>
+</ul>
+<hr />
+</div>
+<div id="references" class="section level1">
+<h1>References</h1>
+<table class="table table-striped table-condensed" style="margin-left: auto; margin-right: auto;">
+<tbody>
 <tr>
-<td style="text-align:left;width: 15%; ">
-<a href="wk05.html">Week 05: Feb 20</a>
-</td>
-<td style="text-align:left;width: 30%; ">
-Introduction to Statistical Learning
-</td>
-<td style="text-align:left;width: 40%; ">
+<td style="text-align:left;">
 <ul>
-<li>
-ISLR Ch2 Exercises: #1, #2, #4 (<b>Write this up as a blog post</b>), #10 (<b>Due Mon 2/24</b>)
-</li>
-<li>
-Peer review Boston exploration via forking &amp; writing issues in github. (<b>Due Wed 2/25</b>)
-</li>
-</ul>
+<li><a href="http://swcarpentry.github.io/shell-novice/">Software Carpentry Shell Novice lesson</a>
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 15%; ">
-<a href="wk06.html">Week 06: Feb 27</a>
-</td>
-<td style="text-align:left;width: 30%; ">
-Prediction using Regression Models
-</td>
-<td style="text-align:left;width: 40%; ">
+<td style="text-align:left;">
 <ul>
-<li>
-ISLR Chapter 3 Exercises: #4, #15 (<b>Due Mon 3/3</b>)
-</li>
-<li>
-Peer review via github (<b>Due Wed 3/5</b>)
-</li>
-</ul>
+<li><a href="http://swcarpentry.github.io/make-novice/">Software Carpentry Make Novice lesson</a>
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 15%; ">
-<a href="wk07.html">Week 07: Mar 06</a>
-</td>
-<td style="text-align:left;width: 30%; ">
-Classification
-</td>
-<td style="text-align:left;width: 40%; ">
+<td style="text-align:left;">
 <ul>
-<li>
-ISLR Chapter 4 Exercises: #5, # 13 (<b>Due Mon 3/10</b>)
-</li>
-<li>
-Peer Review via Github (<b>Due Wed 3/12</b>)
-</li>
-</ul>
+<li><a href="https://dzone.com/articles/makefiles-rlatex-projects">Example of when/why to use make files</a>
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 15%; ">
-<a href="wk08.html">Week 08: Mar 13</a>
-</td>
-<td style="text-align:left;width: 30%; ">
-Dissemination and reporting
-</td>
-<td style="text-align:left;width: 40%; ">
+<td style="text-align:left;">
 <ul>
-<li>
-Dashboard Project (<b>Due Friday 3/30</b>)
-</li>
-</ul>
+<li><a href="http://stat545.com/automation00_index.html">Stat 545 lesson on automation</a>
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 15%; ">
-Spring Break
-</td>
-<td style="text-align:left;width: 30%; ">
-</td>
-<td style="text-align:left;width: 40%; ">
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 15%; ">
-<a href="wk09.html">Week 09: Mar 27</a>
-</td>
-<td style="text-align:left;width: 30%; ">
-Ethics of ML algorithms, Resampling Methods
-</td>
-<td style="text-align:left;width: 40%; ">
+<td style="text-align:left;">
 <ul>
-<li>
-Dashboard Project (<b>Due Friday 3/30</b>)
-</li>
-</ul>
+<li><a href="https://raw.githubusercontent.com/swcarpentry/r-novice-gapminder/gh-pages/_episodes_rmd/data/gapminder-FiveYearData.csv">Gapminder data</a> from [Software Carpentries R Novice lesson(<a href="https://swcarpentry.github.io/r-novice-gapminder/05-data-structures-part2/" class="uri">https://swcarpentry.github.io/r-novice-gapminder/05-data-structures-part2/</a>)
 </td>
 </tr>
+</tbody>
+</table></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+<hr />
+</div>
+<div id="topics" class="section level1">
+<h1>Topics</h1>
+<table class="table table-striped table-condensed" style="margin-left: auto; margin-right: auto;">
+<tbody>
 <tr>
-<td style="text-align:left;width: 15%; ">
-<a href="wk10.html">Week 10: Apr 03</a>
-</td>
-<td style="text-align:left;width: 30%; ">
-Tree based methods
-</td>
-<td style="text-align:left;width: 40%; ">
+<td style="text-align:left;">
 <ul>
-<li>
-ML homework
-</li>
-</ul>
+<li>Recap the predictive analytics life cycle (PAL).
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 15%; ">
-<a href="wk11.html">Week 11: Apr 10</a>
-</td>
-<td style="text-align:left;width: 30%; ">
-Big Data
-</td>
-<td style="text-align:left;width: 40%; ">
+<td style="text-align:left;">
 <ul>
-<li>
-Big data homework
-</li>
-</ul>
+<li>We’ll discuss why you may want to automate script files as opposed to (say) clicking the “knit” button.
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 15%; ">
-<a href="wk12.html">Week 12: Apr 17</a>
-</td>
-<td style="text-align:left;width: 30%; ">
-Working on a computing cluster
-</td>
-<td style="text-align:left;width: 40%; ">
+<td style="text-align:left;">
 <ul>
-<li>
-cluster computing homework
-</li>
+<li>We won’t cover how to use the unix shell or how to create make files directly as part of this class. This is something covered in CS 111, which is taken before this course.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<ul>
+<li>Work through at least one of the three toy pipelines from the <a href="http://stat545.com/automation00_index.html">Stat 545</a> website.
+</td>
+</tr>
+</tbody>
+</table></li>
+</ul></li>
+</ul></li>
+</ul></li>
 </ul>
-</td>
-</tr>
+<table class="table table-striped table-condensed" style="margin-left: auto; margin-right: auto;">
+<tbody>
 <tr>
-<td style="text-align:left;width: 15%; ">
-<a href="wk13.html">Week 13: Apr 24</a>
-</td>
-<td style="text-align:left;width: 30%; ">
-Other Tools
-</td>
-<td style="text-align:left;width: 40%; ">
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 15%; ">
-<a href="wk14.html">Week 14: May 01</a>
-</td>
-<td style="text-align:left;width: 30%; ">
-Final Project
-</td>
-<td style="text-align:left;width: 40%; ">
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 15%; ">
-<a href="wk15.html">Week 15: May 08</a>
-</td>
-<td style="text-align:left;width: 30%; ">
-Dead Week
-</td>
-<td style="text-align:left;width: 40%; ">
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 15%; ">
-Finals
-</td>
-<td style="text-align:left;width: 30%; ">
-</td>
-<td style="text-align:left;width: 40%; ">
+<td style="text-align:left;">
 </td>
 </tr>
 </tbody>
 </table>
+<hr />
+</div>
+<div id="assignments" class="section level1">
+<h1>Assignments</h1>
+<table class="table table-striped table-condensed" style="margin-left: auto; margin-right: auto;">
+<tbody>
+<tr>
+<td style="text-align:left;">
+<ul>
+<li>Using the gapminder data set, explore the question “How does life expectancy change over time for each country?” Automate your entire workflow including data acquisition as a separate R file. Write a tutorial/walk through as a separate RMD file. (Due Sat 2/10)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<ul>
+<li>Peer review 1 classmates file using github (Due Mon 2/12)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<ul>
+<li>Pick a new case study to share next thursday (Post in #readings by Sun 2/10).
+</td>
+</tr>
+</tbody>
+</table></li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
 
 
 
+</div>
+</div>
 
 </div>
 
