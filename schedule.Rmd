@@ -1,23 +1,31 @@
+---
+title: "Schedule"
+output: html_document
+---
 
-```{r echo=FALSE, message=FALSE, warning=FALSE}
-library(dplyr);library(readxl); library(kableExtra); library(stringr)
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+library(dplyr);library(readxl); library(kableExtra);library(stringr); library(pander)
 options(knitr.table.format = "html", knitr.kable.NA = '') 
-
+knitr::opts_chunk$set(echo=FALSE, message=FALSE, warning=FALSE) 
 ```
-<br>
 
-_Last Updated: `r format(Sys.time(), "%a %b %d %X")` _
-<br>
-```{r echo=FALSE, message=FALSE, warning=FALSE}
-rawdat <- read_excel("schedule_485.xlsx")
-cdat   <- rawdat %>% select(-c(SLO:Topic2)) %>% 
-                     mutate(wknum=Week,
-                            wknum = str_pad(wknum, width=2, side="left", pad="0"),
-                            link = paste0("wk", wknum, ".html"), 
-                            Week = paste0("Week ", wknum, ": ",format(Date, format="%b %d")), 
-                            Link = sprintf("[%s](%s)",Week, link))
+# Last Updated: `r format(Sys.time(), "%a %b %d %X")` {.tabset .tabset-fade .tabset-pills}
 
-cdat$Link[c(9,17)] <- c("Spring Break", "Finals")
+## Overview
+
+<p>
+Unless specified otherwise, all assignments are due at midnight on the due date listed.  
+
+Don't forget to check the weekly details for information on how to prepare and links to other materials. 
+</p>
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+# Read in schedule
+raw_detail <- read_excel("schedule_485.xlsx", sheet="schedule")
+
+cdat <- raw_detail %>% select(Week, date, Topics, Materials, Assignments) %>% 
+                     mutate(wknum=Week, 
+                            Date = format(date, "%m/%d"))
 
 # parse assignments
 evallist <- which(!is.na(cdat$Assignments))
@@ -28,12 +36,95 @@ cdat$Assignments[evallist] <- gsub(")", "</b>)", cdat$Assignments[evallist], fix
 
 ```
 
-```{r results='asis', echo=FALSE, message=FALSE, warning=FALSE}
-out <- select(cdat, Link, Topics, Assignments)
+```{r, results='asis', echo=FALSE, message=FALSE, warning=FALSE}
+out <- cdat %>% select(Date, Topics, Materials, Assignments)
 
 knitr::kable(out, align="l", escape=FALSE) %>% 
   kable_styling(bootstrap_options = c("hover", "striped", "responsive", "bordered")) %>% 
-  column_spec(1, width="15%") %>% column_spec(2, width="30%") %>% 
-  column_spec(3, width="40%")
+  column_spec(1, width="5%") %>% 
+  column_spec(2, width="10%") %>% 
+  column_spec(3, width="30%") %>% 
+  column_spec(4, width="30%")
 ```
+
+## Details
+
+Click each link to expand or contract the details for that week. 
+
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+# Function to extract week and display data
+details <- function(w){
+  wd <- filter(raw_detail, Week==w) 
+                                   
+  # Remove * and separate into lists
+  Topic <- gsub("\r\n", "", wd$Topics)
+  wd$SLO <- gsub("\\* ", "", wd$SLO)
+  SLO  <- as.list(str_split(wd$SLO, "\r\n", simplify=TRUE))
+  
+  wd$Prepare <- gsub("\\* ", "", wd$Prepare)
+  prep <- as.list(str_split(wd$Prepare, "\r\n", simplify=TRUE))
+  
+  wd$Materials <- gsub("\\* ", "", wd$Materials)
+  mats <- as.list(str_split(wd$Materials, "\r\n", simplify=TRUE))
+  
+  wd$Topic1 <- gsub("\\* ", "", wd$Topic1)
+  t1  <- as.list(str_split(wd$Topic1, "\r\n", simplify=TRUE))
+  
+  wd$Topic2 <- gsub("\\* ", "", wd$Topic2)
+  t2  <- as.list(str_split(wd$Topic2, "\r\n", simplify=TRUE))
+  
+  wd$Assignments <- gsub("\\* ", "", wd$Assignments)
+  hw  <- as.list(str_split(wd$Assignments, "\r\n", simplify=TRUE))
+
+  return(list(Topic=Topic, SLO=SLO, prep=prep, mats=mats, 
+              t1=t1, t2=t2, hw=hw))
+}
+```
+
+```{r}
+w1 <- details(1)
+```
+### <a href="#week1" data-toggle="collapse">Week 1: `r w1$Topic`</a>
+<div id="week1" class="collapse">
+
+#### Learning Objectives
+By the end of the week, learners will be able to: 
+```{r}
+pander(w1$SLO)
+```
+
+#### How to prepare
+```{r}
+pander(w1$prep)
+```
+
+#### Materials
+```{r}
+pander(w1$mats)
+```
+
+#### Topic 1
+```{r}
+pander(w1$t1)
+```
+
+#### Topic 2
+```{r}
+pander(w1$t2)
+```
+
+#### Assignments
+```{r}
+pander(w1$hw)
+```
+
+</div>
+
+
+
+## Calendar
+
+For those of you that like the calendar view of your schedule. Due to schedule adjustments during the semester these dates may not match exactly with the schedule. In those cases please bring any  descrepencies to my attention via Slack. 
+
 

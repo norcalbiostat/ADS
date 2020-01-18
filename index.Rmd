@@ -1,27 +1,19 @@
-<br><br>
+<br>
 
-This is the landing page for <span style="color:blue">**Math 485 - Advanced Data Science**</span> at CSU, Chico. This page is used for posting of weekly announcements and information for students of the class. 
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+wk1.date <- as.Date("2020-01-21")
+```
+
+This is the course website for <span style="color:blue">**MATH/CSCI 485 - Advanced Data Science**</span> course taught by [Dr. Robin Donatello](www.norcalbiostat.com) in Spring 2020 at California State University, Chico. This landing page is used for posting of regular announcements and information for students of the class. 
+
+_This course aims to help students navigate the evolving and murky waters of the Data Science landscape. We do so by not only providing training in advanced programming and technical skills, but also by providing opportunities for collaboration with other disciplines and reflection on how Data Science impacts human socieity._
+
 
 ----
 
-_This course aims to help students navigate the evolving and murky waters of the Data Science landscape. We do so by not only providing training in advanced programming and technical skills, but also by providing opportunities for collaboration and reflection on how Data Science impacts human socieity. See the [Syllabus](syllabus_499.html) for more details on the topics covered._
+### `r format(wk1.date, "%m-%d-%Y")` Week 1: Welcome to Spring 20!
 
-----
+This course website contains all materials except the textbooks for this class. Be sure to familiarize yourself with the organization. You will be here a lot. Bookmark this page.
 
-# Announcements
+Invitations to a Slack workspace will have been sent out to your @mail.csuchico.edu email address. 
 
-### Week 2: Finding your place in the DS world
-
-* Your first assignment is due by Monday EOD. The peer review starting order is in the #assignments Slack channel. 
-    - We'll walk through the peer review via pull request $PR^2$ in class. 
-* Tuesday we're going to talk about the DDS readings - be prepared to answer the questions written on [week 1](https://norcalbiostat.github.io/ADS/wk01.html#doing_data_science_-_readings).
-* Then it's all about getting your professional webpage started. 
-  - Start simple. Don't let choice paralysis hit you. 
-
-
-
-### Week 1: Welcome! 
-
-* Class time will be split between discussion of current topics, and you working on assignments. 
-* Often you will be presented with a set of questions to answer while doing the readings, that we will discuss in class. These will be posted on the weekly details. 
-* Explore the website, get your system updated if needed, and check the schedule week 1 to see what new programs you'll need to get and/or update. 

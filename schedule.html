@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
 
 <meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
 
-<title></title>
+<title>Schedule</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -20,7 +20,9 @@
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
-<link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+<script src="site_libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 
 
 
@@ -54,9 +56,7 @@ h6 {
 
 <link rel="stylesheet" href="style.css" type="text/css" />
 
-</head>
 
-<body>
 
 <style type = "text/css">
 .main-container {
@@ -70,13 +70,18 @@ code {
 }
 img {
   max-width:100%;
-  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
 }
+.html-widget {
+  margin-bottom: 20px;
+}
 button.code-folding-btn:focus {
   outline: none;
+}
+summary {
+  display: list-item;
 }
 </style>
 
@@ -92,7 +97,6 @@ body {
   padding-top: 50px;
   margin-top: -50px;
 }
-
 .section h2 {
   padding-top: 50px;
   margin-top: -50px;
@@ -112,6 +116,43 @@ body {
 .section h6 {
   padding-top: 50px;
   margin-top: -50px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
 }
 </style>
 
@@ -133,19 +174,74 @@ $(document).ready(function () {
 });
 </script>
 
-
-<div class="container-fluid main-container">
-
 <!-- tabsets -->
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-</script>
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
 
 <!-- code folding -->
 
 
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
 
 
 
@@ -171,62 +267,6 @@ $(document).ready(function () {
 </li>
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    <span class="fa fa-folder-open"></span>
-     
-    Weekly
-     
-    <span class="caret"></span>
-  </a>
-  <ul class="dropdown-menu" role="menu">
-    <li>
-      <a href="wk01.html">Week 01 - Jan 23</a>
-    </li>
-    <li>
-      <a href="wk02.html">Week 02 - Jan 30</a>
-    </li>
-    <li>
-      <a href="wk03.html">Week 03 - Feb 06</a>
-    </li>
-    <li>
-      <a href="wk04.html">Week 04 - Feb 13</a>
-    </li>
-    <li>
-      <a href="wk05.html">Week 05 - Feb 20</a>
-    </li>
-    <li>
-      <a href="wk06.html">Week 06 - Feb 27</a>
-    </li>
-    <li>
-      <a href="wk07.html">Week 07 - Mar 06</a>
-    </li>
-    <li>
-      <a href="wk08.html">Week 08 - Mar 13</a>
-    </li>
-    <li>
-      <a href="wk09.html">Week 09 - Mar 27</a>
-    </li>
-    <li>
-      <a href="wk10.html">Week 10 - Apr 03</a>
-    </li>
-    <li>
-      <a href="wk11.html">Week 11 - Apr 10</a>
-    </li>
-    <li>
-      <a href="wk12.html">Week 12 - Apr 17</a>
-    </li>
-    <li>
-      <a href="wk13.html">Week 13 - Apr 24</a>
-    </li>
-    <li>
-      <a href="wk14.html">Week 14 - May 01</a>
-    </li>
-    <li>
-      <a href="wk15.html">Week 15 - May 08</a>
-    </li>
-  </ul>
-</li>
-<li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
     <span class="fa fa-book"></span>
      
     Textbooks
@@ -234,9 +274,6 @@ $(document).ready(function () {
     <span class="caret"></span>
   </a>
   <ul class="dropdown-menu" role="menu">
-    <li>
-      <a href="http://r4ds.had.co.nz/">R for Data Science (R4DS)</a>
-    </li>
     <li>
       <a href="http://www-bcf.usc.edu/~gareth/ISL/">Introduction to Statistical Learning (ISLR)</a>
     </li>
@@ -272,6 +309,13 @@ $(document).ready(function () {
       </a>
     </li>
     <li>
+      <a href="https://github.com/">
+        <span class="fa fa-google"></span>
+         
+        Google Drive
+      </a>
+    </li>
+    <li>
       <a href="https://csuchico.zoom.us/">
         <span class="fa fa-video-camera"></span>
          
@@ -283,7 +327,7 @@ $(document).ready(function () {
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>
-  <a href="syllabus_499.html">
+  <a href="syllabus_485_s20.html">
     <span class="fa fa-info-circle"></span>
      
     Syllabus
@@ -305,20 +349,30 @@ $(document).ready(function () {
 
 
 
+<h1 class="title toc-ignore">Schedule</h1>
 
 </div>
 
 
-<p><br></p>
-<p><em>Last Updated: Sun Apr 01 11:24:50 PM </em> <br></p>
+<div id="last-updated-sat-jan-18-091653" class="section level1 tabset tabset-fade tabset-pills">
+<h1>Last Updated: Sat Jan 18 09:16:53</h1>
+<div id="overview" class="section level2">
+<h2>Overview</h2>
+<p>
+<p>Unless specified otherwise, all assignments are due at midnight on the due date listed.</p>
+Don’t forget to check the weekly details for information on how to prepare and links to other materials.
+</p>
 <table class="table table-hover table-striped table-responsive table-bordered" style="margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
 <th style="text-align:left;">
-Link
+Date
 </th>
 <th style="text-align:left;">
 Topics
+</th>
+<th style="text-align:left;">
+Materials
 </th>
 <th style="text-align:left;">
 Assignments
@@ -327,40 +381,19 @@ Assignments
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left;width: 15%; ">
-<a href="wk01.html">Week 01: Jan 23</a>
+<td style="text-align:left;width: 5%; ">
+01/22
 </td>
-<td style="text-align:left;width: 30%; ">
-Version Control with git, Team collaboration with slack, Intermediate R Programming concepts.
-</td>
-<td style="text-align:left;width: 40%; ">
-<ul>
-<li>
-Join all visible Slack channels.
-</li>
-<li>
-Introduce yourself in #introductions. Include things like name/major/year/GitHub handle/other info you want to share. Pin this message to this board. (<b>Due Thu 1/25</b>)
-</li>
-<li>
-R4DS HW #1 . Put a link in the #assignments channel when complete. (<b>Due Mon 1/29</b>)
-</li>
-<li>
-Read DDS CH 1&amp; 2 (<b>Due Tue 1/30</b>)
-</li>
-<li>
-Peer review 1 clasmates work by forking their repo, modify their code, then doing a pull request (<b>Due Wed 1/31</b>)
-</li>
-</ul>
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 15%; ">
-<a href="wk02.html">Week 02: Jan 30</a>
-</td>
-<td style="text-align:left;width: 30%; ">
+<td style="text-align:left;width: 10%; ">
 Social Media for Data Scientists
 </td>
-<td style="text-align:left;width: 40%; ">
+<td style="text-align:left;width: 30%; ">
+<ul>
+<li><a href="https://bookdown.org/yihui/blogdown/">Blogdown</a></li>
+<li><a href="https://www.agorapulse.com/blog/lets-clear-content-creation-vs-content-curation">Curation vs Creation</a></li>
+<li><a href="http://varianceexplained.org/r/start-blog/" class="uri">http://varianceexplained.org/r/start-blog/</a>
+</td>
+<td style="text-align:left;width: 30%; ">
 <ul>
 <li>
 Follow the tutorials provided to build your website using blogdown. Minimum information includes an ‘about’ paragraph. (<b>Due Mon 2/5</b>)
@@ -378,239 +411,247 @@ Skim the TOC of DDS and pick a case study you want to read (<b>Ch 4-14</b>) . Po
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 15%; ">
-<a href="wk03.html">Week 03: Feb 06</a>
+<td style="text-align:left;width: 5%; ">
+01/29
+</td>
+<td style="text-align:left;width: 10%; ">
 </td>
 <td style="text-align:left;width: 30%; ">
-Data Analytics Lifecycle: Get, Clean, Explore. Then automate all the things!
 </td>
-<td style="text-align:left;width: 40%; ">
-<ul>
-<li>
-Using the gapminder data set, explore the question “How does life expectancy change over time for each country?” Automate your entire workflow including data acquisition as a separate R file. Write a tutorial/walk through as a separate RMD file. (<b>Due Sat 2/10</b>)
-</li>
-<li>
-Peer review 1 classmates file using github (<b>Due Mon 2/12</b>)
-</li>
-<li>
-Pick a new case study to share next thursday (<b>Post in #readings by Sun 2/10</b>).
-</li>
-</ul>
+<td style="text-align:left;width: 30%; ">
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 15%; ">
-<a href="wk04.html">Week 04: Feb 13</a>
+<td style="text-align:left;width: 5%; ">
+02/05
+</td>
+<td style="text-align:left;width: 10%; ">
 </td>
 <td style="text-align:left;width: 30%; ">
-Data Analytics Lifecycle: Model (Basics), Algorithms
 </td>
-<td style="text-align:left;width: 40%; ">
-<ul>
-<li>
-R4DS HW #2: 23.2.1 #1, #2 , 23.3.3 #1, #3, #4, 23.4.5 #1, #3, #4. Add this assignment to your github repo as a new RMD file. (<b>Due Sat 2/17</b>)
-</li>
-<li>
-Peer Review R4DS HW #2 (<b>Due Mon 2/19</b>)
-</li>
-</ul>
+<td style="text-align:left;width: 30%; ">
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 15%; ">
-<a href="wk05.html">Week 05: Feb 20</a>
+<td style="text-align:left;width: 5%; ">
+02/12
+</td>
+<td style="text-align:left;width: 10%; ">
 </td>
 <td style="text-align:left;width: 30%; ">
-Introduction to Statistical Learning
 </td>
-<td style="text-align:left;width: 40%; ">
-<ul>
-<li>
-ISLR Ch2 Exercises: #1, #2 (<b>Due Sat 2/24</b>)
-</li>
-<li>
-ISLR Ch 2 #4 Write this up as a blog post (<b>Due Sat 2/24</b>)
-</li>
-<li>
-ISLR Ch 2 #10 Explore the Boston data set. Write this up as a separate assignment in your github repo. (<b>Due Sat 2/24</b>)
-</li>
-<li>
-Peer review Boston exploration via forking &amp; writing issues in github. (<b>Due Mon 2/25</b>)
-</li>
-</ul>
+<td style="text-align:left;width: 30%; ">
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 15%; ">
-<a href="wk06.html">Week 06: Feb 27</a>
+<td style="text-align:left;width: 5%; ">
+02/19
+</td>
+<td style="text-align:left;width: 10%; ">
 </td>
 <td style="text-align:left;width: 30%; ">
-Prediction using Regression Models
 </td>
-<td style="text-align:left;width: 40%; ">
-<ul>
-<li>
-ISLR Chapter 3 Exercises: #4, #15 (<b>Due Sat 3/3</b>)
-</li>
-<li>
-Peer review via github (<b>Due Mon 3/5</b>)
-</li>
-</ul>
+<td style="text-align:left;width: 30%; ">
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 15%; ">
-<a href="wk07.html">Week 07: Mar 06</a>
+<td style="text-align:left;width: 5%; ">
+02/26
+</td>
+<td style="text-align:left;width: 10%; ">
 </td>
 <td style="text-align:left;width: 30%; ">
-Classification
 </td>
-<td style="text-align:left;width: 40%; ">
-<ul>
-<li>
-ISLR Chapter 4 Exercises: #5, # 13 (<b>Due Sat 3/10</b>)
-</li>
-<li>
-Peer Review via Github (<b>Due Mon 3/12</b>)
-</li>
-</ul>
+<td style="text-align:left;width: 30%; ">
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 15%; ">
-<a href="wk08.html">Week 08: Mar 13</a>
+<td style="text-align:left;width: 5%; ">
+03/04
+</td>
+<td style="text-align:left;width: 10%; ">
 </td>
 <td style="text-align:left;width: 30%; ">
-Dissemination and reporting
 </td>
-<td style="text-align:left;width: 40%; ">
+<td style="text-align:left;width: 30%; ">
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 15%; ">
+<td style="text-align:left;width: 5%; ">
+03/11
+</td>
+<td style="text-align:left;width: 10%; ">
+</td>
+<td style="text-align:left;width: 30%; ">
+</td>
+<td style="text-align:left;width: 30%; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 5%; ">
+03/18
+</td>
+<td style="text-align:left;width: 10%; ">
 Spring Break
 </td>
 <td style="text-align:left;width: 30%; ">
 </td>
-<td style="text-align:left;width: 40%; ">
+<td style="text-align:left;width: 30%; ">
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 15%; ">
-<a href="wk09.html">Week 09: Mar 27</a>
+<td style="text-align:left;width: 5%; ">
+03/27
+</td>
+<td style="text-align:left;width: 10%; ">
 </td>
 <td style="text-align:left;width: 30%; ">
-Ethics of ML algorithms, Resampling Methods
 </td>
-<td style="text-align:left;width: 40%; ">
-<ul>
-<li>
-ISLR Ch 5: #3, #5 (<b>Due Mon 4/2</b>)
-</li>
-<li>
-Peer review via Github (<b>Due Wed 4/4</b>)
-</li>
-<li>
-Blog post about something in the Data Science news lately (<b>Due Mon 4/2</b>)
-</li>
-</ul>
+<td style="text-align:left;width: 30%; ">
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 15%; ">
-<a href="wk10.html">Week 10: Apr 03</a>
+<td style="text-align:left;width: 5%; ">
+04/03
+</td>
+<td style="text-align:left;width: 10%; ">
 </td>
 <td style="text-align:left;width: 30%; ">
-Tree based methods
 </td>
-<td style="text-align:left;width: 40%; ">
-<ul>
-<li>
-ISLR Ch 8 #5, #7, #9 (<b>Due Mon 4/9</b>)
-</li>
-<li>
-Peer Review via Github (<b>Due Wed 4/11</b>)
-</li>
-<li>
-Blog post about Genocide reading (<b>Due Mon 4/9</b>)
-</li>
-<li>
-Complete Data Camp Sparklyr lesson (<b>Due Wed 4/11</b>)
-</li>
-</ul>
+<td style="text-align:left;width: 30%; ">
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 15%; ">
-<a href="wk11.html">Week 11: Apr 10</a>
+<td style="text-align:left;width: 5%; ">
+04/10
+</td>
+<td style="text-align:left;width: 10%; ">
 </td>
 <td style="text-align:left;width: 30%; ">
-Big Data
 </td>
-<td style="text-align:left;width: 40%; ">
-<ul>
-<li>
-Big data homework
-</li>
-</ul>
+<td style="text-align:left;width: 30%; ">
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 15%; ">
-<a href="wk12.html">Week 12: Apr 17</a>
+<td style="text-align:left;width: 5%; ">
+04/17
+</td>
+<td style="text-align:left;width: 10%; ">
 </td>
 <td style="text-align:left;width: 30%; ">
-Working on a computing cluster
 </td>
-<td style="text-align:left;width: 40%; ">
-<ul>
-<li>
-cluster computing homework
-</li>
-</ul>
+<td style="text-align:left;width: 30%; ">
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 15%; ">
-<a href="wk13.html">Week 13: Apr 24</a>
+<td style="text-align:left;width: 5%; ">
+04/24
+</td>
+<td style="text-align:left;width: 10%; ">
 </td>
 <td style="text-align:left;width: 30%; ">
-Other Tools
 </td>
-<td style="text-align:left;width: 40%; ">
+<td style="text-align:left;width: 30%; ">
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 15%; ">
-<a href="wk14.html">Week 14: May 01</a>
+<td style="text-align:left;width: 5%; ">
+05/01
+</td>
+<td style="text-align:left;width: 10%; ">
 </td>
 <td style="text-align:left;width: 30%; ">
-Final Project
 </td>
-<td style="text-align:left;width: 40%; ">
+<td style="text-align:left;width: 30%; ">
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 15%; ">
-<a href="wk15.html">Week 15: May 08</a>
+<td style="text-align:left;width: 5%; ">
+05/08
 </td>
-<td style="text-align:left;width: 30%; ">
+<td style="text-align:left;width: 10%; ">
 Dead Week
 </td>
-<td style="text-align:left;width: 40%; ">
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 15%; ">
-Finals
+<td style="text-align:left;width: 30%; ">
 </td>
 <td style="text-align:left;width: 30%; ">
 </td>
-<td style="text-align:left;width: 40%; ">
+</tr>
+<tr>
+<td style="text-align:left;width: 5%; ">
+05/15
+</td>
+<td style="text-align:left;width: 10%; ">
+Finals Week
+</td>
+<td style="text-align:left;width: 30%; ">
+</td>
+<td style="text-align:left;width: 30%; ">
 </td>
 </tr>
 </tbody>
-</table>
+</table></li>
+</ul>
+</div>
+<div id="details" class="section level2">
+<h2>Details</h2>
+<p>Click each link to expand or contract the details for that week.</p>
+<div id="week-1-social-media-for-data-scientists" class="section level3">
+<h3><a href="#week1" data-toggle="collapse">Week 1: Social Media for Data Scientists</a></h3>
+<div id="week1" class="collapse">
+<h4 id="learning-objectives">Learning Objectives</h4>
+<p>By the end of the week, learners will be able to:</p>
+<ul>
+<li>Create an professional online presence</li>
+<li>Connect with the current state of DS</li>
+</ul>
+<!-- end of list -->
+<h4 id="how-to-prepare">How to prepare</h4>
+<ul>
+<li>Start reading the blogdown tutorials and looking for DS sources of interest.</li>
+</ul>
+<!-- end of list -->
+<h4 id="materials">Materials</h4>
+<ul>
+<li><a href="https://bookdown.org/yihui/blogdown/">Blogdown</a></li>
+<li><a href="https://www.agorapulse.com/blog/lets-clear-content-creation-vs-content-curation">Curation vs Creation</a></li>
+<li><a href="http://varianceexplained.org/r/start-blog/" class="uri">http://varianceexplained.org/r/start-blog/</a></li>
+</ul>
+<!-- end of list -->
+<h4 id="topic-1">Topic 1</h4>
+<ul>
+<li>You don’t know what you don’t know.</li>
+<li>We’re going to explore the current world of DS by finding and following people in the world doing DS in an area that interests you.</li>
+<li>Find a data science, data visualization, data story, data SOMETHING blog, podcast, twitter feed (or two) to follow.</li>
+<li>You are assigned to write at least 8 blog posts throughout the semester, so you may need to find more than one source if your first choice does not update frequently enough.</li>
+<li>Discuss answers from Last week’s reading from Doing Data Science</li>
+<li></li>
+</ul>
+<!-- end of list -->
+<h4 id="topic-2">Topic 2</h4>
+<ul>
+<li>You’re going to use Hugo/Blogdown to create a professional looking website.</li>
+<li>Several times throughout the semester you will write a post about something in the DS world that you found interesting. It doesn’t have to be a long or involved post.</li>
+<li>This is about practicing writing for a public audience. The more you write the better you’ll get.</li>
+<li>Wait.. why the heck should I create a website? The internet is scary!</li>
+</ul>
+<!-- end of list -->
+<h4 id="assignments">Assignments</h4>
+<ul>
+<li>Follow the tutorials provided to build your website using blogdown. Minimum information includes an ‘about’ paragraph. (Due Mon 2/5)</li>
+<li>Edit your pinned slack introduction message to include the link to your website.</li>
+<li>Tell us a little bit about your DS sources, i.e. blog/podcast/twitter, in #state-of-ds. (Due Mon 2/5)</li>
+<li>Skim the TOC of DDS and pick a case study you want to read (Ch 4-14) . Post your selection in #readings by (Sun 2/4). Be prepared to share an overview of this case study next Thursday.</li>
+</ul>
+<!-- end of list -->
+</div>
+</div>
+</div>
+<div id="calendar" class="section level2">
+<h2>Calendar</h2>
+<p>For those of you that like the calendar view of your schedule. Due to schedule adjustments during the semester these dates may not match exactly with the schedule. In those cases please bring any descrepencies to my attention via Slack.</p>
+</div>
+</div>
 
 
 
@@ -629,6 +670,23 @@ $(document).ready(function () {
 
 
 </script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>

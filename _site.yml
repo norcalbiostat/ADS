@@ -6,66 +6,25 @@ navbar:
   - text: Schedule
     icon: fa-calendar
     href: schedule.html
-  - text: Weekly
-    icon: fa-folder-open
-    menu:
-    - text: Week 01 - Jan 23
-      href: wk01.html
-    - text: Week 02 - Jan 30
-      href: wk02.html
-    - text: Week 03 - Feb 06
-      href: wk03.html
-    - text: Week 04 - Feb 13
-      href: wk04.html
-    - text: Week 05 - Feb 20
-      href: wk05.html
-    - text: Week 06 - Feb 27
-      href: wk06.html
-    - text: Week 07 - Mar 06
-      href: wk07.html
-    - text: Week 08 - Mar 13
-      href: wk08.html
-    - text: Week 09 - Mar 27
-      href: wk09.html
-    - text: Week 10 - Apr 03
-      href: wk10.html 
-    - text: Week 11 - Apr 10
-      href: wk11.html
-    - text: Week 12 - Apr 17
-      href: wk12.html
-    - text: Week 13 - Apr 24
-      href: wk13.html
-    - text: Week 14 - May 01
-      href: wk14.html
-    - text: Week 15 - May 08
-      href: wk15.html
-  - text: Textbooks
-    icon: fa-book
-    menu:
-    - text: R for Data Science (R4DS)
-      href: http://r4ds.had.co.nz/
-    - text: Introduction to Statistical Learning (ISLR)
-      href: http://www-bcf.usc.edu/~gareth/ISL/
-    - text: Doing Data Science (DDS)
-      href: http://shop.oreilly.com/product/0636920028529.do 
-    - text: Weapons of Math Destruction (WMD)
-      href: https://chico-primo.hosted.exlibrisgroup.com/primo-explore/fulldisplay?docid=01CALS_ALMA71420504090002901&context=L&vid=01CALS_CHI&lang=en_US&search_scope=Everything&adaptor=Local%20Search%20Engine&isFrbr=true&tab=everything&query=any,contains,weapons%20of%20math%20destruction&sortby=rank&mode=Basic 
   - text: Tools
     icon: fa-wrench
     menu:
     - text: GitHub
       icon: fa-github
       href: https://github.com/
-    - text: Slack (class discussions)
-      icon: fa-slack
-      href: https://csuc-ads.slack.com/
-    - text: Zoom (video conference)
+    - text: Google Drive
+      icon: fa-google
+      href: https://github.com/
+    - text: Zoom
       icon: fa-video-camera
       href: https://csuchico.zoom.us/
+  - text: POLS Project
+    icon: fa-group
+    href: pols_project.html
   right:
   - text: Syllabus
     icon: fa-info-circle
-    href: syllabus_499.html
+    href: syllabus_485_s20.html
   - text: Dr. D's Website
     icon: fa-paw
     href: http://www.norcalbiostat.com/
