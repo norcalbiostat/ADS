@@ -3,8 +3,6 @@ tags: ADS
 robots: noindex, nofollow
 ---
 
-Click [[here]](https://hackmd.io/@norcalbiostat/data485-lec02) for the live version of these notes on HackMD.
-
 # What is Data Science? 
 This is an example of collaborative notes. After discussing each topic we will rotate through writing down answers to questions marked with a :question:
 
