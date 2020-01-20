@@ -1,3 +1,10 @@
+---
+tags: ADS
+robots: noindex, nofollow
+---
+
+Click [[here]](https://hackmd.io/@norcalbiostat/data485-lec02) for the live version of these notes on HackMD.
+
 # What is Data Science? 
 This is an example of collaborative notes. After discussing each topic we will rotate through writing down answers to questions marked with a :question:
 
@@ -5,6 +12,7 @@ Questions marked with a :busts_in_silhouette: answered by all students (put your
 
 You can find some answers to the following questions in DDS Ch 1 
 :book:, but you will have to also search the general internet :globe_with_meridians: for others. 
+
 
 ---
 
