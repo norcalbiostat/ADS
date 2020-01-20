@@ -1,15 +1,15 @@
 ---
-title: "Schedule"
 output: html_document
 ---
-
+<br> 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 library(dplyr);library(readxl); library(kableExtra);library(stringr); library(pander)
 options(knitr.table.format = "html", knitr.kable.NA = '') 
 knitr::opts_chunk$set(echo=FALSE, message=FALSE, warning=FALSE) 
 ```
 
-# Last Updated: `r format(Sys.time(), "%a %b %d %X")` {.tabset .tabset-fade .tabset-pills}
+# Schedule {.tabset .tabset-fade .tabset-pills}
+_Last Updated: `r format(Sys.time(), "%a %b %d %X")`_
 
 ## Overview
 
@@ -25,14 +25,19 @@ raw_detail <- read_excel("schedule_485.xlsx", sheet="schedule")
 cdat <- raw_detail %>% mutate(wknum=Week, 
                               Date = format(date, "%m/%d"))
 
-
 # parse assignments
 evallist <- which(!is.na(cdat$Assignments))
-#cdat$Assignments[evallist] <- paste0("<ul>", cdat$Assignments[evallist], "</ul>")
-#cdat$Assignments[evallist] <- gsub("(+.)\\*", "</li><li>", cdat$Assignments[evallist])
+cdat$Assignments[evallist] <- paste0("<ul>", cdat$Assignments[evallist], "</ul>")
+cdat$Assignments[evallist] <- gsub("(+.)\\*", "</li><li>", cdat$Assignments[evallist])
 cdat$Assignments <- gsub(" (", " <b> (", cdat$Assignments, fixed=TRUE)
 cdat$Assignments <- gsub(") ", "</b>)", cdat$Assignments, fixed=TRUE)
 
+# parse materials
+#evallist <- which(!is.na(cdat$Materials))
+#cdat$Materials[evallist] <- paste0("<ul>", cdat$Materials[evallist], "</ul>")
+#cdat$Materials[evallist] <- gsub("(+.)\\*", "</li><li>", cdat$Materials[evallist])
+#cdat$Materials <- gsub(" (", " <b> (", cdat$Materials, fixed=TRUE)
+#cdat$Materials <- gsub(") ", "</b>)", cdat$Materials, fixed=TRUE)
 ```
 
 ```{r, results='asis', echo=FALSE, message=FALSE, warning=FALSE}

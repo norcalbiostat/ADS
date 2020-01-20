@@ -11,9 +11,10 @@ library(stringr); library(dplyr);library(pander)
 
 # Lecture Notes
 ```{r, message=FALSE, warning=FALSE, echo=FALSE}
-lec <- data.frame(filenames = paste0('lec/', list.files("lec", pattern='*.pdf|*.html|*.docx')))
+lec <- data.frame(filenames = paste0('lec/', list.files("lec", pattern='*.md|*.pdf|*.html|*.docx')))
 
-out.lec <- lec %>% mutate(name = gsub("lec/|.html|.pdf",  "", filenames), 
+out.lec <- lec %>% filter(!grepl("Rmd", lec$filenames, ignore.case=TRUE)) %>% 
+          mutate(name = gsub("lec/|.html|.pdf|.md",  "", filenames), 
                           link = sprintf("[%s](%s)",name, filenames))
 pander(as.list(out.lec$link))
 ```

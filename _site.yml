@@ -15,6 +15,9 @@ navbar:
     - text: GitHub
       icon: fa-github
       href: https://github.com/
+    - text: HackMD
+      icon: fa-file-code
+      href: https://hackmd.io/
     - text: Google Drive
       icon: fa-google
       href: https://github.com/

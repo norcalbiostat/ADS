@@ -34,9 +34,9 @@ Update R (3.6+) & R Studio (latest)
 
 ## Hack MD
 
-We will be using HackMD as a place for collaborative notes. These notes are locked to our class (using your github user accounts)
+We will be using HackMD as a place for collaborative notes. These notes will be locked to our class (using your github user accounts). 
 
-1. Sign in to HackMD using your Github account. 
+1. Sign in to HackMD using your Github account. Just to make sure it works and you know where to go. We'll use this on Tuesday of week 2. 
 
 
 ## Slack
