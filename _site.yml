@@ -6,6 +6,9 @@ navbar:
   - text: Schedule
     icon: fa-calendar
     href: schedule.html
+  - text: Materials
+    icon: fa-folder-open
+    href: materials.html
   - text: Tools
     icon: fa-wrench
     menu:

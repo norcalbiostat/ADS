@@ -1,0 +1,93 @@
+---
+output:
+  html_document:
+    toc: yes
+    toc_float: yes
+    css: style.css
+title: "Week 1: Jan 23 - Jan 29"
+---
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+library(dplyr);library(readxl); library(knitr)
+library(kableExtra); library(stringr)
+knitr::opts_chunk$set(echo = FALSE)
+options(knitr.table.format = "html", knitr.kable.NA = '') 
+```
+_Last Updated: `r format(Sys.time(), "%a %b %d %X")` _
+
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+raw <- read_excel("schedule_485.xlsx")
+week.w <- filter(raw, Week==1)
+
+SLO    <- t(str_split(week.w$SLO, "\r\n", simplify=TRUE))
+prep   <- t(str_split(week.w$Prepare, "\r\n", simplify=TRUE))
+refs   <- t(str_split(week.w$References, "\r\n", simplify=TRUE))
+hw     <- t(str_split(week.w$Assignments, "\r\n", simplify=TRUE))
+topic1 <- t(str_split(week.w$Topic1, "\r\n", simplify=TRUE))
+topic2 <- t(str_split(week.w$Topic2, "\r\n", simplify=TRUE))
+```
+
+----
+
+# Learning Objectives
+```{r}
+kable(SLO) %>% kable_styling(bootstrap_options = c("striped","condensed"))
+```
+
+----
+
+# Prepare
+```{r}
+kable(prep) %>% kable_styling(bootstrap_options = c("striped","condensed"))
+```
+
+The Slack phone app is technically optional, but really really helpful/handy. Students historically have stated it's much easier to work with. If you opt out of the phone app, make sure the program is installed onto your laptop. You need to be connected throughout the semester, not just when you remember to log in. 
+
+----
+
+# References
+```{r}
+kable(refs) %>% kable_styling(bootstrap_options = c("striped","condensed"))
+```
+
+Additional resources to learn git
+
+* http://happygitwithr.com/
+* https://www.atlassian.com/git/tutorials/what-is-version-control 
+* http://kbroman.org/github_tutorial/ 
+    - You'll be peer reviewing each others code by [using this forking technique](http://kbroman.org/github_tutorial/pages/fork.html)
+
+----
+
+# Version control and R Programming
+
+```{r}
+kable(topic1) %>% kable_styling(bootstrap_options = c("striped","condensed"))
+```
+
+# Doing Data Science - Readings
+
+```{r}
+kable(topic2) %>% kable_styling(bootstrap_options = c("striped","condensed"))
+```
+
+**Other Quick reads**
+
+* Data Scientist profiles: https://www.datacamp.com/community/tutorials/data-science-industry-infographic 
+* The Ten Fallacies of Data Science: https://towardsdatascience.com/the-ten-fallacies-of-data-science-9b2af78a1862
+
+----
+
+# Assignments
+```{r}
+kable(hw) %>% kable_styling(bootstrap_options = c("striped","condensed"))
+```
+
+
+
+
+
+
+
+

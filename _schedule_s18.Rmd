@@ -1,0 +1,32 @@
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+library(dplyr);library(readxl); library(kableExtra); library(stringr)
+options(knitr.table.format = "html", knitr.kable.NA = '') 
+```
+<br>
+
+_Last Updated: `r format(Sys.time(), "%a %b %d %X")` _
+<br>
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+rawdat <- read_excel("schedule_485.xlsx")
+cdat   <- rawdat %>% select(-c(SLO:Topic2)) %>% 
+                     mutate(wknum=Week,
+                            wknum = str_pad(wknum, width=2, side="left", pad="0"),
+                            link = paste0("wk/wk", wknum, ".html"), 
+                            Week = paste0("Week ", wknum, ": ",format(Date, format="%b %d")), 
+                            Link = sprintf("[%s](%s)",Week, link))
+cdat$Link[c(9,17)] <- c("Spring Break", "Finals")
+# parse assignments
+evallist <- which(!is.na(cdat$Assignments))
+cdat$Assignments[evallist] <- paste0("<ul>", cdat$Assignments[evallist], "</ul>")
+cdat$Assignments[evallist] <- gsub("(+.)\\*", "</li><li>", cdat$Assignments[evallist])
+cdat$Assignments[evallist] <- gsub("(", "(<b>", cdat$Assignments[evallist], fixed=TRUE)
+cdat$Assignments[evallist] <- gsub(")", "</b>)", cdat$Assignments[evallist], fixed=TRUE)
+```
+```{r results='asis', echo=FALSE, message=FALSE, warning=FALSE}
+out <- select(cdat, Link, Topics, Assignments)
+knitr::kable(out, align="l", escape=FALSE) %>% 
+  kable_styling(bootstrap_options = c("hover", "striped", "responsive", "bordered")) %>% 
+  column_spec(1, width="15%") %>% column_spec(2, width="30%") %>% 
+  column_spec(3, width="40%")
+```

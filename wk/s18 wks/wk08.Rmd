@@ -1,0 +1,65 @@
+---
+output:
+  html_document:
+    toc: yes
+    toc_float: yes
+    css: style.css
+title: "Week 8: Mar 13 - Mar 16"
+---
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+library(dplyr);library(readxl); library(knitr)
+library(kableExtra); library(stringr)
+knitr::opts_chunk$set(echo = FALSE)
+options(knitr.table.format = "html", knitr.kable.NA = '') 
+```
+_Last Updated: `r format(Sys.time(), "%a %b %d %X")` _
+
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+raw <- read_excel("schedule_485.xlsx")
+week.w <- filter(raw, Week==8)
+
+SLO    <- t(str_split(week.w$SLO, "\r\n", simplify=TRUE))
+prep   <- t(str_split(week.w$Prepare, "\r\n", simplify=TRUE))
+refs   <- t(str_split(week.w$References, "\r\n", simplify=TRUE))
+hw     <- t(str_split(week.w$Assignments, "\r\n", simplify=TRUE))
+topic1 <- t(str_split(week.w$Topic1, "\r\n", simplify=TRUE))
+topic2 <- t(str_split(week.w$Topic2, "\r\n", simplify=TRUE))
+```
+
+----
+
+# Learning Objectives
+```{r}
+kable(SLO) %>% kable_styling(bootstrap_options = c("striped","condensed"))
+```
+
+----
+
+# Prepare
+```{r}
+kable(prep) %>% kable_styling(bootstrap_options = c("striped","condensed"))
+```
+
+----
+
+# References
+```{r}
+kable(refs) %>% kable_styling(bootstrap_options = c("striped","condensed"))
+```
+
+----
+
+# Project
+
+```{r}
+kable(topic1) %>% kable_styling(bootstrap_options = c("striped","condensed"))
+```
+
+----
+
+# Assignments
+```{r}
+kable(hw) %>% kable_styling(bootstrap_options = c("striped","condensed"))
+```

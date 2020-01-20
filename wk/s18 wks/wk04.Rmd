@@ -1,0 +1,96 @@
+---
+output:
+  html_document:
+    toc: yes
+    toc_float: yes
+    css: style.css
+title: "Week 4: Feb 13 - Feb 19"
+---
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+library(dplyr);library(readxl); library(knitr)
+library(kableExtra); library(stringr)
+knitr::opts_chunk$set(echo = FALSE)
+options(knitr.table.format = "html", knitr.kable.NA = '') 
+```
+_Last Updated: `r format(Sys.time(), "%a %b %d %X")` _
+
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+raw <- read_excel("schedule_485.xlsx")
+week.w <- filter(raw, Week==4)
+
+SLO    <- t(str_split(week.w$SLO, "\r\n", simplify=TRUE))
+prep   <- t(str_split(week.w$Prepare, "\r\n", simplify=TRUE))
+refs   <- t(str_split(week.w$References, "\r\n", simplify=TRUE))
+hw     <- t(str_split(week.w$Assignments, "\r\n", simplify=TRUE))
+topic1 <- t(str_split(week.w$Topic1, "\r\n", simplify=TRUE))
+topic2 <- t(str_split(week.w$Topic2, "\r\n", simplify=TRUE))
+```
+
+----
+
+# Learning Objectives
+```{r}
+kable(SLO) %>% kable_styling(bootstrap_options = c("striped","condensed"))
+```
+
+----
+
+# Prepare
+```{r}
+kable(prep) %>% kable_styling(bootstrap_options = c("striped","condensed"))
+```
+
+----
+
+# References
+```{r}
+kable(refs) %>% kable_styling(bootstrap_options = c("striped","condensed"))
+```
+
+----
+
+# Model Basics
+
+```{r}
+kable(topic1) %>% kable_styling(bootstrap_options = c("striped","condensed"))
+```
+
+
+### Method of Least Squares 
+
+Consider the following linear model with $p$ predictors and where $\beta_{1}= \mathbf{1}$ (the $nx1$ intercept vector containing all 1s): 
+
+$$
+y_{ij} = \sum_{i=1}^{n} X_{ij}\beta_{j} \qquad j=1, \ldots, p
+$$
+
+This can also be written as $y_{ij} = \mathbf{X}\beta$. The best fit line is the set of $\beta$'s that minimizes the squared residuals, or distances, between the predicted value $\mathbf{X}\beta$ and observed value $y_{ij}$. That means we need to minimize this: 
+
+$$
+\lVert y-\mathbf{X}\beta \rVert^{2}
+$$
+Given that the columns of $\mathbf{X}$ are linearly independent ($cov(x_{j}, x_{j^{'}})=0$), there is a [[unique solution]](https://en.wikipedia.org/wiki/Linear_least_squares_(mathematics)#Derivation_of_the_normal_equations) to this problem. 
+
+$$
+\hat{\mathbf{\beta}}=(\mathbf{X}^{T}\mathbf{X})^{-1}\mathbf{X}^{T}\mathbf{y} 
+$$
+
+This is why we care about multicollinearity and sparseness. If one variable is an exact linear function of another then $\mathbf{X}^{T}\mathbf{X}$ is not positive definite, and thus not invertable. 
+
+An example of this is in the case of a rare event. The column containing an indicator for that event would be nearly perfectly collinear with the intercept, causing algebraic inversion properties (or quasi-complete separation). 
+
+# Algorithms
+Be prepared to discuss the following questions from the DDS textbook.
+
+```{r}
+kable(topic2) %>% kable_styling(bootstrap_options = c("striped","condensed"))
+```
+
+----
+
+# Assignments
+```{r}
+kable(hw) %>% kable_styling(bootstrap_options = c("striped","condensed"))
+```

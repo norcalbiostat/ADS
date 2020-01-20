@@ -1,88 +1,32 @@
 ---
-title: "Advanced Topics in Data Science  (ADS)- Syllabus"
+title: "Syllabus for MATH/CSCI 485 - Spring 2020"
 output:
-  pdf_document: default
   html_document: default
+  pdf_document: default
 ---
 
 You can download the Syllabus in PDF form by clicking [[this link]](syllabus_485_s20.pdf).
 
 ## Logistics
 
+* **Course Name:** Advanced Topics in Data Science (a.k.a. ADS or DATA 485)
 * **Instructor:** Dr. Robin Donatello  (Dr. D, she/her/hers)
-* **Office Location:** Holt 202  
-* **Telephone:** 898-5767  
-* **E-mail:** rdonatello@csuchico.edu    
-* **Office Hours:** TBD Week 2    
-* **Meeting time and locations:** TR 2-3:30 pm Holt 155  
-* **Prerequisites:**  
-    1. Introduction to Data Science (MATH/CSCI 385).  
-    2. Math 456 (_or co-requisite_)  
-    3. Or instructor permission  
-* **Course Website:** http://norcalbiostat.github.io/MATH485/  
-* **Slack Channel**  http://csuc-ads.slack.com  You will be sent an email invitation to your campus email.   
-* **Google Drive**  You will be added to the ADS Google drive using your campus email. 
-
-## Course Description
-This course aims to help students navigate the evolving field of Data Science. We do so by not only providing training in advanced programming and technical skills, but also by providing opportunities for collaboration and reflection on how Data Science impacts human society. The overarching themes of the class include: 
-
-### Collaboration
-* Team collaboration tools (Slack, Zoom, Github)
-* Joint project with Political Science Graduate students
-* Community Coding
-* [DATAFEST](chicodatafest.netlify.com)!!!
-* What's your Data Science Profile?
+* **Office Location:** Holt 202
+* **Telephone:** 898-5767
+* **E-mail:** rdonatello@csuchico.edu
+* **Best Contact Method:** Slack.
+* **Office Hours:** TBD Week 2
+* **Meeting time and locations:** TR 2-3:30 pm Holt 155
+* **Prerequisites:**
+    1. Introduction to Data Science (DATA 385).
+    2. Math 456 (_or co-requisite_)
+    3. Or instructor permission
+* **Course Website:** http://norcalbiostat.github.io/MATH485/
+* **Slack Channel**  http://csuc-ads.slack.com  You will be sent an email invitation to your campus email.
+* **Google Drive**  You will be added to the Drive folder using your campus email.
 
 
-### Computation 
-* Identifying and applying appropriate methods to answer a business or research need. 
-* Introduction to Statistical learning techniques (predictive modeling using Supervised and Unsupervised Machine Learning).
-* Cross Validation
-* Parallel Processing
-* Nerual Networks, Deep Learning, Image Classification
-
-### Communication 
-* Dissemination of transparent research.
-* Writing instructional materials (tutorials) for others to learn from your work. 
-* Reflections and discussion on readings, interesting findings
-* Peer review
-
-### Community 
-* Building a professional online presence
-* Social Media for #DataScientists 
-* Who's out there doing cool things? 
-* Keeping current with a fast moving field. What's next on the Hype Cycle?
-
-### Conscience 
-* Ethics of predictive analytics (Weapons of Math Destruction)
-* Protecting privacy in the age of open data
-* Playing with the emotions of the electorate / Facebook 2016 / Election 2020?
-* Role of Tech in controlling/spreading fake news
-
-### Cloud based resources 
-* Introduction to current scalable technologies to handle and analyze Big Data.
-* Managing large relational databases using SQL
-* Options: Google, Amazon, Microsoft
-
-### Career
-* Cos we gotta make munny!
-* What are your options? 
-* Money, Location, Satisfaction --> Can we get all 3? 
-
-> Note: Due to time constraints, not all items on the above list will be able to be covered. 
-
-----
-
-# Interdisciplinary Collaboration
-
-We will be doing a joint project with Political Science Graduate students (POLS 624). 
-The project will be a twitter analysis of public opinion. You will work with a team of PolSci students, where you will provide technical and coding support and they are the content experts. 
-
-More details can be found on the Project page of the course website. 
-
-----
-
-# Required Materials
+## Required Materials
 
 * **Computer**
     * A laptop is nearly invaluable, bring to class every day. 
@@ -93,24 +37,31 @@ More details can be found on the Project page of the course website.
     * Introduction to Statistical Learning http://www-bcf.usc.edu/~gareth/ISL/ (free)
     * Weapons of Math Destruction, Cathy O'Neil (2016) ISBN-10 0553418815 - Available for checkout in the library. 
     * Doing Data Science ,Cathy O'Neil, Rachel Schutt (2014) ISBN-10 978-1-449-35865-5
-* **Accounts (Free)** Github, Slack, Twitter
+* **Accounts (Free)** Github, Slack, Twitter, HackMD
 
-----
 
-# Grading
+## Interdisciplinary Collaboration Project
 
-The _approximate_ contributions per category are: Reflections and Discussions XX%, Peer review XX%, Assignments XX%, and Project XX%. There are no formal exams. 
+We will be doing a joint project with Political Science Graduate students (POLS 624). 
+The project will be a twitter analysis of public opinion. You will work with a team of PolSci students, where you will provide technical and coding support and they are the content experts. 
+
+We will also have a joint Slack channel with this class, and you will be helping them learn R through a series of reviews of their "Learn R (Math 130)" homework assignments, and attending Community Coding. 
+
+More details can be found on the Project page of the course website. 
+
+## Grading
+
+The _approximate_ contributions per type of activity are: Participation, Reading assignments XX%, Textbook Assignments XX%, and Project XX%. There are no formal exams. 
 
 **Letter Grade Conversion:**  100-90%: A, 89-80%: B, 79-70%: C, 69-60%: D, 0-59%: F
 
-----
 
-# Policies
+## Policies
 
-## Adding and Dropping the course
+### Adding and Dropping the course
 The last day to add or drop classes without special permission by the instructor is 1/31/20. No adds or drops are allowed after 2/14/20 without a serious and compelling reason approved by the instructor, department chair, and college dean.
 
-## Americans with Disabilities Act
+### Americans with Disabilities Act
 
 If you need course adaptations or accommodations because of a disability or chronic illness,  or if you need to make special arrangements in case the building must be evacuated, please make an appointment with me as soon as possible, or see me during office hours. Please also contact Accessibility Resource Center (ARC) as they are the designated department responsible for approving and coordinating reasonable accommodations and services for students with disabilities. ARC will help you understand your rights and responsibilities under the Americans with Disabilities Act and provide you further assistance with requesting and arranging accommodations.
 
@@ -120,7 +71,7 @@ Student Services Center 170
 arcdept@csuchico.edu  
 
 
-## Chico State Basic Needs Project
+### Chico State Basic Needs Project
 
 The **Hungry Wildcat Food Pantry** provides supplemental food, fresh produce, CalFresh application assistance and basic needs referral services for students experiencing food and housing insecurity.
 

@@ -1,0 +1,68 @@
+---
+title: "Assignment: Getting Started"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Course Materials
+
+* Familarize yourself with the class website navigation. Make sure you can find
+    - The weekly/topic overview grid
+    - The due date for this assignment
+    - Full list of lecture materials, homework, additional readings
+    - Calendar of events, & the toggle between the class calendar and the DSI calendar
+    - The project page where all content related to the joint project will be presented. 
+  
+* Obtain a copy of Doing Data Science (DDS) by O'Neil & Schutt. Through our library there is at least one hard copy available in the Library, and an online version it appears we have free access.
+    - Our first reading will be due Tuesday 1/31
+* Download a copy of ISLR 7th edition http://faculty.marshall.usc.edu/gareth-james/ISL/ 
+    - There are cheap print version avaible. I have no idea what's been updated in each edition aside from corrections.  
+* Prepare to obtain a copy of Weapons of Math Destruction (WMD) by Spring Break. There also should be a few copies in the library. 
+
+
+
+## Programs
+
+Update R (3.6+) & R Studio (latest)
+
+## Github
+
+1. Follow the URL in the #git channel to join the Github Classroom
+
+## Hack MD
+
+We will be using HackMD as a place for collaborative notes. These notes are locked to our class (using your github user accounts)
+
+1. Sign in to HackMD using your Github account. 
+
+
+## Slack
+
+1. Join our Slack channel csuc-ads.slack.com by clicking on the invite link in your campus email account
+2. Download & Install both the phone app, and the desktop app. You must have at least the desktop app at minimum. 
+3. Introduce yourself in the #introductions channel. You'll do something similar in 456, so this is brief. 
+    - github username
+    - What do you want to get out of this class?
+    - What are you worried/concerned about with this class? (after Tuesday's orientation)
+
+
+## Twitter
+
+1. Make a Twitter account. When in doubt, link it to your campus email address. 
+We'll do more with this later. For now it's yours to connect to the greater DS community. 
+
+
+## Project
+
+Fill out this Google Form so we can figure out teams for the joint project
+https://forms.gle/GMr4xNd517ny8H496
+
+
+## Learning Journal (LJ)
+
+If you opted to create an electronic learning journal, PM Robin a link to your LJ in Slack. 
+
+

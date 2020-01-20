@@ -1,0 +1,131 @@
+---
+output:
+  html_document:
+    toc: yes
+    toc_float: yes
+    css: style.css
+title: "Week 2: Jan 30 - Feb 5"
+---
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+library(dplyr);library(readxl); library(knitr)
+library(kableExtra); library(stringr)
+knitr::opts_chunk$set(echo = FALSE)
+options(knitr.table.format = "html", knitr.kable.NA = '') 
+```
+_Last Updated: `r format(Sys.time(), "%a %b %d %X")` _
+
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+raw <- read_excel("schedule_485.xlsx")
+week.w <- filter(raw, Week==2)
+
+SLO    <- t(str_split(week.w$SLO, "\r\n", simplify=TRUE))
+prep   <- t(str_split(week.w$Prepare, "\r\n", simplify=TRUE))
+refs   <- t(str_split(week.w$References, "\r\n", simplify=TRUE))
+hw     <- t(str_split(week.w$Assignments, "\r\n", simplify=TRUE))
+topic1 <- t(str_split(week.w$Topic1, "\r\n", simplify=TRUE))
+topic2 <- t(str_split(week.w$Topic2, "\r\n", simplify=TRUE))
+```
+
+----
+
+# Learning Objectives
+```{r}
+kable(SLO) %>% kable_styling(bootstrap_options = c("striped","condensed"))
+```
+
+----
+
+# Prepare
+```{r}
+kable(prep) %>% kable_styling(bootstrap_options = c("striped","condensed"))
+```
+
+----
+
+# References
+```{r}
+kable(refs) %>% kable_styling(bootstrap_options = c("striped","condensed"))
+```
+
+----
+
+# Topics
+
+### Connecting with the current state of Data Science
+
+```{r}
+kable(topic1) %>% kable_styling(bootstrap_options = c("striped","condensed"))
+```
+
+Here are some cool places to start
+
+* https://www.pudding.cool/ 
+* https://flowingdata.com/ or @flowingdata 
+* https://www.r-bloggers.com/ 
+* http://simplystatistics.org or @simplystats
+    - Start here: [A non-comprehensive list of awesome things other people did in 2017](https://simplystatistics.org/2017/12/20/a-non-comprehensive-list-of-awesome-things-other-people-did-in-2017/)
+* Mathbabe https://mathbabe.org/ @mathbabe 
+* https://podtail.com/fi/podcast/healthcare-tech-talk-exploring-how-technology-can-/
+* https://www.techrepublic.com/
+* A curated list of DS blogs https://github.com/rushter/data-science-blogs 
+* Another list of DS blogs https://www.datascienceweekly.org/data-science-resources/data-science-blogs 
+* Partially Derivative http://partiallyderivative.com/ -- over for now, but worth listening to some of the older podcasts. They also promise a triumphant return. 
+
+Twitter Users
+
+* Calling Bullshit @callin_bull
+* Jenny Bryan @JennyBryan
+
+**Curation vs Creation**
+
+> Don't stress out! You're not creating new content to share, you're curating (or sharing) existing knowledge to new sources. 
+
+* https://education.cu-portland.edu/blog/news/content-curation-teachers/
+* https://www.agorapulse.com/blog/lets-clear-content-creation-vs-content-curation
+
+<br><br>
+
+### Making your own website/blog
+
+```{r}
+kable(topic2) %>% kable_styling(bootstrap_options = c("striped","condensed"))
+```
+
+
+In addition to the book, here are a couple more tutorials on how to use Blogdown
+
+* [Alison Hill's Tutorial](https://alison.rbind.io/post/up-and-running-with-blogdown/) (I used this one with success!)
+* [Slides](https://alison.rbind.io/slides/blogdown-workshop-slides.html#1) from a workshop she ran in September. MUCH more detail about Hugo. Use at your own discretion
+
+
+Here are some examples that use varying customizations of this approach. That means you can look at the authors github repo and see how they designed their site features. This is how we learn how to do cool things! Don't get lost in the weeds. Start simple, customization can occur later. 
+
+* [Alison Hill](https://alison.rbind.io/) 
+* [CSUC DSI](datascience.csuchico.edu) 
+* [ESPM 157](https://espm-157.carlboettiger.info/)
+* [Rbind](https://support.rbind.io/)
+* [Simply Statistics](https://simplystatistics.org/)
+* https://tclavelle.github.io/
+* https://daijiang.name/
+* https://statr.me/
+
+
+
+### But the internet is scary & I value my privacy
+Which is a really really good thing as we'll talk more about how your data can be used against you later. But here are some readings that aim to convince you that it's a really good habit that starting early can only make you look more awesome later on when you start really marketing yourself. 
+
+* https://www.insidehighered.com/news/2016/07/22/author-discusses-book-about-how-academics-should-use-social-media
+* https://blogs.scientificamerican.com/literally-psyched/why-grad-schools-should-require-students-to-blog/
+* https://www.chronicle.com/article/3-Rules-of-Academic-Blogging/234139 -- This one more is for faculty and researchers. Getting your platform "right" on the first try is less of a deal these days. 
+
+
+---
+
+# Assignments
+```{r}
+kable(hw) %>% kable_styling(bootstrap_options = c("striped","condensed"))
+```
+
+
