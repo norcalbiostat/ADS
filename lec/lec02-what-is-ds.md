@@ -3,75 +3,111 @@ tags: ADS
 robots: noindex, nofollow
 ---
 
-# What is Data Science? 
-This is an example of collaborative notes. After discussing each topic we will rotate through writing down answers to questions marked with a :question:
+> This is an example of collaborative notes. After discussing each topic we will rotate through writing down answers to questions marked with a :question:  
+> Questions marked with a :busts_in_silhouette: answered by all students (put your name in [brackets]). 
 
-Questions marked with a :busts_in_silhouette: answered by all students (put your name in [brackets]). 
+# What is Data Science
+You're here, so obviously you have some interest in DS. But let's get a little more concerete about your desires, examine the field a bit more, and start dipping our toes into the online professional world of DS.
 
-You can find some answers to the following questions in DDS Ch 1 
-:book:, but you will have to also search the general internet :globe_with_meridians: for others. 
 
+### Reading/References
+:book: DDS Ch 1, 16, 
+
+### Learning Objectives
+
+* (K) Describe a hype cycle
+* (A) Identify current DS researchers of note. 
+* (S) Discuss how the expectations of a Data Scientists have changed in the last decade
 
 ---
 
-:question: What is a Hype cycle? Find an example image (or two) and link it here. :globe_with_meridians: 
+# What's the big deal? 
 
-
-:question: When did Data Science become a "Thing(tm)"?
+:question: What is a Hype cycle? Find an example image (or two) and link it here.
 
 
 :question: When was Data Science at the top of the Hype cycle? 
 
-:question: What is the connection between a Data Scientist and a unicorn? 
 
 :busts_in_silhouette: Give an example of _datafication_ that affects you personaly. 
 
 
-:busts_in_silhouette: What's your DS profile?
+# What is a Data Scientist? 
 
-
-:busts_in_silhouette: Find an answer to the question "What is a Data Scientist" for each year prior to now. Let's see how far back we can go in a reasonable amount of time. Include the URL of your finding. 
+:busts_in_silhouette: Find an answer to the question "What is a Data Scientist" for each year prior to now. Let's see how far back we can go in a reasonable amount of time. Include the URL of your finding as a link. 
 
 * 2020
 * 2019
 * 2018
+* 2012: ["Data Scientist (n.): Person who is better at statistics than any software engineer and better at software engineering than any statistician."](https://twitter.com/josh_wills/status/198093512149958656)
 
+:question: How has the idea or definition of a data scientist changed over the years? 
+
+
+# What do you need to know to be a Data Scientist? 
+
+:question: Start off with some overarching concepts/areas
+
+
+:busts_in_silhouette: Review :book: DDS p10, What's your DS profile? (Approximate %'s)
+
+
+:question: What is the connection between a Data Scientist and a unicorn? 
+
+
+:busts_in_silhouette: Google "data science skills" and link an image. 
+
+
+
+:busts_in_silhouette: Build a mind map of Data Science
+
+
+
+# Where do Data Scientists work? 
 
 :busts_in_silhouette: Find a job posting for a Data Scientist. Provide the name of the company, location, position title, salary (if shown), very brief description, required skills/knowledges/degree. Example: 
 
-**Who/Where**: Quicken Loans, Detroit, MI.  
-**Title**: Data Scientist.  
-**Salary** $100k or $20/hour _(those don't add up)_  
-**Duties**: Tech lead on modeling project. Work with large complex dat sets. Build prototypes. Data Viz  
-**Reqs**: Deep understanding of domaim. Summarize data. Deploy models. One of (?) R, Python, C++, SQL, Version control  
-**Edu**: "Advanced Degree preferred"
+:dog: **Dr. D**  
+- **Who/Where**: Quicken Loans, Detroit, MI.
+- **Title**: Data Scientist. 
+- **Salary** $100k or $20/hour _(those don't add up)_
+- **Duties**: Tech lead on modeling project. Work with large complex dat sets. Build prototypes. Data Viz
+- **Reqs**: Deep understanding of domaim. Summarize data. Deploy models. One of (?) R, Python, C++, SQL, Version control
+- **Edu**: "Advanced Degree preferred" 
 
-Copy the below code chunk and write your own answers. Two spaces at the end of a line creates a line break. 
 ```
-**Who/Where**: 
-**Title**: 
-**Salary**: 
-**Duties**: 
-**Reqs**: 
-**Edu**: 
+**Name**:
+- **Who/Where**: 
+- **Title**: 
+- **Salary**: 
+- **Duties**: 
+- **Reqs**: 
+- **Edu**: 
 ```
 
 
-----
+# How do I get started? 
+No two paths are the same, but you're already very much on your way. Lifelong learning is the key, as is the desire to sit and tinker with things. 
 
-# What's going on now in the DS World? 
+Following people/news on Social media/blogs is also a great way to keep up with current news and topics, and to learn about new things. 
 
-Find 1) someone on Twitter :twitter: that is in the DS realm that seems interesting to you. Post their twitter handle below. 2) A DS blog (from a different person) to follow. 
+As you get closer to graduating (next year?), and thinking about those next steps, start googling topics like _"How to become a Data Scientist"_, and _"Data Science skillset"_. (Make sure you filter to show articles in the past year.)
 
-:pencil: Share a blog post from your choice in Slack `#state-of-ds` channel.   
-:pencil: Read the linked article,  and comment on someone elses post
-
-### People
-
-* [@JennyBryan](https://twitter.com/jennybryan) Sofware engineer at RStudio. Developer of [STAT 545](https://stat545.com/) (a killer grad DS course at UBC) 
+Here are a few articles that stood out to me
+* https://towardsdatascience.com/compilation-of-advice-for-new-and-aspiring-data-scientists-5ea75a3925c4
+* https://www.tableau.com/learn/articles/data-science-skills
+* https://insights.dice.com/2019/11/20/how-to-become-a-data-scientist/
 
 
-### Blogs
+:exclamation: remember... these articles are someone's opinion from their perspective, in their sector.
 
-* [R Bloggers](https://www.r-bloggers.com): R news and tutorials contributed by hundreds of R bloggers
-* 
+You are not going to meet _all_ criteria, you are not a unicorn, but you are a beautiful and unique scientist. :muscle: Your DS profile will change, it will grow as you learn new things. Your path will be unique depending on your skillset and desires. 
+
+Of course there are a common set of skills and knowledges that you need, and thats what this DS Certificate aims to provide you with at least the start of. 
+
+:busts_in_silhouette:  But what are *you* going to do? What's your path to stardom? 
+
+
+* List 3 topics not covered in our class that you would like to learn .
+* List 2 actions that you will engage in to learn those topics.
+* List 1 habit you will try to build to aid your journy. 
