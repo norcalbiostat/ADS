@@ -14,7 +14,6 @@ _This page was last updated `r format(Sys.time(), "%a %b %d")`._
 * Become aware of how the `blogdown` R package can be used to create responsive websites
 * Download and compile a starter website based on blogdown. 
 
-
 ----
 
 The "simple" website that was built last time can be extended and enhanced well enough with some CSS and Rmarkdown wizardry. However, sometimes you may want a little more of a 'modern', 'dynamic' or 'responsive' feel, or to include a blog in your website. Here are some examples:  
@@ -32,8 +31,12 @@ For now, we are just going to show you how to get started in this realm of fancy
 
 If you did not do so beforehand, install the `blogdown` package, and use it to install Hugo using `blogdown::install_hugo()`. 
 
-### 1. Create a new Github Repo and connect it to an R Project. 
+### 1. Clone the `Blogdown website` repo in our Github Classroom. 
 
+There is no starter code because this is just an assignment shell. 
+
+1. Add a `README` file
+2. Clone to R studio using a new project. 
 
 
 ### 2. Create a new site with a specified theme
@@ -69,8 +72,6 @@ Areas of the website, like the menu (navbar), are controlled in sections that st
     url = "/about/"
 ```
 
-**Do together** 
-
 * Remove the twitter link
 * Change the GitHub link to point to your GitHub account
 * Give your site a different title. 
@@ -84,14 +85,11 @@ Open the `content` folder. Right now there is only an `about.md` file. **Open th
 
 We see a familiar YAML header, and a body of text. 
 
-**Do together** 
-
 * Change the title and content. 
 * Save this file, go back to your local site and refresh the live preview to see the changes. 
 
 This folder is where we can add more static pages, such as a CV. Since we are not using any R code here, we can stick with the simpler markdown only file format. 
 
-**Do together** 
 
 * Copy the `about.md` file, rename this as `cv.md`. 
   - You can do this in R Studio by clicking the box to the left of the file name in the Files window, then clicking _More --> Copy_
@@ -111,14 +109,12 @@ On your newly updated website, clicking on the icon in the top left. This will t
 
 The content files for posts are stored under `content/post/` folder. If you look there now you'll see some markdown (`.md`), some R Markdown (`.Rmd`) files, and their associated `.html` output files. 
 
-**Creating new blog posts**
 
 * Option 1: Copy/paste/modify one of the example files already in this folder. 
 * Option 2: Use the R Studio Addins to setup the page structure for you. 
     - **This is the one we're going to use**
     - Using the UI allows you to easily set catgories, tags and the like. 
     
-**Do together** 
     
 * Click _Addins --> New Post_
   - This will likely require you to install and/or update new packages including (but not limited to) 
@@ -153,8 +149,6 @@ Go ahead and save your work, add, commit, and push your content to your github a
 If you have your own server, and you are familiar with website deployment then you can roll your own as you are used to. For those of us that have absolutely no idea how to host a website, a very good option that is very user friendly (and free) is [Netlify](https://www.netlify.com/). 
 
 You *could* use GitHub Pages as we did previously to host a Hugo based website, but there are some tweaks that you have to do to get GitHub to work with/around Jekyll in the way Blogdown/Hugo builds the sites. If you want to learn more about the why's, go read the docs at https://bookdown.org/yihui/blogdown/deployment.html
-
-**Do together**
 
 
 

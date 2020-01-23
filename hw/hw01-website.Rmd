@@ -1,0 +1,30 @@
+---
+title: "Assignment: Personal Website"
+output: html_document
+---
+
+# Demo Sites
+
+* Create a basic/demo website using both R Markdown and Hugo. 
+* These will be checked off in Github Classroom. 
+
+# Start your own site
+
+You can choose to use either method (Rmarkdown/Blogdown). By the due date have the following completed: 
+
+* A page/section with brief info about you
+  - Name
+  - Contact info
+  - Github repo
+  - Short Bio (About me)
+
+* A page/section to showcase projects
+  - Link to at least one recent project. 
+  
+* A page/section to blog, write tutorials, share stories. 
+  - A "Hello world" example post. 
+  
+I'm happy to help brainstorm style/formats for Rmarkdown websites. 
+Look at all my class websites to see slightly different ways to organize content. 
+
+
