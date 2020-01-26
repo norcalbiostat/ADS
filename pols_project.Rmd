@@ -1,0 +1,13 @@
+---
+title: "Political Opinion on Natural Disasters"
+output: html_document
+---
+
+_Add overview, learning objectives, and a timeline_
+
+## Background Research
+
+You will each be assigned to read a research article that uses Twitter to examine opinions. Your goal is to summarize and explain to the class, the methods they used to 1) extract twitter data, and 2) what analysis was performed. 
+
+
+## Team Formation

@@ -8,8 +8,22 @@ This is the course website for <span style="color:blue">**MATH/CSCI 485 - Advanc
 
 _This course aims to help students navigate the evolving and murky waters of the Data Science landscape. We do so by not only providing training in advanced programming and technical skills, but also by providing opportunities for collaboration with other disciplines and reflection on how Data Science impacts human socieity._
 
-
 ----
+
+
+### `r format(wk1.date+1*7, "%m-%d-%Y")` Week 2: What is Data Science? 
+
+* Websites
+    - We'll finish our introduction to working with `blogdown` to make dynamic websites. 
+    - Then you need to start working on creating your own personal page. Deadline for a site with just the basic info (HW1) pushed back to Friday. 
+
+* What is Data Science
+    - We'll explore the world of DS a bit more in depth, using HackMD as a place for our collaborative notes.
+    - Read DDS Ch 1 and 16 to provide background and context
+
+* Project
+    - A summary of data science research examples in the social sciences will be scanned (Monday) and put into our shared Google Drive folder with the POLS students. The overarching topic is "Political opinions in natural disasters". 
+    
 
 ### `r format(wk1.date, "%m-%d-%Y")` Week 1: Welcome to Spring 20!
 
