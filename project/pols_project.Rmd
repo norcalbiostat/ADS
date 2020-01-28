@@ -11,3 +11,8 @@ You will each be assigned to read a research article that uses Twitter to examin
 
 
 ## Team Formation
+
+
+## Get Twitter Data
+
+Dumping ground of tutorials, ideas, and bug reports found at [twitter info.md]()
