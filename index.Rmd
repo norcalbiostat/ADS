@@ -8,6 +8,19 @@ This is the course website for <span style="color:blue">**MATH/CSCI 485 - Advanc
 
 _This course aims to help students navigate the evolving and murky waters of the Data Science landscape. We do so by not only providing training in advanced programming and technical skills, but also by providing opportunities for collaboration with other disciplines and reflection on how Data Science impacts human socieity._
 
+
+----
+
+### `r format(wk1.date+1*7, "%m-%d-%Y")` Week 3: POLS Twitter analysis project
+
+* POLS project page has been updated. 
+* Read over the [Hack MD notes/idea](https://hackmd.io/@norcalbiostat/data485-twitter) dumping ground
+* Make a Twitter dev account before Tuesday. (docs are in the hack md post)
+* Read over the summary of DS project examples (POLS google drive)
+    
+Thursday I will be in a teaching demo from 2-2:50pm. You are expected to come to class and work together. 
+I will come check in with you all when that class is over. 
+
 ----
 
 
@@ -21,9 +34,11 @@ _This course aims to help students navigate the evolving and murky waters of the
     - We'll explore the world of DS a bit more in depth, using HackMD as a place for our collaborative notes.
     - Read DDS Ch 1 and 16 to provide background and context
 
-* Project
-    - A summary of data science research examples in the social sciences will be scanned (Monday) and put into our shared Google Drive folder with the POLS students. The overarching topic is "Political opinions in natural disasters". 
-    
+* What is your DS Niche? 
+        - What is your skillset? Your domain? 
+        - Where do you want to grow? 
+
+----
 
 ### `r format(wk1.date, "%m-%d-%Y")` Week 1: Welcome to Spring 20!
 

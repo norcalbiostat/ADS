@@ -1,0 +1,30 @@
+---
+title: "Assignment: Hello Twitter"
+output:   
+  html_document:
+    theme: yeti
+    highlight: tango
+    css: ../style.css
+---
+
+# Part I. Twitter Tutorial for POLS
+
+* Work as a team to write a tutorial for the POLS students to get current (past 30 days) Twitter data
+* Comment/PR other team's tutorial using issues. 
+
+
+### Submission
+* After revision, post this as a blog post/project post on your website. 
+
+
+# Part II. Demo script getting historical Twitter data
+* Write a report that shows you did a thing. Details TBD. 
+
+
+# Part III. Sentiment analysis
+Probably part of the submission for part II. 
+
+
+
+
+

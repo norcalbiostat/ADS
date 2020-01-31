@@ -1,16 +1,25 @@
 ---
-title: "Assignment: Personal Website"
-output: html_document
+title: "Assignment: Building your DS portfolio"
+output:   
+  html_document:
+    theme: yeti
+    highlight: tango
+    css: ../style.css
 ---
 
-# Demo Sites
+# Part I. Demo Sites
 
-* Create a basic/demo website using both R Markdown and Hugo. 
-* These will be checked off in Github Classroom. 
+* Using the relevant lecture notes and starter code from Github Classroom, create a basic/demo website using both R Markdown and Hugo/Blogdown.
+    - Put your published site URL in your repo's description. 
+    
+### Submission
+These will be checked off in Github Classroom. 
 
-# Start your own site
+# Part II. Start your own site
 
-You can choose to use either method (Rmarkdown/Blogdown). By the due date have the following completed: 
+You can choose to use either method (Rmarkdown/Blogdown). 
+This repo should be in your own personal github account, not the DS classroom account. 
+By the due date have the following completed: 
 
 * A page/section with brief info about you
   - Name
@@ -23,8 +32,14 @@ You can choose to use either method (Rmarkdown/Blogdown). By the due date have t
   
 * A page/section to blog, write tutorials, share stories. 
   - A "Hello world" example post. 
-  
+
+* Edit the repo description, and/or the `README.md` file to include the URL of your live site. 
+
 I'm happy to help brainstorm style/formats for Rmarkdown websites. 
 Look at all my class websites to see slightly different ways to organize content. 
 
+
+### Submission
+
+Add your public website URL to the README in the `class-logistics` repo using a pull request.
 

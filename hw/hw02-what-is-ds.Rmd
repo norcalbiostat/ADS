@@ -1,6 +1,10 @@
 ---
-title: "Assignment: What is Data Science and how do I do it?"
-output: html_document
+title: "Assignment: Identifying your Data Science niche"
+output:   
+  html_document:
+    theme: yeti
+    highlight: tango
+    css: ../style.css
 ---
 
 ```{r setup, include=FALSE}
@@ -10,7 +14,8 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Shared Notes
 
-Compete any remaining items in the collaborative notes:  https://hackmd.io/@norcalbiostat/data485-lec02 
+* Compete any remaining items in the collaborative notes:  https://hackmd.io/@norcalbiostat/data485-lec02 
+* Make sure your name is in [brackets] next to your answer. 
 
 
 # Share content 
@@ -18,25 +23,4 @@ Compete any remaining items in the collaborative notes:  https://hackmd.io/@norc
 1. Find someone on Twitter that is in the DS realm that seems interesting to you. Post their twitter handle in `#state-of-ds` Slack channel.
 2. Share a blog post or tweet in `#state-of-ds`. Write a _short_ description on what it's about, and why it was of interest to you.
 3. Read and comment on at least one of your classmates posts. 
-
-
-# Big picture
-
-Create a mind map of Data Science. Upload a picture, or PDF version of your map to the `hw02/mind maps` folder in Google Drive. 
-
-
-**Analog version:**
-
-1. Get a pad of sticky notes, index cards cut in half, or cut up a piece of scratch paper into sticky note sized cards. You'll need about 20. 
-2. Brainstorm words associated with data science. Write one word/concept per paper. 
-    - Stop at about 10
-3. Spatially arrange these words into your mind map into connected topics 
-    - write connector words between the topics 
-4. Add more paper/notes 
-    
-
-**Digital version:**
-* You could google "mind map program" if you don't already have a preference.
-* I don't mind lucid chart, it's free with Google
-
 

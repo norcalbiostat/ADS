@@ -1,6 +1,10 @@
 ---
 title: "Assignment: Getting Started"
-output: html_document
+output:   
+  html_document:
+    theme: yeti
+    highlight: tango
+    css: ../style.css
 ---
 
 ```{r setup, include=FALSE}
@@ -28,9 +32,6 @@ knitr::opts_chunk$set(echo = TRUE)
 
 Update R (3.6+) & R Studio (latest)
 
-## Github
-
-1. Follow the URL in the #git channel to join the Github Classroom
 
 ## Hack MD
 
@@ -42,9 +43,9 @@ We will be using HackMD as a place for collaborative notes. These notes will be 
 ## Slack
 
 1. Join our Slack channel csuc-ads.slack.com by clicking on the invite link in your campus email account
-2. Download & Install both the phone app, and the desktop app. You must have at least the desktop app at minimum. 
-3. Introduce yourself in the #introductions channel. You'll do something similar in 456, so this is brief. 
-    - github username
+2. Download & Install both the phone app, and the desktop app. You must have at least the desktop app at minimum.
+3. PM Dr. D with your github username. You will be added to the class organization.  
+4. Introduce yourself in the #introductions channel. You'll do something similar in 456, so this is brief. 
     - What do you want to get out of this class?
     - What are you worried/concerned about with this class? (after Tuesday's orientation)
 
@@ -53,6 +54,7 @@ We will be using HackMD as a place for collaborative notes. These notes will be 
 
 1. Make a Twitter account. When in doubt, link it to your campus email address. 
 We'll do more with this later. For now it's yours to connect to the greater DS community. 
+2. Add your Twitter handle to the README in the `class-logistics` repo using a pull request.
 
 
 ## Project
