@@ -7,22 +7,51 @@ output:
     css: ../style.css
 ---
 
-# Part I. Twitter Tutorial for POLS
 
-* Work as a team to write a tutorial for the POLS students to get current (past 30 days) Twitter data
-* Comment/PR other team's tutorial using issues. 
+# Part I. Introductions to POLS students (Due Friday 2/7)
 
+Join the POLS Slack channel using this [invitation link](https://join.slack.com/t/pols624-ds-project/shared_invite/enQtODkyMDQ5OTcyMzIxLTBiODEwMjAxNjNhNzg5YzI1NzM4YTkwNGRhYTRhNDQ3MDc1NmFjODRhZjJmYzNlZDUxODhlNmMwNDhmZTlmMmI) that will expire in 4 days.
+
+  - Change your profile picture as well to something recognizable (so you’re not a blank head)
+  - Introduce yourself in the #introductions channel
+  - Include a pic of yourself with something you like (e.g. animals, basketball, ...soil...). 
+  - This helps to "humanize" yourself to the other class. You want them to feel comfortable asking you questions. You are *not* the "data gods" to them. 
+
+
+# Part II. Readings (Due Monday 2/10)
+In our shared Google Drive, there are a selection of documents in the "Twitter project" folder. 
+
+* Pick one of the papers numbered #2 through #5. 
+* Post your selection in Slack #readings channel. 
+* Two people per paper
+* Be prepared to share what data collection, wrangling and analysis was done, and what research question they were trying to understand.  
+    
+# Part III. Twitter Tutorial for POLS (Due Fri 2/14)
+
+Work in teams of 2 to write a (rmarkdown) tutorial for the POLS students to get current (past 30 days) Twitter data for some using `rtweet` (no Twitter account is needed) and your choice of topic hashtag. 
+
+* Demonstrate how to look at data
+* Go through each variable and show how to examine/think about it
+    - what is the data type? 
+* Show an example of how to use the data for each relevant column E.g. 
+    - we don't care about an ID
+    - timestamp can get converted into a date, aggregate counts of tweets per day can be plotted over time, 
+    - Use simple `grep` pattern matching (not regex) to extract a keyword or two into a new variable. (e.g. indicator of the word 'frightening')
+
+Do not try to rehash an analysis that you read in one of the manuscripts, unless it's _really_ easy. 
 
 ### Submission
+* I will work on figuring this out this/next week. 
+* Comment/PR other team's tutorial using issues. - connected to first bullet point.
 * After revision, post this as a blog post/project post on your website. 
 
+# Part IV. Documentation for getting historical tweets (Due 2/14)
+Work together as a class in Hack MD to write a clear and concise tutorial on how to get historical twitter data into R. 
 
-# Part II. Demo script getting historical Twitter data
-* Write a report that shows you did a thing. Details TBD. 
+I will give this to someone else who is familiar with R, but not Twitter data to test drive your explanation. I advise taking turns to follow the instructions yourself to see what's missing / what can be re-worded. 
 
+This is part of being able to explain yourself to others. 
 
-# Part III. Sentiment analysis
-Probably part of the submission for part II. 
 
 
 
