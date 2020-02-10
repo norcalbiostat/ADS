@@ -41,5 +41,5 @@ Look at all my class websites to see slightly different ways to organize content
 
 ### Submission
 
-Add your public website URL to the README in the `class-logistics` repo using a pull request.
+Add your public website URL to the README in the `class-logistics` repo using a branch/pull request.
 

@@ -11,7 +11,18 @@ _This course aims to help students navigate the evolving and murky waters of the
 
 ----
 
-### `r format(wk1.date+1*7, "%m-%d-%Y")` Week 3: POLS Twitter analysis project
+### `r format(wk1.date+2*7, "%m-%d-%Y")` Week 4: POLS Twitter analysis project
+
+This week we will explore the following questions: 
+
+* What types of analysis can be done on Twitter data? 
+* What types of analysis are important in the field of political science / public administration / public opinion? 
+* HW03 involves team writing a tutorial for the POLS students. We'll work out how to form teams in Github in class. 
+* You're advised to finish all Twitter assignment items before 
+
+----
+
+### `r format(wk1.date+1*7, "%m-%d-%Y")` Week 3: POLS Twitter analysis project 
 
 * POLS project page has been updated. 
 * Read over the [Hack MD notes/idea](https://hackmd.io/@norcalbiostat/data485-twitter) dumping ground

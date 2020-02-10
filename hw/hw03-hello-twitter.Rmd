@@ -8,7 +8,7 @@ output:
 ---
 
 
-# Part I. Introductions to POLS students (Due Friday 2/7)
+# Part I. Introductions to POLS students
 
 Join the POLS Slack channel using this [invitation link](https://join.slack.com/t/pols624-ds-project/shared_invite/enQtODkyMDQ5OTcyMzIxLTBiODEwMjAxNjNhNzg5YzI1NzM4YTkwNGRhYTRhNDQ3MDc1NmFjODRhZjJmYzNlZDUxODhlNmMwNDhmZTlmMmI) that will expire in 4 days.
 
@@ -18,15 +18,16 @@ Join the POLS Slack channel using this [invitation link](https://join.slack.com/
   - This helps to "humanize" yourself to the other class. You want them to feel comfortable asking you questions. You are *not* the "data gods" to them. 
 
 
-# Part II. Readings (Due Monday 2/10)
+# Part II. Readings
 In our shared Google Drive, there are a selection of documents in the "Twitter project" folder. 
 
 * Pick one of the papers numbered #2 through #5. 
 * Post your selection in Slack #readings channel. 
-* Two people per paper
-* Be prepared to share what data collection, wrangling and analysis was done, and what research question they were trying to understand.  
+    - Two people per paper
+* Read this paper. 
+* Be prepared to share in class what data collection, wrangling and analysis was done, and what research question they were trying to understand.  
     
-# Part III. Twitter Tutorial for POLS (Due Fri 2/14)
+# Part III. Twitter Tutorial for POLS 
 
 Work in teams of 2 to write a (rmarkdown) tutorial for the POLS students to get current (past 30 days) Twitter data for some using `rtweet` (no Twitter account is needed) and your choice of topic hashtag. 
 
@@ -45,7 +46,7 @@ Do not try to rehash an analysis that you read in one of the manuscripts, unless
 * Comment/PR other team's tutorial using issues. - connected to first bullet point.
 * After revision, post this as a blog post/project post on your website. 
 
-# Part IV. Documentation for getting historical tweets (Due 2/14)
+# Part IV. Documentation for getting historical tweets
 Work together as a class in Hack MD to write a clear and concise tutorial on how to get historical twitter data into R. 
 
 I will give this to someone else who is familiar with R, but not Twitter data to test drive your explanation. I advise taking turns to follow the instructions yourself to see what's missing / what can be re-worded. 
