@@ -13,6 +13,11 @@ _This course aims to help students navigate the evolving and murky waters of the
 
 ### `r format(wk1.date+2*7, "%m-%d-%Y")` Week 4: POLS Twitter analysis project
 
+Housekeeping
+
+* Assignment tracker in google drive
+* HW02 collab notes - getting started. We *will* learn machine learning. It's not as mystical as you think it is.  
+
 This week we will explore the following questions: 
 
 * What types of analysis can be done on Twitter data? 
