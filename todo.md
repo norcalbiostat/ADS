@@ -1,16 +1,24 @@
-# todo
+# Getting started with Github for classroom
 
-* get unicorn logo onto DS github repo
+* Create new organization per class/term
+* Create a `class-logistics` repo in this organization. 
 * Collect student github usernames (put in CSV for large classes)
 * Add students to github classroom 
+    - Add them to a `all-students` team
+    - Give this team write access to `class-logistics`
+    
 * Add first assignment. 
     - Create starter code repo for basic RMD site
     - Send assignment link to class via slack
+
     
 
 https://classroom.github.com/help/creating-an-individual-assignment
 https://github.com/organizations/DATA485-S20/settings/profile
 https://education.github.com/benefits
+
+
+
 
 ## Random Readings
 

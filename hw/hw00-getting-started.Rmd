@@ -50,11 +50,30 @@ We will be using HackMD as a place for collaborative notes. These notes will be 
     - What are you worried/concerned about with this class? (after Tuesday's orientation)
 
 
+## Github
+
+Once added to the class Github organization, find the `class-logistics` repository. You have been granted **write** access to this repo. You will be adding information to the README file a few times. Since you have write access, you could access the master branch directly, but we are going to work on how to work in git as a team using _branches_. 
+
+
+1. Click "Branch: master" button on the left side, next to "New pull request" button. 
+2. Make a new branch by typing the branch name in the text box. If it does not automatically switch you to that branch, click the branch button again and select your branch
+3. Click on the pencil icon in the top right corner. This will put the file in edit mode (only works for code files like `.md` and `.Rmd`)
+4. Add your edits.
+5. Write a commit message below and commit your changes to your branch
+6. Create a pull request (PR). Make sure the arrow goes from your branch to the master branch
+7. Delete your branch.
+
+**Learn more about using branches and how to manage branches at the command line**: https://www.atlassian.com/git/tutorials/using-branches
+
+Pre-req: Working with remote repositories first (https://www.atlassian.com/git/tutorials/syncing)
+
+
+
 ## Twitter
 
 1. Make a Twitter account. When in doubt, link it to your campus email address. 
 We'll do more with this later. For now it's yours to connect to the greater DS community. 
-2. Add your Twitter handle to the README in the `class-logistics` repo using a pull request.
+2. Add your Twitter handle to the README in the `class-logistics` repo using branch/PR.
 
 
 ## Project
