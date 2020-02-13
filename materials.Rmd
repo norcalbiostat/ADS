@@ -21,6 +21,7 @@ pander(as.list(out.lec$link))
 **Collaborative Notes on HackMD**
 
 * [lec02-what-is-ds](https://hackmd.io/@norcalbiostat/data485-lec02) 
+* [Getting historical data out of twitter](https://hackmd.io/@norcalbiostat/data485-twitter)
 
 # Homework 
 ```{r, message=FALSE, warning=FALSE, echo=FALSE}
