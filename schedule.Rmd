@@ -26,11 +26,11 @@ cdat <- raw_detail %>% mutate(wknum=Week,
                               Date = format(date, "%m/%d"))
 
 # parse assignments
-evallist <- which(!is.na(cdat$Assignments))
-cdat$Assignments[evallist] <- paste0("<ul>", cdat$Assignments[evallist], "</ul>")
-cdat$Assignments[evallist] <- gsub("(+.)\\*", "</li><li>", cdat$Assignments[evallist])
+#evallist <- which(!is.na(cdat$Assignments))
+#cdat$Assignments[evallist] <- paste0("<ul>", cdat$Assignments[evallist], "</ul>")
+#cdat$Assignments[evallist] <- gsub("(+.)\\*", "</li><li>", cdat$Assignments[evallist])
 cdat$Assignments <- gsub(" (", " <b> (", cdat$Assignments, fixed=TRUE)
-cdat$Assignments <- gsub(") ", "</b>)", cdat$Assignments, fixed=TRUE)
+cdat$Assignments <- gsub(" )", ")</b>", cdat$Assignments, fixed=TRUE)
 
 # parse materials
 #evallist <- which(!is.na(cdat$Materials))
@@ -46,10 +46,10 @@ out <- cdat %>% select(Date, Topics, Prepare, Materials, Assignments)
 knitr::kable(out, align="l", escape=FALSE) %>% 
   kable_styling(bootstrap_options = c("hover", "striped", "responsive", "bordered")) %>% 
   column_spec(1, width="5%") %>% 
-  column_spec(2, width="10%") %>% 
+  column_spec(2, width="20%") %>% 
   column_spec(3, width="20%") %>% 
-  column_spec(4, width="30%") %>%
-  column_spec(4, width="30%")
+  column_spec(4, width="20%") %>%
+  column_spec(4, width="20%")
 ```
 
 
