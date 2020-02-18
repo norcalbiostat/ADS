@@ -8,6 +8,31 @@ This is the course website for <span style="color:blue">**MATH/CSCI 485 - Advanc
 
 _This course aims to help students navigate the evolving and murky waters of the Data Science landscape. We do so by not only providing training in advanced programming and technical skills, but also by providing opportunities for collaboration with other disciplines and reflection on how Data Science impacts human socieity._
 
+----
+
+
+### `r format(wk1.date+3*7, "%m-%d-%Y")` Week 5: Doing Data Science
+
+* Being a Data Scientist means more than just building models. It's identifying what the customers need, what they currently have, and how to bridge that gap. We'll be working on case study in class this week. 
+
+* On Thursday we're going to share out case studies from the DDS book. Please respond to the Slack Poll in `#readings` by EOD on Tuesday (2/18) for which chapter you're going to read & share on Thursday (2/20). 
+
+* You also need to review another teams R Twitter data tutorial. Everyone has read access to all tutorial repos. Use GitHub **issues** to make comments/suggestions.  Things you are to look for: 
+
+    1. Terminology not defined / too technical. Doesn't look like standard R help files. 
+    2. Instructions start off at an appropriate point, assuming they have installed the `Rtweet` package but have not loaded it. 
+    3. Code needs to be able to run independently, without a Twitter account. 
+    4. Examples of what the data looks like. 
+    5. Suggestions on how to use the data / what analysis questions could be asked with this data. 
+
+
+* Dates
+    - Peer Review due Thursday 2/20
+    - Final version due Sunday 2/23
+    - I will present your tutorials to the POLS class on Wednesday 2/25 along with providing them a sample data set containing historical tweet data. 
+
+* POLS project dates are starting to be set. See google calendar for a general idea of project timeline. More info will be posted on the Project page in the next week or so. 
+
 
 ----
 
