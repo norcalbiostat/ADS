@@ -14,44 +14,59 @@ output:
 * Explain the concept of overfitting, and bias-variance tradeoff. 
 
 # Submission Instructions
-Prepare answers for the questions you are assigned to. Be concise as you will have to share out/explain it to others. Be prepared to take notes on the remaining questions. Your grade on this portion will be based on completeness. Delete this section before submission. 
+
+> Delete all instructional text formatted like this before submission. 
 
 Submit your compiled PDF to the corresponding folder in Google Drive by the due date. 
 
 
-
 # Part I: In class shared learning. 
+> Review ISLR Chapter 2 and prepare answers for the questions you are assigned to. Be concise as you will have to share out/explain it to others. Be prepared to take notes on the remaining questions. Your grade on this portion will be based on completeness. 
 
-[1]
+
+#### Brandon - (2.1.1)
 * What is f? 
+* Why do we care about estimating f? 
+* Describe the two types of errors in a model.  
+* What concept in 456 does irreducible error portion of the model correspond to? 
 
-[2]
-* What is the difference between supervised & unsupervised models?
+
+#### Collin - (2.1.2)
 * What is the difference between a parametric & non-parametric model? 
-
-
-[3]
+* Give an example of each. 
 * What are the advantages of a parametric approach to regression or classification (as opposed to a nonparametric approach)? 
 * What are the disadvantages?
 
-[4]
+
+#### Irfan - (2.1.3, 2.1.4)
 * Why would we ever choose to use a more restrictive method instead of a very flexible approach?
+* What is the difference between supervised & unsupervised learning?
+* Give an example of each. 
 
-[5]
+#### Kaleb (2.2.1)
+* What is the primary measure of model accuracy for regression models? 
+* Compare and contrast a _smoothing spline_ to a _linear regression line_. (What is the same, what is different) 
 
+
+#### Kris (2.2.1, 2.2.2)
 * What's the difference between training and testing data? Why do we need both? 
 * What is overfitting? 
 * If we don't have a testing data set, what method can we use to estimate the MSE of the testing data? 
 
-[6]
-* What is the bias-variance tradeoff? 
 
-[7]
-* What is the primary measure of model fit for regression models? 
-* What is the primary measure of model fit for classification models? 
-* Name two classification models 
+#### Madeline (2.2.2, 2.2.3)
+* What is the bias-variance trade-off? 
+* What is the primary measure of model accuracy for classification models? 
 
-[8]
+
+#### Olivia (2.2.3)
+* Describe the Bayes Classifier 
+* What is the Bayes error rate? 
+* What is a limitation of the Bayes classifier? 
+
+
+#### Tanya (2.2.3)
+* Describe how the K-Nearest Neighbors classifier works. 
 * Name a benefit of using a KNN model. 
 * What happens to the accuracy/bias of the model as the K increases? Why? 
 
@@ -69,5 +84,5 @@ Review the Advertisement data set from ISLR Chapter 2. Figure 2.1 displays sales
 
 Suppose that in our role as statistical consultants we are asked to suggest, on the basis of this data, a marketing plan for next year that will result in high product sales. What information would be useful in order to provide such a recommendation?
 
->You will fill in more information here later. 
+> You will fill in more information here later. 
 
