@@ -21,7 +21,8 @@ pander(as.list(out.lec$link))
 **Collaborative Notes on HackMD**
 
 * [lec02-what-is-ds](https://hackmd.io/@norcalbiostat/data485-lec02) 
-* [Getting historical data out of twitter](https://hackmd.io/@norcalbiostat/data485-twitter)
+* [Getting historical data out of twitter](https://hackmd.io/@norcalbiostat/data485-twitter) (part of hw03)
+* [Real Estate Website Case Study](https://hackmd.io/@norcalbiostat/real-estate-case-study) (part of hw04)
 
 # Homework 
 ```{r, message=FALSE, warning=FALSE, echo=FALSE}
@@ -36,7 +37,6 @@ out.hw <- hw %>% mutate(name = gsub("hw/|_template",  "", filenames),
 pander(as.list(out.hw$link))
 ```
 
-
 # Reading
 ```{r, message=FALSE, warning=FALSE, echo=FALSE}
 read <- data.frame(filenames = paste0('read/', list.files("read", pattern='*.pdf|*.html|*.docx')))
@@ -47,6 +47,11 @@ out.read <- read %>% mutate(name = gsub("read/",  "", filenames),
 
 pander(as.list(out.read$link))
 ```
+
+Supplemental material for ISLR: 
+
+* Slides and videos for Statistical Learning MOOC by Hastie and Tibshirani:  http://auapps.american.edu/alberto/www/analytics/ISLRLectures.html 
+* Slides and video tutorials related to this book by Abass Al Sharif: https://www.alsharif.info/iom530 
 
 
 # Other Books on Data Science

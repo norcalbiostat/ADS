@@ -6,12 +6,30 @@ wk1.date <- as.Date("2020-01-21")
 
 This is the course website for <span style="color:blue">**MATH/CSCI 485 - Advanced Data Science**</span> course taught by [Dr. Robin Donatello](www.norcalbiostat.com) in Spring 2020 at California State University, Chico. This landing page is used for posting of regular announcements and information for students of the class. 
 
-_This course aims to help students navigate the evolving and murky waters of the Data Science landscape. We do so by not only providing training in advanced programming and technical skills, but also by providing opportunities for collaboration with other disciplines and reflection on how Data Science impacts human socieity._
+_This course aims to help students navigate the evolving and murky waters of the Data Science landscape. We do so by not only providing training in advanced programming and technical skills, but also by providing opportunities for collaboration with other disciplines and reflection on how Data Science impacts human society._
 
 ----
 
 
-### `r format(wk1.date+3*7, "%m-%d-%Y")` Week 5: Doing Data Science
+### `r format(wk1.date+5*7, "%m-%d-%Y")` Week 6: Examples in Data Science, Statistical Learning
+
+* Examples in Data Science
+    - Tuesday you will share your case study/chapter in DDS with the rest of the class. 
+    - There are 8 of you, and we only have 75 minutes total for class. So with housekeeping & discussion,
+      prepare to only talk for 5-7 minutes on your chosen chapter/case study. If you have more info 
+      to share, consider writing up your notes in HackMD and we can add it to our shared notes files.
+      
+* We will learn out of the ISLR textbook in several ways such as;  
+    - I will pose a list of questions and assign them for you to answer/share with the rest of the class. (See hw05 as an example)
+    - Selected exercises from the back of the chapter.
+
+There are supplemental videos and slides for the ISLR textbook. Links are on the [materials](materials.html) page. Me passively lecturing is not the best way for you to learn. I am trying to include you all in as much of the learning process as possible. 
+
+We will not cover ISLR Chapter 3: Linear Regression in much detail, as that is one of the main topics in 456. This however is a **GREAT** chapter to read for a different perspective/approach to regression. `r emo::ji("star")` `r emo::ji("star")``r emo::ji("star")``r emo::ji("star")``r emo::ji("star")`. Highly recommmend. 
+
+----
+
+### `r format(wk1.date+4*7, "%m-%d-%Y")` Week 5: Doing Data Science
 
 * Being a Data Scientist means more than just building models. It's identifying what the customers need, what they currently have, and how to bridge that gap. We'll be working on case study in class this week. 
 
@@ -36,7 +54,7 @@ _This course aims to help students navigate the evolving and murky waters of the
 
 ----
 
-### `r format(wk1.date+2*7, "%m-%d-%Y")` Week 4: POLS Twitter analysis project
+### `r format(wk1.date+3*7, "%m-%d-%Y")` Week 4: POLS Twitter analysis project
 
 Housekeeping
 
@@ -52,7 +70,7 @@ This week we will explore the following questions:
 
 ----
 
-### `r format(wk1.date+1*7, "%m-%d-%Y")` Week 3: POLS Twitter analysis project 
+### `r format(wk1.date+2*7, "%m-%d-%Y")` Week 3: POLS Twitter analysis project 
 
 * POLS project page has been updated. 
 * Read over the [Hack MD notes/idea](https://hackmd.io/@norcalbiostat/data485-twitter) dumping ground
