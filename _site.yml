@@ -34,6 +34,7 @@ navbar:
   - text: Dr. D's Website
     icon: fa-paw
     href: http://www.norcalbiostat.com/
+    
 output:
   html_document:
     theme: yeti

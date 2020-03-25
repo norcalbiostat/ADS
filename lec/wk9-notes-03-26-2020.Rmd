@@ -23,6 +23,7 @@ output:
 
 # Learning Content
 
+* Starting small with a clear message. The [LA Times Coronavirus in CA report](https://www.latimes.com/projects/california-coronavirus-cases-tracking-outbreak/). 
 
 
 # Deliverables 

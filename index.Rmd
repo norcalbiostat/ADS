@@ -1,7 +1,3 @@
----
-title: "Data 485 - Advanced Data Science"
----
-
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 wk1.date <- as.Date("2020-01-21")
 ```
