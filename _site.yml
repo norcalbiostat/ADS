@@ -1,4 +1,4 @@
-name: Advanced Data Science
+name: ADS
 output_dir: '.'
 navbar:
   title: Advanced Data Science
@@ -24,9 +24,9 @@ navbar:
     - text: Zoom
       icon: fa-video-camera
       href: https://csuchico.zoom.us/
-  - text: POLS Project
+  - text: Twitter Project
     icon: fa-group
-    href: project/pols_project.html
+    href: https://data485-s20.github.io/campfire_tweets/index.html
   right:
   - text: Syllabus
     icon: fa-info-circle

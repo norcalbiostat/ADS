@@ -1,17 +1,23 @@
 ---
-tags: ADS
-robots: noindex, nofollow
+title: "Class meeting 03-10-2020"
+output:   
+  html_document: 
+    highlight: tango
+    theme: yeti
+    toc: yes
+    toc_float: true
 ---
 
-# Class meeting 2020-03-10
+# Overview
 
+## Reference docs
 Associated Reading: ISLR Ch 3 Introduction, 3.4
 
-## Goals: 
+## Goals
 * Learn how to assess a posed research question for “analyzability”
 * Identify at least one RQ per team that can be answered given the data available. 
 
-## Outline
+# Outline
 * Talk through ISLR Ch 3 :heavy_check_mark:
 * Review Twitter project docs. :heavy_check_mark:
 * Walk through examination and questioning of Markley. :heavy_check_mark:
@@ -20,7 +26,7 @@ Associated Reading: ISLR Ch 3 Introduction, 3.4
 * Share out - what further questions do you have? :x:
 
 
-## Deliverables
+# Deliverables
 * Review the student questions from your POLS team. Assess the questions for “analyzability”
 * Provide feedback as comments in the documents directly.  
 * Due Wed before 7pm

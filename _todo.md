@@ -45,3 +45,24 @@ https://education.github.com/benefits
 https://www.springboard.com/blog/data-scientist-training-college/
 
 
+# post break
+
+
+
+# Covid19 Kaggle challenge
+Let's practice what it's like to be a DS. 
+https://www.kaggle.com/allen-institute-for-ai/CORD-19-research-challenge/kernels?sortBy=hotness&group=everyone&pageSize=20&datasetId=551982&language=R
+
+
+* Creating a good analytics report: https://www.kaggle.com/jpmiller/creating-a-good-analytics-report
+* Sentiment analysis: https://www.kaggle.com/c/tweet-sentiment-extraction
+
+Step 1: Learn how to conduct a sentiment analysis in R
+
+
+# Natural Language Processing
+* https://www.lexalytics.com/lexablog/machine-learning-natural-language-processing
+
+
+- prediction on disaster vs not? https://www.kaggle.com/atpspin/same-tweet-two-target-labels
+

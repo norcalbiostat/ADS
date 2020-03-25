@@ -84,5 +84,5 @@ Review the Advertisement data set from ISLR Chapter 2. Figure 2.1 displays sales
 
 Suppose that in our role as statistical consultants we are asked to suggest, on the basis of this data, a marketing plan for next year that will result in high product sales. What information would be useful in order to provide such a recommendation?
 
-> You will fill in more information here later. 
+> In class discussion 03/10/2020
 

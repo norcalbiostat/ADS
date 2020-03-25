@@ -1,0 +1,34 @@
+---
+title: "Class meeting 03-26-2020"
+output:   
+  html_document: 
+    highlight: tango
+    theme: yeti
+    toc: yes
+    toc_float: true
+---
+
+# Overview
+
+
+## Reference Docs
+
+
+## Goals
+
+
+## Housekeeping
+
+
+
+# Learning Content
+
+
+
+# Deliverables 
+
+## Dr. D.
+
+## Students
+
+
