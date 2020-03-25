@@ -1,5 +1,5 @@
 ---
-title: "Class meeting 03-24-2020"
+title: "Week 9 notes"
 output:   
   html_document: 
     highlight: tango
@@ -8,7 +8,11 @@ output:
     toc_float: true
 ---
 
-# Overview
+_A video recording of this document has been created and posted in google drive_
+
+# Housekeeping
+
+## Goals
 Imagine that we had class as scheduled on Tuesday 3/24. This is what we would have covered.
 
 * COVID-19 related course changes
@@ -16,7 +20,10 @@ Imagine that we had class as scheduled on Tuesday 3/24. This is what we would ha
 * Natural Language Processing
 
 
-# COVID-19 related course changes
+This week we are going to complete steps to keep this project moving forward, and start to learn a bit about text processing, sentiment analysis, and natural language processing. 
+
+
+## COVID-19 related course changes
 
 * I will still be holding class virutally, during normal class times. 
   - I am aware that there are times where you may not be able to make it to class due to caring for others during this time. As with 456, grace is given, but I ask that you try your best to be there.
@@ -35,9 +42,7 @@ Imagine that we had class as scheduled on Tuesday 3/24. This is what we would ha
 
 ----
 
-# New Content
-
-This week we are going to complete steps to keep this project moving forward, and start to learn a bit about text processing, sentiment analysis, and natural language processing. 
+# Tuesday 3/24/2020
 
 
 ## Recap of project tasks
@@ -76,9 +81,9 @@ Each task has been assigned to a point person. That person is responsible for ad
 ----
 
 
-# Learning Content
+## Learning Content
 
-## Natural Language Processing
+### Natural Language Processing
 
 Each time I encounter this topic, the algorithms, packages and things that can be done to text keep improving. 
 
@@ -98,19 +103,19 @@ Each time I encounter this topic, the algorithms, packages and things that can b
 
 ----
 
-# Deliverables 
+## Deliverables 
 
 
-## Dr. D (Due 3/29)
+### Dr. D (Due 3/29)
 
 * Modify twitter project data repo to reflect project topic changes. 
 * Make video for pols students on how they can collect their own twitter data using DS student tutorials.
 
-## Students 
+### Students 
 
 Suggestion: View this file in github, copy the md text and make it a todo list for yourself if the assignment tracker isn't sufficient. 
 
-### (Due 3/28)
+#### (Due 3/28)
 
 1. Fork the twitter project data repo https://github.com/DATA485-S20/campfire_tweets.
 2. Address my new comments in your twitter tutorial repo. These should be as issues on lines directly. 
@@ -123,20 +128,27 @@ Suggestion: View this file in github, copy the md text and make it a todo list f
     - If you finish fast, and I know which ones will, help Olivia and Tanya. 
 
 
-### (Due 3/30)
+#### (Due 3/30)
 5. LJ entry. Look back at what you said you were going to do in lec02 notes. Were you doing it before all hell broke loose? Give yourself permission _in writing_ to slack off on this aspect of your external learning for the time being.   
 6. Blog post. This is written and posted on your website, then linked into #state-of-ds Slack channel.
     - What role are data scientists playing right now on the battle against COVID-19? Provide evidence for your claim using links to pages, tweets, stories, projects that are going on right now. 
     - If you had infinite time and no classwork, what current project tackling the pandemic would you want to be involved in? 
 
-### (Due 4/1)
+#### (Due 4/1)
 7. Post discussion - Comment on at least one of your classmates posts.   
 8. Read the 2 NLP articles above and [answer these few questions](https://forms.gle/rofwbaTqGLxiK9br8). 
 
 
+-----
+
+# Thursday 3/26/2020
+
+## Goals
+
+* Address questions and concerns about deliverable list
+* Make progress on this work. 
 
 
+## New content
 
-
-
-
+* Guidance on project or tutorial development - start small with a clear message. The [LA Times Coronavirus in CA report](https://www.latimes.com/projects/california-coronavirus-cases-tracking-outbreak/). 
