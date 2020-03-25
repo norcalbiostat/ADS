@@ -1,8 +1,7 @@
 ---
+title: "Course materials"
 output: html_document
 ---
-
-<br>
 
 ```{r, message=FALSE, warning=FALSE, echo=FALSE}
 library(stringr); library(dplyr);library(pander)

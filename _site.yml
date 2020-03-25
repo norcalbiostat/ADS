@@ -1,7 +1,7 @@
-name: ADS
+name: Advanced Data Science
 output_dir: '.'
 navbar:
-  title: Advanced Data Science
+  title: ADS
   left:
   - text: Schedule
     icon: fa-calendar
@@ -39,6 +39,5 @@ output:
     theme: yeti
     highlight: tango
     css: style.css
-    lib_dir: site_libs
-    self_contained: no
+
 
