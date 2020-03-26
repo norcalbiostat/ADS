@@ -1526,7 +1526,7 @@ div.tocify {
 <div id="covid-19-related-course-changes" class="section level2">
 <h2>COVID-19 related course changes</h2>
 <ul>
-<li>I will still be holding class virutally, during normal class times.
+<li>I will still be holding class virtually, during normal class times.
 <ul>
 <li>I am aware that there are times where you may not be able to make it to class due to caring for others during this time. As with 456, grace is given, but I ask that you try your best to be there.</li>
 <li>When you can’t make it, you still need to check the course webpage and Slack to catch up on what you missed.</li>
@@ -1694,8 +1694,12 @@ div.tocify {
 <div id="goals-1" class="section level2">
 <h2>Goals</h2>
 <ul>
-<li>Address questions and concerns about deliverable list</li>
-<li>Make progress on this work.</li>
+<li>Address questions and concerns about deliverable list.</li>
+<li>Ensure everyone understands how we’re going to work on NLP over this and next week.</li>
+<li>Decide on which platform to get COVID19 data from.
+<ul>
+<li>Decide on a sampling frame.</li>
+</ul></li>
 </ul>
 </div>
 <div id="new-content" class="section level2">
@@ -1703,6 +1707,23 @@ div.tocify {
 <ul>
 <li>Guidance on project or tutorial development - start small with a clear message. The <a href="https://www.latimes.com/projects/california-coronavirus-cases-tracking-outbreak/">LA Times Coronavirus in CA report</a>.</li>
 </ul>
+<div id="getting-covid19-twitter-data.-new-options." class="section level3">
+<h3>Getting COVID19 Twitter data. New options.</h3>
+<p>Since this is a dataset that many others are interested in, they are doing the hard work of downloading and collecting data from Twitter. Here are some of the sources I’ve found so far (outside of Kaggle).</p>
+<ul>
+<li><a href="https://www.docnow.io/">Documenting the Now</a> is a tool and community developed around supporting the ethical collection, use, and preservation of social media content. They have a curated list of datasets at <a href="https://www.docnow.io/catalog/" class="uri">https://www.docnow.io/catalog/</a></li>
+<li><a href="https://ieee-dataport.org/open-access/corona-virus-covid-19-tweets-dataset" class="uri">https://ieee-dataport.org/open-access/corona-virus-covid-19-tweets-dataset</a> <a href="https://www.kaggle.com/smid80/coronavirus-covid19-tweets" class="uri">https://www.kaggle.com/smid80/coronavirus-covid19-tweets</a></li>
+</ul>
+<p>I am leaning towards the <code>#COVID-19</code> set from <a href="https://arxiv.org/pdf/2003.07372.pdf">echen</a></p>
+<p>However, Twitter’s Terms of Service only allows sharing of Tweet ID’s. So we have to use other methods to connect the context of the tweet, to the ID. This has been called “hydrating”. (I don’t know why kaggle is different, and I have an email out to the Twitter API support team to ask). There seem to be two main tools for hydrating tweets:</p>
+<ul>
+<li><a href="https://github.com/DocNow/hydrator">DocNow Hydrator</a>
+<ul>
+<li><a href="https://programminghistorian.org/en/lessons/beginners-guide-to-twitter-data">Tutorial from a historian on how to hydrate tweets using this tool</a></li>
+</ul></li>
+<li><a href="https://github.com/DocNow/twarc">Twarc</a> Command line interface to a python script.</li>
+</ul>
+</div>
 </div>
 </div>
 

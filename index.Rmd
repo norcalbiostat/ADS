@@ -14,7 +14,7 @@ _This course aims to help students navigate the evolving and murky waters of the
 
 * Project updates, starting to talk about NLP. 
 * New course note format to reflect the online delivery. 
-    - See [Notes from 03-24](lec/wk9-notes-03-24-2020.html) to begin. 
+    - See [these notes](lec/week9-notes.html) to begin. 
     - A recording of these notes will be put into Google Drive. 
 
 ----

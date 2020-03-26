@@ -25,7 +25,7 @@ This week we are going to complete steps to keep this project moving forward, an
 
 ## COVID-19 related course changes
 
-* I will still be holding class virutally, during normal class times. 
+* I will still be holding class virtually, during normal class times. 
   - I am aware that there are times where you may not be able to make it to class due to caring for others during this time. As with 456, grace is given, but I ask that you try your best to be there.
   - When you can't make it, you still need to check the course webpage and Slack to catch up on what you missed. 
 * The topics have changed slightly. Both to remove the amount of content to reflect this difficult time and to adjust for the language processing topics coming up as part of the project. 
@@ -145,10 +145,35 @@ Suggestion: View this file in github, copy the md text and make it a todo list f
 
 ## Goals
 
-* Address questions and concerns about deliverable list
-* Make progress on this work. 
+* Address questions and concerns about deliverable list. 
+* Ensure everyone understands how we're going to work on NLP over this and next week. 
+* Decide on which platform to get COVID19 data from. 
+  - Decide on a sampling frame. 
 
 
 ## New content
 
 * Guidance on project or tutorial development - start small with a clear message. The [LA Times Coronavirus in CA report](https://www.latimes.com/projects/california-coronavirus-cases-tracking-outbreak/). 
+
+### Getting COVID19 Twitter data. New options. 
+
+Since this is a dataset that many others are interested in, they are doing the hard work of downloading and collecting data from Twitter. Here are some of the sources I've found so far (outside of Kaggle).
+
+* [Documenting the Now](https://www.docnow.io/) is a tool and community developed around supporting the ethical collection, use, and preservation of social media content. They have a curated list of datasets at https://www.docnow.io/catalog/
+* https://ieee-dataport.org/open-access/corona-virus-covid-19-tweets-dataset
+https://www.kaggle.com/smid80/coronavirus-covid19-tweets
+
+I am leaning towards the `#COVID-19` set from [echen](https://arxiv.org/pdf/2003.07372.pdf)
+
+However, Twitter's Terms of Service only allows sharing of Tweet ID's. So we have to use other methods to connect the context of the tweet, to the ID. This has been called "hydrating". (I don't know why kaggle is different, and I have an email out to the Twitter API support team to ask). There seem to be two main tools for hydrating tweets: 
+
+* [DocNow Hydrator](https://github.com/DocNow/hydrator)
+    - [Tutorial from a historian on how to hydrate tweets using this tool](https://programminghistorian.org/en/lessons/beginners-guide-to-twitter-data)
+* [Twarc](https://github.com/DocNow/twarc) Command line interface to a python script. 
+
+    
+
+
+
+
+
