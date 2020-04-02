@@ -10,7 +10,15 @@ _This course aims to help students navigate the evolving and murky waters of the
 
 ----
 
-### `r format(wk1.date+6*8, "%m-%d-%Y")` Week 9: Introduction to Natural Language Processing
+### `r format(wk1.date+10*7, "%m-%d-%Y")` Week 10: Text processing, sentiment
+
+* Tuesday holiday. Yay for loosing more class time. `r emo::ji("face_with_rolling_eyes")`
+* Thursday: Project updates, research question operationalization, text processing
+* [Week 10 notes](lec/wk10-notes.html) posted. 
+
+----
+
+### `r format(wk1.date+9*7, "%m-%d-%Y")` Week 9: Introduction to Natural Language Processing
 
 * Project updates, starting to talk about NLP. 
 * New course note format to reflect the online delivery. 
@@ -19,7 +27,7 @@ _This course aims to help students navigate the evolving and murky waters of the
 
 ----
 
-### `r format(wk1.date+6*8, "%m-%d-%Y")` Week 8: Translating a scientific question to a data analysis plan. 
+### `r format(wk1.date+7*7, "%m-%d-%Y")` Week 8: Translating a scientific question to a data analysis plan. 
 
 Crazy week with COVID-19 ramp up. 
 See Google Drive for class notes. 

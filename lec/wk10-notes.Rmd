@@ -1,5 +1,5 @@
 ---
-title: "Class meeting 03-26-2020"
+title: "Class meeting 04-02-2020"
 output:   
   html_document: 
     highlight: tango
@@ -8,28 +8,174 @@ output:
     toc_float: true
 ---
 
+
 # Overview
 
+* Operationalize project research questions into data tasks
+* Text processing and Sentiment analysis
 
-## Reference Docs
+# Goals
+
+* Operationalize what data/format each group needs for their project question
+* Understand the minimum necessary information about text processing and sentiment analysis. 
+* Identify what parts of text analysis will be needed for your groups project
+* Replicate the steps needed for text processing and sentiment scoring to your twitter project data (even if it's not part of your research question).
+
+## Housekeeping (5 min)
+
+* Gradebook finally updated with post-break scores. 
+* This section will rely on your ability to follow code from a textbook and/or my notes. 
+    - don't wait to ask questions during OH or Slack.
+    - you're encouraged to work together on assignments
+* There is a new [text analysis assignment](https://classroom.github.com/a/t2Wt4CIJ) in Github Classroom. 
+* First draft due before next Tuesday 4/7.
+    - You must include a compiled version. 
+    - I will provide comments and suggestions for corrections/improvements. 
+* Final version due for grading by Thursday 4/9. 
 
 
-## Goals
+# Projects (15 min)
+
+* Project repo continually updated with resources, including the ones that you are helping write. 
+    - Goal: one stop shop for data information and code (via github for us, via html for them). 
+* Data Collection ongoing. 
+    - Hydrating tweets does not count against your API calls. The rate limit is making sure the API is not sending to many requests too fast.  
+        - See the [Dataset information](https://data485-s20.github.io/campfire_tweets/datainfo.html) page for more info how how to hydrate tweets. 
+    - Use March API calls on campfire data. A list of target time frames is in the tweet tracker. 
+    - Please be contributing to these data sets. 
+* Analyst responsibilities. You are in charge of: 
+    - keeping track of the project tasks for the group. Who said they're gonna do what? 
+    - weekly reporting out to the #data-team Slack channel the status of your group. (Sunday night)
+        - What have you done so far, what are your goals for this week? 
+    - Updating the [Data wants and needs](https://docs.google.com/document/d/1QAFN956Pj8d3arh9rOlj1HY5mjZGOv24Fhlw21CjyC0/) list in Google Drive (and letting me know there is a new data request.)
+        - I will help ensure we get the data each group needs to the best of our ability. 
+    - making sure they are maintaining a reproducible code file. POLS students have a R studio cloud project with starter code and data. 
+    - writing complicated code to accomplish tasks _that you agree on is necessary to answer research questions_. 
+    - encouraging them to handle tasks such as running frequencies, making new indicator variables on their own (but with your help/guidance).
+    - showing them how to use resources such as the tutorials on the project website
+    
+# Breakout work (25 min)
+Work together in a pair to share your research question with another person, and figure out how to operationalize your research question. Or what data processing steps (filtering, creating new measures, etc) you'll need to take to start to answer your research question.
+      
+# Lecture: Text analysis  (20 min)
+
+This work follows from the [Text mining with R](https://www.tidytextmining.com/) book. These notes serve as a demonstration of how these topics apply to our twitter data. 
 
 
-## Housekeeping
+## Learning resources
+
+* Tidytext book and vignette (recommended)
+    - [Vignette](https://cran.r-project.org/web/packages/tidytext/vignettes/tidytext.html)
+    - [Text mining with R book](https://www.tidytextmining.com/)
+* [Sentiment Analysis](https://cran.r-project.org/web/packages/SentimentAnalysis/vignettes/SentimentAnalysis.html) package vignette. 
+
+I'm scrapping the DataCamp tutorials. You can look at them, the links are in week 9. I find the info in the Text mining with R book more useful. 
 
 
+```{r, warning=FALSE, message=FALSE}
+library(tidyverse)
+library(tidytext)
+```
 
-# Learning Content
+## Data Cleaning
+Read in data. Extract tweet text into a new tibble.
+```{r}
+cf <- readRDS("G:/My Drive/Teaching/POLS 624 S20/Twitter project docs/data/campfire-tweets-2020-03-31.Rds")
+tweet <- tibble(status_id=cf$status_id, text=cf$text)
+tweet$text[1]
+```
 
-* Starting small with a clear message. The [LA Times Coronavirus in CA report](https://www.latimes.com/projects/california-coronavirus-cases-tracking-outbreak/). 
+Tokenization using the `unnest_tokens()` function. 
+```{r}
+tweet %>% unnest_tokens(word, text) %>% print(n=15)
+```
+
+Notice when we unnested the tokens, it removed the `#` and `@` symbols. We can use a custom token function for tweets. 
+We should also remove symbols such as `&`, `>` and `<`. 
+
+```{r}
+remove_reg <- "&amp;|&lt;|&gt;"
+tweet_words <- tweet %>% 
+                  mutate(text = str_remove_all(text, remove_reg)) %>%
+                  unnest_tokens(word, text, token="tweets")
+tweet_words %>% print(n=15)
+```
+
+Remove stop words - what's in the stop words lexicon anyhow? 
+```{r}
+data("stop_words")
+head(stop_words)
+table(stop_words$lexicon)
+```
+
+```{r}
+tweet_words_nostop <- tweet_words %>% anti_join(stop_words)
+head(tweet_words_nostop)
+```
+
+Most frequent words? 
+```{r}
+tweet_words_nostop %>% count(word, sort = TRUE)
+```
+
+## Exploration
+Top tags
+```{r}
+tweet_words_nostop %>% filter(str_detect(word, "^#")) %>% count(word, sort=TRUE)
+```
+
+Top mentions
+```{r}
+tweet_words_nostop %>% filter(str_detect(word, "^@")) %>% count(word, sort=TRUE)
+```
+
+@doggietatoo???? Need to look into some of these users/mentions. 
+Or better yet, see if we can find a way to identify using a model which tweets are actually about the disaster. 
+
+---
+
+## Sentiments
+
+Read the notice about [proper licensing of lexicons](https://www.tidytextmining.com/sentiment.html). We will have to cite this in any work that uses this lexicon. I am choosing AFINN because it creates a score from -5 to 5 (part of the `textdata` package). Each lexicon mentioned in this text has it's advantages. You will have to choose with your group which one you will use. The Text mining with R [Chapter 2.3](https://www.tidytextmining.com/sentiment.html#comparing-the-three-sentiment-dictionaries) shows how you can use all three dictionaries to compare sentiment application methods to the same tweet. 
+
+```{r}
+library(textdata)
+```
+
+When learning a new thing, i always do it in stages so I can see exactly how the data is being modified.
+```{r}
+ts1 <- tweet_words_nostop %>% 
+          inner_join(get_sentiments("afinn"))
+head(ts1)
+```
+
+We are going to want the overall sentiment per tweet as well, so we employ group_by and summarize tactic.  
+```{r}
+ts2 <- ts1 %>% group_by(status_id) %>% summarize(sentiment=sum(value))
+head(ts2)
+```
+
+Since these still have the ID's attached (on purpose), we can merge this score back on to the original full tweet data. 
+
+```{r}
+cf2 <- cf %>% left_join(ts2, by='status_id')
+names(cf2)
+```
+
+Simple comparison of sentiment by verified vs not (may not be of interest, but it was an binary variable that I had easy access to).
+```{r}
+ggplot(cf2, aes(x=sentiment, col=verified)) + geom_density(lwd=2) + theme_minimal()
+```
+
+See the rest of Chapter 2 in the Text mining with R book for other examples of what you can do with words and sentiments. 
 
 
-# Deliverables 
+## Considerations
 
-## Dr. D.
-
-## Students
-
+* Not all tweets (especially for COVID-19) are in English
+* Records contain original, and re-tweeted content. The frequency of a word said only once, but retweeted thousands of times, may appear to be more frequent than it really is. Decide what type of tweets your group wants to analyze and apply that filter right away. 
+* You are likely going to be applying sentiments to the tweets at the project level, not beforehand. 
+    - We could, but with the variety of lexicons, and what can be done with the word level datasets, that some of this will happen at the project level anyhow. 
+* Don't forget to check for abnormalities in the tweets, especially for the campfire. We can't guarantee all tweets are about this one disaster. 
+* We could get into the weeds here. This is a topic of an [entire dissertation topic](https://scholarcommons.usf.edu/cgi/viewcontent.cgi?article=8925&context=etd). So don't set your sights too high for this class project. 
 
