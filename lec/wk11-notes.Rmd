@@ -1,0 +1,89 @@
+---
+title: "Week 11: Classification"
+date: "04-07-2020"
+output:   
+  html_document: 
+    highlight: tango
+    theme: yeti
+    toc: yes
+    toc_float: true
+---
+
+# Learning Path
+
+### Where we've been
+
+* Multivariable model building using linear and logistic regression. 
+* Basic concepts surrounding flexible vs ridgid, parametric vs non-parametric estimates of $f$. 
+* Basic concepts of prediction and classification. Target measures of fit. 
+* Wrangling and exploring text data
+
+### Where we're at
+
+* Classification models other than logistic regression. Starting simple with discrimenant analysis and naieve bayes. (ISLR Ch 4)
+
+### Where we're going
+
+* Employing resampling methods such as cross validation to improve our prediction accuracy (ISLR Ch 5)
+* Topic modeling of text data - making predictions using text. 
+* Tree based methods for classification (ISLR Ch 8)
+
+
+----
+
+# Goals for the week
+
+* Examine basic classification models other than logistic regression 
+
+----
+
+# Housekeeping 
+
+* Please help with data collection. 
+* Sentiment analysis draft HW due today. Must include a compiled HTML version. I'll comment on them using github issues and get them back to you today. 
+* Don't forget to do your Sunday night project report in the #data-team channel. 
+
+----
+
+# Learning
+
+## Before class on Tuesday
+Watch at least one of the following three videos recapping classification methods and logistic regression. The time in parenthesis is the length of the video. The locations of the textbook corresponding with that video are also noted. It's always good to follow along with the book. 
+
+* ISLR Ch 2.2 [Classification Problems and K-Nearest Neighbors](https://www.youtube.com/watch?v=RfrGiG1Hm3M) (15:37)
+* ISLR Ch 4.1, 4.2 [Introduction to Classification](https://www.youtube.com/watch?v=RfrGiG1Hm3M) (10:25)
+* ISLR Ch 4.3.4 [Multivariate Logistic Regression and Confounding](https://www.youtube.com/watch?v=MpX8rVv_u4E) (9:53)
+* (Optional extra) ISLR Ch 4.3.5 [Case-Control Sampling and Multiclass Logsitic Regression](https://www.youtube.com/watch?v=GavRXXEHGqU) (7:28)
+
+## During class on Tuesday
+
+1. We will (individually) watch the following videos during class. Take notes on your own while you watch. 
+2. Then work in pairs to summarize the main take home points of that lecture. Write this in the [[Hack MD lec03_classifiers]]() notes.
+    - Each group has their own section. 
+    - Work out what you want to write with your partner before you add to the notes. 
+3. We will reconviene as a group and discuss as a group what you came up with. 
+
+* ISLR Ch 4.4 [Linear Discriminant Analysis and Bayes Theorem](https://www.youtube.com/watch?v=RfrGiG1Hm3M) (7:12)
+* ISLR Ch 4.4.2 [Univariate Linear Discriminant Analysis](https://www.youtube.com/watch?v=QG0pVJXT6EU) (7:37)
+
+
+
+## Before class on Thursday
+* ISLR [Multivariate Linear Discriminant Analsyis and ROC Curves](https://www.youtube.com/watch?v=X4VDZDp2vqw) (17:42)
+* ISLR [Quandratic Discriminant Analysis and Naive Bayes](https://www.youtube.com/watch?v=6FiNGTYAOAA)(10:07)
+
+
+## During class on Thursday
+
+
+----
+
+# Assignment
+
+* Github classroom assignment [[link]](). Due 4/18
+* Comes in two parts - classification and resampling. 
+    - Classification assignment will be released first. 
+    - Resampling assignment will be sent via Slack. - You'll have to manually add it to your repo. 
+    
+    
+    
