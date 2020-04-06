@@ -22,6 +22,7 @@ pander(as.list(out.lec$link))
 * [lec02-what-is-ds](https://hackmd.io/@norcalbiostat/data485-lec02) 
 * [Getting historical data out of twitter](https://hackmd.io/@norcalbiostat/data485-twitter) (part of hw03)
 * [Real Estate Website Case Study](https://hackmd.io/@norcalbiostat/real-estate-case-study) (part of hw04)
+* [lec03_classifiers](https://hackmd.io/@norcalbiostat/lec03_classifiers)
 
 # Homework 
 ```{r, message=FALSE, warning=FALSE, echo=FALSE}

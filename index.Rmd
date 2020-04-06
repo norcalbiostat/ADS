@@ -10,6 +10,16 @@ _This course aims to help students navigate the evolving and murky waters of the
 
 ----
 
+### `r format(wk1.date+11*7, "%m-%d-%Y")` Week 11: Classification methods
+
+* There's more to life than logistic regression. 
+* Let's look at some linear, and non-linear classifying models. 
+* Start to implement testing/training samples. 
+* [Week 11 notes](lec/wk11-notes.html) posted, as well as [HackMD notes on classifiers](https://hackmd.io/@norcalbiostat/lec03_classifiers). 
+* Case study in Doing Data Science - chapter 5 is a relevant topic. 
+
+----
+
 ### `r format(wk1.date+10*7, "%m-%d-%Y")` Week 10: Text processing, sentiment
 
 * Tuesday holiday. Yay for loosing more class time. `r emo::ji("face_with_rolling_eyes")`

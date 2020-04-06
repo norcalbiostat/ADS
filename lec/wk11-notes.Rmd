@@ -39,9 +39,15 @@ output:
 
 # Housekeeping 
 
-* Please help with data collection. 
+* Please help with data collection for both projects. 
+    - COVID19: Hydrating tweets does not count against your API requests. Try to do a handful of files this week. I'll add more as people take them. 
+               - Targeted searches: I will specifically get lists of ID's from 3/10-3/12. We
+    - Campfire: Targeted searches: FEMA & Honea, "Authority" accounts. Need list of 'authority' accoutns. 
+        * Brandon: Do a new search with Honea keywords, between dates 11/08/18 to 12/31/18. 
+        * Olivia: try the same with FEMA. 
 * Sentiment analysis draft HW due today. Must include a compiled HTML version. I'll comment on them using github issues and get them back to you today. 
 * Don't forget to do your Sunday night project report in the #data-team channel. 
+* Link to poll in POLS Slack channel for scheduling final presentation. 
 
 ----
 
@@ -58,8 +64,8 @@ Watch at least one of the following three videos recapping classification method
 ## During class on Tuesday
 
 1. We will (individually) watch the following videos during class. Take notes on your own while you watch. 
-2. Then work in pairs to summarize the main take home points of that lecture. Write this in the [[Hack MD lec03_classifiers]]() notes.
-    - Each group has their own section. 
+2. Then work in pairs to summarize the main take home points of that lecture. Write this in the [[Hack MD lec03_classifiers]](https://hackmd.io/@norcalbiostat/lec03_classifiers) notes.
+    - Each group has their own section to write in. 
     - Work out what you want to write with your partner before you add to the notes. 
 3. We will reconviene as a group and discuss as a group what you came up with. 
 
@@ -75,12 +81,13 @@ Watch at least one of the following three videos recapping classification method
 
 ## During class on Thursday
 
+* Breakout discussion on these topics, similar to Tuesday. 
 
 ----
 
 # Assignment
 
-* Github classroom assignment [[link]](). Due 4/18
+* Github classroom assignment [[link forthcoming]](). Due 4/18
 * Comes in two parts - classification and resampling. 
     - Classification assignment will be released first. 
     - Resampling assignment will be sent via Slack. - You'll have to manually add it to your repo. 
