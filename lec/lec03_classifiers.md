@@ -93,3 +93,47 @@ Reducing the function further results in a function for descriminant score, whic
 * We may use other densities and throw it into our Bayes' classifier.
 * attractive for small $p$ (variables)
 
+
+
+
+## ISLR Ch 4.4.3 [Multivariate Linear Discriminant Analsyis and ROC Curves](https://www.youtube.com/watch?v=X4VDZDp2vqw) (17:42)
+
+* Why is the gaussian distribution on the top right of page 142 squished? 
+* Compare (non-mathematically) how the classification process for LDA with 1 predictor, is the same as the classification process for LDS with 2 predictors. 
+* In the top right picture on page 143, what is the differnece between the dotted and solid lines?
+* Label each line as `a` (between yellow and green), `b` (between yellow and blue) and `c` (between blue and green). Write out the decision rules in english using these labels. _E.g. if X1 is less than a, and less than c, then classify as green._
+* Consider the debt example in the textbook (confusion matrix on top of page 145). Why does LDS do such a poor job of classifying the customers who default? 
+
+
+#### Breakout group 1
+
+
+#### Breakout group 2
+
+
+#### Breakout group 3
+
+
+#### Breakout group 4
+
+
+
+
+## ISLR Ch 4.4.4 [Quadratic Discriminant Analysis and Naive Bayes](https://www.youtube.com/watch?v=6FiNGTYAOAA)(10:07)
+
+* Why is this called QDA insead of LDA with more X's? What makes it different? 
+* Which is the more flexible classifer? LDA or QDA? 
+* Why does it matter whether or not we assume that the $K$ classes share a common covariance matrix? Explain this in terms of the bias-variance tradeoff and parameter estimation. 
+* When would QDA be more accurate than LDA? 
+* What are the take home messages for Figure 4.10 and 4.11? What can you learn from these plots?
+
+#### Breakout group 1
+
+
+#### Breakout group 2
+
+
+#### Breakout group 3
+
+
+#### Breakout group 4
