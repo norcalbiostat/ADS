@@ -49,6 +49,12 @@ output:
 * Don't forget to do your Sunday night project report in the #data-team channel. 
 * Link to poll in POLS Slack channel for scheduling final presentation. 
 
+### Update for Thursday
+* Start to work with team on writing project presentation slides. 
+* Due dates are on Google Calendar, [schedule](../schedule.html) and on [project](../project/pols_project.html) page. 
+
+
+
 ----
 
 # Learning
