@@ -98,42 +98,71 @@ Reducing the function further results in a function for descriminant score, whic
 
 ## ISLR Ch 4.4.3 [Multivariate Linear Discriminant Analsyis and ROC Curves](https://www.youtube.com/watch?v=X4VDZDp2vqw) (17:42)
 
-* Why is the gaussian distribution on the top right of page 142 squished? 
-* Compare (non-mathematically) how the classification process for LDA with 1 predictor, is the same as the classification process for LDS with 2 predictors. 
-* In the top right picture on page 143, what is the differnece between the dotted and solid lines?
-* Label each line as `a` (between yellow and green), `b` (between yellow and blue) and `c` (between blue and green). Write out the decision rules in english using these labels. _E.g. if X1 is less than a, and less than c, then classify as green._
-* Consider the debt example in the textbook (confusion matrix on top of page 145). Why does LDS do such a poor job of classifying the customers who default? 
+1. Why is the gaussian distribution on the top right of page 142 squished? 
+2. Compare (non-mathematically) how the classification process for LDA with 1 predictor, is the same as the classification process for LDS with 2 predictors. 
+3. In the top right picture on page 143, what is the differnece between the dotted and solid lines?
+4. Label each line as `a` (between yellow and green), `b` (between yellow and blue) and `c` (between blue and green). Write out the decision rules in english using these labels. _E.g. if X1 is less than a, and less than c, then classify as green._
+5. Consider the debt example in the textbook (confusion matrix on top of page 145). Why does LDS do such a poor job of classifying the customers who default? 
 
 
-#### Breakout group 1
+#### Breakout group 1 (Tanya & Irfan)
+1. The distribution is squished because the predictors are correlated. Another reason why this could happen is when the predictors have unequal variances.
+2. They both are using the bayes classifier to determine the largest "group."
+3. The dotted lines represent the Bayes decision boundaries. The solid lines are the LDA decision boundaries. 
+4. If X1 is  greater than a and less b, then classify as yellow. If X1 is greater than a and less than b and greater than c classify as blue. If X1 is less than a, and less then c, classify as green.
+5. LDS does such a poor job of classifying the customers who default because the initial threshold is too high (.5). Bayes classifier uses a threshold of .5 by default.
 
 
-#### Breakout group 2
+
+#### Breakout group 2 (Olivia & Kaleb) :joy: :joy: :joy:
+1. The distribution is squished because the variables are correlated in the graph to the right.
+2. They both utilize the Bayes classifier, and we assume the data is pulled from the Gauzian distribution. The only difference is the number of variables that we use to estimate the probabilities of an event belonging to a specific class. 
+3. The solid line represents the 95% classification for each class (the LDA decision boundary) and the dashed line represents the Bayes decision boundary. 
+4. If $x1$ is less than $b$ and greater than $a$, classify as yellow. If $x1$ is less than $b$ and less than $a$, classify as green. If $x1$ is greater than $a$ and greater than $b$, classify as blue.
+5. LDS does a poor job of classifying defaulting customers because LDA is an attempt to approximate the Bayes classifier, which is tuned to minimize misclassifications, irrespective of which class they belong to. 
 
 
-#### Breakout group 3
+#### Breakout group 3 (Brandon & Kris)
+1. The variables are correlated.
 
+2. Still maintains linear (under normal assumption) relationship for classifying. For 2 predictors there is a boundary line in which you classify based on where the data is in relation to that boundary line. This is the same for 1 predictor when on an axis, classification is based on which side of the boundary line the data point is.
 
-#### Breakout group 4
+3. The dashed lines are the Bayes decision boundaries. Solid lines are linear discriminant analyis decision boundaries corresponding to observations.
+
+4. If $X_2$ is greater than $a$ and $X_1$ is less than $b$, then classify it as yellow. If $X_2$ is less than $a$ and $X_1$ is less than $c$, then classify it as green. If $X_2$ is less than $b$ and $X_1$ is greater than $c$, then classify it as blue. 
+
+5. Linear discriminant analysis is attempting to estimate the Bayes classifier, which should have the lowest total error rate out of all classifiers (if Normal model assumption holds),it will show the smallest total number of misclassified observations no matter which class the errors come from.
 
 
 
 
 ## ISLR Ch 4.4.4 [Quadratic Discriminant Analysis and Naive Bayes](https://www.youtube.com/watch?v=6FiNGTYAOAA)(10:07)
 
-* Why is this called QDA insead of LDA with more X's? What makes it different? 
-* Which is the more flexible classifer? LDA or QDA? 
-* Why does it matter whether or not we assume that the $K$ classes share a common covariance matrix? Explain this in terms of the bias-variance tradeoff and parameter estimation. 
-* When would QDA be more accurate than LDA? 
-* What are the take home messages for Figure 4.10 and 4.11? What can you learn from these plots?
-
-#### Breakout group 1
+1. Why is this called QDA insead of LDA with more X's? What makes it different and thus, called "quadratic"? 
+2. Which is the more flexible classifer? LDA or QDA? 
+3. Why does it matter whether or not we assume that the $K$ classes share a common covariance matrix? Explain this in terms of the bias-variance tradeoff and parameter estimation. 
+4. When would QDA be more accurate than LDA? 
+5. What are the take home messages for Figure 4.10 and 4.11? What can you learn from these plots?
 
 
-#### Breakout group 2
+#### Breakout group 1 (Tanya & Olivia)
+1. QDA assumes that each class has its own covariance matrix. The quantity x appears as a quadratic function.
+2. QDA is the more flexible classifier.
+3. The assumption that K classes share a common covariance matrix, such as in LDA's case, causes there to be lower variance. If this assumption is off, then there can be the issue of high bias. QDA is reocmmended if the training set is large, so the variance of the classifier is not a concern.
+4. QDA will be more accurate than LDA in cases where LDA's assumption of a shared covariance matrix is badly off.
+5. No method consistently dominates the others, but QDA is generally better in situations with boundaries that are moderately non-linear.
 
+#### Breakout group 2 (Kris & Kaleb)
+1. QDA assumes that each class has its own covariance matrix, and it assigns observations to class (largest). 
+2. The quadratic quality of QDA makes it a more flexible classifier.
+3. By sharing a common covariance matrix, we are able to reduce bias among individual classes. However, the trade off to this is that there is a much higher variance 
+4. Useful for large amount of variables and variance of the classifier is not too much of a concern. Also useful when its unreasonable to make the assumption of common covariance matrices for your classes.
+5. Linear scenarios: error rate smallest range at QDA, logistic, and LDA when data range is smaller. The amount of correlation between the predictors has a direct affect on the performance.
 
-#### Breakout group 3
+#### Breakout group 3 (Irf & Brandon)
+1. QDA assumes that the variances for each class are not the same, which results in no cancellation meaning that there are square terms leftover in the function of the predictors. This results in a quadratic boundary line.
+2. QDA is more flexible.
+3. If we assume K classes share a common covariance matrix, which lowers variance, and that assumption is "badly off", it can suffer from High bias.
+4. QDA is reccomended if the training set is very large, so the variance of the classifier is not a major concern. QDA is also better for when the assumption for an equal covariance matrix is not able to be made.
+5. They both have varying levels of error rate, so choosing between QDA and LDA depends on the context of the data. There may be a slight increase in IQR of error rates for non-linear scenarios.
 
-
-#### Breakout group 4
