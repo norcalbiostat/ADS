@@ -87,7 +87,9 @@ Watch at least one of the following three videos recapping classification method
 
 ## During class on Thursday
 
-* Breakout discussion on these topics, similar to Tuesday. 
+* Questions written in HackMD under each topic. 
+* Answers can be found in the videos, and in the textbook. 
+* Work in breakout groups to answer the questions. 
 
 ----
 
