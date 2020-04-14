@@ -32,7 +32,7 @@ First hand experience working on a research team where the divisions of expertis
 _campus is shut down due to COVID-19. Schedule changes, topics change, groups change_
 
 * Week 11: Sunday 4/5 - Up to slide 5 (background & introduction)
-* Week 12: Sunday 4/12 - Up to slide 8 (methods)
+* Week 12: Sunday 4/12 - Up to slide 8 (data & analysis methods)
 * Week 13: 
     - Sunday 4/19 - Up to univariate results
     - Wednesday 4/22 - Peer review of other teams slides
@@ -44,4 +44,15 @@ _campus is shut down due to COVID-19. Schedule changes, topics change, groups ch
     - Either Mon 5/11 or Wed 5/13, 6-8pm. Confernece presentations. 
 
 
+# Project grading (50 pts)
+
+* working collaboratively with POLS students (10 pts)
+* presentation development
+    - data and methods (5 pts)
+    - univariate EDA (5 pts)
+    - bivariate EDA (5 pts)
+* peer reviews (twice) (5 pts each)
+    - final presentation: cleaned up slides (5 pts)
+    - final presentation: oral (10 pts)
+    
 
