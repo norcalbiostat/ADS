@@ -26,7 +26,11 @@ navbar:
       href: https://csuchico.zoom.us/
   - text: Twitter Project
     icon: fa-group
-    href: https://data485-s20.github.io/campfire_tweets/index.html
+    menu:
+      - text: Instructions
+      - href: pols_project.html
+      - text: Project website
+      - href: https://data485-s20.github.io/campfire_tweets/index.html
   right:
   - text: Syllabus
     icon: fa-info-circle

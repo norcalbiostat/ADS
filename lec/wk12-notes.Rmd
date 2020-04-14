@@ -59,7 +59,7 @@ output:
 1. What are the two most commonly used resampling methods? 
 2. The process of evaluating a model’s performance is known as ____. 
 3. The process of selecting the proper level of flexibility for a model is known as _____. 
-4. The training error is typically ______ estimates the test error rate. 
+4. The training error typically ______ estimates the test error rate. 
 5. What is the main reason to use cross-validation? 
 6. What is the main reason to use bootstrap? 
 7. As the model complexity increases, what happens to the training and testing errors? 

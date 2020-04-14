@@ -10,6 +10,16 @@ _This course aims to help students navigate the evolving and murky waters of the
 
 ----
 
+### `r format(wk1.date+11*7, "%m-%d-%Y")` Week 12: Resampling methods
+
+* Project instruction page has been linked to the navbar
+    - Worth 50 pts total. Gradebook will be updated periodically. 
+* Don't forget the weekly report ins
+* Next homework: classification and resampling. Link to google classroom assignment in the schedule.
+* [Week 12 notes](lec/wk12-notes.html) posted.
+
+----
+
 ### `r format(wk1.date+11*7, "%m-%d-%Y")` Week 11: Classification methods
 
 * There's more to life than logistic regression. 
