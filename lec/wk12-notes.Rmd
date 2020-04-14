@@ -42,9 +42,10 @@ output:
 # Housekeeping 
 
 * Project updates - Missing for about half of you. 
-* Update on classification homework. Do ISLR Ch 4 # 10a-h instead.
-    - If you've already started 13, go ahead and stick with it. Just don't get too deep into the weeds of variable selection. 
-    - If you haven't copied the homework repo yet, those files have been updated. 
+* Update on homework. 
+    - Classification homework Do ISLR Ch 4 # 10a-h instead. If you've already started 13, go ahead and stick with it. Just don't get too deep into the weeds of variable selection. 
+    - Resampling. Answer questions that are in this set of notes. This week: Go get a data set. 
+    - If you haven't copied the homework repo yet, the repo has been updated. 
 * Continuing with the in class shared student-centered learning. We'll go through these notes at a measured pace. The videos are longer, so we may not finish both sections today. I'm not in a rush, we'll wrap this into next week if needed. 
 
 ----
