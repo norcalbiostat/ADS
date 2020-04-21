@@ -56,9 +56,10 @@ output:
 
 ----
 
-# Learning - Theory
+# Learning - Theory (Homework)
 
-`r emo::ji("busts_in_silhouette")` Continue to discuss these questions in your group and write the answers in your `resampling-assignment.Rmd`.
+
+On your own, watch the video & read through this section of the book. Answer these questions in your `resampling-assignment.Rmd`, and be prepared to answer as a group on Thursday. 
 
 ### The Bootstrap (ISLR 5.2) [[Video  (11:29)]](https://www.youtube.com/watch?v=p4BYWX7PTBM&list=PL5-da3qGB5IA6E6ZNXu7dp89_uv8yocmf&index=4)
 
@@ -66,7 +67,6 @@ output:
 * Instead of using the population estimates for the variance and the covariance, what do you use instead? 
 * How does creating a bootstrap sample different from creating the sampling distribution? 
 * Why do some observations appear more than once in a given bootstrap sample? 
-
 
 ----
 
