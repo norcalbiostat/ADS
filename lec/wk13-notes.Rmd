@@ -36,12 +36,14 @@ output:
 
 # Goals for the week
 
-* Learn about how to pull yourself up by your bootstraps
-    - Finish the resampling assignment (Sat 4/25)
 * Project 
     - Conduct a peer review of one other projects slides
     - Explore the bivariate relationships within your project data. 
-    - Revise all old slides, write up bivariate exploration slides. 
+    - Revise all old slides, write up bivariate exploration slides by Sunday.
+* Learn about how to pull yourself up by your bootstraps (Breakout room work - brief). 
+    - Finish the resampling assignment (Tue 4/28 - no class that day either)
+    - This is the set of questions that we worked on in class last, and this week.
+    - You will also apply the classification example steps from this weeks notes on your chosen data set from UCI. 
 
 ----
 
