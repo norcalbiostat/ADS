@@ -14,10 +14,10 @@ output:
 ### Where we've been
 
 * Multivariable model building using linear and logistic regression. 
-* Basic concepts surrounding flexible vs ridgid, parametric vs non-parametric estimates of $f$. 
+* Basic concepts surrounding flexible vs rigid, parametric vs non-parametric estimates of $f$. 
 * Basic concepts of prediction and classification. Target measures of fit. 
 * Wrangling and exploring text data
-* Classification models other than logistic regression. Starting simple with discrimenant analysis and naieve bayes. (ISLR Ch 4)
+* Classification models other than logistic regression. Starting simple with discriminant analysis and naive Bayes. (ISLR Ch 4)
 
 ### Where we're at
 
@@ -37,6 +37,8 @@ output:
     - Theoretical learning and discussion in class
     - Applied learning as part of the homework. 
 
+* Write the methods slides for your group project. 
+
 ----
 
 # Housekeeping 
@@ -44,9 +46,10 @@ output:
 * Project updates - Missing for about half of you. 
 * Update on homework. 
     - Classification homework Do ISLR Ch 4 # 10a-h instead. If you've already started 13, go ahead and stick with it. Just don't get too deep into the weeds of variable selection. 
-    - Resampling. Answer questions that are in this set of notes. This week: Go get a data set. 
+    - Resampling. Answer questions that are in this set of notes. 
+    - By Monday: Go get a data set. Instructions on what type of data are in the `resampling-assignment.Rmd`
     - If you haven't copied the homework repo yet, the repo has been updated. 
-* Continuing with the in class shared student-centered learning. We'll go through these notes at a measured pace. The videos are longer, so we may not finish both sections today. I'm not in a rush, we'll wrap this into next week if needed. 
+* Continuing with the in class shared student-centered learning. For this section I have generated questions for you to ask based on information in the text, and the videos. 
 
 ----
 
@@ -84,14 +87,9 @@ _The video describes K-fold first, then LOOCV second. This is opposite of the or
 
 
 #### Bias-Variance trade-off for k-Fold CV (5.1.4)
-6. Why does k-fold CV give more accurate estimates of the test error rate than LOOCF? Explain this in english. 
+6. Why does k-fold CV give more accurate estimates of the test error rate than LOOCF? Explain this in English. 
 7. What is a good value for $k$ that will result in test error rates that find a nice balance between bias and variance? 
 
-
-### The Boostrap (5.2) [[Video (11:29)]](https://www.youtube.com/watch?v=p4BYWX7PTBM&list=PL5-da3qGB5IA6E6ZNXu7dp89_uv8yocmf&index=4)
-
-
-> in progress
 
 ----
 
@@ -99,9 +97,5 @@ _The video describes K-fold first, then LOOCV second. This is opposite of the or
 
 We will use the `caret` package for most, if not all, of our machine learning algorithms. [Here is a link to the vignette/book](http://topepo.github.io/caret/index.html). 
 
-Of particular note  - Chapter 3. Real data is not clean. Real data cannot be shoved into a model without pre-processing. Mindful pre-processing. 
-
-
-> in progress
 
 

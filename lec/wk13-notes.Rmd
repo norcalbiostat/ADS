@@ -1,0 +1,391 @@
+---
+title: "Week 13: Bootstrap"
+date: "`r paste(Sys.Date())`"
+output:   
+  html_document: 
+    highlight: tango
+    theme: yeti
+    toc: yes
+    toc_float: true
+---
+
+# Learning Path
+
+### Where we've been
+
+* Multivariable model building using linear and logistic regression. 
+* Basic concepts surrounding flexible vs rigid, parametric vs non-parametric estimates of $f$. 
+* Basic concepts of prediction and classification. Target measures of fit. 
+* Wrangling and exploring text data
+* Classification models other than logistic regression. Starting simple with discriminant analysis and naive Bayes. (ISLR Ch 4)
+* Employing resampling methods such as cross validation to improve our prediction accuracy (ISLR Ch 5)
+
+### Where we're at
+
+* Estimating accuracy using the bootstrap (ISLR Ch 5.2)
+* Working with the `caret` package to conduct a machine learning algorithm to classify data under a variety of models. 
+
+
+### Where we're going
+
+* Topic modeling of text data - making predictions using text. 
+* Tree based methods for classification (ISLR Ch 8)
+
+
+----
+
+# Goals for the week
+
+* Learn about how to pull yourself up by your bootstraps
+    - Finish the resampling assignment (Sat 4/25)
+* Project 
+    - Conduct a peer review of one other projects slides
+    - Explore the bivariate relationships within your project data. 
+    - Revise all old slides, write up bivariate exploration slides. 
+
+----
+
+# Housekeeping 
+
+* Should have a data set to play with by today. Instructions on what type of data are in the `resampling-assignment.Rmd`
+* Sharing out - Since the github classroom assignments are private, ya'all can't see what each other is doing. That means if you get stuck, it's hard to get unstuck. 
+    - Please recompile your sentiment analysis homework and upload to the `HW: Sentiment analysis` folder in Google drive. 
+    - I'm going to do this for each assignment going forward as well. 
+
+----
+
+# Learning - Theory
+
+`r emo::ji("busts_in_silhouette")` Continue to discuss these questions in your group and write the answers in your `resampling-assignment.Rmd`.
+
+### The Bootstrap (ISLR 5.2) [[Video  (11:29)]](https://www.youtube.com/watch?v=p4BYWX7PTBM&list=PL5-da3qGB5IA6E6ZNXu7dp89_uv8yocmf&index=4)
+
+* The bootstrap is a powerful method for estimating _____? 
+* Instead of using the population estimates for the variance and the covariance, what do you use instead? 
+* How does creating a bootstrap sample different from creating the sampling distribution? 
+* Why do some observations appear more than once in a given bootstrap sample? 
+
+
+----
+
+# Learning - Application
+
+Most of the examples and links below are from the [caret package vignette](https://topepo.github.io/caret/). Replicate the steps below with your chosen dataset using the same header structure in your `resampling` assignment. 
+
+Other references & tutorials
+
+* https://remiller1450.github.io/s230f19/caret1.html
+* https://cran.r-project.org/web/packages/caret/vignettes/caret.html
+
+
+```{r, message=FALSE, warning=FALSE}
+knitr::opts_chunk$set(message=FALSE, warning=FALSE) 
+library(caret)
+library(dplyr)
+```
+
+
+# Classification example
+Classification task: Build a model to predict the _class_ of a record. Recall that a _class_ is a level of a categorical variable such as `major`, which holds values of `math`, `biology`, and `psychology`. A binary indicator variable such as `smoking_status` that has values `1` for _smoker_ and `0` for _non-smoker_ is also considered a classification problem. 
+
+
+## 1. Introduce the data
+
+I will be using the Wisconsin diagnostic breast cancer data set available on the UCI ML database. 
+
+Credit for the code to read in the data comes from Raul Eulogio: https://rpubs.com/raviolli77/352956. 
+I have done this earlier and saved the resulting dataset in my github repo. This avoids redownloading the data each time this file is knit. 
+
+```{r, eval=FALSE}
+UCI_data_URL <-'https://archive.ics.uci.edu/ml/machine-learning-databases/breast-cancer-wisconsin/wdbc.data'
+
+names <- c('id_number', 'diagnosis', 'radius_mean', 
+         'texture_mean', 'perimeter_mean', 'area_mean', 
+         'smoothness_mean', 'compactness_mean', 
+         'concavity_mean','concave_points_mean', 
+         'symmetry_mean', 'fractal_dimension_mean',
+         'radius_se', 'texture_se', 'perimeter_se', 
+         'area_se', 'smoothness_se', 'compactness_se', 
+         'concavity_se', 'concave_points_se', 
+         'symmetry_se', 'fractal_dimension_se', 
+         'radius_worst', 'texture_worst', 
+         'perimeter_worst', 'area_worst', 
+         'smoothness_worst', 'compactness_worst', 
+         'concavity_worst', 'concave_points_worst', 
+         'symmetry_worst', 'fractal_dimension_worst')
+bc <- read.table(UCI_data_URL, sep = ',', col.names = names)
+
+bc$id_number <- NULL
+save(bc, file="lec/breast_cancer_UCI.Rdata")
+```
+
+```{r}
+load("breast_cancer_UCI.Rdata")
+str(bc)
+```
+
+This data set has 569 rows and 31 numeric variables. From the UCI website; "Features are computed from a digitized image of a fine needle aspirate (FNA) of a breast mass. They describe characteristics of the cell nuclei present in the image."
+
+
+
+## 2. Visualize the data
+
+Here I use the `featurePlot` function in the `caret` package to create a scatterplot matrix between pairs of numeric variables, with ellipsis of concentrations based on the diagnosis categorical variable, and density plots for a selection single variable by diagnosis Both plots are not necessarily needed, this is just a demonstration. 
+ 
+I am only showing a small sample of variables for demo purposes. 
+
+
+```{r, fig.width=10, fig.height=10}
+featurePlot(x = bc[, 2:7], 
+            y = bc$diagnosis, 
+            plot = "ellipse",
+            auto.key = list(columns = 2))
+```
+
+```{r}
+featurePlot(x = bc[, 8:16], 
+            y = bc$diagnosis, 
+            plot = "density",
+            scales = list(x=list(relation="free"), 
+                          y = list(relation="free")),
+            auto.key = list(columns = 2))
+```
+
+How many records for each class? 
+```{r}
+table(bc$diagnosis)
+```
+
+
+## 3. Data splitting
+
+There are several methods you could use to split the data into testing and training. 
+
+#### Complete random selection. 
+
+Here I create a 60/40% training/testing split. 
+
+```{r}
+set.seed(485)
+train.idx <- sample(1:NROW(bc), size=.6*NROW(bc), replace=FALSE)
+
+train.bc <- bc[train.idx,]
+test.bc  <- bc[-train.idx,]
+```
+
+#### Split based on the outcome 
+
+Often in the case where the number of records in each class are very different (called a class imbalance), you may want to make sure your testing data set contains sufficient amount of records of all classes. If you train on a data set that never sees one class, it will do very poorly to predict that class. 
+
+
+```{r}
+# not run
+train.idx <- createDataPartition(bc$diagnosis, p = .6, 
+                                 # return a vector, not list
+                                 list = FALSE,
+                                 # used to make multiple splits at once as desired. 
+                                 times = 1) 
+```
+
+Other methods described in the `caret` vignette create splits on predictors, and for time series. 
+
+
+## 4. Pre-processing
+
+Ch 3 in the caret vignette serves as a great pre-processing checklist. All steps are not needed for every problem. Pre-processing the data should occur after you split the data into testing & training. The `preProcess` command writes the functions needed to apply the pre-processing step, then you use `predict` to apply the preprocessing step. 
+
+> Note: this is typically done in the `train` statement. It is shown here as a separate step for instructional purposes. 
+
+For this example I will only center and scale the numeric data using the `preProcess` command.
+Again, only a few variables are chosen for demonstration.
+
+```{r, fig.height=8}
+par(mfrow=c(2,1))
+train.bc[,20:24] %>% boxplot(main="Raw data")
+preProcess(train.bc[,20:24], method=c("center", "scale")) %>% 
+           predict(train.bc[,20:24]) %>% boxplot(main="Normalized Data")
+```
+
+
+## 5. Model training
+
+The `train` function in `caret` can be used to
+
+* evaluate, using resampling, the effect of model tuning parameters on performance
+* choose the “optimal” model across these parameters
+* estimate model performance from a training set
+
+This is accomplished by a nested, looping process. 
+
+![Machine learning algorithm steps in pseudocode](https://topepo.github.io/caret/premade/TrainAlgo.png)
+
+
+Recall part of the definition of Machine Learning is that the algorithm improves automatically through experience. 
+
+* LASSO using cross validation: Using different partitions of the data, what value for $\lambda$ results in the best fitting model? 
+* What cutoff values on each variable in a linear discriminant analysis provide the best separate of data points? 
+
+
+To train a model you must have at least the following:  
+
+1. Choose a model to use. Here I am using linear discriminant analysis. This is passed to the `method` argument. 
+2. Specify the parameters to estimate. This is done specified as a result of a combination of your model formulation (passed as the argument to `form`), and the `method` chosen. 
+
+```{r}
+train(form=diagnosis ~., 
+      data=train.bc,
+      method = "lda")
+```
+
+This output provides a summary of what was input, what preprocessing and sampling algorithms were run, and what the resulting training accuracy is. 
+
+
+## 6. Model tuning
+
+That was just the basics. Now let's twist some knob and pull some levers to see if we can do better. 
+
+### Adding a pre-processing step. 
+
+```{r}
+train(form=diagnosis ~., # formula
+      data=train.bc, # data
+      method = "lda", # model
+      preProcess = c("center", "scale")) # preprocessing
+```
+
+Slightly lower training accuracy. 
+
+### Adjusting the resampling method.
+
+By default, bootstrap resampling is used. We can specify what type of sampling we want to use with the `trainControl` function. 
+
+Let's do 5-fold CV.
+
+```{r}
+fitControl <- trainControl(method="cv",
+                           number=5)
+
+train(form=diagnosis ~., 
+      data=train.bc, 
+      method = "lda", 
+      trControl=fitControl, # here's the new step
+      preProcess = c("center", "scale")) 
+```
+
+No meaningful improvements to the training error. 
+
+But that was only one random split of 5. Let's do 5-fold CV, 10 times. 
+```{r}
+fitControl <- trainControl(method="repeatedcv",
+                           number=5, 
+                           repeats=10)
+
+train(form=diagnosis ~., 
+      data=train.bc, 
+      method = "lda", 
+      trControl=fitControl, 
+      preProcess = c("center", "scale")) 
+```
+
+Imagine writing a loop to do 5-fold CV, 10 times. Using caret for machine learning is like using ggplot for plotting. It's built on purpose to build models up in layers in a very painless way. 
+
+However, we see a slight increase in training accuracy. What if LDA isn't the bet model? 
+
+
+## 7. Compare across different models
+
+There are literally hundreds of training models that can be specified. The caret package vignette does a good job of organizing the models, grouping by similarity, type, diversity etc. It's important to test several types of models. 
+
+Let's stick with models that we're familiar with. 
+
+Here I add `classProbs` to the train control options, so that the class probabilities are saved and passed into a new summary function called `twoClassSummary`. This is a great metric to use when you are conducting a binary classification. This saves metrics such as sensitivity, specificity and AUC (denoted as ROC) when you specify the optimization metric to be AUC instead of accuracy. 
+
+```{r}
+fitControl <- trainControl(method="repeatedcv",
+                           number=5, 
+                           repeats=10, 
+                           classProbs = TRUE, # new
+                           summaryFunction = twoClassSummary) #new
+
+(lda.mod <- train(form=diagnosis ~., 
+                  data=train.bc, 
+                  method = "lda", 
+                  trControl=fitControl, 
+                  metric="ROC",
+                  preProcess = c("center", "scale")) )
+
+(glm.mod <- train(form=diagnosis ~., 
+                  data=train.bc, 
+                  method = "glm", 
+                  trControl=fitControl, 
+                  metric="ROC",
+                  preProcess = c("center", "scale")) )
+
+(qda.mod <- train(form=diagnosis ~., 
+                  data=train.bc, 
+                  method = "qda", 
+                  trControl=fitControl, 
+                  metric="ROC",
+                  preProcess = c("center", "scale")) )
+
+# Naieve Bayes requires the `klaR` package (not the only version)
+(nb.mod <- train(form=diagnosis ~., 
+                  data=train.bc, 
+                  method = "nb", 
+                  trControl=fitControl, 
+                  metric="ROC",
+                  preProcess = c("center", "scale")) )
+```
+
+
+Then we collect the resampling results from each model.
+
+```{r}
+resamps <- resamples(list(LDA = lda.mod,
+                          GLM = glm.mod,
+                          QDA = qda.mod, 
+                          BAYES = nb.mod)) 
+```
+
+Then visualize the distribution of sensitivity, specificity and AUC (ROC). 
+```{r, fig.width=10}
+bwplot(resamps, layout=c(3,1))
+dotplot(resamps, metric="ROC")
+splom(resamps)
+```
+
+Here are some things to note, and what plot I got this information from. 
+
+* LDA has comparable AUC to Bayes and QDA (dotplot)
+* LDA has the highest sensitivity, but much wider range of specificity. (boxplot)
+* GLM does the worst out of all methods. (boxplot and dotplot)
+* Bayes and QDA perform similararly (scatterplot)
+
+> Important note about reproducibility and setting seeds in Section 5.4 in the caret vignette. 
+
+
+## 8. Implementing your model
+
+All of the model tuning was done on the training data as it should be. The final step is to apply your trained model to new, never before seen testing data. Let's go with the QDA since it has similar AUC and sensitivity to other models, but better and less varying specificity. 
+
+You can access the final resulting optimal model by accessing the `finalModel` list object. 
+
+```{r}
+qda.mod$finalModel
+```
+
+When we call `predict` on the resulting saved model object (`qda.mod` here), it will use this `finalModel` to make predictions on the set of data provided.
+
+```{r}
+pred.qda <- predict(qda.mod, newdata=test.bc)
+confusionMatrix(pred.qda, test.bc$diagnosis)
+```
+
+92% testing accuracy. Not bad, but not great if lives were on the line. 
+
+* 6 tumors were predicted benign, but were malignant (possibly resulting in death)
+* 12 tumors were predicted malignant when they were benign (possibly resulting in unnecessary chemo) 
+
+
+
+
