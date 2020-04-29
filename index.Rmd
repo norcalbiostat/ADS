@@ -8,16 +8,25 @@ _This course aims to help students navigate the evolving and murky waters of the
 
 > Due to the COVID-19 pandemic all classes will be held online for the remainder of the semseter. 
 
+
 ----
 
-### `r format(wk1.date+11*7, "%m-%d-%Y")` Week 13: Resampling methods - Application
+### `r format(wk1.date+14*7, "%m-%d-%Y")` Week 14: Tree based models & Ethics
+
+* [Week 14 notes](lec/wk14-notes.html) posted.
+* Start Reading: Weapons of Math Destruction 
+* Thursday: Intro to tree models and the last homework. 
+
+----
+
+### `r format(wk1.date+13*7, "%m-%d-%Y")` Week 13: Resampling methods - Application
 
 * [Week 13 notes](lec/wk13-notes.html) posted.
 * Let's run some machine learning classification models!
 
 ----
 
-### `r format(wk1.date+11*7, "%m-%d-%Y")` Week 12: Resampling methods - Theory
+### `r format(wk1.date+12*7, "%m-%d-%Y")` Week 12: Resampling methods - Theory
 
 * Project instruction page has been linked to the navbar
     - Worth 50 pts total. Gradebook will be updated periodically. 

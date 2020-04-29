@@ -1,0 +1,79 @@
+---
+title: "Classification"
+output:   
+  html_document: 
+    highlight: tango
+    theme: yeti
+    toc: yes
+    toc_float: true
+---
+
+
+# Goals
+
+* Examine basic classification models other than logistic regression 
+* Starting simple with discriminant analysis and Naieve Bayes. (ISLR Ch 4)
+
+----
+
+# Learning
+
+## Before class
+Watch at least one of the following three videos recapping classification methods and logistic regression. The time in parenthesis is the length of the video. The locations of the textbook corresponding with that video are also noted. It's always good to follow along with the book. 
+
+* ISLR Ch 2.2 [Classification Problems and K-Nearest Neighbors](https://www.youtube.com/watch?v=RfrGiG1Hm3M) (15:37)
+* ISLR Ch 4.1, 4.2 [Introduction to Classification](https://www.youtube.com/watch?v=RfrGiG1Hm3M) (10:25)
+* ISLR Ch 4.3.4 [Multivariate Logistic Regression and Confounding](https://www.youtube.com/watch?v=MpX8rVv_u4E) (9:53)
+* (Optional extra) ISLR Ch 4.3.5 [Case-Control Sampling and Multiclass Logsitic Regression](https://www.youtube.com/watch?v=GavRXXEHGqU) (7:28)
+
+## During class
+
+1. We will (individually) watch the following videos during class. Take notes on your own while you watch. 
+2. Then work in pairs to summarize the main take home points of that lecture. Write this in the [[Hack MD lec03_classifiers]](https://hackmd.io/@norcalbiostat/lec03_classifiers) notes.
+    - Each group has their own section to write in. 
+    - Work out what you want to write with your partner before you add to the notes. 
+3. We will reconviene as a group and discuss as a group what you came up with. 
+
+* ISLR Ch 4.4 [Linear Discriminant Analysis and Bayes Theorem](https://www.youtube.com/watch?v=RfrGiG1Hm3M) (7:12)
+* ISLR Ch 4.4.2 [Univariate Linear Discriminant Analysis](https://www.youtube.com/watch?v=QG0pVJXT6EU) (7:37)
+
+----
+
+## Before class watch
+* ISLR Ch 4.4.3 [Multivariate Linear Discriminant Analsyis and ROC Curves](https://www.youtube.com/watch?v=X4VDZDp2vqw) (17:42)
+* ISLR Ch 4.4.4 [Quandratic Discriminant Analysis and Naive Bayes](https://www.youtube.com/watch?v=6FiNGTYAOAA)(10:07)
+
+
+## During class answer the following questions
+* Answers can be found in the videos, and in the textbook. 
+* Work in breakout groups to answer the questions. 
+
+## ISLR Ch 4.4.3 [Multivariate Linear Discriminant Analsyis and ROC Curves](https://www.youtube.com/watch?v=X4VDZDp2vqw) (17:42)
+
+1. Why is the gaussian distribution on the top right of page 142 squished? 
+2. Compare (non-mathematically) how the classification process for LDA with 1 predictor, is the same as the classification process for LDS with 2 predictors. 
+3. In the top right picture on page 143, what is the differnece between the dotted and solid lines?
+4. Label each line as `a` (between yellow and green), `b` (between yellow and blue) and `c` (between blue and green). Write out the decision rules in english using these labels. _E.g. if X1 is less than a, and less than c, then classify as green._
+5. Consider the debt example in the textbook (confusion matrix on top of page 145). Why does LDS do such a poor job of classifying the customers who default? 
+
+
+
+## ISLR Ch 4.4.4 [Quadratic Discriminant Analysis and Naive Bayes](https://www.youtube.com/watch?v=6FiNGTYAOAA)(10:07)
+
+1. Why is this called QDA insead of LDA with more X's? What makes it different and thus, called "quadratic"? 
+2. Which is the more flexible classifer? LDA or QDA? 
+3. Why does it matter whether or not we assume that the $K$ classes share a common covariance matrix? Explain this in terms of the bias-variance tradeoff and parameter estimation. 
+4. When would QDA be more accurate than LDA? 
+5. What are the take home messages for Figure 4.10 and 4.11? What can you learn from these plots?
+
+
+----
+
+
+# Assignment Due 4/18
+
+* hw07-classification-assignment
+* Github classroom [[link forthcoming]](). 
+    
+    
+    

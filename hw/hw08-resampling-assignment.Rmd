@@ -1,0 +1,78 @@
+---
+title: "Resampling assignment"
+author: "Student name"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Theory
+
+## Introduction and the validation set approach. (ISLR 5.1.1)
+
+1. What are the two most commonly used resampling methods? 
+2. The process of evaluating a model’s performance is known as ____. 
+3. The process of selecting the proper level of flexibility for a model is known as _____. 
+4. The training error is typically ______ estimates the test error rate. 
+5. What is the main reason to use cross-validation? 
+6. What is the main reason to use bootstrap? 
+7. As the model complexity increases, what happens to the training and testing errors? 
+8. Why is the bias low for models with high complexity? 
+9. What is a validation set? 
+10. Describe the validation process. 
+11. What are the drawbacks of the validation set approach? 
+
+
+## Cross-Validation and LOOCV for Regression and Classification (ISLR 5.1.2- 5.1.5)
+
+1. Describe the process of K-fold cross validation. 
+2. _In English_  how do you calculate the cross-validation error rate? 
+3. How is LOOCF a special case of CV? 
+4. What is a drawback of LOOCF when $n$ is large? 
+5. When would we only care about the location of the minimum point in the test MSE curve, and not the actual value of the minimum MSE itself? 
+6. Why does k-fold CV give more accurate estimates of the test error rate than LOOCF? Explain this in english. 
+7. What is a good value for $k$ that will result in test error rates that find a nice balance between bias and variance? 
+
+
+
+## The Bootstrap (ISLR 5.2) [[Video  (11:29)]](https://www.youtube.com/watch?v=p4BYWX7PTBM&list=PL5-da3qGB5IA6E6ZNXu7dp89_uv8yocmf&index=4)
+
+* The bootstrap is a powerful method for estimating _____? 
+* Instead of using the population estimates for the variance and the covariance, what do you use instead? 
+* How does creating a bootstrap sample different from creating the sampling distribution? 
+* Why do some observations appear more than once in a given bootstrap sample? 
+
+
+----
+
+# Application
+
+First step, get data. Go to the [UCI Machine Learning repository](http://archive.ics.uci.edu/ml/datasets.php) and pick two (2) data sets that you want to work with. Use the links on the left side to filter by the following features: 
+
+* One must be for regression, one must be for classification. You can use the same data set for both if you find one you like. 
+* Multivariate data types - No time series, no spatial, no text, no images 
+* More than 100 instances (sample size)
+* More than 10 attributes (variables) - you have to be able to explain these variables. 
+* Preference to non-textbook data sets (i.e. titanic, breast cancer, iris). Consider getting something at least from this century. 
+
+
+## Data description
+
+
+## Data preparation
+
+
+## Modeling
+
+
+
+## Predictions
+
+
+
+
+
+
+

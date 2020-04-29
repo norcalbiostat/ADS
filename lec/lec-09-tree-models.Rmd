@@ -1,0 +1,33 @@
+---
+title: "Tree-based models"
+output:   
+  html_document: 
+    highlight: tango
+    theme: yeti
+    toc: yes
+    toc_float: true
+---
+
+
+# Goals
+
+----
+
+# Learning - Theory
+
+
+----
+
+# Learning - Application
+
+
+----
+
+
+# Assignment Due 4/25
+
+* hw09-tree-assignment
+
+    
+    
+    
