@@ -34,13 +34,13 @@ output:
 # Goals for this week. 
 
 * Project - start wrap up/decide on what results to present. 
-* Start reading [Weapons of Math Destruction (WMD)](https://chico-primo.hosted.exlibrisgroup.com/permalink/f/jik37n/01CALS_ALMA71384958140002901)
+* Start reading Weapons of Math Destruction (WMD)[[Link to library e-book]](https://chico-primo.hosted.exlibrisgroup.com/permalink/f/jik37n/01CALS_ALMA71384958140002901)
 * Start reading ILSR Ch8 on Tree based models. 
     - Work through questions as a group in [[these notes]](lec09-tree-models.html)
-    - Last homework assignment. Due 5/15. [[Github repo assignment link TBD]]()
+    - Tree models homework assignment. Due 5/15. [[Github repo assignment link TBD]]()
 
 ## WMD Reading Schedule
-Each set of 2 chapters has a few [reflection questions](../read/WMD_Discussion_Questions.html). Choose one of these discussion questions to answer in your Learning Journal by the due date. We will share out in class each day next week. 
+Each set of 2 chapters has a few reflection questions that are posted [[on this page]](../read/WMD_Discussion_Questions.html). Choose one of these discussion questions to answer in your Learning Journal by the due date. We will share out in class each day next week. 
 
 * Intro & Ch 1 - Due 5/4 [In class discussion on Tue]
 * Ch 2 & 3  - Due 5/6 [In class discussion on Thu] 
@@ -59,8 +59,7 @@ No class.
 ## Reading on ethics of algorithms
 
 * I notified you via Slack on Tuesday to start reading/listening to the WMD book.
-    - The reading & writing assignment schedule is at the top of this page. 
-    - First writing assignment due this Friday.  
+    - The reading & writing assignment schedule and instructions is at the top of this page. 
 * Additional (optional) readings on ethics & algorithms have been added to the [materials](materials.html) page. 
 
 ## Project updates
