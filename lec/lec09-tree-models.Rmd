@@ -11,9 +11,59 @@ output:
 
 # Goals
 
+* Learn what a decision tree is, how it's constructed and how to read one
+* Understand model enhancements like bagging and boosting
+* Describe the benefits and drawbacks for using a Random Forest instead of a single Decision Tree
+
+Corresponding reading: ISLR Ch 8
+
+
 ----
 
 # Learning - Theory
+
+Answer the following questions. The questions are split into groups following the videos, which does not always align with numbered sections in the text. 
+
+## The Basics of Decision Trees (ISLR 8.1) 
+
+### [[Video 1 14:37]](https://www.youtube.com/watch?v=6ENTbK3yQUQ&list=PL5-da3qGB5IB23TLuA8ZgVGC8hV8ZAdGh) 
+
+1. What does it mean to _segment_ the data? 
+2. Are tree based methods supervised or unsupervised methods? 
+3. What does CART stand for? 
+4. What determines if a record goes to the left or right of a split? (i.e. what records go left, what go right?) 
+5. What do the values in the _internal_ and _terminal_ nodes represent? 
+6. How can you tell which variables are most 'important' in a tree model? 
+7. What is the _feature space_? Compare this to the term _predictor space_. Do this in your own words. You may want to look into other sources of information (outside the book) for something that fits into your mental model. 
+8. Explain how _recursive binary splitting_ works without using equations. 
+9. Explain why this process has this name. That is, what about this process is _recursive_? (don't use the word in the definition either), why _binary_?
+10. Why its considered _top down_ and _greedy_. 
+11. What is a _stopping criterion_? Give an example of one. 
+12. Why are decision trees considered a statistical _learning_ model? Where does the algorithmic learning occur? 
+
+
+### [[Video 2 11:45]](https://www.youtube.com/watch?v=GfPR7Xhdokc&list=PL5-da3qGB5IB23TLuA8ZgVGC8hV8ZAdGh&index=2)
+
+> In progress
+
+* How are predictions of new values made? 
+* Why is pruning necessary? 
+* Name one advantage and disadvantage of trees when compared to classical methods. 
+
+
+
+
+
+## Bagging, Random Forests, Boosting (ISLR 8.2)
+
+* bagging is a general-purpose procedure for reducing _(bias/variance)____ of a statistical learning method
+* Explain how bagging works
+* What is an out of bag error estimate? Why do we care about it? 
+* Bagging improves prediction accuracy at the expense of ______
+* How is the Gini index used to generate a summary measure of importance for each predictor? 
+* What's the difference between Random Forests and bagged trees? 
+* How is boosting a sequential method? 
+* What are the three tuning parameters for boosting? 
 
 
 ----

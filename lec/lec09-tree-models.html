@@ -1518,11 +1518,62 @@ div.tocify {
 
 <div id="goals" class="section level1">
 <h1>Goals</h1>
+<ul>
+<li>Learn what a decision tree is, how it’s constructed and how to read one</li>
+<li>Understand model enhancements like bagging and boosting</li>
+<li>Describe the benefits and drawbacks for using a Random Forest instead of a single Decision Tree</li>
+</ul>
+<p>Corresponding reading: ISLR Ch 8</p>
 <hr />
 </div>
 <div id="learning---theory" class="section level1">
 <h1>Learning - Theory</h1>
+<p>Answer the following questions. The questions are split into groups following the videos, which does not always align with numbered sections in the text.</p>
+<div id="the-basics-of-decision-trees-islr-8.1" class="section level2">
+<h2>The Basics of Decision Trees (ISLR 8.1)</h2>
+<div id="video-1-1437" class="section level3">
+<h3><a href="https://www.youtube.com/watch?v=6ENTbK3yQUQ&amp;list=PL5-da3qGB5IB23TLuA8ZgVGC8hV8ZAdGh">[Video 1 14:37]</a></h3>
+<ol style="list-style-type: decimal">
+<li>What does it mean to <em>segment</em> the data?</li>
+<li>Are tree based methods supervised or unsupervised methods?</li>
+<li>What does CART stand for?</li>
+<li>What determines if a record goes to the left or right of a split? (i.e. what records go left, what go right?)</li>
+<li>What do the values in the <em>internal</em> and <em>terminal</em> nodes represent?</li>
+<li>How can you tell which variables are most ‘important’ in a tree model?</li>
+<li>What is the <em>feature space</em>? Compare this to the term <em>predictor space</em>. Do this in your own words. You may want to look into other sources of information (outside the book) for something that fits into your mental model.</li>
+<li>Explain how <em>recursive binary splitting</em> works without using equations.</li>
+<li>Explain why this process has this name. That is, what about this process is <em>recursive</em>? (don’t use the word in the definition either), why <em>binary</em>?</li>
+<li>Why its considered <em>top down</em> and <em>greedy</em>.</li>
+<li>What is a <em>stopping criterion</em>? Give an example of one.</li>
+<li>Why are decision trees considered a statistical <em>learning</em> model? Where does the algorithmic learning occur?</li>
+</ol>
+</div>
+<div id="video-2-1145" class="section level3">
+<h3><a href="https://www.youtube.com/watch?v=GfPR7Xhdokc&amp;list=PL5-da3qGB5IB23TLuA8ZgVGC8hV8ZAdGh&amp;index=2">[Video 2 11:45]</a></h3>
+<blockquote>
+<p>In progress</p>
+</blockquote>
+<ul>
+<li>How are predictions of new values made?</li>
+<li>Why is pruning necessary?</li>
+<li>Name one advantage and disadvantage of trees when compared to classical methods.</li>
+</ul>
+</div>
+</div>
+<div id="bagging-random-forests-boosting-islr-8.2" class="section level2">
+<h2>Bagging, Random Forests, Boosting (ISLR 8.2)</h2>
+<ul>
+<li>bagging is a general-purpose procedure for reducing <em>(bias/variance)</em>___ of a statistical learning method</li>
+<li>Explain how bagging works</li>
+<li>What is an out of bag error estimate? Why do we care about it?</li>
+<li>Bagging improves prediction accuracy at the expense of ______</li>
+<li>How is the Gini index used to generate a summary measure of importance for each predictor?</li>
+<li>What’s the difference between Random Forests and bagged trees?</li>
+<li>How is boosting a sequential method?</li>
+<li>What are the three tuning parameters for boosting?</li>
+</ul>
 <hr />
+</div>
 </div>
 <div id="learning---application" class="section level1">
 <h1>Learning - Application</h1>

@@ -33,31 +33,49 @@ output:
 
 # Goals for this week. 
 
-* Project 
-    - Analysis should be wrapping up. 
-    - This week, work on conclusion and discussion. 
-    - Final peer review starts next Sunday. 
-* Start [Weapons of Math Destruction (WMD)](https://chico-primo.hosted.exlibrisgroup.com/permalink/f/jik37n/01CALS_ALMA71384958140002901)
+* Project - start wrap up/decide on what results to present. 
+* Start reading [Weapons of Math Destruction (WMD)](https://chico-primo.hosted.exlibrisgroup.com/permalink/f/jik37n/01CALS_ALMA71384958140002901)
 * Start reading ILSR Ch8 on Tree based models. Lecture notes are [[here]](lec/lec09-tree-models.html)
     - Last homework assignment. Due 5/15. [[Github repo assignment link TBD]]()
-    
+
+## WMD Reading Schedule
+Each set of 2 chapters has a few [reflection questions](read/WMD_Discussion_Questions.html). Choose one of these discussion questions to answer in your Learning Journal by the due date. We will share out in class each day next week. 
+
+* Intro & Ch 1 - Due 5/4 [In class discussion on Tue]
+* Ch 2 & 3  - Due 5/6 [In class discussion on Thu] 
+* Ch 4 & 5 OR 6 & 7 - Due Fri 5/15 
+
+
 ----
 
-# Housekeeping 
+# Tuesday
+No class.
 
-* Class is not officially held on Tuesday. I will be around, but possibly may leave at a moments notice. 
+----
+
+# Thursday
+
+## Reading on ethics of algorithms
+
 * I notified you via Slack on Tuesday to start reading/listening to the WMD book.
-    - The reading & writing assignment schedule is below. 
-* Additional (optional) readings on Ethics & Algorithms have been added to the [materials](materials.html) page. 
+    - The reading & writing assignment schedule is at the top of this page. 
+    - First writing assignment due this Friday.  
+* Additional (optional) readings on ethics & algorithms have been added to the [materials](materials.html) page. 
 
-----
+## Project updates
 
-# WMD Reading Schedule
-Each set of 2 chapters has a few [reflection questions](read/WMD_Discussion_Questions.html). Choose one of these questions to answer in your Learning Journal by the due date. We will share out in class each day next week. 
+* Wrapping up EDA, decide on what graphics that tell your story the best. 
+* Final draft of presentations due this upcoming Sunday. 
+* One more round of peer review, to help you finalize your presentations. 
 
-* Intro & Ch 1 - Due Fri 5/1
-* Ch 2 & 3  - Due Fri 5/8
-* Ch 4 & 5 OR 6 & 7 - Due Fri 5/15
+
+## Tree based methods
+
+* Just an introduction today, following ISLR Ch 8.1
+* Notes are linked here and on the materials page. [[HTML]](lec/lec09-tree-models.html) or the [[RMD]](lec/lec09-tree-models.Rmd) if you want to use it to take notes on. 
+* Collaborative notes session - Each breakout room will have 4 questions to answer.
+    - We will return and each group shares out their answers with the rest of the class. 
+    - You will turn in your answers as part of your homework. 
 
 
 
