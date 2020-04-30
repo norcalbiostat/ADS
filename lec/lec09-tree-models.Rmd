@@ -74,7 +74,7 @@ Answer the following questions. The questions are split into groups following th
 ----
 
 
-# Assignment Due 5/16
+# Assignment
 
 * hw09-tree-assignment
 

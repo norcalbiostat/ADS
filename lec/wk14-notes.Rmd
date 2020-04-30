@@ -35,11 +35,12 @@ output:
 
 * Project - start wrap up/decide on what results to present. 
 * Start reading [Weapons of Math Destruction (WMD)](https://chico-primo.hosted.exlibrisgroup.com/permalink/f/jik37n/01CALS_ALMA71384958140002901)
-* Start reading ILSR Ch8 on Tree based models. Lecture notes are [[here]](lec/lec09-tree-models.html)
+* Start reading ILSR Ch8 on Tree based models. 
+    - Work through questions as a group in [[these notes]](lec09-tree-models.html)
     - Last homework assignment. Due 5/15. [[Github repo assignment link TBD]]()
 
 ## WMD Reading Schedule
-Each set of 2 chapters has a few [reflection questions](read/WMD_Discussion_Questions.html). Choose one of these discussion questions to answer in your Learning Journal by the due date. We will share out in class each day next week. 
+Each set of 2 chapters has a few [reflection questions](../read/WMD_Discussion_Questions.html). Choose one of these discussion questions to answer in your Learning Journal by the due date. We will share out in class each day next week. 
 
 * Intro & Ch 1 - Due 5/4 [In class discussion on Tue]
 * Ch 2 & 3  - Due 5/6 [In class discussion on Thu] 
@@ -72,10 +73,11 @@ No class.
 ## Tree based methods
 
 * Just an introduction today, following ISLR Ch 8.1
-* Notes are linked here and on the materials page. [[HTML]](lec/lec09-tree-models.html) or the [[RMD]](lec/lec09-tree-models.Rmd) if you want to use it to take notes on. 
+* Notes are linked here and on the materials page. [[HTML]](lec09-tree-models.html) or the [[RMD]](lec09-tree-models.Rmd) if you want to use it to take notes on. 
 * Collaborative notes session - Each breakout room will have 4 questions to answer.
     - We will return and each group shares out their answers with the rest of the class. 
     - You will turn in your answers as part of your homework. 
+    - This RMD document will be included in the github classroom link once it's created. 
 
 
 
