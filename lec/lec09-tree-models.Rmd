@@ -28,7 +28,7 @@ Answer the following questions. The questions are split into groups following th
 
 ### [[Video 1 14:37]](https://www.youtube.com/watch?v=6ENTbK3yQUQ&list=PL5-da3qGB5IB23TLuA8ZgVGC8hV8ZAdGh) 
 
-1. What does it mean to _segment_ the data? 
+1. What does it mean to _segment_ the data? What do we call this in MATH 456? 
 2. Are tree based methods supervised or unsupervised methods? 
 3. What does CART stand for? 
 4. What determines if a record goes to the left or right of a split? (i.e. what records go left, what go right?) 
