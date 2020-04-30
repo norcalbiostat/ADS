@@ -24,6 +24,7 @@ pander(as.list(out.lec$link))
 * [Real Estate Website Case Study](https://hackmd.io/@norcalbiostat/real-estate-case-study) (part of hw04)
 * [lec03_classifiers](https://hackmd.io/@norcalbiostat/lec03_classifiers)
 
+
 # Homework 
 ```{r, message=FALSE, warning=FALSE, echo=FALSE}
 hw <- data.frame(filenames = paste0('hw/', list.files("hw", pattern='*.pdf|*.html|*.docx')))
@@ -66,4 +67,11 @@ Note - many of these books are links to a Tweet where the book is promoted/discu
     - might be same book https://twitter.com/robinson_es/status/1207450496019111942?s=09
 * How to be a modern scientist https://twitter.com/alexpghayes/status/1200917769774141442?s=09    
 
+
+# Other books on Ethics & Algorithms
+
+* [Race after techcnology: Abolistionist tools for the new Jim Code](https://www.amazon.com/Race-After-Technology-Abolitionist-Tools/dp/1509526404). 
+* [When Data Science Destabilizes Democracy and Facilitates Genocide](http://www.fast.ai/2017/11/02/ethics/)
+* [Activision Patents Matchmaking That Encourages Players To Buy Microtransactions](https://kotaku.com/activision-patents-matchmaking-that-encourages-players-1819630937)
+* [More than a Million Pro-Repeal Net Neutrality Comments were Likely Faked](https://hackernoon.com/more-than-a-million-pro-repeal-net-neutrality-comments-were-likely-faked-e9f0e3ed36a6)
 

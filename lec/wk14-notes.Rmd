@@ -37,18 +37,28 @@ output:
     - Analysis should be wrapping up. 
     - This week, work on conclusion and discussion. 
     - Final peer review starts next Sunday. 
-* Start reading Weapons of Math Destruction
-* Start reading ILSR Ch8 on Tree based models. 
+* Start [Weapons of Math Destruction (WMD)](https://chico-primo.hosted.exlibrisgroup.com/permalink/f/jik37n/01CALS_ALMA71384958140002901)
+* Start reading ILSR Ch8 on Tree based models. Lecture notes are [[here]](lec/lec09-tree-models.html)
+    - Last homework assignment. Due 5/15. [[Github repo assignment link TBD]]()
     
 ----
 
 # Housekeeping 
 
-* Class is not officially held on Tuesday. I will try to be around, but my dog is having surgery that day and so I don't know when he'll be done/need to be picked up etc. 
-* We will be doing an in class discussion on WMD for part of Tuesday. 
-    - You will have at least one reflective writing assignment out of this book (to be done in your Learning Journal)
+* Class is not officially held on Tuesday. I will be around, but possibly may leave at a moments notice. 
+* I notified you via Slack on Tuesday to start reading/listening to the WMD book.
+    - The reading & writing assignment schedule is below. 
+* Additional (optional) readings on Ethics & Algorithms have been added to the [materials](materials.html) page. 
 
 ----
+
+# WMD Reading Schedule
+Each set of 2 chapters has a few [reflection questions](read/WMD_Discussion_Questions.html). Choose one of these questions to answer in your Learning Journal by the due date. We will share out in class each day next week. 
+
+* Intro & Ch 1 - Due Fri 5/1
+* Ch 2 & 3  - Due Fri 5/8
+* Ch 4 & 5 OR 6 & 7 - Due Fri 5/15
+
 
 
 

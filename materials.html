@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
 
 <meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
@@ -218,6 +217,7 @@ $(document).ready(function () {
   border: none;
   display: inline-block;
   border-radius: 4px;
+  background-color: transparent;
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li {
@@ -310,12 +310,24 @@ $(document).ready(function () {
     </li>
   </ul>
 </li>
-<li>
-  <a href="https://data485-s20.github.io/campfire_tweets/index.html">
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
     <span class="fa fa-group"></span>
      
     Twitter Project
+     
+    <span class="caret"></span>
   </a>
+  <ul class="dropdown-menu" role="menu">
+    <li class="dropdown-header">Instructions</li>
+    <li>
+      <a href="pols_project.html"></a>
+    </li>
+    <li class="dropdown-header">Project website</li>
+    <li>
+      <a href="https://data485-s20.github.io/campfire_tweets/index.html"></a>
+    </li>
+  </ul>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -353,11 +365,16 @@ $(document).ready(function () {
 <li><a href="lec/lec00_orientation.html">lec00_orientation</a></li>
 <li><a href="lec/lec01a_rmarkdown_website.html">lec01a_rmarkdown_website</a></li>
 <li><a href="lec/lec01b_blogdown_website.html">lec01b_blogdown_website</a></li>
+<li><a href="lec/lec06-tidy-text-analysis.html">lec06-tidy-text-analysis</a></li>
+<li><a href="lec/lec07-classification--sp20-.html">lec07-classification–sp20-</a></li>
+<li><a href="lec/lec08-resampling.html">lec08-resampling</a></li>
 <li><a href="lec/wk08-notes-03-10-2020.html">wk08-notes-03-10-2020</a></li>
 <li><a href="lec/wk08-notes-03-12-2020.html">wk08-notes-03-12-2020</a></li>
 <li><a href="lec/wk09-notes.html">wk09-notes</a></li>
 <li><a href="lec/wk10-notes.html">wk10-notes</a></li>
 <li><a href="lec/wk11-notes.html">wk11-notes</a></li>
+<li><a href="lec/wk12-notes.html">wk12-notes</a></li>
+<li><a href="lec/wk13-notes.html">wk13-notes</a></li>
 </ul>
 <!-- end of list -->
 <p><strong>Collaborative Notes on HackMD</strong></p>
@@ -377,6 +394,9 @@ $(document).ready(function () {
 <li><a href="hw/hw03-hello-twitter.html">hw03-hello-twitter</a></li>
 <li><a href="hw/hw04-real-estate-case-study.html">hw04-real-estate-case-study</a></li>
 <li><a href="hw/hw05-statistical-learning.html">hw05-statistical-learning</a></li>
+<li><a href="hw/hw06-project-text-analysis.html">hw06-project-text-analysis</a></li>
+<li><a href="hw/hw07-classification-assignment.html">hw07-classification-assignment</a></li>
+<li><a href="hw/hw08-resampling-assignment.html">hw08-resampling-assignment</a></li>
 </ul>
 <!-- end of list -->
 </div>
@@ -384,6 +404,7 @@ $(document).ready(function () {
 <h1>Reading</h1>
 <ul>
 <li><a href="read/ISLR7.pdf">ISLR7</a></li>
+<li><a href="read/WMD_Discussion_Questions.html">WMD_Discussion_Questions.html</a></li>
 </ul>
 <!-- end of list -->
 <p>Supplemental material for ISLR:</p>
@@ -406,6 +427,15 @@ $(document).ready(function () {
 <li>might be same book <a href="https://twitter.com/robinson_es/status/1207450496019111942?s=09" class="uri">https://twitter.com/robinson_es/status/1207450496019111942?s=09</a></li>
 </ul></li>
 <li>How to be a modern scientist <a href="https://twitter.com/alexpghayes/status/1200917769774141442?s=09" class="uri">https://twitter.com/alexpghayes/status/1200917769774141442?s=09</a></li>
+</ul>
+</div>
+<div id="other-books-on-ethics-algorithms" class="section level1">
+<h1>Other books on Ethics &amp; Algorithms</h1>
+<ul>
+<li><a href="https://www.amazon.com/Race-After-Technology-Abolitionist-Tools/dp/1509526404">Race after techcnology: Abolistionist tools for the new Jim Code</a>.</li>
+<li><a href="http://www.fast.ai/2017/11/02/ethics/">When Data Science Destabilizes Democracy and Facilitates Genocide</a></li>
+<li><a href="https://kotaku.com/activision-patents-matchmaking-that-encourages-players-1819630937">Activision Patents Matchmaking That Encourages Players To Buy Microtransactions</a></li>
+<li><a href="https://hackernoon.com/more-than-a-million-pro-repeal-net-neutrality-comments-were-likely-faked-e9f0e3ed36a6">More than a Million Pro-Repeal Net Neutrality Comments were Likely Faked</a></li>
 </ul>
 </div>
 

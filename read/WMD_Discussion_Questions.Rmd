@@ -1,0 +1,219 @@
+---
+title: "WMD Reading discussion questions"
+output:   
+  html_document: 
+    highlight: tango
+    theme: readable
+    toc: yes
+    toc_float: yes
+---
+
+
+Discussion questions pulled directly from
+https://bryanalexander.org/readings/reading-_weapons-of-math-destruction_-the-plan/. 
+
+This page has links to public responses to the chapters as well. 
+
+# Introduction
+
+Here O’Neil introduces herself and the book’s major themes.  For autobiography, the author describes her childhood love of numbers, her academic career leading to a tenure-track position, a big career jump to work for a Wall Street hedge fund, working for an ecommerce startup, blogging, and joining Occupy Wall Street.
+
+For the book’s major themes, they concern "the dark side of Big Data." (13)  A story introduces these, one concerning Washington D.C. schoolteachers fired based on an algorithm’s findings during Michelle Rhee‘s tenure as chancellor.   O’Neil uses this as a cautionary tale about how bad data analytics – the titular Weapons of Math Destruction – can backfire and cause human suffering.
+
+Key problems:
+
+> An algorithm entering a feedback loop whereby its results are trusted because the software confirms it; (7)
+  The WMD "punishes the poor" – the wealthiest people tend to receive personal attention;
+  The algorithm cannot be explored publicly, given secrecy, as "the model itself is a black box";(8)
+  It is more difficult to push back on an algorithm than it is to be condemned by one (10).
+
+The proliferation of WMDs are a major ethical threat to data scientists, as the latter "all too often lose sight of the folks on the receiving end of the [data analytical] transaction." (12)
+
+# Chapter 1, "Bomb Parts: What is a Model?"
+
+This chapter explores data models (defined as "nothing more than an abstract representation of some process", 18; also "opinions embedded in mathematics", 21) using three examples.  First, Moneyball (Michael Lewis, 2003), a data analytical approach which "represents a healthy case study" of applied data science (15-19).  Second, the author’s mental model for preparing meals for her family, which is workable but not scaleable (19-22).  Third, the story of predictive sentencing software, which embodies racism (23-30).  All rely on math for its objectivity.
+
+The chapter uses these cases to reiterate the introduction’s criteria for determining a WMD’s quality:
+
+* **Transparency**.  The Moneyball model is based on publicly accessible data, while the prison sentencing data is hard to get and the analytics closely guarded.
+* **Statistical rigor**.  There has to be a big enough and relevant data set.
+* **A learning curve**.  New data gets fed into the system, which adjusts itself accordingly.
+* **Damage**.  How many people are hurt by the system?
+
+# Questions
+
+1. What does the model of algorithms presented so far tell us about social media?
+2. Have you had experiences with big data that O’Neil’s account illuminates?
+3. What would it take for an education algorithm to meet all of O’Neil’s criteria for not doing damage?
+4. What are the best ways to address the problem of "false positives", of exceptionally bad results, of anomalies?
+
+---
+
+# Chapter 2, "Shell Shocked: My Journey of Disillusionment"
+
+This section dives into the financial world in search of WMDs (the titular weapons of math destruction), while continuing the book’s autobiographical theme.
+
+Finance: O’Neil explains how hedge funds like the one she worked for use math to make money.  This includes applying historical data models to the present and future.  It also involves working with ever more complex derivatives and securities, which lead up to the 2008 financial meltdown.  Along the way an important distinction appears:
+
+> [T]he subprime mortgages that piled up during the housing boom… were not WMDs. They were financial instruments, not models.
+> But when banks starting loading mortgages... into classes of securities and selling them, they were relying on flawed mathematical models to do it.  The risk model attached to mortgage-backed securities was a WMD. [emphases added] (40-41)
+
+While we can find many problems with the financial strategies that led to the 2008 crisis, O’Neil focuses on one, with regard to data models: scale. (42)
+
+One final point: the chapter points out that the people running these financial models, as well as the financial houses, tend to be drawn from economic and/or intellectual elites, including "elite universities like MIT, Princeton, or Stanford", and become eager devotees of economic Darwinism.  They are filled with confidence and marked by rewards, which confirms to them the virtue of their successes. However,. "it looks very much to the outside like a combination of gaming a system and dumb luck." (47-8)
+
+Autobiography: we follow O’Neil as she moves from academia to a hedge fund, then, disillusioned, takes up other positions to try to understand, and do something about, WMDs.
+
+---
+
+# Chapter 3, "Arms Race: Going to College"
+
+Here the book shifts to college ranking systems, and how they have changed the world of higher education.  The chapter focuses on the famous and notorious U.S. News & World Report ranking service, deeming it to be "a bona fide WMD." (54)
+
+O’Neil criticizes the service for incentivizing gaming the system (54, 62, 66), for not incorporating costs (59), for relying on proxies (52-3), and for its scale ("[i]t forces everyone to shoot for exactly the same goials, which creates a rat race", 58).  The desirability of gaming the system encourages unethical behavior (62).  She also draws attention to the "Flutie effect" whereby a successful campus athlete or team boosts student applications. (57)
+
+This chapter also faults US News for taking advantage of escalating social anxiety about academics and economic status, "fe[eding] on these beliefs, fears, and neuroses" (60).  I’m reminded of Tressie Cottom’s theory of the "education gospel".  The success of this WMD – growing a major audience, altering institutional behavior – has also led to spinoff businesses (64).
+
+There are two more points which end the chapter.  First, in terms of economic inequality, the author points out that the intensity of such a WMD rewards wealthy families, and punishes "the vast majority of Americans, the poor and middle-class families who don’t have thousands of dollars to spend on courses and consultants."  This speeds another feedback, loop, whereby the former win benefits which solidify their position, while opening wider the gap with the latter. (65)
+
+Second, O’Neil reminds us that the Obama administration’s drive to produce an alternative scorecard flopped, partly due to strong resistance from higher ed.  The result is an anti-WMD, one with open data, available to outside queries, and capable of individualization.  "Think of it: transparent, controlled by the user, and personal.  You might call it the opposite of a WMD." (67)
+
+# Questions
+
+1. If creating or running a WMD is so profitable, how can we push back against them?
+2. Do you find other university ranking schemes to be preferable to the US News one, either personally or within this book’s argument?
+3. At one point the author suggests that gaming the US News ranking might not be bad for a university, as "most of the proxies… reflect a school’s overall quality to some degree" (58).  Do you agree?
+
+----
+
+# Chapter 4, "Propaganda Machine: Online Advertising"
+
+While the chapter title invokes the general topic of online advertising, this section really focuses on one instance: its use by for-profit colleges and universities.  This continues last week’s theme of data in higher education. As Tressie Cottom also argues, O’Neil finds for-profits aggressively targeting poor people.  They promote "ads that pinpoint people in great need and sell them false or overpriced promises.  The find inequality and feast on it." (70)  And they work with Cottom’s "gospel of education", that widespread belief in the fruitful connection between education and career progress (81).
+
+In terms of online advertising in general, O’Neil points out that Facebook and Google ads  are interesting WMDs, because they do have some unusual features, one being learning from campaigns.  They energetically learn from new data, and now "sift through data on their own… [w]ith machine learning." (75) .   They also act at very large scale, which further strengthens their ability to learn.
+
+The end of chapter 4 touches on one other industry using predatory advertising: payday loan outfits.
+
+----
+
+# Chapter 5, "Civilian Casualties: Justice in the Age of Big Data"
+
+Here the book shifts ground from education to criminal justice, identifying a new group of bad algorithms.  We lead off with Predpol, software designed to help police determine the most crimogenic areas of a city.  This causes problems when applied to nuisance crimes through a broken windows policing approach, as that disproportionately targets poor neighborhoods.  A feedback loop then results when analysis gathers more data from those regions, revealing more crime. "The result is that we criminalize poverty, believing all the whole that our tools are not only scientific but fair." (91)  (O’Neil offers a fine, acidic thought experiment whereby police give rich white collar areas the same treatment, 89-90).
+
+O’Neil derives several general principles about WMDs from the policing experience, the first being that big data and data analytics involves "a choice between fairness and efficiency" (94).  Efficiency is easier for software to handle.  A second concept is that WMDs tend to be applied unequally.  As with the previous chapter, many enterprises aim their data instruments at the poor.  One more point flows from this: that we tend to gather data unevenly, ruling out certain categories because they are uncomfortable.  There is, in short, always a question of which data is obtained, and which is excluded.
+
+The chapter concludes on a recommendation for community policing, for "attempting to build relationships in the neighborhood" rather than subjecting an area to data surveillance. (103)
+
+# Questions
+
+1. Are there advertising campaigns using big data that avoid these problems?
+2. If non-profit higher education competition heats up, will those campuses turn to these sorts of big data campaigns?
+3. [Mark Wilson asks a powerful question](https://twitter.com/MCorbettWilson/status/922836574718406657). If all data massively collected in America is biased, how should we proceed?
+
+
+---
+
+# Chapter 6, "Ineligible to Serve: Getting a Job" 
+
+Two stories anchor this chapter, one concerning a man prevented from being hired because of answers to a standard questionnaire based on big data, the other about a late 20th-century British hospital’s experience with using early digital data to make hiring more efficient.  The key point is that companies all too often rely on (at best) flawed software to make hiring choices.
+
+To begin with, these WMDs use imprecise metrics, proxies standing in for actual hiring data, such as personality tests (108, 119).  Those proxies not only fail to capture the problem, but also come close to being illegal.  Companies also don’t implement the software in a way that provides useful feedback (110-111).  On top of that, they also work at enormous scale (112).  It’s another case where an organization chooses efficiency over fairness (116).  In practice, people with money and/or knowledge of the system can game it, "one more example in which the wealthy and informed get the edge, and the poor are more likely to lose out." (114)
+
+The chapter includes a pleasantly surprising positive story, wherein Xerox started a big data/data analytics project, and found it discriminated against poor people.  So they got rid of the problematic data (119).
+
+# Chapter 7, "Sweating Bullets: On the Job"
+
+Here Weapons of Math Destruction turns to the use of data analytics upon employees.  O’Neil begins with software creating inhumane work schedules, designed to minimize compensation in favor of maximized sales.  This isn’t wholly a new development, drawing on operations research and Taylorized management (the latter oddly unmentioned); what’s new is massively more powerful data gathering and analysis (126-8).
+
+The chapter shows how such labor management software creates "a poisonous feedback loop" which makes it harder for poor people to get ahead on the job or elsewhere.  It has negative impacts on workers’ families as well (129-130).
+
+O’Neil then describes new software to manage white collar workers.  At least one tool uses practices drawn from knowledge management to rate staff performance, and did so in some WMD fashions: with poor data and missing feedback loops.  This subtype of data analytics could well grow into "an industrial standard… and then we’ll all be in trouble." (134)
+
+As a hint of that troubled future two education stories conclude the chapter, one concerning the famous Nation at Risk report (1983).  O’Neil describes its appearance and large influence, then its less well known partial debunking. (134-7)  Next she describes the bad contruction of data modeling to assess K-12 teacher quality, which ultimately "measured nothing" (emphasis in original) (137).
+
+NB: the chapter begins with a neologism, "clopening".  That’s when a worker is scheduled to close out their workplace one night, then open it the next.  I used to do this back in the 1980s, when working at a bookstore.  It’s not easy.
+
+# Questions
+
+* Chapter 7 concludes by mentioning a boycott against on particular WMD implementation, and that it succeeded in pushing back its deployment (140).  Do you think boycotts could be a useful tool for resisting bad data analytics?
+* Tom Haymes has been thinking about the intersection of storytelling and big data.  What’s the narrative these WMD providers are proferring?
+* O’Neil describes how businesses often exploit WMDs to maximize their bottom line.  Is "neoliberalism" another word for what she’s describing?
+
+----
+
+# Chapter 8, "Collateral Damage: Landing Credit" 
+
+This chapter explores the ways companies can (mis)assess our financial status.  Key to this is the idea of "e-scores", or methods for collecting and interpreting creditworthiness that do not include actual credit scores (143, 144).  One problem with them is their reliance on "a veritable blizzard of proxies" instead of more relevant data, especially based on classes of people, rather than on individuals (145-6).  Once again this functions as a negative feedback loop as bad e-scores make it harder for poor people and people of color to escape poverty (148-9, 158).  E-score data is also largely unregulated (151).
+
+Also in this chapter is an anti-WMD, FICO scores, as O’Neil views them as transparent, effectively regulated, and working with "a clear feedback loop" (142).  Another positive feature is the role of individuals reaching through data to glimpse the lives of others, and act to complement a WMD (160, 163,165).
+
+Keep an eye out for e-scores; they will recur through the rest of this book.
+
+# Chapter 9, "No Safe Zone: Getting Insurance"
+
+This chapter picks up on the previous ones to further pursue problems of data analytics on personal finance, with a focus here on insurance.  That’s a business with a longstanding focus on data, and O’Neil begins with an early example of it going wrong by establishing redlining.  More recently, insurance companies can err by classing customers incorrectly.
+
+One way they err is when car insurance businesses rely less on how well customers driver, and much more on their financial data, according to a recent Consumer Reports investigation.  Yes, e-scores return, and have a powerful, often invisible, impact on what we pay for policies (164-5).  Once again, companies deploy such data analytics to extract greater profit.  Their tools fit O’Neil’s WMD model, being anti-transparent, scaled, and offering a bad feedback loop.  Once more, they are tilted against poor people, making it harder for them to work their way up the ladder (169, 171).
+
+O’Neil finds the wellness movement to partake of this bad data science.  Despite good reasons for using it as a way to encourage people to lead healthier lives, it leads to intrusive surveillance.  The author fears that firms could use wellness data to shape employment hiring decisions (175), but does hold back from condemning wellness programs as full WMDs, finding them actually pretty transparent (178).  Body mass index (BMI) comes in for criticism as well (176-7).
+
+# Questions
+
+* What are good examples of positive uses of medical data?
+* Do you see e-scores or similar data analytics in your world?
+* What prevents these tools from being transparent?
+
+
+# Chapter 10,  "The Targeted Citizen: Civic Life" 
+
+Here the book turns to politics and the way algorithms might reshape it.  O’Neill begins with two recent studies, each of which suggested Facebook users’ attitudes can be altered by what they see on that network.
+
+Next, the chapter tours the history of recent American presidential campaigns and their use of big data, starting with direct mail (187), and touching on the Romney, Obama, Hillary Clinton, and Cruz runs.  O’Neil noted Cambridge Analytica’s role early (191; she references this 2015 Guardian article).
+
+The chapter concludes by looking at microtargeting in anti-abortion and other campaigns, citing the research of Zeynep Tufekci.  It finds American republicans more interested in, and susceptible to, microtargeting (194) and concludes that the practice constitutes a very dangerous WMD.  "It is vast, opaque, and unaccountable." (198) . It also separates people civically, as "it will become harder to access the political messages our neighbors are seeing – and as a result, to understand why they believe what they do." (195)
+
+Interestingly, in the 2016 edition of this book O’Neil decided not to call Facebook and Google WMDs, in the political context:
+
+> I wouldn’t yet call Facebook or Google’s algorithms political WMDs, because I have no evidence that the companies are using their networks to cause harm.  Still, the potential for abuse is vast. (185)
+
+# Conclusion
+
+> Big Data processes codify the past.  They do not invent the future.  Doing that requires moral imagination, and that’s something only humans can provide. (204)
+
+This is the first edition’s conclusion, which is revised to an extent in the afterward.  Its essence is a call for federal regulation of algorithms.
+
+O’Neil begins by noting that WMDs are bad enough in isolation, but that their synergies can make things worse.  "The problem is that they’re feeding on each other." (199) . They may have some benefits, but the poorest will suffer the worst (202).
+
+How could regulation work?  O’Neil proposes a data scientist’s ethical code, akin to medical doctors’ Hippocratic Oath (205).  She goes on to describe how a state regulation would have to carefully measure WMD impact, how auditing movements could work, and that we should simply ditch some of the algorithms that can’t be fixed:
+
+> The only solution in such a case is to ditch the unfair system.  Forget, at least for a decade or two, about building tools to measure the effectiveness of a teacher. (208)
+
+Others should be "dumb[ed] down." (210) .   Some positive ones might work, even in education (216).  Meanwhile, helpful actors like ProPublica can use algorithms to expose and oppose WMDs (211).  Ultimately, black box algorithms should be opened to the public (214).
+
+# Afterward
+
+(This is apparently new for the 2017 paperback edition)
+
+We begin with the 2016 election and the role algorithms played in it, from polling to Facebook.  ProPublica again appears in a heroic role, exposing another WMD in the justice system (223-4).  O’Neil is skeptical about polling, criticizing it for generating bad readings, and thinks its importance will dwindle in the wake of Trump’s win (221-2).
+
+The author also offers a modification to her previous work, suggesting that we understand algorithms by "identify[ing] the stakeholders and weigh[ing] their relative harms." (225) . That means balancing costs and benefits across society, such as comparing people protected by software versus those harmed.  One example is the state of Michigan, whose employment tracking program falsely accused 20,000 people of fraud, injuring their reputations, along with their ability to get jobs (226-7).  O’Neil also recommends that we examine not only data processing but collection (229).
+
+
+# Questions
+
+* How can political campaigns best use big data and data analytics without causing harm?
+* Which educational uses of algorithms actually benefit learners?
+* Which actors (agencies, nonprofits, companies, scholars) are best placed to help address the problems O’Neil identifies?
+* Are there themes in the book we haven’t addressed, that we should?
+
+
+
+----
+
+# Other discussion questions
+
+* https://arbitrarilyclose.com/2017/11/11/mtbos-book-club-weapons-of-math-destruction-by-cathy-oneil/
+
+
+
+

@@ -41,7 +41,7 @@ library(tidytext)
 ## Data Cleaning
 Read in data. Extract tweet text into a new tibble.
 ```{r}
-cf <- readRDS("G:/My Drive/Teaching/POLS 624 S20/Twitter project docs/data/campfire-tweets-2020-03-31.Rds")
+cf <- readRDS("C:/Users/Robin/Google Drive/Teaching/POLS 624 S20/Twitter project docs/data/campfire-tweets-2020-04-27.Rds")
 tweet <- tibble(status_id=cf$status_id, text=cf$text)
 tweet$text[1]
 ```

@@ -14,14 +14,6 @@ output: html_document
 > Always remove any instructional text before submission. 
 
 
-```{r, warning=FALSE, message=FALSE}
-knitr::opts_chunk$set(echo = TRUE, warning=FALSE, message=FALSE)
-library(tidyverse)
-library(tidytext)
-library(wordcloud)
-```
-
-
 # Project objective
 > Describe your project objective here as it relates to topic sentiment. If your research group does not have a research question directly tied to a sentiment, make one up. That is, look at what your group is researching, and ask yourself if you can add to the story using sentiments. 
 

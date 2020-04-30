@@ -76,4 +76,15 @@ Watch at least one of the following three videos recapping classification method
 * Github classroom [[link forthcoming]](). 
     
     
+--- 
+
+Additional questions
+
+* Name one reason resampling techniques are used in statistical learning
+* Describe the overall or general process of model validation
+* What are the two primary methods of cross-validation? 
+* Which method above is nearly unbaiased? Why?
+* What is the primary driver of the bias-variance tradeoff in cross-validation? 
+* Describe how the bootstrap method differs from cross-validation
+
     
