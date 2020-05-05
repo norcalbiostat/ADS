@@ -1,0 +1,57 @@
+---
+title: "Week 15: Tree Based Models"
+date: "`r paste(Sys.Date())`"
+output:   
+  html_document: 
+    highlight: tango
+    theme: yeti
+    toc: yes
+    toc_float: true
+---
+
+# Learning Path
+
+### Where we've been
+
+* Multivariable model building using linear and logistic regression. 
+* Basic concepts surrounding flexible vs rigid, parametric vs non-parametric estimates of $f$. 
+* Basic concepts of prediction and classification. Target measures of fit. 
+* Wrangling and exploring text data
+* Classification models other than logistic regression. Starting simple with discriminant analysis and naive Bayes. (ISLR Ch 4)
+* Employing resampling methods such as cross validation to improve our prediction accuracy (ISLR Ch 5)
+* Estimating accuracy using the bootstrap (ISLR Ch 5.2)
+* Working with the `caret` package to conduct a machine learning algorithm to classify data under a variety of models. 
+
+### Where we're at
+
+* Ethics of Predictive models and artificial intelligence. 
+* Tree based methods for classification (ISLR Ch 8)
+
+
+----
+
+# Goals for this week. 
+
+* Project - Peer review final slides
+* Reading Weapons of Math Destruction 
+* Continue through ILSR Ch8 on Tree based models. 
+    
+
+----
+
+# Tuesday
+
+* Discussing WMD Intro & Ch1. What makes a WMD? 
+* Best (Agriculture) practices - keep those trees pruned. Better for the tree, better for the fruit. 
+* Remember you're responsible for all the questions from the book, not just the ones that you answered in class. 
+
+----
+
+# Thursday
+
+* Discussing WMD CH 2 & 3. 
+* Building and pruning trees in R using `caret`. 
+
+
+
+

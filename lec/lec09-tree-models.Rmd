@@ -13,9 +13,13 @@ output:
 
 * Learn what a decision tree is, how it's constructed and how to read one
 * Understand model enhancements like bagging and boosting
+* Fit a regression and classification tree on data using `caret`. 
 * Describe the benefits and drawbacks for using a Random Forest instead of a single Decision Tree
 
-Corresponding reading: ISLR Ch 8
+# Assignments
+
+* Reading: ISLR Ch 8
+* Homework: [[HTML]](hw09-CART-assignment.html) [[RMD]](hw09-CART-assignment.Rmd)
 
 
 ----
@@ -26,7 +30,9 @@ Answer the following questions. The questions are split into groups following th
 
 ## The Basics of Decision Trees (ISLR 8.1) 
 
-### [[Video 1 14:37]](https://www.youtube.com/watch?v=6ENTbK3yQUQ&list=PL5-da3qGB5IB23TLuA8ZgVGC8hV8ZAdGh) 
+### Building Regression Trees 
+
+[[Video 1 14:37]](https://www.youtube.com/watch?v=6ENTbK3yQUQ&list=PL5-da3qGB5IB23TLuA8ZgVGC8hV8ZAdGh) 
 
 1. What does it mean to _segment_ the data? What do we call this in MATH 456? 
 2. Are tree based methods supervised or unsupervised methods? 
@@ -35,20 +41,38 @@ Answer the following questions. The questions are split into groups following th
 5. What do the values in the _internal_ and _terminal_ nodes represent? 
 6. How can you tell which variables are most 'important' in a tree model? 
 7. What is the _feature space_? Compare this to the term _predictor space_. Do this in your own words. You may want to look into other sources of information (outside the book) for something that fits into your mental model. 
-8. Explain how _recursive binary splitting_ works without using equations. 
+8. Explain how _rec`ursive binary splitting_ works without using equations. 
 9. Explain why this process has this name. That is, what about this process is _recursive_? (don't use the word in the definition either), why _binary_?
 10. Why its considered _top down_ and _greedy_. 
 11. What is a _stopping criterion_? Give an example of one. 
 12. Why are decision trees considered a statistical _learning_ model? Where does the algorithmic learning occur? 
 
 
-### [[Video 2 11:45]](https://www.youtube.com/watch?v=GfPR7Xhdokc&list=PL5-da3qGB5IB23TLuA8ZgVGC8hV8ZAdGh&index=2)
+### Pruning Trees 
 
-> In progress
+[[Video 2 11:45]](https://www.youtube.com/watch?v=GfPR7Xhdokc&list=PL5-da3qGB5IB23TLuA8ZgVGC8hV8ZAdGh&index=2)
 
-* How are predictions of new values made? 
-* Why is pruning necessary? 
-* Name one advantage and disadvantage of trees when compared to classical methods. 
+1. How are predictions of new values made? 
+2. Why is pruning necessary? Why can't we just build a short tree by stopping early?
+3. How is _Cost complexity pruning_ similar to LASSO? 
+4. What is the penalty function? Report this in symbols, not words, but define each symbol in words.
+5. How is $\alpha$ chosen? 
+6. What information do you get out of Figure 8.5? If you were to build this plot as part of your analysis (just the black and green lines), what information can you draw from it? 
+
+
+## Classification Trees (ISLR 8.1.2) 
+
+[[Video 3 11:00]](https://www.youtube.com/watch?v=hPEJoITBbQ4&list=PL5-da3qGB5IB23TLuA8ZgVGC8hV8ZAdGh&index=3)
+
+1. How do you make predictions from a classification tree? 
+2. What is the _classification error rate_? 
+3. What does _node purity_ mean? Why is it important (it may be helpful to read through the example before answering this question).
+4. Is a large or small _Gini index_ preferred? 
+5. If prediction accuracy is the goal of tree building, what measure should be used to prune the tree? 
+
+## Advantages and Disadvantages of Trees (ISLR 8.1.4)
+
+1. Name one advantage and disadvantage of trees when compared to classical methods. 
 
 
 
@@ -56,10 +80,14 @@ Answer the following questions. The questions are split into groups following th
 
 ## Bagging, Random Forests, Boosting (ISLR 8.2)
 
-* bagging is a general-purpose procedure for reducing _(bias/variance)____ of a statistical learning method
+### Bagging (ISLR 8.2.1) 
+
+[[Video 13:45]](https://www.youtube.com/watch?v=lq_xzBRIWm4&list=PL5-da3qGB5IB23TLuA8ZgVGC8hV8ZAdGh&index=4)
+
+* Bagging is a general-purpose procedure for reducing (bias or variance?) of a statistical learning method
 * Explain how bagging works
 * What is an out of bag error estimate? Why do we care about it? 
-* Bagging improves prediction accuracy at the expense of ______
+* Bagging improves prediction accuracy at the expense of what? (one word)
 * How is the Gini index used to generate a summary measure of importance for each predictor? 
 * What's the difference between Random Forests and bagged trees? 
 * How is boosting a sequential method? 
@@ -70,13 +98,16 @@ Answer the following questions. The questions are split into groups following th
 
 # Learning - Application
 
+Using your UCI data from the last homework, and using the `caret` package, 
 
-----
+```{r}
+load("breast_cancer_UCI.Rdata")
+```
+
+1. Build a decision tree. Prune it. Make a plot. Interpret the results. Calculate test sample accuracy. 
+2. Grow a forest. Plot the variable importance. Interpret the results. Calculate test sample accuracy. How does it compare to your models from last homework? 
 
 
-# Assignment
-
-* hw09-tree-assignment
 
     
     

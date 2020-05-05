@@ -11,6 +11,13 @@ _This course aims to help students navigate the evolving and murky waters of the
 
 ----
 
+### `r format(wk1.date+15*7, "%m-%d-%Y")` Week 15: Tree based models & Ethics
+
+* [Week 15 notes](lec/wk15-notes.html) posted.
+* HW09 CART models has been updated. Download and add the questions to your HW file. 
+
+----
+
 ### `r format(wk1.date+14*7, "%m-%d-%Y")` Week 14: Tree based models & Ethics
 
 * [Week 14 notes](lec/wk14-notes.html) posted.
