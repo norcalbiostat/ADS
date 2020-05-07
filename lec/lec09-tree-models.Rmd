@@ -115,7 +115,73 @@ load("breast_cancer_UCI.Rdata")
 library(caret)
 ```
 
-1. Build a decision tree. Prune it. Make a plot. Interpret the results. Calculate test sample accuracy. 
+Recall this is a dataset with continuous measurements on breast tumors, with a categorical response variable of either `B`enign or `M`alignant. 
+
+## Preprocess
+
+Split into testing/training. Set train control parameters (5 fold CV), and preprocessing steps (normalizing the data). 
+
+```{r}
+train.idx <- createDataPartition(bc$diagnosis, p = .6, list = FALSE)
+
+train.dta <- bc[train.idx,]
+test.dta  <- bc[-train.idx,]
+
+fitControl <- trainControl(method="cv", number=5)
+PreProc    <- c("center", "scale")
+```
+
+## 1. Build a decision tree using the `rpart` method (recursive partioning). Requires the `rpart` package. 
+
+```{r}
+bc.tree <- train(diagnosis ~ ., 
+                  data=train.dta, 
+                  method="rpart", 
+                  trControl = fitControl, 
+                  preProcess = PreProc)
+```
+
+The basic output shows a recap of what the data looks like (n, p, classes), the preprocessing and resampling processes, as well as the tuning parameters and which were chosen to use in the final model. 
+```{r}
+bc.tree
+```
+
+Calling a `summary` on the tree object gives us more information. 
+
+```{r}
+summary(bc.tree)
+```
+
+A *lot* more. Specifically it is showing [1] the data set (not ideal with large datasets), [2] the variable importance measures, and [3] information on each node such as what the splits were, how many observations are to either side of the split, and the predicted probability of the outcome for that node. 
+
+Let's see how to get this information out in a more concise manner. Like plotting the final tree!
+
+```{r}
+plot(bc.tree$finalModel, uniform=TRUE)
+text(bc.tree$finalModel, use.n = TRUE, all=TRUE, cex=.8)
+```
+
+How about a fancier version? Perhaps more readable? 
+
+```{r}
+library(rattle)
+fancyRpartPlot(bc.tree$finalModel)
+```
+
+Okay prettier, but what do the numbers mean?
+
+
+
+
+
+
+
+
+
+
+Prune it. Make a plot. Interpret the results. Calculate test sample accuracy. 
+
+
 2. Grow a forest. Plot the variable importance. Interpret the results. Calculate test sample accuracy. How does it compare to your models from last homework? 
 3. Compare RF to GBM
 
