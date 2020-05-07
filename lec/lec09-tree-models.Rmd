@@ -41,7 +41,7 @@ Answer the following questions. The questions are split into groups following th
 5. What do the values in the _internal_ and _terminal_ nodes represent? 
 6. How can you tell which variables are most 'important' in a tree model? 
 7. What is the _feature space_? Compare this to the term _predictor space_. Do this in your own words. You may want to look into other sources of information (outside the book) for something that fits into your mental model. 
-8. Explain how _rec`ursive binary splitting_ works without using equations. 
+8. Explain how _recursive binary splitting_ works without using equations. 
 9. Explain why this process has this name. That is, what about this process is _recursive_? (don't use the word in the definition either), why _binary_?
 10. Why its considered _top down_ and _greedy_. 
 11. What is a _stopping criterion_? Give an example of one. 
