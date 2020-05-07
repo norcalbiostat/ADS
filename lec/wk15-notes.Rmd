@@ -28,14 +28,20 @@ output:
 * Tree based methods for classification (ISLR Ch 8)
 
 
-----
-
-# Goals for this week. 
+### Goals for this week. 
 
 * Project - Peer review final slides
 * Reading Weapons of Math Destruction 
 * Continue through ILSR Ch8 on Tree based models. 
     
+---
+
+# Materials
+
+* [[WMD Discussion Questions]](https://norcalbiostat.github.io/ADS/read/WMD_Discussion_Questions.html)
+* Lecture notes on Tree based models [[HTML]](lec09-tree-models.html)
+* CART homework [[HTML]](../hw/hw09-CART-assignment.html) [[Github repo]](https://classroom.github.com/a/PHgPJN70)
+* ISLR [[video lectures]](https://www.youtube.com/watch?v=6ENTbK3yQUQ&list=PL5-da3qGB5IB23TLuA8ZgVGC8hV8ZAdGh).
 
 ----
 
@@ -49,8 +55,14 @@ output:
 
 # Thursday
 
+* End of the semester Learning Journal entries: Reflections on the past 16 weeks. 
+    - [Complete theBridge](https://norcalbiostat.github.io/MATH315/lecture/321_Bridge.html). 
+    - Thinking Routine [I used to Think... Now I think...](used_to_think.html)
+    - Lastly, and this is for my future course development. Answer the following two questions: 
+        - What is one thing you are glad you learned in this class? 
+        - What is one thing you wished you had learned in this class? 
 * Discussing WMD CH 2 & 3. 
-* Building and pruning trees in R using `caret`. 
+* Methods to enhance decision trees. 
 
 
 
