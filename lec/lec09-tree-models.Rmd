@@ -111,8 +111,22 @@ Answer the following questions. The questions are split into groups following th
 Using your UCI data from the last homework, and using the `caret` package, 
 
 ```{r}
+# annotated package loading from: https://bradleyboehmke.github.io/HOML/DT.html 
+# Helper packages
+library(dplyr)       # for data wrangling
+library(ggplot2)     # for awesome plotting
+
+# Modeling packages
+library(rpart)       # direct engine for decision tree application
+library(caret)       # meta engine for decision tree application
+
+# Model interpretability packages
+library(rpart.plot)  # for plotting decision trees
+library(vip)         # for feature importance
+
+
+
 load("breast_cancer_UCI.Rdata")
-library(caret)
 ```
 
 Recall this is a dataset with continuous measurements on breast tumors, with a categorical response variable of either `B`enign or `M`alignant. 
@@ -166,6 +180,8 @@ How about a fancier version? Perhaps more readable?
 ```{r}
 library(rattle)
 fancyRpartPlot(bc.tree$finalModel)
+
+rpart.plot(bc.tree)
 ```
 
 Okay prettier, but what do the numbers mean?
