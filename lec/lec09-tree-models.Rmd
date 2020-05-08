@@ -108,30 +108,20 @@ Answer the following questions. The questions are split into groups following th
 
 # Learning - Application
 
-Using your UCI data from the last homework, and using the `caret` package, 
+Explore tree based models using the UCI data from the prior assignment.  
 
-```{r}
-# annotated package loading from: https://bradleyboehmke.github.io/HOML/DT.html 
-# Helper packages
-library(dplyr)       # for data wrangling
-library(ggplot2)     # for awesome plotting
-
-# Modeling packages
+```{r, warning=FALSE, message=FALSE}
+library(dplyr)  
+library(ggplot2) 
 library(rpart)       # direct engine for decision tree application
-library(caret)       # meta engine for decision tree application
-
-# Model interpretability packages
-library(rpart.plot)  # for plotting decision trees
-library(vip)         # for feature importance
-
-
+library(caret)       # meta engine for machine learning
 
 load("breast_cancer_UCI.Rdata")
 ```
 
 Recall this is a dataset with continuous measurements on breast tumors, with a categorical response variable of either `B`enign or `M`alignant. 
 
-## Preprocess
+## Preprocess data
 
 Split into testing/training. Set train control parameters (5 fold CV), and preprocessing steps (normalizing the data). 
 
@@ -145,7 +135,10 @@ fitControl <- trainControl(method="cv", number=5)
 PreProc    <- c("center", "scale")
 ```
 
-## 1. Build a decision tree using the `rpart` method (recursive partioning). Requires the `rpart` package. 
+## Decision Trees
+
+### 1. Build and prune a tree 
+Using the `rpart` method (recursive partioning). Requires the `rpart` package. 
 
 ```{r}
 bc.tree <- train(diagnosis ~ ., 
@@ -156,13 +149,30 @@ bc.tree <- train(diagnosis ~ .,
 ```
 
 The basic output shows a recap of what the data looks like (n, p, classes), the preprocessing and resampling processes, as well as the tuning parameters and which were chosen to use in the final model. 
+
 ```{r}
 bc.tree
 ```
 
-Calling a `summary` on the tree object gives us more information. 
+The tuning parameter `cp` stands for _complexity parameter_ and that's what controls the pruning. The default is to evaluate 3 values for `cp`, we can change this in the `tuneLength` argument to evaluate more, say 7. 
 
 ```{r}
+bc.tree <- train(diagnosis ~ ., 
+                  data=train.dta, 
+                  method="rpart", 
+                  tuneLength= 7, 
+                  trControl = fitControl, 
+                  preProcess = PreProc)
+```
+
+Plotting this object gives you a summary of the cross-validated model complexity. 
+```{r}
+plot(bc.tree)
+```
+
+Calling a `summary` on the tree object would gives us more information. 
+
+```{r, attr.output='style="max-height: 300px;"'}
 summary(bc.tree)
 ```
 
@@ -175,17 +185,45 @@ plot(bc.tree$finalModel, uniform=TRUE)
 text(bc.tree$finalModel, use.n = TRUE, all=TRUE, cex=.8)
 ```
 
-How about a fancier version? Perhaps more readable? 
+How about a fancier version? Perhaps more readable? Let's use the `rpart.plot` function in the similarly named `rpart.plot` package. The full package information can be found ere: http://www.milbo.org/rpart-plot/ 
 
 ```{r}
-library(rattle)
-fancyRpartPlot(bc.tree$finalModel)
-
-rpart.plot(bc.tree)
+rpart.plot::rpart.plot(bc.tree$finalModel)
 ```
 
-Okay prettier, but what do the numbers mean?
+Okay prettier, but what does the information in the box mean? 
 
+Let's look at the top box as a demonstration. 
+
+* `B`: The predicted class for observations falling into that node
+* `0.37`: The predicted probability of the outcome (here we are predicting `M`)
+* `100%`: The percent of observations that are in that node. 
+
+So tumors that have `area_worst < -0.031`, and `concave_points_worst > 0.35` and `texture_mean > 0.27` are predicted to be malignant. Only 3% of records fall into this covariate profile. 
+
+### 2. Predict using the tree
+
+Create the prediction using `predict`, and add it back onto the testing dataset so we can do some easier comparisons. 
+
+```{r}
+test.dta$pred.class <- bc.tree %>% predict(test.dta)
+confusionMatrix(test.dta$diagnosis, test.dta$pred.class)
+```
+
+The overall test accuracy is 93.81%.
+
+
+
+
+----
+
+# Additional Resources
+
+* http://www.milbo.org/rpart-plot/
+* http://www.sthda.com/english/articles/35-statistical-machine-learning-essentials/141-cart-model-decision-tree-essentials/
+
+
+Other possibilities for plotting variable importance. https://koalaverse.github.io/vip/articles/vip.html
 
 
 
