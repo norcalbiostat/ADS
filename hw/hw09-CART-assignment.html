@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
 
 <meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
@@ -330,7 +331,6 @@ summary {
   border: none;
   display: inline-block;
   border-radius: 4px;
-  background-color: transparent;
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li {
@@ -413,7 +413,38 @@ summary {
 <ol style="list-style-type: decimal">
 <li>Name one advantage and disadvantage of trees when compared to classical methods.</li>
 </ol>
+</div>
+<div id="bagging-random-forests-boosting-islr-8.2" class="section level2">
+<h2>Bagging, Random Forests, Boosting (ISLR 8.2)</h2>
+<div id="bagging" class="section level3">
+<h3>Bagging</h3>
+<ol style="list-style-type: decimal">
+<li>Bagging is a general-purpose procedure for reducing (bias or variance?) of a statistical learning method</li>
+<li>Explain how bagging works.<br />
+</li>
+<li>What is a <em>majority vote</em> in the context of classification?</li>
+<li>What is an out of bag error estimate? How does it compare to k-fold CV/LOOCV?</li>
+</ol>
+</div>
+<div id="random-forests" class="section level3">
+<h3>Random Forests</h3>
+<ol style="list-style-type: decimal">
+<li>What’s the main difference between building a Random Forest vs simply bagged trees?</li>
+<li>How is the Gini index used to generate a summary measure of importance for each predictor in a Random Forest?</li>
+<li>In the gene expression example (video), what critiera do they use to pre-screen variables to go into the model, and why?</li>
+<li>Why can we say that Random Forests is equivlenant to bagging trees when <span class="math inline">\(m=p\)</span>?</li>
+<li>Can you overfit a Random Forest model by constructing too many trees?</li>
+</ol>
+</div>
+<div id="boosting" class="section level3">
+<h3>Boosting</h3>
+<ol style="list-style-type: decimal">
+<li>How is boosting a sequential method?</li>
+<li>In Boosting, why are the trees are grown on the residuals?</li>
+<li>What are the three tuning parameters for boosting?</li>
+</ol>
 <hr />
+</div>
 </div>
 </div>
 <div id="application" class="section level1">

@@ -213,6 +213,30 @@ confusionMatrix(test.dta$diagnosis, test.dta$pred.class)
 The overall test accuracy is 93.81%.
 
 
+## Random Forests
+
+Fit the tree using no additional options and the `rf` method. Upon reading up on new methods, looks like [[ranger]](https://github.com/imbs-hl/ranger) might be a really good upgrade at this time. 
+
+```{r}
+rf.tree <- train(diagnosis ~ ., 
+                  data=train.dta, 
+                  method="rf", 
+                  trControl = fitControl, 
+                  preProcess = PreProc)
+rf.tree
+```
+
+Plotting the model object gives us the CV accuracy for the only tuning parameter the rf method allows for, `mtry`, or the number of randomly selected predictors chosen at each node. This matches the output above that shows only choosing 2 variables for each split results in the best CV accuracy.
+
+```{r}
+plot(rf.tree)
+```
+
+Variable importance: Which predictors contribute to the 'best' prediction? 
+```{r}
+varImp(rf.tree)
+```
+
 
 
 ----
@@ -222,8 +246,17 @@ The overall test accuracy is 93.81%.
 * http://www.milbo.org/rpart-plot/
 * http://www.sthda.com/english/articles/35-statistical-machine-learning-essentials/141-cart-model-decision-tree-essentials/
 
+## Random Forests
 
-Other possibilities for plotting variable importance. https://koalaverse.github.io/vip/articles/vip.html
+* https://bradleyboehmke.github.io/HOML/random-forest.html
+* https://topepo.github.io/caret/train-models-by-tag.html#random-forest
+* https://uc-r.github.io/random_forests
+* https://cran.rstudio.com/web/packages/randomForestExplainer/vignettes/randomForestExplainer.html
+
+
+## Variable Importance
+
+* https://koalaverse.github.io/vip/articles/vip.html
 
 
 
