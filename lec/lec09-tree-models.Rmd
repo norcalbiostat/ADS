@@ -116,7 +116,7 @@ library(ggplot2)
 library(rpart)       # direct engine for decision tree application
 library(caret)       # meta engine for machine learning
 
-load("breast_cancer_UCI.Rdata")
+load("lec/breast_cancer_UCI.Rdata")
 ```
 
 Recall this is a dataset with continuous measurements on breast tumors, with a categorical response variable of either `B`enign or `M`alignant. 
