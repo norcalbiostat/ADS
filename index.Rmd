@@ -1,5 +1,6 @@
 ---
 title: "ADS"
+output: html_document
 ---
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 wk1.date <- as.Date("2020-01-21")
