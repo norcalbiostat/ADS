@@ -45,24 +45,32 @@ https://education.github.com/benefits
 https://www.springboard.com/blog/data-scientist-training-college/
 
 
-# post break
+-----
+
+* Effort based grading like S20
+    - Where to show grid to students? -> Individual student repo containing R data set of assignments, grades, and % effort. Single RMD file that creates a nice table for them when they knit.
+  
+* class credit for hosting community coding?
+
+* github classroom
+    - ISLR assignments in separate repos like last time
+    - `class-notes` repo open to all as listed above.
+        - Individual RMD files for reading questions (ISLR & others)
+        - Set up as a website. Let the students collaborate to add/modify items to this webpage. 
+
+* Coding Homework
+  - probably sent out via github classroom
+  - upload compiled homework as PDF to google drive
+
+* learning journal
+    - 321-bridge
+    - reading reflections. Ask several questions, ask each student to share one insight from the reading that they want their fellow students to hear. 
+    
+* Schedule time/bonus pts for DataFest
+* How to schedule a screening of Coded Bias? 
 
 
 
-# Covid19 Kaggle challenge
-Let's practice what it's like to be a DS. 
-https://www.kaggle.com/allen-institute-for-ai/CORD-19-research-challenge/kernels?sortBy=hotness&group=everyone&pageSize=20&datasetId=551982&language=R
 
 
-* Creating a good analytics report: https://www.kaggle.com/jpmiller/creating-a-good-analytics-report
-* Sentiment analysis: https://www.kaggle.com/c/tweet-sentiment-extraction
-
-Step 1: Learn how to conduct a sentiment analysis in R
-
-
-# Natural Language Processing
-* https://www.lexalytics.com/lexablog/machine-learning-natural-language-processing
-
-
-- prediction on disaster vs not? https://www.kaggle.com/atpspin/same-tweet-two-target-labels
 

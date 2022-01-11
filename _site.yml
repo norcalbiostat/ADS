@@ -1,40 +1,30 @@
-name: Advanced Data Science
+name: DATA 485
 output_dir: '.'
 navbar:
-  title: ADS
+  title: DATA 485
   left:
   - text: Schedule
     icon: fa-calendar
     href: schedule.html
-  - text: Materials
-    icon: fa-folder-open
-    href: materials.html
-  - text: Tools
-    icon: fa-wrench
-    menu:
-    - text: GitHub
-      icon: fa-github
-      href: https://github.com/
-    - text: HackMD
-      icon: fa-file-code
-      href: https://hackmd.io/
-    - text: Google Drive
-      icon: fa-google
-      href: https://drive.google.com/drive/folders/1CFEf9KkLIDpHfX-v08N6z8KXRLybcUgx?usp=sharing
-    - text: Zoom
-      icon: fa-video-camera
-      href: https://csuchico.zoom.us/
-  - text: Twitter Project
-    icon: fa-group
-    menu:
-      - text: Instructions
-      - href: pols_project.html
-      - text: Project website
-      - href: https://data485-s20.github.io/campfire_tweets/index.html
+#  - text: Materials
+#    icon: fa-folder-open
+#    href: materials.html
+  # - text: Tools
+  #   icon: fa-wrench
+  #   menu:
+  #   - text: GitHub
+  #     icon: fa-github
+  #     href: https://github.com/
+  #   - text: HackMD
+  #     icon: fa-file-code
+  #     href: https://hackmd.io/
+  #   - text: Google Drive
+  #     icon: fa-google
+  #     href: 
   right:
   - text: Syllabus
     icon: fa-info-circle
-    href: syllabus_485_s20.html
+    href: syllabus_485.html
   - text: Dr. D's Website
     icon: fa-paw
     href: http://www.norcalbiostat.com/

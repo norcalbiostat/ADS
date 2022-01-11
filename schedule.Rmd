@@ -1,4 +1,4 @@
----gi
+---
 title: "DATA 485 Schedule"
 output: html_document
 ---
@@ -9,10 +9,8 @@ options(knitr.table.format = "html", knitr.kable.NA = '')
 knitr::opts_chunk$set(echo=FALSE, message=FALSE, warning=FALSE) 
 ```
 
-# Schedule {.tabset .tabset-fade .tabset-pills}
+# Schedule 
 _Last Updated: `r format(Sys.time(), "%a %b %d %X")`_
-
-## Overview
 
 <p>
 Unless specified otherwise, all assignments are due at midnight on the due date listed.  
@@ -52,12 +50,5 @@ knitr::kable(out, align="l", escape=FALSE) %>%
   column_spec(4, width="20%") %>%
   column_spec(4, width="20%")
 ```
-
-
-## Calendar
-
-For those of you that like the calendar view of your schedule. Due to schedule adjustments during the semester these dates may not match exactly with the schedule. In those cases please bring any  descrepencies to my attention via Slack. 
-
-<iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FLos_Angeles&amp;src=bWFpbC5jc3VjaGljby5lZHVfajg0NjlvamVhcHFyZXNiZWswdmxobzRxMjBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=bWFpbC5jc3VjaGljby5lZHVfOTNyMXBmOThxZ2VzNzlsa2dkb3FpcGV1YW9AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%235A9A08&amp;color=%23871111" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
 
 

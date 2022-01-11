@@ -13,46 +13,41 @@
 
 <title>DATA 485 Schedule</title>
 
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/yeti.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <script src="site_libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="site_libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 
-
-
-
 <style type="text/css">
-h1 {
-  font-size: 34px;
-}
-h1.title {
-  font-size: 38px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 24px;
-}
-h4 {
-  font-size: 18px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 12px;
-}
-.table th:not([align]) {
-  text-align: left;
-}
-</style>
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+
+
+
+
 
 <link rel="stylesheet" href="style.css" type="text/css" />
 
@@ -63,10 +58,6 @@ h6 {
   max-width: 940px;
   margin-left: auto;
   margin-right: auto;
-}
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
 }
 img {
   max-width:100%;
@@ -83,40 +74,13 @@ button.code-folding-btn:focus {
 summary {
   display: list-item;
 }
+pre code {
+  padding: 0;
+}
 </style>
 
 
 <style type="text/css">
-/* padding for bootstrap navbar */
-body {
-  padding-top: 45px;
-  padding-bottom: 40px;
-}
-/* offset scroll position for anchor links (for fixed navbar)  */
-.section h1 {
-  padding-top: 50px;
-  margin-top: -50px;
-}
-.section h2 {
-  padding-top: 50px;
-  margin-top: -50px;
-}
-.section h3 {
-  padding-top: 50px;
-  margin-top: -50px;
-}
-.section h4 {
-  padding-top: 50px;
-  margin-top: -50px;
-}
-.section h5 {
-  padding-top: 50px;
-  margin-top: -50px;
-}
-.section h6 {
-  padding-top: 50px;
-  margin-top: -50px;
-}
 .dropdown-submenu {
   position: relative;
 }
@@ -144,7 +108,7 @@ body {
   margin-right: -10px;
 }
 .dropdown-submenu:hover>a:after {
-  border-left-color: #ffffff;
+  border-left-color: #adb5bd;
 }
 .dropdown-submenu.pull-left {
   float: none;
@@ -156,7 +120,7 @@ body {
 }
 </style>
 
-<script>
+<script type="text/javascript">
 // manage active state of menu based on current page
 $(document).ready(function () {
   // active menu anchor
@@ -167,10 +131,23 @@ $(document).ready(function () {
   var menuAnchor = $('a[href="' + href + '"]');
 
   // mark it active
-  menuAnchor.parent().addClass('active');
+  menuAnchor.tab('show');
 
   // if it's got a parent navbar menu mark it active as well
   menuAnchor.closest('li.dropdown').addClass('active');
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
 });
 </script>
 
@@ -182,7 +159,6 @@ $(document).ready(function () {
   max-height: 500px;
   min-height: 44px;
   overflow-y: auto;
-  background: white;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
@@ -254,7 +230,7 @@ $(document).ready(function () {
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.html">ADS</a>
+      <a class="navbar-brand" href="index.html">DATA 485</a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
@@ -265,75 +241,10 @@ $(document).ready(function () {
     Schedule
   </a>
 </li>
-<li>
-  <a href="materials.html">
-    <span class="fa fa-folder-open"></span>
-     
-    Materials
-  </a>
-</li>
-<li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    <span class="fa fa-wrench"></span>
-     
-    Tools
-     
-    <span class="caret"></span>
-  </a>
-  <ul class="dropdown-menu" role="menu">
-    <li>
-      <a href="https://github.com/">
-        <span class="fa fa-github"></span>
-         
-        GitHub
-      </a>
-    </li>
-    <li>
-      <a href="https://hackmd.io/">
-        <span class="fa fa-file-code"></span>
-         
-        HackMD
-      </a>
-    </li>
-    <li>
-      <a href="https://drive.google.com/drive/folders/1CFEf9KkLIDpHfX-v08N6z8KXRLybcUgx?usp=sharing">
-        <span class="fa fa-google"></span>
-         
-        Google Drive
-      </a>
-    </li>
-    <li>
-      <a href="https://csuchico.zoom.us/">
-        <span class="fa fa-video-camera"></span>
-         
-        Zoom
-      </a>
-    </li>
-  </ul>
-</li>
-<li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    <span class="fa fa-group"></span>
-     
-    Twitter Project
-     
-    <span class="caret"></span>
-  </a>
-  <ul class="dropdown-menu" role="menu">
-    <li class="dropdown-header">Instructions</li>
-    <li>
-      <a href="pols_project.html"></a>
-    </li>
-    <li class="dropdown-header">Project website</li>
-    <li>
-      <a href="https://data485-s20.github.io/campfire_tweets/index.html"></a>
-    </li>
-  </ul>
-</li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>
-  <a href="syllabus_485_s20.html">
+  <a href="syllabus_485.html">
     <span class="fa fa-info-circle"></span>
      
     Syllabus
@@ -351,7 +262,7 @@ $(document).ready(function () {
   </div><!--/.container -->
 </div><!--/.navbar -->
 
-<div class="fluid-row" id="header">
+<div id="header">
 
 
 
@@ -361,11 +272,9 @@ $(document).ready(function () {
 
 
 <p><br></p>
-<div id="schedule" class="section level1 tabset tabset-fade tabset-pills">
+<div id="schedule" class="section level1">
 <h1>Schedule</h1>
-<p><em>Last Updated: Tue May 05 9:33:46 AM</em></p>
-<div id="overview" class="section level2">
-<h2>Overview</h2>
+<p><em>Last Updated: Mon Jan 10 10:29:43 PM</em></p>
 <p>
 <p>Unless specified otherwise, all assignments are due at midnight on the due date listed.</p>
 </p>
@@ -392,7 +301,7 @@ Assignments
 <tbody>
 <tr>
 <td style="text-align:left;width: 5%; ">
-01/20
+01/25
 </td>
 <td style="text-align:left;width: 20%; ">
 Getting started
@@ -400,160 +309,118 @@ Getting started
 <td style="text-align:left;width: 20%; ">
 </td>
 <td style="text-align:left;width: 20%; width: 20%; ">
-<a href="lec/lec00_orientation.html">Lec00: Class Orientation</a>
 </td>
 <td style="text-align:left;">
-<a href="hw/hw00-getting-started.html">hw00: Getting Started</a> <b> (Due Wed 1/22)</b>
 </td>
 </tr>
 <tr>
 <td style="text-align:left;width: 5%; ">
 </td>
 <td style="text-align:left;width: 20%; ">
-Personal Websites
+Showcase your work
 </td>
 <td style="text-align:left;width: 20%; ">
 </td>
 <td style="text-align:left;width: 20%; width: 20%; ">
-<a href="lec/lec01a_rmarkdown_website.html">Lec01a - RMarkdown Websites</a><br />
-<a href="lec/lec01b_blogdown_website.html">Lec01b - Blogdown Websites</a>
 </td>
 <td style="text-align:left;">
-<a href="hw/hw01-website.html">hw01: Personal Website</a> <b> (Due Fri 1/31)</b>
 </td>
 </tr>
 <tr>
 <td style="text-align:left;width: 5%; ">
-01/27
+02/01
 </td>
 <td style="text-align:left;width: 20%; ">
 What is Data Science? What’s your DS path?
 </td>
 <td style="text-align:left;width: 20%; ">
-Read DDS Ch1, 16.
 </td>
 <td style="text-align:left;width: 20%; width: 20%; ">
-<a href="https://hackmd.io/@norcalbiostat/data485-lec02">Lec02 - What is DS</a>
-</td>
-<td style="text-align:left;">
-<a href="hw/hw02-what-is-ds.html">hw02: What is DS</a> <b> (Due Mon 2/3)</b>
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 5%; ">
-02/03
-</td>
-<td style="text-align:left;width: 20%; ">
-Getting and wrangling Twitter data
-</td>
-<td style="text-align:left;width: 20%; ">
-Get approved for a Twiter Dev account.<br />
-Read through the links in the Twitter collab notes. Read the example POLS DS projects in Google Drive
-</td>
-<td style="text-align:left;width: 20%; width: 20%; ">
-DS Research examples in the Social Science (Google Drive)<br />
-<a href="https://hackmd.io/@norcalbiostat/data485-twitter">Twitter collab notes</a>
-</td>
-<td style="text-align:left;">
-<a href="hw/hw03-hello-twitter.html">hw03: Hello Twitter</a><br />
-Slack intro to POLS <b> (Due 2/7)</b><br />
-Readings <b> (Due 2/10)</b><br />
-Rtweet tutorial <b> (Draft Due 2/14 , PR Due 2/20, Final 2/23)</b><br />
-Historical tweet documentation <b> (Due 2/14)</b>
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 5%; ">
-02/10
-</td>
-<td style="text-align:left;width: 20%; ">
-Learning about data science research in the Political Science field
-</td>
-<td style="text-align:left;width: 20%; ">
-Respond to Slack poll on POLS #reading, and prepare to share on Tue.
-</td>
-<td style="text-align:left;width: 20%; width: 20%; ">
-Research on Twitter Examples (Google Drive)
-</td>
-<td style="text-align:left;">
-Review POLS Learn R HW 1 <b> (Due 2/18)</b>
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 5%; ">
-02/17
-</td>
-<td style="text-align:left;width: 20%; ">
-Statistical Inference, Exploratory Data Analysis, and the Data Science Process
-</td>
-<td style="text-align:left;width: 20%; ">
-Read DDS Ch2 before Tuesday
-</td>
-<td style="text-align:left;width: 20%; width: 20%; ">
-DDS CH 2 Slack poll in #readings (Tue 2/18)
-</td>
-<td style="text-align:left;">
-<p><a href="https://classroom.github.com/a/2BmxOWsY">hw04: Real estate case study</a> <b> (Printed report due in class 2/25)</b></p>
-Review POLS Learn R HW 2 <b> (Due 2/25)</b>
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 5%; ">
-02/24
-</td>
-<td style="text-align:left;width: 20%; ">
-Data Science Case Studies
-</td>
-<td style="text-align:left;width: 20%; ">
-Summarize chosen DDS Case study on Tue
-</td>
-<td style="text-align:left;width: 20%; width: 20%; ">
-</td>
-<td style="text-align:left;">
-Review POLS Learn R HW 3 <b> (Due 3/3)</b><br />
-Blog post &amp; response <b> (Due 2/29)</b>
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 5%; ">
-03/02
-</td>
-<td style="text-align:left;width: 20%; ">
-Intro to Statistical Learning
-</td>
-<td style="text-align:left;width: 20%; ">
-Read ISLR Ch1 before Tue. Prepare your part of HW5 before Tue.
-</td>
-<td style="text-align:left;width: 20%; width: 20%; ">
-ISLR Ch 1, 2<br />
-ISLR MOOC <a href="http://auapps.american.edu/alberto/www/analytics/ISLRLectures.html">Video lectures</a><br />
-<a href="https://www.alsharif.info/iom530">Materials from DSO/IOM 530 at USC</a>
-</td>
-<td style="text-align:left;">
-<a href="hw/hw05-statistical-learning.html">hw05: Statistical Learning</a> <b> (Due 3/13)</b>
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 5%; ">
-03/09
-</td>
-<td style="text-align:left;width: 20%; ">
-Prediction using Regression Models
-</td>
-<td style="text-align:left;width: 20%; ">
-Familarize yourself with the advertising data from Ch 2. Read ISLR Ch 3.5
-</td>
-<td style="text-align:left;width: 20%; width: 20%; ">
-ISLR Ch 3<br />
-<a href="lec/wk08-notes-03-10-2020.html">Class notes from 03-10</a><br />
-<a href="lec/wk08-notes-03-12-2020.html">Class notes from 03-12</a>
 </td>
 <td style="text-align:left;">
 </td>
 </tr>
 <tr>
 <td style="text-align:left;width: 5%; ">
-03/16
+02/08
+</td>
+<td style="text-align:left;width: 20%; ">
+</td>
+<td style="text-align:left;width: 20%; ">
+</td>
+<td style="text-align:left;width: 20%; width: 20%; ">
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 5%; ">
+02/15
+</td>
+<td style="text-align:left;width: 20%; ">
+</td>
+<td style="text-align:left;width: 20%; ">
+</td>
+<td style="text-align:left;width: 20%; width: 20%; ">
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 5%; ">
+02/22
+</td>
+<td style="text-align:left;width: 20%; ">
+</td>
+<td style="text-align:left;width: 20%; ">
+</td>
+<td style="text-align:left;width: 20%; width: 20%; ">
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 5%; ">
+03/01
+</td>
+<td style="text-align:left;width: 20%; ">
+</td>
+<td style="text-align:left;width: 20%; ">
+</td>
+<td style="text-align:left;width: 20%; width: 20%; ">
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 5%; ">
+03/08
+</td>
+<td style="text-align:left;width: 20%; ">
+</td>
+<td style="text-align:left;width: 20%; ">
+</td>
+<td style="text-align:left;width: 20%; width: 20%; ">
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 5%; ">
+03/15
+</td>
+<td style="text-align:left;width: 20%; ">
+</td>
+<td style="text-align:left;width: 20%; ">
+</td>
+<td style="text-align:left;width: 20%; width: 20%; ">
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 5%; ">
+03/22
 </td>
 <td style="text-align:left;width: 20%; ">
 Spring Break
@@ -567,147 +434,110 @@ Spring Break
 </tr>
 <tr>
 <td style="text-align:left;width: 5%; ">
-03/23
+03/29
 </td>
 <td style="text-align:left;width: 20%; ">
-Project updates NLP (Text processing)
 </td>
 <td style="text-align:left;width: 20%; ">
-Review the notes from 3/24 even though we didn’t meet that day.
 </td>
 <td style="text-align:left;width: 20%; width: 20%; ">
-<a href="lec/wk09-notes.html">Week 9 Notes</a>
 </td>
 <td style="text-align:left;">
-Listed in notes from 3/24.
 </td>
 </tr>
 <tr>
 <td style="text-align:left;width: 5%; ">
-03/30
+04/05
 </td>
 <td style="text-align:left;width: 20%; ">
-NLP- Sentiment analysis
 </td>
 <td style="text-align:left;width: 20%; ">
 </td>
 <td style="text-align:left;width: 20%; width: 20%; ">
-<a href="lec/wk10-notes.html">Week 10 Notes</a>
 </td>
 <td style="text-align:left;">
-<a href="https://classroom.github.com/a/t2Wt4CIJ">Text analysis assignment</a> <b> (Draft due Tue 4/7, Final 4/9)</b>
 </td>
 </tr>
 <tr>
 <td style="text-align:left;width: 5%; ">
-04/06
+04/12
 </td>
 <td style="text-align:left;width: 20%; ">
-Classification
 </td>
 <td style="text-align:left;width: 20%; ">
-Watch at least one recap video (links in Wk 11 notes)
 </td>
 <td style="text-align:left;width: 20%; width: 20%; ">
-<a href="lec/wk11-notes.html">Week 11 Notes</a><br />
-<a href="https://hackmd.io/@norcalbiostat/lec03_classifiers">lec03-classifiers Hack MD notes</a><br />
-ISLR Chapter 4<br />
-Doing Data Science Ch 5
 </td>
 <td style="text-align:left;">
-<a href="https://classroom.github.com/a/8AQxyAIa">Classification Assignment</a> <b> (Due 04/18) </b>
 </td>
 </tr>
 <tr>
 <td style="text-align:left;width: 5%; ">
-04/13
+04/19
 </td>
 <td style="text-align:left;width: 20%; ">
-Cross-Validation
 </td>
 <td style="text-align:left;width: 20%; ">
-ISLR Ch 5
 </td>
 <td style="text-align:left;width: 20%; width: 20%; ">
-<a href="lec/wk12-notes.html">Week 12 Notes</a><br />
-Project instructions linked in navbar
 </td>
 <td style="text-align:left;">
-Presentation slides- through Methods <b> (Due 4/12)</b>
 </td>
 </tr>
 <tr>
 <td style="text-align:left;width: 5%; ">
-04/20
+04/26
 </td>
 <td style="text-align:left;width: 20%; ">
-Bootstrap, comparing multiple ML models
 </td>
 <td style="text-align:left;width: 20%; ">
 </td>
 <td style="text-align:left;width: 20%; width: 20%; ">
 </td>
 <td style="text-align:left;">
-Presentation slides- through Univariate Results <b> (Due 4/19 , PR 4/22) Resampling homework <b> (Due 4/28)</b> </b>
 </td>
 </tr>
 <tr>
 <td style="text-align:left;width: 5%; ">
-04/27
+05/03
 </td>
 <td style="text-align:left;width: 20%; ">
-Tree based methods Ethics
 </td>
 <td style="text-align:left;width: 20%; ">
-ISLR CH 8 Weapons of Math Destruction
 </td>
 <td style="text-align:left;width: 20%; width: 20%; ">
-<a href="lec/wk14-notes.html">Week 14 Notes</a>
 </td>
 <td style="text-align:left;">
-Presentation slides- through EDA/bivariate results <b> (Due 4/26)</b> WMD Intro-Ch1 reflection questions <b> (Due 5/4)</b>
 </td>
 </tr>
 <tr>
 <td style="text-align:left;width: 5%; ">
-05/04
+05/10
 </td>
 <td style="text-align:left;width: 20%; ">
-Tree based methods Ethics
 </td>
 <td style="text-align:left;width: 20%; ">
 </td>
 <td style="text-align:left;width: 20%; width: 20%; ">
-<a href="read/WMD_Discussion_Questions.html">Weapons of Math Destruction Discussion Questions</a> <a href="lec09-tree-models.html">Notes on Tree based models</a>
 </td>
 <td style="text-align:left;">
-Presentation slides-finish <b> (Due 5/3 , PR 5/6)</b> Learning journal assignment <b> (Due 5/7)</b> WMD Ch 2-3 reflection question <b> (Due 5/6)</b>
 </td>
 </tr>
 <tr>
 <td style="text-align:left;width: 5%; ">
-05/11
+05/17
 </td>
 <td style="text-align:left;width: 20%; ">
-Final Presentations
 </td>
 <td style="text-align:left;width: 20%; ">
 </td>
 <td style="text-align:left;width: 20%; width: 20%; ">
 </td>
 <td style="text-align:left;">
-Final Presentation 6-8pm Wednesday WMD Ch 4-5 OR 6-7 reflection question <b> (Due 5/15)</b> CART assignment <a href="hw09-CART-assignment.html">[HTML]</a><a href="hw09-CART-assignment.Rmd">[RMD]</a> <b> (Due 5/15)</b>
 </td>
 </tr>
 </tbody>
 </table>
-</div>
-<div id="calendar" class="section level2">
-<h2>Calendar</h2>
-<p>For those of you that like the calendar view of your schedule. Due to schedule adjustments during the semester these dates may not match exactly with the schedule. In those cases please bring any descrepencies to my attention via Slack.</p>
-<iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FLos_Angeles&amp;src=bWFpbC5jc3VjaGljby5lZHVfajg0NjlvamVhcHFyZXNiZWswdmxobzRxMjBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=bWFpbC5jc3VjaGljby5lZHVfOTNyMXBmOThxZ2VzNzlsa2dkb3FpcGV1YW9AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%235A9A08&amp;color=%23871111" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no">
-</iframe>
-</div>
 </div>
 
 
@@ -719,7 +549,7 @@ Final Presentation 6-8pm Wednesday WMD Ch 4-5 OR 6-7 reflection question <b> (Du
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();
@@ -737,7 +567,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
+    $(this).parent().toggleClass('nav-tabs-open');
   });
 });
 </script>
