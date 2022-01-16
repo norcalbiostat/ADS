@@ -1,6 +1,9 @@
 ---
 title: "Syllabus for MATH 485 - Spring 2022"
-output: html_document
+output: 
+  html_document: 
+    toc: yes
+    toc_float: true
 ---
 
 
@@ -12,7 +15,7 @@ output: html_document
 * **E-mail:** rdonatello@csuchico.edu
 * **Best Contact Method:** Discord
 * **Office Hours:** TBD Week 2
-* **Meeting time and locations:** TR 2-3:30 pm Holt 155
+* **Meeting time and locations:** TR 9:30-10:45 pm Butte 203, or remotely over Zoom as needed. 
 * **Prerequisites:**
     1. Introduction to Data Science (DATA 385).
     2. Math 456 (_or co-requisite_)
@@ -27,29 +30,58 @@ output: html_document
 * **Computer**
     * A laptop is nearly invaluable, bring to class every day. 
     * A solid internet connection is a must. We will be using a lot of online resources.
-* **Computer Software**: R 4.1+, RStudio 1.4+, Discord. 
-* **Textbooks** 
-    * Introduction to Statistical Learning http://www-bcf.usc.edu/~gareth/ISL/ (free)
-    * Doing Data Science ,Cathy O'Neil, Rachel Schutt (2014) ISBN-10 978-1-449-35865-5
-    * Race after technology? 
-* Something about coded bias
+* **Computer Software**: R 4.1+, RStudio 1.4+, git, Discord. 
 * **Accounts (Free)** Github, Discord
+* **Textbooks** 
+    * Introduction to Statistical Learning (ISLR) [[Ebook]](http://www-bcf.usc.edu/~gareth/ISL/) [[Slides & Videos]](http://auapps.american.edu/alberto/www/analytics/ISLRLectures.html), [[Code]](https://emilhvitfeldt.github.io/ISLR-tidymodels-labs/index.html)
+    * Doing Data Science (DDS), Cathy O'Neil, Rachel Schutt (2014) ISBN-10 978-1-449-35865-5 [[Library copy]](https://csu-chico.primo.exlibrisgroup.com/permalink/01CALS_CHI/s3tu53/alma991071823573402901)
+    * Benjamin, Ruha. Race after Technology: Abolitionist Tools for the New Jim Code (RAT). Polity, 2019. ISBN 978-1-509-52643-7. [[Library copy]](https://csu-chico.primo.exlibrisgroup.com/permalink/01CALS_CHI/s3tu53/alma991008332949602904)
 
+---
 
+# What are we going to learn? 
 
-# What are we going to learn? (Course Learning Outcomes) {#co}
+## Course Learning Outcomes
 
 By the end of the course, students will be able to...
 
+1. Work effectively with a remote team using modern collaboration tools.
+2. Build and update a professional online presence.
+3. Explain how modern automated technology can perpetuate existing structures of discrimination through its design and application.
+4. Train and validate a variety of predictive and classification models. 
+5. Professionally engage with a client to assess and potentially solve a problem using data science tools within the framework of the data science lifecycle
 
 
+## General Outline of Topics
+Totally subject to time constraints and how the class unfolds, but generally be covered in the following order. More details are on the schedule page of the course website. 
+
+1. Creating personal webpages. 
+    - You'll be heading into the career world soon enough. Now is the time to start playing around with your own site and building your DS portfolio. 
+
+2. What is Data Science? Who is doing Data Science? What's hot right now? 
+    - Another look at the field you are studying. 
+    - Building connections into this community. 
+    - What is your Data Science profile? 
+    
+3. SQL - because you got to learn this at some point. 
+
+4. Statistical Learning
+    - Linear Regression, from a different viewpoint
+    - Classification using multiple classifiers
+    - Resampling methods (Cross Validation)
+    - Tree based methods
+
+5. Ethics of Algorithms, Machine Learning, Big Data. 
+    - Lots of reading, reflection, and looking for examples in every day occurrences. 
+    
 ----
   
 # Who are we learning it with? 
 
 My name is Robin Donatello and my pronouns are she/her. You can address me as "Robin", "Dr. D", or some other respectful title such as "professor". 
 
-I have a Doctorate in Public Health (DrPH) Biostatistics from UCLA, but I'm a Chico alum. I double majored in Statistics &  Biology, with minor in Chemistry, and a first generation college student who started at Butte College. 
+I am a first generation college student who started at Butte College, double majored in Statistics &  Biology, with minor in Chemistry here at Chico State, and ended with a Doctorate in Public Health (DrPH) Biostatistics from UCLA. 
+
 My campus life consists of training the next generation of Scientists how to harness the power of Statistics and Data in a responsible and ethical manner, supporting students in their academic adventures through intensive advising and research, leading the Data Science Initiative (DSI) to develop Data Science capacity on our campus, and providing analytical support and statistical consulting for many projects on and off campus.
 
 When I’m not on campus, typically I’m growing 🥕🌾🍅🍆🍏 for my family, out adventuring with my 🐶🧔🐩, or getting some 🎮🎲📚 time in.
@@ -58,15 +90,21 @@ You can learn more about the work that I do on my [website](http://www.norcalbio
 
 ----
 
-# Interdisciplinary Collaboration Project
+# How are we learning it? 
 
-We will be collaborating with two campus organizations to provide data and research assistance. Details about the projects will be discussed in class and posted on the course website. 
+* **Traditional coursework** We will be working through ISLR to learn and practice predictive modeling using typical problem sets. 
+* **Collaborative note taking** Students will collaborate to generate class-wide course notes and materials. 
+* **Reading & Reflecting** We will engage with several readings where you will be asked to answer reflection questions in your personal learning journal, as well as having discussions with your peers. 
+* **Peer feedback / code review** Reviewing each others work and code facilitates the sharing of knowledge, strengthens your ability to read others work, and can find bugs and problems early in the development stage. 
+* **Interdisciplinary Collaboration Project** We will be collaborating with two campus organizations to provide data and research assistance. Details about the projects will be discussed in class and posted on the course website. 
 
 ----
 
-# How is learning measured? (What are you graded on?)
+# How is learning measured?
 
-There are five general areas that each piece of work will fall under. 
+The learning objectives for this class are very broad and high level. To work towards achieving those goals you will have several tasks to work through each week. Depending on the effort level for each task, the actual number of tasks will vary. 
+
+There are five general areas that each task is designed to help strengthen. 
 
 * Skills: Can you do the thing? 
 * Communication: Can you talk about the thing? 
@@ -74,12 +112,14 @@ There are five general areas that each piece of work will fall under.
 * Collaboration: Can you work on the thing with someone else? 
 * Learning: What did you learn from engaging with the thing? 
 
-Each week you will have several tasks to work through. Each task will have a % effort for the week. I will review your work and grade on the completion of each task. You will then be given a score (out of 10) for the week calculated as `completion status * % effort`. 
+I will review your work and provide feedback as appropriate. To acknowledge that revision and growth is part of every aspect of our lives, that we all are balancing other external priorities and that nothing is ever perfect, I use an effort based scoring method. 
+
+Each task will be classified as incomplete (0) / needs major revision (0.5) / complete (1). You will then be given a score for the week calculated as `completion status * % effort` summed over all tasks. Scores will be scaled to 10 points for ease of addition. 
 
 
 ## Grading
 
-- Your grades will be available in a private github repo that is updated on a regular basis. 
+- A dataset of tasks with completion status, % effort and a script that generates your weekly and overall scores will be available in a private github repo that is updated regularly. 
 - I mostly stick with the standard grade cutoff ranges of 100-90%: A, 89-80%: B, 79-70%: C, 69-60%: D, 0-59%: F, but reserve the right to modify those ranges depending on how I feel the semester went.
 - I also reserve the right to round a grade up up if borderline (i.e. 89.6% to a 90%) based on in-class attitude and general engagement in the class. 
 

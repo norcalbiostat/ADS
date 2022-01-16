@@ -17,7 +17,9 @@ https://classroom.github.com/help/creating-an-individual-assignment
 https://github.com/organizations/DATA485-S20/settings/profile
 https://education.github.com/benefits
 
-
+## Hack MD stuff
+* https://hackmd.io/WivwpZz7TXKdFsRvmQu5lA
+* https://hackmd.io/@norcalbiostat/data485-lec02/https%3A%2F%2Fhackmd.io%2F%40norcalbiostat%2Fdata485-lec02%2Fedit%3Fedit
 
 
 ## Random Readings

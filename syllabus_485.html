@@ -13,8 +13,8 @@
 
 <title>Syllabus for MATH 485 - Spring 2022</title>
 
-<script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
-<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="site_libs/header-attrs-2.8/header-attrs.js"></script>
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/yeti.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
@@ -29,6 +29,9 @@
        h6 {font-size: 12px;}
        code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
        pre:not([class]) { background-color: white }</style>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
@@ -209,6 +212,69 @@ $(document).ready(function () {
 
 
 
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
 
 </head>
 
@@ -216,6 +282,16 @@ $(document).ready(function () {
 
 
 <div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
 
 
 
@@ -234,23 +310,30 @@ $(document).ready(function () {
       <ul class="nav navbar-nav">
         <li>
   <a href="schedule.html">
-    <span class="fa fa-calendar"></span>
+    <span class="fas fa-calendar"></span>
      
     Schedule
+  </a>
+</li>
+<li>
+  <a href="notes.html">
+    <span class="fas fa-folder-open"></span>
+     
+    Notes
   </a>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>
   <a href="syllabus_485.html">
-    <span class="fa fa-info-circle"></span>
+    <span class="fas fa-info-circle"></span>
      
     Syllabus
   </a>
 </li>
 <li>
   <a href="http://www.norcalbiostat.com/">
-    <span class="fa fa-paw"></span>
+    <span class="fas fa-paw"></span>
      
     Dr. D's Website
   </a>
@@ -269,7 +352,6 @@ $(document).ready(function () {
 </div>
 
 
-<p>You can download the Syllabus in PDF form by clicking <a href="syllabus_485.pdf">[this link]</a>.</p>
 <div id="logistics" class="section level1">
 <h1>Logistics</h1>
 <ul>
@@ -279,7 +361,7 @@ $(document).ready(function () {
 <li><strong>E-mail:</strong> <a href="mailto:rdonatello@csuchico.edu" class="email">rdonatello@csuchico.edu</a></li>
 <li><strong>Best Contact Method:</strong> Discord</li>
 <li><strong>Office Hours:</strong> TBD Week 2</li>
-<li><strong>Meeting time and locations:</strong> TR 2-3:30 pm Holt 155</li>
+<li><strong>Meeting time and locations:</strong> TR 9:30-10:45 pm Butte 203, or remotely over Zoom as needed.</li>
 <li><strong>Prerequisites:</strong>
 <ol style="list-style-type: decimal">
 <li>Introduction to Data Science (DATA 385).</li>
@@ -300,39 +382,85 @@ $(document).ready(function () {
 <li>A laptop is nearly invaluable, bring to class every day.</li>
 <li>A solid internet connection is a must. We will be using a lot of online resources.</li>
 </ul></li>
-<li><strong>Computer Software</strong>: R 4.1+, RStudio 1.4+, Discord.</li>
+<li><strong>Computer Software</strong>: R 4.1+, RStudio 1.4+, git, Discord.</li>
+<li><strong>Accounts (Free)</strong> Github, Discord</li>
 <li><strong>Textbooks</strong>
 <ul>
-<li>Introduction to Statistical Learning <a href="http://www-bcf.usc.edu/~gareth/ISL/" class="uri">http://www-bcf.usc.edu/~gareth/ISL/</a> (free)</li>
-<li>Doing Data Science ,Cathy O’Neil, Rachel Schutt (2014) ISBN-10 978-1-449-35865-5</li>
-<li>Race after technology?</li>
+<li>Introduction to Statistical Learning (ISLR) <a href="http://www-bcf.usc.edu/~gareth/ISL/">[Ebook]</a> <a href="http://auapps.american.edu/alberto/www/analytics/ISLRLectures.html">[Slides &amp; Videos]</a>, <a href="https://emilhvitfeldt.github.io/ISLR-tidymodels-labs/index.html">[Code]</a></li>
+<li>Doing Data Science (DDS), Cathy O’Neil, Rachel Schutt (2014) ISBN-10 978-1-449-35865-5 <a href="https://csu-chico.primo.exlibrisgroup.com/permalink/01CALS_CHI/s3tu53/alma991071823573402901">[Library copy]</a></li>
+<li>Benjamin, Ruha. Race after Technology: Abolitionist Tools for the New Jim Code (RAT). Polity, 2019. ISBN 978-1-509-52643-7. <a href="https://csu-chico.primo.exlibrisgroup.com/permalink/01CALS_CHI/s3tu53/alma991008332949602904">[Library copy]</a></li>
 </ul></li>
-<li>Something about coded bias</li>
-<li><strong>Accounts (Free)</strong> Github, Discord</li>
 </ul>
-</div>
-</div>
-<div id="co" class="section level1">
-<h1>What are we going to learn? (Course Learning Outcomes)</h1>
-<p>By the end of the course, students will be able to…</p>
 <hr />
+</div>
+</div>
+<div id="what-are-we-going-to-learn" class="section level1">
+<h1>What are we going to learn?</h1>
+<div id="course-learning-outcomes" class="section level2">
+<h2>Course Learning Outcomes</h2>
+<p>By the end of the course, students will be able to…</p>
+<ol style="list-style-type: decimal">
+<li>Work effectively with a remote team using modern collaboration tools.</li>
+<li>Build and update a professional online presence.</li>
+<li>Explain how modern automated technology can perpetuate existing structures of discrimination through its design and application.</li>
+<li>Train and validate a variety of predictive and classification models.</li>
+<li>Professionally engage with a client to assess and potentially solve a problem using data science tools within the framework of the data science lifecycle</li>
+</ol>
+</div>
+<div id="general-outline-of-topics" class="section level2">
+<h2>General Outline of Topics</h2>
+<p>Totally subject to time constraints and how the class unfolds, but generally be covered in the following order. More details are on the schedule page of the course website.</p>
+<ol style="list-style-type: decimal">
+<li><p>Creating personal webpages.</p>
+<ul>
+<li>You’ll be heading into the career world soon enough. Now is the time to start playing around with your own site and building your DS portfolio.</li>
+</ul></li>
+<li><p>What is Data Science? Who is doing Data Science? What’s hot right now?</p>
+<ul>
+<li>Another look at the field you are studying.</li>
+<li>Building connections into this community.</li>
+<li>What is your Data Science profile?</li>
+</ul></li>
+<li><p>SQL - because you got to learn this at some point.</p></li>
+<li><p>Statistical Learning</p>
+<ul>
+<li>Linear Regression, from a different viewpoint</li>
+<li>Classification using multiple classifiers</li>
+<li>Resampling methods (Cross Validation)</li>
+<li>Tree based methods</li>
+</ul></li>
+<li><p>Ethics of Algorithms, Machine Learning, Big Data.</p>
+<ul>
+<li>Lots of reading, reflection, and looking for examples in every day occurrences.</li>
+</ul></li>
+</ol>
+<hr />
+</div>
 </div>
 <div id="who-are-we-learning-it-with" class="section level1">
 <h1>Who are we learning it with?</h1>
 <p>My name is Robin Donatello and my pronouns are she/her. You can address me as “Robin”, “Dr. D”, or some other respectful title such as “professor”.</p>
-<p>I have a Doctorate in Public Health (DrPH) Biostatistics from UCLA, but I’m a Chico alum. I double majored in Statistics &amp; Biology, with minor in Chemistry, and a first generation college student who started at Butte College. My campus life consists of training the next generation of Scientists how to harness the power of Statistics and Data in a responsible and ethical manner, supporting students in their academic adventures through intensive advising and research, leading the Data Science Initiative (DSI) to develop Data Science capacity on our campus, and providing analytical support and statistical consulting for many projects on and off campus.</p>
+<p>I am a first generation college student who started at Butte College, double majored in Statistics &amp; Biology, with minor in Chemistry here at Chico State, and ended with a Doctorate in Public Health (DrPH) Biostatistics from UCLA.</p>
+<p>My campus life consists of training the next generation of Scientists how to harness the power of Statistics and Data in a responsible and ethical manner, supporting students in their academic adventures through intensive advising and research, leading the Data Science Initiative (DSI) to develop Data Science capacity on our campus, and providing analytical support and statistical consulting for many projects on and off campus.</p>
 <p>When I’m not on campus, typically I’m growing 🥕🌾🍅🍆🍏 for my family, out adventuring with my 🐶🧔🐩, or getting some 🎮🎲📚 time in.</p>
 <p>You can learn more about the work that I do on my <a href="http://www.norcalbiostat.com/">website</a></p>
 <hr />
 </div>
-<div id="interdisciplinary-collaboration-project" class="section level1">
-<h1>Interdisciplinary Collaboration Project</h1>
-<p>We will be collaborating with two campus organizations to provide data and research assistance. Details about the projects will be discussed in class and posted on the course website.</p>
+<div id="how-are-we-learning-it" class="section level1">
+<h1>How are we learning it?</h1>
+<ul>
+<li><strong>Traditional coursework</strong> We will be working through ISLR to learn and practice predictive modeling using typical problem sets.</li>
+<li><strong>Collaborative note taking</strong> Students will collaborate to generate class-wide course notes and materials.</li>
+<li><strong>Reading &amp; Reflecting</strong> We will engage with several readings where you will be asked to answer reflection questions in your personal learning journal, as well as having discussions with your peers.</li>
+<li><strong>Peer feedback / code review</strong> Reviewing each others work and code facilitates the sharing of knowledge, strengthens your ability to read others work, and can find bugs and problems early in the development stage.</li>
+<li><strong>Interdisciplinary Collaboration Project</strong> We will be collaborating with two campus organizations to provide data and research assistance. Details about the projects will be discussed in class and posted on the course website.</li>
+</ul>
 <hr />
 </div>
-<div id="how-is-learning-measured-what-are-you-graded-on" class="section level1">
-<h1>How is learning measured? (What are you graded on?)</h1>
-<p>There are five general areas that each piece of work will fall under.</p>
+<div id="how-is-learning-measured" class="section level1">
+<h1>How is learning measured?</h1>
+<p>The learning objectives for this class are very broad and high level. To work towards achieving those goals you will have several tasks to work through each week. Depending on the effort level for each task, the actual number of tasks will vary.</p>
+<p>There are five general areas that each task is designed to help strengthen.</p>
 <ul>
 <li>Skills: Can you do the thing?</li>
 <li>Communication: Can you talk about the thing?</li>
@@ -340,11 +468,12 @@ $(document).ready(function () {
 <li>Collaboration: Can you work on the thing with someone else?</li>
 <li>Learning: What did you learn from engaging with the thing?</li>
 </ul>
-<p>Each week you will have several tasks to work through. Each task will have a % effort for the week. I will review your work and grade on the completion of each task. You will then be given a score (out of 10) for the week calculated as <code>completion status * % effort</code>.</p>
+<p>I will review your work and provide feedback as appropriate. To acknowledge that revision and growth is part of every aspect of our lives, that we all are balancing other external priorities and that nothing is ever perfect, I use an effort based scoring method.</p>
+<p>Each task will be classified as incomplete (0) / needs major revision (0.5) / complete (1). You will then be given a score for the week calculated as <code>completion status * % effort</code> summed over all tasks. Scores will be scaled to 10 points for ease of addition.</p>
 <div id="grading" class="section level2">
 <h2>Grading</h2>
 <ul>
-<li>Your grades will be available in a private github repo that is updated on a regular basis.</li>
+<li>A dataset of tasks with completion status, % effort and a script that generates your weekly and overall scores will be available in a private github repo that is updated regularly.</li>
 <li>I mostly stick with the standard grade cutoff ranges of 100-90%: A, 89-80%: B, 79-70%: C, 69-60%: D, 0-59%: F, but reserve the right to modify those ranges depending on how I feel the semester went.</li>
 <li>I also reserve the right to round a grade up up if borderline (i.e. 89.6% to a 90%) based on in-class attitude and general engagement in the class.</li>
 </ul>
@@ -432,12 +561,14 @@ $(document).ready(function () {
 <h2>Academic Integrity</h2>
 <p>Academic integrity is defined as “a commitment, even in the face of adversity, to five fundamental values: honesty, trust, fairness, respect, and responsibility”. From these values flow principles of behavior that enable academic communities to translate ideals to action. Academic integrity is expected and required. No forms of cheating or plagiarism will be tolerated. Please see your student handbook at <a href="https://www.csuchico.edu/scrr/integrity.shtml" class="uri">https://www.csuchico.edu/scrr/integrity.shtml</a> if you have questions about the meaning of these terms or the consequences of violating academic integrity.</p>
 <hr />
-<p><em>Last updated: Mon Jan 10 2022 10:36:21 PM</em></p>
+<p><em>Last updated: Sun Jan 16 2022 10:49:23</em></p>
 </div>
 </div>
 
 
 
+</div>
+</div>
 
 </div>
 
@@ -470,6 +601,32 @@ $(document).ready(function () {
 
 <!-- code folding -->
 
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>

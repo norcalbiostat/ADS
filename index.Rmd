@@ -35,5 +35,5 @@ _This course aims to help students navigate the evolving and murky waters of the
 
 This course website contains all materials except the textbooks for this class. Be sure to familiarize yourself with the organization. You will be here a lot. Bookmark this page.
 
-_Add notes here about syllabus, tools etc_
+This week we will make sure you are connected to all the content and platforms for the class, and start working to build your first website using R & Markdown.
 
