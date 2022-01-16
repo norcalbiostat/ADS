@@ -6,21 +6,10 @@ navbar:
   - text: Schedule
     icon: fa-calendar
     href: schedule.html
-#  - text: Materials
-#    icon: fa-folder-open
-#    href: materials.html
-  # - text: Tools
-  #   icon: fa-wrench
-  #   menu:
-  #   - text: GitHub
-  #     icon: fa-github
-  #     href: https://github.com/
-  #   - text: HackMD
-  #     icon: fa-file-code
-  #     href: https://hackmd.io/
-  #   - text: Google Drive
-  #     icon: fa-google
-  #     href: 
+  - text: Notes
+    icon: fa-folder-open
+    href: notes.html
+
   right:
   - text: Syllabus
     icon: fa-info-circle

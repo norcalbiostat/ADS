@@ -3,7 +3,6 @@ title: "Syllabus for MATH 485 - Spring 2022"
 output: html_document
 ---
 
-You can download the Syllabus in PDF form by clicking [[this link]](syllabus_485.pdf).
 
 # Logistics
 
