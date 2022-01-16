@@ -50,7 +50,7 @@ https://www.springboard.com/blog/data-scientist-training-college/
 * Effort based grading like S20
     - Where to show grid to students? -> Individual student repo containing R data set of assignments, grades, and % effort. Single RMD file that creates a nice table for them when they knit.
   
-* class credit for hosting community coding?
+* class credit for hosting community coding
 
 * github classroom
     - ISLR assignments in separate repos like last time
