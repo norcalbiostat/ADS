@@ -1,0 +1,39 @@
+---
+title: "Course materials"
+output: html_document
+---
+
+```{r, message=FALSE, warning=FALSE, echo=FALSE}
+library(stringr); library(dplyr);library(pander)
+```
+
+# Collaborative Notes
+```{r, message=FALSE, warning=FALSE, echo=FALSE}
+note <- data.frame(filenames = paste0('notes/', list.files("notes", pattern='*.pdf|*.html|*.docx')))
+
+out.note <- note %>% mutate(name = gsub("note/|.html|.pdf|.md",  "", filenames), 
+                          link = sprintf("[%s](%s)",name, filenames))
+pander(as.list(out.note$link))
+```
+
+# Other Books on Data Science
+Note - many of these books are links to a Tweet where the book is promoted/discussed. I leave the tweets in there so you can 1) see the entire context of the post, and 2) you can learn more people involved in the DS world that you may want to follow. 
+
+* DS with R - Garrett Grolemund https://garrettgman.github.io/
+* Another book on Data Science https://www.anotherbookondatascience.com/
+* Text mining with R https://www.tidytextmining.com/
+* Hands on Machine Learning with R https://bradleyboehmke.github.io/HOML/DT.html
+* Create your own DS curriculum https://twitter.com/DataKimist/status/1213855599013830657?s=09
+* "Best Free Data Science ebook" https://twitter.com/kareem_carr/status/1205191083443048448?s=09
+* Building a career in Data Science https://twitter.com/skyetetra/status/1202350563859369984?s=09
+    - might be same book https://twitter.com/robinson_es/status/1207450496019111942?s=09
+* How to be a modern scientist https://twitter.com/alexpghayes/status/1200917769774141442?s=09    
+
+
+
+# Additional readings on Ethics & Algorithms
+
+* [When Data Science Destabilizes Democracy and Facilitates Genocide](http://www.fast.ai/2017/11/02/ethics/)
+* [Activision Patents Matchmaking That Encourages Players To Buy Microtransactions](https://kotaku.com/activision-patents-matchmaking-that-encourages-players-1819630937)
+* [More than a Million Pro-Repeal Net Neutrality Comments were Likely Faked](https://hackernoon.com/more-than-a-million-pro-repeal-net-neutrality-comments-were-likely-faked-e9f0e3ed36a6)
+

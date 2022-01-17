@@ -6,11 +6,10 @@ output:
     toc_float: true
 ---
 
-
 # Logistics
 
 * **Course Name:** Advanced Topics in Data Science (a.k.a. ADS or DATA 485)
-* **Instructor:** Dr. Robin Donatello  (Dr. D, she/her/hers)
+* **Instructor:** Dr. Robin Donatello  (Dr. D, she/her)
 * **Office Location:** Holt 202
 * **E-mail:** rdonatello@csuchico.edu
 * **Best Contact Method:** Discord
@@ -22,8 +21,6 @@ output:
     3. Or instructor permission
 * **Course Website:** https://data485.netlify.app/
 * **Discord Server**: https://discord.gg/tzcB4MJadW
-    - After you agree to the code of conduct you will be able to select `DATA-485` as your role which will grant you access to our class channels. 
-
 
 ## Required Materials
 
@@ -33,7 +30,7 @@ output:
 * **Computer Software**: R 4.1+, RStudio 1.4+, git, Discord. 
 * **Accounts (Free)** Github, Discord
 * **Textbooks** 
-    * Introduction to Statistical Learning (ISLR) [[Ebook]](http://www-bcf.usc.edu/~gareth/ISL/) [[Slides & Videos]](http://auapps.american.edu/alberto/www/analytics/ISLRLectures.html), [[Code]](https://emilhvitfeldt.github.io/ISLR-tidymodels-labs/index.html)
+    * Introduction to Statistical Learning (ISLR) [[PDF]](https://www.statlearning.com/) [[Slides & Videos]](http://auapps.american.edu/alberto/www/analytics/ISLRLectures.html), [[Code]](https://emilhvitfeldt.github.io/ISLR-tidymodels-labs/index.html)
     * Doing Data Science (DDS), Cathy O'Neil, Rachel Schutt (2014) ISBN-10 978-1-449-35865-5 [[Library copy]](https://csu-chico.primo.exlibrisgroup.com/permalink/01CALS_CHI/s3tu53/alma991071823573402901)
     * Benjamin, Ruha. Race after Technology: Abolitionist Tools for the New Jim Code (RAT). Polity, 2019. ISBN 978-1-509-52643-7. [[Library copy]](https://csu-chico.primo.exlibrisgroup.com/permalink/01CALS_CHI/s3tu53/alma991008332949602904)
 
@@ -63,13 +60,14 @@ Totally subject to time constraints and how the class unfolds, but generally be 
     - Building connections into this community. 
     - What is your Data Science profile? 
     
-3. SQL - because you got to learn this at some point. 
+3. SQL - because you got to learn this at some point. [[All you really need to know about SQL in one tweet]](https://twitter.com/thosjleeper/status/1184572652125589504?s=09)
 
 4. Statistical Learning
     - Linear Regression, from a different viewpoint
     - Classification using multiple classifiers
     - Resampling methods (Cross Validation)
     - Tree based methods
+    - Unsupervised clustering
 
 5. Ethics of Algorithms, Machine Learning, Big Data. 
     - Lots of reading, reflection, and looking for examples in every day occurrences. 
@@ -92,7 +90,10 @@ You can learn more about the work that I do on my [website](http://www.norcalbio
 
 # How are we learning it? 
 
-* **Traditional coursework** We will be working through ISLR to learn and practice predictive modeling using typical problem sets. 
+This class is semi-unstructured, meaning there is a combination of standard homework assignments, and several ongoing / multi-stage activities that we'll be working on throughout the semester. A lot of class time will be spent working on activities. 
+
+
+* **Textbook assignments** We will be working through ISLR to learn and practice predictive modeling using typical problem sets. 
 * **Collaborative note taking** Students will collaborate to generate class-wide course notes and materials. 
 * **Reading & Reflecting** We will engage with several readings where you will be asked to answer reflection questions in your personal learning journal, as well as having discussions with your peers. 
 * **Peer feedback / code review** Reviewing each others work and code facilitates the sharing of knowledge, strengthens your ability to read others work, and can find bugs and problems early in the development stage. 
@@ -101,6 +102,8 @@ You can learn more about the work that I do on my [website](http://www.norcalbio
 ----
 
 # How is learning measured?
+
+In the workplace you don't get homework assignments. You work on larger projects typically broken down into smaller pieces with their own due dates. It is common also to be working on multiple projects at the same time. 
 
 The learning objectives for this class are very broad and high level. To work towards achieving those goals you will have several tasks to work through each week. Depending on the effort level for each task, the actual number of tasks will vary. 
 
@@ -152,7 +155,7 @@ This is a fully in person class, however time has shown us that we need to be fl
 
 Class attendance is expected. Talk to me ahead of time if you need to miss a class for a planned reason. In the event of an unplanned reason, PM me in Discord when you can so that I know you are still alive. 
 
-* If you are not feeling well or are experiencing Covid symptoms **DO NOT COME TO CLASS**. DM me in Discord and attend online until you can return. 
+* If you are not feeling well or are experiencing COVID symptoms **DO NOT COME TO CLASS**. DM me in Discord and attend online until you can return. 
     - This is NOT an open invitation to attend class online just because it's cold and rainy or you are hungover and didn't get up until 20 minutes before class. Don't abuse my flexibility. 
 
 ## Zoom Eqituette
@@ -170,8 +173,6 @@ When we meet online please attend to the following
 # Campus Resources
 
 This [campus website](https://www.csuchico.edu/coronavirus/students.shtml) contains a lot of information and resources specific to our COVID-19 situation. Specifically this page contains links to resources to help you keep [learning](https://www.csuchico.edu/keep-learning/index.shtml), and [engaging](https://www.csuchico.edu/keep-engaging/index.shtml), and lots of links to student support services such as emergency grants, basic need such as healthy food and housing, tutoring, health center, financial aid and a lot more.
-
-You can also check out the resources on the [Help](help.html) page. 
 
 ## Technology Support
 
@@ -201,10 +202,7 @@ Individuals unable to wear a face covering due to a medical condition should con
 
 ## Adding and Dropping the course
 
-You are responsible for understanding the policies and procedures about add/drops, academic renewal, etc., found in the [CSU Chico University Catalog](http://www.csuchico.edu/catalog/). You should be aware of the new deadlines and penalties for adding and dropping classes.
-
-The last day to add or drop classes without special permission by the instructor is 2/4/22. No adds or drops are allowed after 2/18/22 without a serious and compelling reason approved by the instructor, department chair, and college dean.
-
+You are responsible for understanding the policies and procedures about add/drops, academic renewal, etc., found in the [CSU Chico University Catalog](http://www.csuchico.edu/catalog/). You should be aware of the deadlines and penalties for adding and dropping classes.
 
 ## Confidentiality and Mandatory Reoprting
 

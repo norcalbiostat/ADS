@@ -13,8 +13,8 @@
 
 <title>Syllabus for MATH 485 - Spring 2022</title>
 
-<script src="site_libs/header-attrs-2.8/header-attrs.js"></script>
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/yeti.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
@@ -310,30 +310,23 @@ div.tocify {
       <ul class="nav navbar-nav">
         <li>
   <a href="schedule.html">
-    <span class="fas fa-calendar"></span>
+    <span class="fa fa-calendar"></span>
      
     Schedule
-  </a>
-</li>
-<li>
-  <a href="notes.html">
-    <span class="fas fa-folder-open"></span>
-     
-    Notes
   </a>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>
   <a href="syllabus_485.html">
-    <span class="fas fa-info-circle"></span>
+    <span class="fa fa-info-circle"></span>
      
     Syllabus
   </a>
 </li>
 <li>
   <a href="http://www.norcalbiostat.com/">
-    <span class="fas fa-paw"></span>
+    <span class="fa fa-paw"></span>
      
     Dr. D's Website
   </a>
@@ -356,7 +349,7 @@ div.tocify {
 <h1>Logistics</h1>
 <ul>
 <li><strong>Course Name:</strong> Advanced Topics in Data Science (a.k.a. ADS or DATA 485)</li>
-<li><strong>Instructor:</strong> Dr. Robin Donatello (Dr. D, she/her/hers)</li>
+<li><strong>Instructor:</strong> Dr. Robin Donatello (Dr. D, she/her)</li>
 <li><strong>Office Location:</strong> Holt 202</li>
 <li><strong>E-mail:</strong> <a href="mailto:rdonatello@csuchico.edu" class="email">rdonatello@csuchico.edu</a></li>
 <li><strong>Best Contact Method:</strong> Discord</li>
@@ -369,10 +362,7 @@ div.tocify {
 <li>Or instructor permission</li>
 </ol></li>
 <li><strong>Course Website:</strong> <a href="https://data485.netlify.app/" class="uri">https://data485.netlify.app/</a></li>
-<li><strong>Discord Server</strong>: <a href="https://discord.gg/tzcB4MJadW" class="uri">https://discord.gg/tzcB4MJadW</a>
-<ul>
-<li>After you agree to the code of conduct you will be able to select <code>DATA-485</code> as your role which will grant you access to our class channels.</li>
-</ul></li>
+<li><strong>Discord Server</strong>: <a href="https://discord.gg/tzcB4MJadW" class="uri">https://discord.gg/tzcB4MJadW</a></li>
 </ul>
 <div id="required-materials" class="section level2">
 <h2>Required Materials</h2>
@@ -386,7 +376,7 @@ div.tocify {
 <li><strong>Accounts (Free)</strong> Github, Discord</li>
 <li><strong>Textbooks</strong>
 <ul>
-<li>Introduction to Statistical Learning (ISLR) <a href="http://www-bcf.usc.edu/~gareth/ISL/">[Ebook]</a> <a href="http://auapps.american.edu/alberto/www/analytics/ISLRLectures.html">[Slides &amp; Videos]</a>, <a href="https://emilhvitfeldt.github.io/ISLR-tidymodels-labs/index.html">[Code]</a></li>
+<li>Introduction to Statistical Learning (ISLR) <a href="https://www.statlearning.com/">[PDF]</a> <a href="http://auapps.american.edu/alberto/www/analytics/ISLRLectures.html">[Slides &amp; Videos]</a>, <a href="https://emilhvitfeldt.github.io/ISLR-tidymodels-labs/index.html">[Code]</a></li>
 <li>Doing Data Science (DDS), Cathy O’Neil, Rachel Schutt (2014) ISBN-10 978-1-449-35865-5 <a href="https://csu-chico.primo.exlibrisgroup.com/permalink/01CALS_CHI/s3tu53/alma991071823573402901">[Library copy]</a></li>
 <li>Benjamin, Ruha. Race after Technology: Abolitionist Tools for the New Jim Code (RAT). Polity, 2019. ISBN 978-1-509-52643-7. <a href="https://csu-chico.primo.exlibrisgroup.com/permalink/01CALS_CHI/s3tu53/alma991008332949602904">[Library copy]</a></li>
 </ul></li>
@@ -421,13 +411,14 @@ div.tocify {
 <li>Building connections into this community.</li>
 <li>What is your Data Science profile?</li>
 </ul></li>
-<li><p>SQL - because you got to learn this at some point.</p></li>
+<li><p>SQL - because you got to learn this at some point. <a href="https://twitter.com/thosjleeper/status/1184572652125589504?s=09">[All you really need to know about SQL in one tweet]</a></p></li>
 <li><p>Statistical Learning</p>
 <ul>
 <li>Linear Regression, from a different viewpoint</li>
 <li>Classification using multiple classifiers</li>
 <li>Resampling methods (Cross Validation)</li>
 <li>Tree based methods</li>
+<li>Unsupervised clustering</li>
 </ul></li>
 <li><p>Ethics of Algorithms, Machine Learning, Big Data.</p>
 <ul>
@@ -448,8 +439,9 @@ div.tocify {
 </div>
 <div id="how-are-we-learning-it" class="section level1">
 <h1>How are we learning it?</h1>
+<p>This class is semi-unstructured, meaning there is a combination of standard homework assignments, and several ongoing / multi-stage activities that we’ll be working on throughout the semester. A lot of class time will be spent working on activities.</p>
 <ul>
-<li><strong>Traditional coursework</strong> We will be working through ISLR to learn and practice predictive modeling using typical problem sets.</li>
+<li><strong>Textbook assignments</strong> We will be working through ISLR to learn and practice predictive modeling using typical problem sets.</li>
 <li><strong>Collaborative note taking</strong> Students will collaborate to generate class-wide course notes and materials.</li>
 <li><strong>Reading &amp; Reflecting</strong> We will engage with several readings where you will be asked to answer reflection questions in your personal learning journal, as well as having discussions with your peers.</li>
 <li><strong>Peer feedback / code review</strong> Reviewing each others work and code facilitates the sharing of knowledge, strengthens your ability to read others work, and can find bugs and problems early in the development stage.</li>
@@ -459,6 +451,7 @@ div.tocify {
 </div>
 <div id="how-is-learning-measured" class="section level1">
 <h1>How is learning measured?</h1>
+<p>In the workplace you don’t get homework assignments. You work on larger projects typically broken down into smaller pieces with their own due dates. It is common also to be working on multiple projects at the same time.</p>
 <p>The learning objectives for this class are very broad and high level. To work towards achieving those goals you will have several tasks to work through each week. Depending on the effort level for each task, the actual number of tasks will vary.</p>
 <p>There are five general areas that each task is designed to help strengthen.</p>
 <ul>
@@ -501,7 +494,7 @@ div.tocify {
 <p>This is a fully in person class, however time has shown us that we need to be flexible and be able to go online at anytime. There may be times we want/need to hold/attend class remotely.</p>
 <p>Class attendance is expected. Talk to me ahead of time if you need to miss a class for a planned reason. In the event of an unplanned reason, PM me in Discord when you can so that I know you are still alive.</p>
 <ul>
-<li>If you are not feeling well or are experiencing Covid symptoms <strong>DO NOT COME TO CLASS</strong>. DM me in Discord and attend online until you can return.
+<li>If you are not feeling well or are experiencing COVID symptoms <strong>DO NOT COME TO CLASS</strong>. DM me in Discord and attend online until you can return.
 <ul>
 <li>This is NOT an open invitation to attend class online just because it’s cold and rainy or you are hungover and didn’t get up until 20 minutes before class. Don’t abuse my flexibility.</li>
 </ul></li>
@@ -523,7 +516,6 @@ div.tocify {
 <div id="campus-resources" class="section level1">
 <h1>Campus Resources</h1>
 <p>This <a href="https://www.csuchico.edu/coronavirus/students.shtml">campus website</a> contains a lot of information and resources specific to our COVID-19 situation. Specifically this page contains links to resources to help you keep <a href="https://www.csuchico.edu/keep-learning/index.shtml">learning</a>, and <a href="https://www.csuchico.edu/keep-engaging/index.shtml">engaging</a>, and lots of links to student support services such as emergency grants, basic need such as healthy food and housing, tutoring, health center, financial aid and a lot more.</p>
-<p>You can also check out the resources on the <a href="help.html">Help</a> page.</p>
 <div id="technology-support" class="section level2">
 <h2>Technology Support</h2>
 <ul>
@@ -550,8 +542,7 @@ div.tocify {
 </div>
 <div id="adding-and-dropping-the-course" class="section level2">
 <h2>Adding and Dropping the course</h2>
-<p>You are responsible for understanding the policies and procedures about add/drops, academic renewal, etc., found in the <a href="http://www.csuchico.edu/catalog/">CSU Chico University Catalog</a>. You should be aware of the new deadlines and penalties for adding and dropping classes.</p>
-<p>The last day to add or drop classes without special permission by the instructor is 2/4/22. No adds or drops are allowed after 2/18/22 without a serious and compelling reason approved by the instructor, department chair, and college dean.</p>
+<p>You are responsible for understanding the policies and procedures about add/drops, academic renewal, etc., found in the <a href="http://www.csuchico.edu/catalog/">CSU Chico University Catalog</a>. You should be aware of the deadlines and penalties for adding and dropping classes.</p>
 </div>
 <div id="confidentiality-and-mandatory-reoprting" class="section level2">
 <h2>Confidentiality and Mandatory Reoprting</h2>
@@ -561,7 +552,7 @@ div.tocify {
 <h2>Academic Integrity</h2>
 <p>Academic integrity is defined as “a commitment, even in the face of adversity, to five fundamental values: honesty, trust, fairness, respect, and responsibility”. From these values flow principles of behavior that enable academic communities to translate ideals to action. Academic integrity is expected and required. No forms of cheating or plagiarism will be tolerated. Please see your student handbook at <a href="https://www.csuchico.edu/scrr/integrity.shtml" class="uri">https://www.csuchico.edu/scrr/integrity.shtml</a> if you have questions about the meaning of these terms or the consequences of violating academic integrity.</p>
 <hr />
-<p><em>Last updated: Sun Jan 16 2022 10:49:23</em></p>
+<p><em>Last updated: Sun Jan 16 2022 7:52:48 PM</em></p>
 </div>
 </div>
 
@@ -603,6 +594,9 @@ $(document).ready(function () {
 
 <script>
 $(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
 
     // move toc-ignore selectors from section div to header
     $('div.section.toc-ignore')

@@ -8,8 +8,7 @@
     - Give this team write access to `class-logistics`
     
 * Add first assignment. 
-    - Create starter code repo for basic RMD site
-    - Send assignment link to class via slack
+    - Create starter code repo for gradebook
 
     
 
@@ -56,12 +55,12 @@ https://www.springboard.com/blog/data-scientist-training-college/
 
 * github classroom
     - ISLR assignments in separate repos like last time
-    - `class-notes` repo open to all as listed above.
-        - Individual RMD files for reading questions (ISLR & others)
-        - Set up as a website. Let the students collaborate to add/modify items to this webpage. 
+    
+* Collaborative notes still in Hackmd, git connected to course repo. 
+    - Individual RMD files for reading questions (ISLR & others)
 
 * Coding Homework
-  - probably sent out via github classroom
+  - sent out via github classroom
   - upload compiled homework as PDF to google drive
 
 * learning journal

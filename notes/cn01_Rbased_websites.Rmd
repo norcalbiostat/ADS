@@ -1,0 +1,612 @@
+---
+title: "Building Websites"
+output:
+  html_document: 
+    toc: yes
+    toc_float: no
+    theme: flatly
+---
+
+:::{.blue}
+**Learning Objectives**
+
+* Recognize the minimal requirements to build a website using R and Markdown. 
+* Build three types of websites using R Studio, Github, Markdown and a sprinkle of Hugo
+* Publish these website to GitHub and/or Netlify
+:::
+
+----
+
+# Introduction
+
+## Motivating Examples
+
+* Static pages
+    - Personal website: http://www.emilyzabor.com/
+    - Academic website: http://webpages.csus.edu/wiscons/ 
+    - Academic website: http://webpages.csus.edu/fitzgerald/about/
+    - Workshop: https://psyteachr.github.io/hack-your-data/index.html 
+    - Course materials https://norcalbiostat.github.io/MATH315/index.html
+    - Project report https://norcalbiostat.github.io/chem_ss/
+* Static pages + blog
+    - Course website for Data Analytics for Social Good https://norcalbiostat.github.io/DATA185/ 
+    - Piping hot data https://www.pipinghotdata.com/ 
+    - Teaching in Production https://rstudio-education.github.io/teaching-in-production/ 
+* Blog centric
+    - https://alison.rbind.io/
+    - http://www.citizen-statistician.org/
+    - https://beyondrawdata.rbind.io/
+    - https://chicodatafest.netlify.com/
+    - http://datascience.csuchico.edu/
+    - https://yihui.org/
+    - https://robjhyndman.com/ 
+    - https://www.norcalbiostat.com/ 
+    
+
+## Prerequisites
+To full participate in today's activites, you must have the following: 
+
+* **Version Control:** A github account, git installed on your computer, the ability to push and pull from a local repository to a remote one, and the ability to connect git repositories to R through projects. 
+* **R & R Studio:** with the following packages: `knitr`, `blogdown v1.3`, `distill v1.2.4`, 
+    - use blogdown to install Hugo by typing `blogdown::install_hugo()`
+* **A [Netlify](https://www.netlify.com/) account.** I recommend that you sign up with your github account.  
+* **Set Intentions** It's easy to get lost in all the settings, tweaks, themes, customizations and so forth. Decide on some clear objectives to help keep you on track.  
+
+
+:::{.green}
+`r emo::ji("pencil2")`**Exercise 1: Set your intentions (Think-Pair-Share)**
+
+1. Write down three things you want to accomplish with a website
+2. Get into random breakout rooms with another persons
+3. Share & discuss your goals
+:::
+
+<br>
+
+:::{.blue}
+**First watch, then do**
+
+We will be alternating a lot today where you watch me demo first, then you replicate on your own or in groups.
+:::
+
+**How you will actually learn this material:**
+![](https://carpentries-incubator.github.io/open-science-with-r/img/practical_dev_both.png)
+
+
+----
+
+# Getting started: RMarkdown
+
+R Markdown websites like this one can be built with a minimum of two files: a `_site.yml` and an `index.Rmd`. 
+
+The `_site.yml` file controls the overall structure of the website, such as the order of the navigation bar and the color theme. 
+
+When these files are _rendered_ into HTML files, they can be hosted on GitHub for free. Then after turning on a few settings in your GitHub repository (repo) these files can be viewed as a magnificent webpage. 
+
+
+
+
+### 1. Create a public Github repo. 
+We are going to employ the "[GitHub first, R Studio second](https://happygitwithr.com/new-github-first.html)" approach. 
+
+* From your *Repository* page, click the green <span style="color:green">[NEW]</span> button.  
+* (_Suggestion_): Name this repo something like `website_test_rmarkdown` so you know it's a playground.
+* keep it a PUBLIC repo
+* YES initialize with a README
+
+Click 'Create Repository' to finish, but keep this page open. We'll come back to it a few times.
+
+### 2. Create a project in R Studio and clone your new repo into this project
+
+* Top right corner in R Studio click: *New Project --> Checkout from version control --> Git*
+* Go back to GitHub, and click on the green <span style="color:green">[Clone or Download]</span> button.
+  - Click the clipboard icon to copy the URL to your repo. 
+  - Paste this URL into the _Repository URL_ box in R Studio. 
+    * **(_Strongly Suggested_)**: Name this project the same as the repo name.
+    * Subdirectory: Your path, your choice. Just don't put a repo inside a repo. 
+* Click _Create Project_
+
+### 3. Create necessary files in R Studio
+
+* In the *Terminal* window (tab to the right of the *Console*), create the `_site.yml` and `index.Rmd` files using the `touch` command. Type the following commands in the Terminal one at a time, pressing <kbd>Return</kbd> or <kbd>Enter</kbd> after each line to execute. 
+```
+touch _site.yml
+touch index.rmd
+```
+You can view these files in the _File_ pane (lower right). You can open supported file types by clicking on the name of the file from this pane. 
+* Open both the `_site.yml` and `index.Rmd` files now. 
+
+:::{.green}
+`r emo::ji("pencil2")` Do steps 1-3. 
+Put up a `r emo::ji("heavy_check_mark")`when you are done. 
+:::
+
+### 4. Configuring the `_site.yml` file
+This is the file that controls your overall site's configuration. If you are familiar with R Markdown files, this is the same type of 'language' that is used in the header area to control the document structure. 
+
+YAML headers, and this file, are very particular about spacing and tabs. To avoid unnecessary grief we are going to copy/paste code from the collaborative notes. 
+
+```
+name: "my-website"
+output_dir: "."
+navbar:
+  title: "My Website"
+  left:
+    - text: "Home"
+      href: index.html
+```
+
+* Give your website a name and title!
+
+
+### 5. Configure your index page
+
+This is your landing page. That is, the first page people see when they go to your website. You can add a title to this page using a YAML header as is shown in the bookdown website, or you can use a pound sign `#` as a first level header to make this title. 
+
+* Create a title for your page using *either* a YAML header or a `#` sign. Using both is redundant. 
+* Write a sentence or two welcoming your viewers to your website. 
+
+
+### 6. Building & previewing your website locally 
+
+Since we created the `.yml` file manually after creating the R Project, your project doesn't quite know yet that it has a website to build. 
+
+* Save your work and close down R studio. 
+* Navigate to your repository folder on your computer, and open the project by double clicking on the R project file icon (a cube with the letter R). 
+    - _Note: This is always how you should open your R Project files_
+
+There should now be a **BUILD** tab in the top right pane.
+
+* Click this tab, and then click the _Build Website_ button. 
+
+An HTML file should now appear in your viewer pane. 
+
+* Click the 'Show in new window' button to see your site in a full browser window. 
+
+* Make a change to your `index.Rmd`, knit and refresh your browser window.
+
+:::{.green}
+`r emo::ji("pencil2")` Do steps 4-6. 
+Put up a `r emo::ji("heavy_check_mark")`when you are done. 
+:::
+
+<br>
+
+:::{blue}
+**Notes, Tips and Comments** 
+
+* `r emo::ji("warning")` <span style="color:red">Clicking "Build Website" will render every `.md` and `.Rmd` file in your top level project folder into an HTML file. </span>
+    - This is important to keep in mind when creating a website with a lot of pages. 
+    - Code files in sub-folders will not be automatically rendered. 
+* You can re-render individual files by clicking 'Knit'. 
+* You can leave this browser window open as you work, refreshing the page to see new changes. 
+:::
+
+### 7. Push to GitHub & publish your website 
+
+Let's get your test site up for the world to see. 
+
+* In the _Terminal_ window, stage and commit your files to version control by executing the following commands:
+
+```
+git add <file name>
+```
+
+This will _stage_ all files that have been changed and/or added. _Staging_ is the process of adding a file to be tracked under version control. 
+
+```
+git commit -m "first commit"
+```
+
+Every commit needs a message. Try to make it informative, yet brief. 
+
+```
+git push
+```
+
+This will _push_ your changes up to GitHub's servers online. You may have to enter your github username and password here. See [happy git with R](https://happygitwithr.com/push-pull-github.html) for help storing your github credentials. 
+
+* Go back to your GitHub repo page and refresh - you should now see that your repo now contains the new code, and HTML files that you have been working on. 
+* Click _Settings_ in the top right of the navigation bar in your repository. 
+    - Scroll down to the **Pages** section in the left navigation pane. 
+    - Under _Source_, select _main_
+    
+After the page refreshes, you will see the URL to your website in at the top of GitHub pages section. 
+
+* Click on this link to see what your public facing website looks like!
+* Copy this URL, we're going to paste it in the repo settings so it can be found easy. 
+* Go back to your main repo page by clicking on the name of your repo at the top of the GitHub page. 
+    - Click **About** on the right side panel
+    - Paste the URL into the _Website_ field. 
+
+### 8. Adding Content 
+
+Let's add some content.  
+
+* Create a new R Markdown file using _File -> New R Markdown_ so we can get the example R Markdown content that includes a plot. 
+    - Save this file with a name such as `project.Rmd`
+* Add a link to the project HTML page to your `_site.yml` configuration file by adding a new `text` line to the `navbar`.   
+
+```
+    - text: "My Projects"
+      href: project.html
+```
+
+`r emo::ji("warning")` <span style="color:red">Be mindful about the spacing. </span> Make sure the `- text:` is directly in line with the home page item in the YAML header. 
+
+
+* Rebuild your website by clicking the _Build Website_ button in the _Build_ tab in the top right pane.
+* View your changes locally, make a change if you see fit. 
+* Add, commit, and push your changes. 
+* Refresh your live webpage on GitHub to see the results! 
+
+
+:::{.green}
+`r emo::ji("group")` Do steps 7-8 in your breakout rooms. 
+Come back to the main room when you are done. 
+:::
+
+### Additional Features & References
+
+* Drill down navigation bar - indent in the YAML header under `menu`
+* Right alignment of some text
+~~~md
+---
+name: "my-website"
+output_dir: "."
+navbar:
+  title: "My Website"
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "Courses"
+      menu:
+      - text: "Math 1"
+        href:  math1.html
+      - text: "Math 2"
+        href: math2.html
+  right: 
+    - text: "About"
+      href: about.html
+---
+~~~
+
+* R Markdown sites from R Studio https://rmarkdown.rstudio.com/lesson-13.html
+* Chapter 10.5 in the Blogdown book https://bookdown.org/yihui/rmarkdown/rmarkdown-site.html 
+
+----
+
+# Level up: Blog Aware with Distill
+Distill based websites are a nice enhancement to the Rmarkdown website. Very similar setup/structure, but with added ability to manage a blog. You can actually create static Websites with distill as well. [Learn more about the difference here](https://rstudio.github.io/distill/blog.html#website-or-blog).
+
+### 1. Create a new Github Repo and connect it to an R Project. 
+
+Follow steps 1 & 2 from the section above. 
+
+### 2. Use `distill` to turn the project into a website. 
+In the console, type the following: 
+
+```{r, eval=FALSE}
+library(distill)
+create_blog(dir=".", title = "My Blog")
+```
+
+The basic scaffolding for a blog and an initial welcome post will be created within the root (`.`) sub-directory.
+
+* Shut down RStudio and re-open the project to enable the _build_ tab. This is similar to step 6 above.  
+
+### 3. Configure the YAML header and build your site.  
+Open `_site.yml` Looks similar eh? 
+
+* output: `distill::distill_article` instead of `html_document`
+* Change the description and name. 
+* Change the `output_dir:` in the YAML to  `"docs"`
+* Build your website by using the _build_ tab and see if you can spot where these items show up. 
+    - You can also run `render_site()` in the console to build your site instead of using the _build_ tab. 
+
+:::{.red}
+#### Changing the output directory
+
+* For this example we will be publishing through github pages, which doesn't seem to recognize `_site`, but does `docs`.  
+* This seems to be a github thing. Not a universal thing
+:::
+
+What's happening, is that all `.md` and `.Rmd` files in your root directory get knitted into `.html` files and placed into the `docs` folder. All content in the `_posts` folder also gets **directly copied** into the `docs` folder.
+
+### 4. Create a post
+Run the following code in the console: 
+
+```{r, eval=FALSE}
+create_post("Hello World", draft=TRUE)
+```
+
+* Posts are created in the `_posts` subdirectory. 
+* An entire subdirectory is created that reflects the creation date and name of post: `2021-06-15-hello-world`
+* You can work on these posts individually, knitting as needed. 
+    - Files in a sub-directory do not get re-rendered when you build your site. 
+    - _See [this section](https://rstudio.github.io/distill/blog.html#renaming-posts) of the distill documentation for how to rename posts and directories_
+
+* When you are ready to make your post live, either fully remove or update the `draft: true` section in the YAML header
+
+
+:::{.green}
+`r emo::ji("group")` In breakout rooms: 
+
+1. Create new static page
+2. Add the new static page to the navigation bar
+3. Create a new post and write a few sentences about what you want to use this site for. 
+4. Build your site and make sure you see all changes. 
+
+Come back to the main room when you are done. 
+:::
+
+### 5. Publishing your website
+* Add a `.nojekyll` file using either `touch .nojekyll` in the terminal, or `file.create(".nojekyll")` in the R console
+    - Github pages tends to want to use the Jekyll website generator to compile pieces of a website into one cohesive site. You don't need that in this case. 
+* Add, commit, and push your changes to your github repository.
+* Activate github pages, and publish from the from the `main` branch and the `/docs` folder. 
+
+
+:::{.green}
+#### `r emo::ji("group")` RANDOM SHARE OUT: 
+
+* You will be randomly assigned a new breakout room.  
+* Each person take 1 minute, share their screen and show others what their page looks like. 
+:::
+
+
+### Additional References
+This was a basic introduction to these types of websites. See the documentation at https://rstudio.github.io/distill/blog.html to see how to: 
+
+* create custom listings for subsets of posts
+* add categories to posts so they can be searched through
+* allow Disqus commenting and sharing of posts on social media
+* Themes
+* Publishing on sites other than github like Netlify
+* and more
+
+
+----
+
+# Fancieness Level 1: Hello Hugo 
+
+The "simple" websites that were built above can be extended and enhanced well enough with some CSS and Rmarkdown wizardry. However, sometimes you may want a little more of a 'modern', 'dynamic' or 'responsive' feel, or to include a blog in your website. 
+
+This is when we enter the realm of [[Hugo]](https://gohugo.io/), - the self proclaimed "most popular open-source static site generator". 
+
+Hugo is it's own language, and for advanced usage of Hugo-based websites, some understanding of how Hugo works and reading _those_ docs may be required. Alison Hill has a [ton of resources](https://alison.rbind.io/tags/blogdown/) on how to work with blogdown and Hugo, including a four part [Summer of blogdown](https://alison.rbind.io/talk/2019-summer-of-blogdown-01/) series of workshop notes. What we're going to cover here is a very watered down, one hour(ish) version. 
+
+For now, we are just going to show you how to get started in this realm of fancy-ness using the R package `blogdown`. Then you can go break it later. The super official blogdown documentation is linked in the References section at the bottom of this page.  
+
+If you did not do so beforehand, install the `blogdown` package, and use it to install Hugo using `blogdown::install_hugo()`. 
+
+### 1. Create a new Github Repo and connect it to an R Project 
+
+You got this. Fifteenth time is the charm. 
+
+### 2. Create a new site with a specified theme
+
+The `blogdown` package will setup the necessary files, folder structures and theme files from a pre-specified them that is available on github. The example we will start with is a very simple site containing a few pages and a blog. 
+
+
+```{r, eval=FALSE}
+blogdown::new_site(theme='yihui/hugo-lithium')
+```
+
+* This could take up to a minute to download all necessary files. 
+* Want to serve and preview the site now? (y/n) **n** (say no)
+* "Serve" your site by doing one of two things: 
+    - In the console type: `blogdown:::serve_site()`
+    - In R studio, go to the _Addins_ drop down menu, and select "Serve Site"
+    
+This is the "website compilation" part. R/Markdown are turning all the `.md` and `.Rmd` files into HTML, Hugo is linking them together under the direction of themes and the config file. 
+
+
+`r emo::ji("question")` Poke around on this site. What do you notice? 
+
+
+### 3. Explore configuration files 
+Let's start by looking at the files that are contained in the root folder of this project. 
+
+* `index.Rmd`: Nothing really is there! 
+    - This is one of the primary differences between this type of site building and the one we just finished. 
+    - Content is handled in a very different manner. 
+
+* `config.yaml`: Functions similar to the `_site.yml` file, with a **LOT** more options. 
+    - we will _not_ go into detail about these parameters, because they are theme specific. 
+
+
+:::{.green}
+`r emo::ji("pencil2")` **Customize your site**
+
+* Remove the twitter link
+* Change the GitHub link to point to your GitHub account
+* Give your site a different title. 
+* Save
+:::
+
+<br>
+
+`r emo::ji("question")` Were you able to see the results of each of the changes you made on the live site? This is the magic of `r emo::ji("sparkles")`_Live Reload_ `r emo::ji("sparkles")`. 
+
+
+### 4. Explore and modify static content files. 
+
+* Open the `content` folder. Right now there is only an `about.md` file. * Opening this file we see a familiar YAML header, and a body of text. 
+* This folder is where we can add more static pages, such as a CV. 
+    - Since we are not using any R code in this specific document, we can stick with the simpler markdown only (`.md`) file format. 
+
+
+:::{.green}
+`r emo::ji("pencil2")` **Update content**
+
+* Change the title and content of the `about.md`. 
+* Copy the `about.md` file, rename this as `cv.md`. 
+  - You can do this in R Studio by clicking the box to the left of the file name in the Files window, then clicking _More --> Copy_
+* Change the title, add a few bullet points and save. 
+* Go back to the `config.yaml` file, and add a new menu item
+* Save this file, notice changes.
+:::
+
+
+
+### 5. Blog posts
+
+On your newly updated website, clicking on the icon in the top left. This will take you back to the landing page. For this theme, the landing page is a blog (instead of a static page such as `About`). Clicking on one of these posts takes you to the page that contains the post itself. 
+
+The content files for posts are stored under `content/post/` folder. If you look there now you'll see some markdown (`.md`), some R Markdown (`.Rmd`) files, and their associated `.html` output files. 
+
+**Creating new posts**
+
+* Option 1: Copy/paste/modify one of the example files already in this folder. 
+* Option 2: Use the R Studio Addins to setup the page structure for you. 
+    - **This is the one we're going to use**
+    - Using the UI allows you to easily set catgories, tags and the like. 
+    
+:::{.green}
+`r emo::ji("pencil2")` **Add a post**
+ 
+* Click _Addins --> New Post_
+  - This may require you to install and/or update new packages. Go ahead and do so. 
+  - If you run into seemingly endless package installation loops, restart RStudio and re-try. 
+* Give your post a title, author name, a category and a tag. 
+    - Categories and tags are optional, but for this example go ahead and set them. 
+* Select the `.Rmd` format for this example. What this `.Rmarkdown`? `r emo::ji("shrug")`. See [this github issue](https://github.com/rstudio/blogdown/issues/530) as a place to start to learn about how these two extensions work with hugo. 
+* Select <kbd>Done</kbd>
+* Add some simple content for display such as
+    - A header
+    - a plot
+    - a sentence
+* Save let live reload do it's magic. If it doesn't work, you can always _knit_ to see it work. 
+:::
+
+
+
+### 6. Serve Site
+
+* When we started the new site in step 2, we also ran `serve_site()` to see the live preview.
+* At a later point when you want to come back to working on your website, opening the project file itself will not initiate a `serve_site()`. You will have to do this manually. 
+
+### 7. Push to GitHub
+
+Go ahead and save your work, add, commit, and push your content to your github account. 
+
+
+### 8. Publish your website 
+
+If you have your own server, and you are familiar with website deployment then you can roll your own as you are used to. For those of us that have absolutely no idea how to host a website, a very good option that is very user friendly (and free) is [Netlify](https://www.netlify.com/). 
+
+You *could* use GitHub Pages as we did previously to host a Hugo based website, but there are some tweaks that you have to do to get GitHub to work with/around Jekyll in the way Blogdown/Hugo builds the sites. If you want to learn more about the why's, go read the docs at https://bookdown.org/yihui/blogdown/deployment.html
+
+  
+:::{.green}
+`r emo::ji("pencil2")` **Publish**
+
+1. Sign in to [Netlify](https://www.netlify.com/) using your github account. 
+2. Select _New site from Git -> continuous deployment: github_
+3. Choose your hugo website repo
+4. Leave all defaults, and click 'deploy'
+5. When it's done it will give you a URL that you should customize.
+    - _Site settings -> Change site name_
+:::
+
+Almost done! We need to do one more big of configuration on the Rstudio side so that when you push change to github, it will trigger a redeploy automatically.
+
+:::{.green}
+`r emo::ji("pencil2")` **Update deployment settings**
+
+Go back to your `config.yml` file and change the baseurl to your website URL. 
+:::
+
+Now you are GTG! At least at a starting page. The devil is always in the details (of the theme). That's where we're going next. 
+
+:::{.blackbox}
+* `r emo::ji("warning")` Hugo has a TON of themes: https://themes.gohugo.io/ . Not all work with `blogdown`, and not all are easy to work with. Here is a blog post by Peter Baumgartner on [important thoughts on choosing a theme to work with](https://portfolio.peter-baumgartner.net/2018/07/19/blogdown-using-themes/). 
+* The lithium theme  has a very simple YAML configuration file. Each theme is different and unique. Reading the documentation (generally contained in the readme) is critical. 
+:::
+
+----
+
+# Fancieness Level 5000: Hello Academic Theme. 
+
+We do **not** have time to go through this in detail. PLEASE follow up with [Alison Hill's Up and running with blogdown in 2021](https://alison.rbind.io/blog/2020-12-new-year-new-blogdown/) post before you start serious webpage building. She'll set you up with all the proper checks. We're just fiddling around here and getting you introduced. 
+
+
+### 1. Create a new Github Repo and connect it to an R Project 
+### 2. Create a new site with the Academic theme
+
+```{r, eval=FALSE}
+blogdown::new_site(theme = "wowchemy/starter-academic")
+```
+* This time let blogdown start the server for us. 
+* Expand your site out of the viewer pane and into a browser window. 
+* Scroll down and be overwhelmed by ALL the parts. 
+
+### 3. Simplify!
+
+* Each one of those horizontal panes is controlled with a `widget`. 
+* Massive cognitive overload to have all of them on.
+* Start your configuration in the `content/home` folder. 
+    - each one of these `.md` files are a widget. 
+
+:::{.green}
+`r emo::ji("pencil2")` **Control your widgets**
+
+* Open `hero.md`
+* Add `active: false` to line 3 (under widget: name)
+    - This will add the parameter _active_, and set it to _false_. I didn't make up that name, I found the solution [here](https://github.com/wowchemy/wowchemy-hugo-modules/discussions/2229). 
+* Save this file, and look back at the page in the browser. Which section was deleted? 
+* Turn off `demo.md` the same way. This one already had a spot for the active parameter. 
+:::
+
+### 4. Personalize
+* People are controlled under `content/authors`. You specifically are in `/admin/_index.md`, and AFAIK you are not Nelson Bighetti. 
+
+
+:::{.green}
+`r emo::ji("pencil2")` **Make it about you**
+Change each of these one at a time, watching the live reload to make sure you know what they are linked to. 
+
+* bio
+* interests
+* title
+* organization
+* role
+* paragraph at the bottom
+
+:::
+
+
+### 5. General layout for projects, publications, events
+* Each has a folder under `/content` with an `_index.md` file
+    - This index file controls the look of the widget, how many items to show, if there is an image or caption etc. 
+* Each item (individual project, course) has their own folder
+* Each item is controlled by an `index.md`
+    - So to add new projects, publications etc, add a new folder, copy an `index.md` from another project, and modify. 
+    - Cover images are always named `featured`
+    - The specific configuration for a project is different from a publication, is different from an event. So if you're making new events, make sure you copy the files from another event. 
+
+### 6. New blog posts
+* Use the new post addin in R Studio
+    - This creates a new folder similar to what was seen before, with the folder name containing the date and slug. 
+* Note it gives you the option to put this post in other subdirectories. Stick with `posts` until you're more familiar with blogdown. 
+    - The post template that is created isn't driven by the folder. 
+    I.e. if you create a new post and select the "project" folder, it will still give you a post template for a new blog post, not a project. 
+
+
+### Random other tidbits
+* Some widgets are useful, just not on the home page. Widgets can be transplanted to other pages. 
+* Check the `content/home/widget.md` for customization options 
+* navbar items are controlled in `config/_default/menus.yaml`
+* [updating your theme can be painful...](https://community.rstudio.com/t/updating-academic-theme-woes/68224)
+
+
+### Additional References
+In recommended order
+
+* `r emo::ji("exclamation")` Up and running with blogdown in 2021 https://alison.rbind.io/blog/2020-12-new-year-new-blogdown/ 
+* Literally all of her other Blogdown material
+* Getting started with the Academic theme: https://wowchemy.com/docs/getting-started/get-started/
+* `blogdown`: Creating Websites with R Markdown https://bookdown.org/yihui/blogdown/ , https://github.com/rstudio/blogdown 
+
+    

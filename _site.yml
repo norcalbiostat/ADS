@@ -6,9 +6,9 @@ navbar:
   - text: Schedule
     icon: fa-calendar
     href: schedule.html
-  - text: Notes
-    icon: fa-folder-open
-    href: notes.html
+#  - text: Materials
+#    icon: fa-folder-open
+#    href: materials.html
 
   right:
   - text: Syllabus
