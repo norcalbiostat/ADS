@@ -1,5 +1,5 @@
 ---
-title: "Welcome Aboard"
+title: "Welcome Aboard!"
 date: "`r paste(Sys.Date())`"
 output:   
   html_document: 
@@ -20,11 +20,8 @@ _Last Updated: `r format(Sys.time(), "%a %b %d %X")` _
 
 # Course Logistics
 
-An introduction video was posted in Blackboard going over the syllabus and all the important logistics of the class. 
-
 > Introductions
 
-You know a bit about me from the video. I want to get to know you. 
 - Where are you from
 - Why are you interested in data science? 
 - What do you want to do when you graduate? 
@@ -32,6 +29,8 @@ You know a bit about me from the video. I want to get to know you.
 **To post later in Discord**
 - What is one thing you want us to know about you?
 - Do you have any pets, or favorite items?  (pictures!)
+
+What other questions do you have? 
 
 --- 
 
@@ -42,7 +41,7 @@ This course aims to help students navigate the evolving field of Data Science. W
 ### Collaboration
 * Team collaboration tools (Discord, Zoom, Github, HackMD)
 * Community Coding - hold helper hours X times /week
-* [DATAFEST](chicodatafest.netlify.com)!! April 1-3rd. (Extra credit!)
+* [DATAFEST](chicodatafest.netlify.com)!! April 1-3rd.
 * What's your Data Science Profile?
 
 ### Computation 
@@ -98,7 +97,7 @@ _Important: A measure of patience with me is required._
 
 # Getting Connected
 
-Complete the tasks below to get oriented to the course materials 
+Complete the tasks below to get oriented to the course materials.
 
 <img src="get allthethings.jpg" width="50%"/>
 

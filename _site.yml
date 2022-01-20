@@ -9,7 +9,9 @@ navbar:
 #  - text: Materials
 #    icon: fa-folder-open
 #    href: materials.html
-
+  - text: Github Classroom
+    icon: fa-github
+    href: https://classroom.github.com/classrooms/97549390-data485-s22
   right:
   - text: Syllabus
     icon: fa-info-circle
