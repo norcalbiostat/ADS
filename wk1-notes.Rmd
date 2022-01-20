@@ -19,6 +19,8 @@ knitr::opts_chunk$set(echo=FALSE, message=FALSE, warning=FALSE)
 
 _Last Updated: `r format(Sys.time(), "%a %b %d %X")` _
 
+----
+
 # Learning Path
 
 ### Where we've been
@@ -37,9 +39,7 @@ _Last Updated: `r format(Sys.time(), "%a %b %d %X")` _
 * Doing all we can to lower the spike and get back to more casual in person events.
 * Starting to explore the world of DS, from data pipelines to machine learning, to ethical algorithms, to what's new and exciting. Finding your nitch, and learning some useful tools along the way. 
 
-----
-
-# Goals for the week
+## Goals for the week
 
 * Review and understand the class policies and logistics
 * Get connected to the class learning tools
@@ -47,9 +47,9 @@ _Last Updated: `r format(Sys.time(), "%a %b %d %X")` _
 
 ----
 
-# Housekeeping 
+# Tuesday: Orientation
 
-`r emo::ji("group")` Introductions
+## `r emo::ji("group")` Introductions
 
 - Where are you from
 - Why are you interested in data science? 
@@ -63,10 +63,6 @@ Note: I have a TON of things that I'd like to share with you. Sometimes when I g
 
 
 `r emo::ji("question")` What questions do you have? 
-
-----
-
-# Learning - Theory
 
 ## Course Description
 
@@ -114,17 +110,16 @@ This course aims to help students navigate the evolving field of Data Science. W
 * Increasing your Google-fu
 
 
-----
+## Initial Thoughts 
 
-# Learning - Application
-
-## Let's get started: What is Data Science to you?  
+> What is Data Science to you?  
 
 1. Start a learning journal. This can be on paper, or online such as Google Docs. You will send me the URL this week, I will be checking in on it regularly. Make sure I have write access so I can leave comments. 
 2. [3-2-1 Bridge Activity](https://norcalbiostat.github.io/MATH315/lecture/321_Bridge.html)
 
 
-## Complete the tasks by Thursday below to get oriented to the course materials.
+## Deliverables
+Complete the tasks by Thursday below to get oriented to the course materials.
 
 * Read over the [syllabus](syllabus_485.html) on your own.
 
@@ -138,3 +133,9 @@ read_excel("schedule_485.xlsx", sheet="assignments") %>%
 ```
 
 <img src="fig/get allthethings.jpg" width="40%"/>
+
+----
+
+# Thursday: Websites
+
+Using [notes](notes/cn01_Rbased_websites.html) from a half day workshop. 

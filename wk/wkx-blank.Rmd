@@ -7,7 +7,14 @@ output:
     theme: yeti
     toc: yes
     toc_float: true
+    toc_depth: 2
+  css: style.css
 ---
+
+
+# Housekeeping 
+
+----
 
 # Learning Path
 
@@ -17,26 +24,17 @@ output:
 ### Where we're at
 
 
-### Where we're going
-
-
 ----
 
 # Goals for the week
 
 
-
 ----
 
-# Housekeeping 
-
-
-----
-
-# Learning - Theory
+# Tuesday
 
 
 ----
 
-# Learning - Application
+# Thursday
 

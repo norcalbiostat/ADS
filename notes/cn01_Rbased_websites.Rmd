@@ -3,7 +3,7 @@ title: "Building Websites"
 output:
   html_document: 
     toc: yes
-    toc_float: no
+    toc_float: yes
     theme: flatly
 ---
 
@@ -608,5 +608,7 @@ In recommended order
 * Literally all of her other Blogdown material
 * Getting started with the Academic theme: https://wowchemy.com/docs/getting-started/get-started/
 * `blogdown`: Creating Websites with R Markdown https://bookdown.org/yihui/blogdown/ , https://github.com/rstudio/blogdown 
+* RStudio for Education  https://rstudio4edu.github.io/rstudio4edu-book/intro-rmd.html
+
 
     
