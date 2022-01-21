@@ -46,8 +46,10 @@ By the end of the course, students will be able to...
 1. Work effectively with a remote team using modern collaboration tools.
 2. Build and update a professional online presence.
 3. Explain how modern automated technology can perpetuate existing structures of discrimination through its design and application.
-4. Train and validate a variety of predictive and classification models. 
-5. Professionally engage with a client to assess and potentially solve a problem using data science tools within the framework of the data science lifecycle
+4. Introduce fundamental tools for building predictive models & understand the role of model selection and assessment using cross-validation and randomization 
+5. Solve problems using data science tools within the framework of the data science lifecycle.
+5. Professionally engage with a client to assess and potentially 
+6. Know how to find and engage with current trends in Data Science. 
 
 
 ## General Outline of Topics
@@ -93,11 +95,14 @@ You can learn more about the work that I do on my [website](http://www.norcalbio
 
 This class is semi-unstructured, meaning there is a combination of standard homework assignments, and several ongoing / multi-stage activities that we'll be working on throughout the semester. A lot of class time will be spent working on activities. 
 
-* **Textbook assignments** We will be working through ISLR to learn and practice predictive modeling using typical problem sets. 
+* **Statistical Learning & Modeling** We will be working through ISLR to learn and practice predictive modeling using typical problem sets. 
 * **Collaborative note taking** You will collaborate to generate class-wide course notes and materials. 
 * **Reading & Reflecting** We will engage with several readings where you will be asked to answer reflection questions in your personal learning journal, as well as having discussions with your peers. 
+* **Writing for a public audience** Combination of blog posts & stakeholder reports. 
 * **Peer feedback / code review** Reviewing each others work and code facilitates the sharing of knowledge, strengthens your ability to read others work, and can find bugs and problems early in the development stage. 
 * **Interdisciplinary Collaboration Project** We will be collaborating with two campus organizations to provide data and research assistance. Details about the projects will be discussed in class and posted on the course website. 
+
+You can get an idea of the individual assignments in your personal gradebook repository. This is updated regularly.  
 
 ----
 
