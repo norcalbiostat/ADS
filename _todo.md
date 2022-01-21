@@ -7,9 +7,6 @@
     - Add them to a `all-students` team
     - Give this team write access to `class-logistics`
     
-* Add first assignment. 
-    - Create starter code repo for gradebook
-
     
 
 https://classroom.github.com/help/creating-an-individual-assignment
@@ -23,7 +20,28 @@ https://education.github.com/benefits
 
 ## Random Readings
 
-### Why blog
+### Need channel for random stuff
+
+
+## Garrett
+
+* can make a thursday meeting in week 3 
+* will have him and + project lead 
+* get paragraph summary with deliverables before week 2
+  - how do we engage and track with individual stakeholders/clients and be able to craete an enironment them and staff member to enteract with them, collect structured information (where is the farm, what do you do), and allows for an easy way for that client over time to add information over time (images, other data)
+  - Blyth this week tos ample. this project. here is an intake form. background information (starts their ticket/unique ID - it allows them to have drop down, this type of farmer/location etc.). Build a profile of that client. 
+  - handle any engagement with stakeholders. a farmer that sends our lab soils amples, or a farm that htey visit and they sample and add a cover crop. how much time do they interact with ppl. do you send them money? 
+  - Tracking can't be through google sheets for the entire thing. 
+  - Need a strucutred data system. common headers. 
+  - Create a playbook for new staff/students to use. Conceputal diagram this. identify a couple nuggets
+  - foundataional data structure for the data and te lab. build out how they engage with clients. 
+  - owuld allow them to automate conservatino documentation that would be value adde to the stakeholder
+  - outputs that are useful to the farmer and center (for funder )
+  most likely will be a lcoation/enterprise. about that place. could be multiple fields in that places. 
+
+* Asset tracking of samples. Subset of the big hand waving. 
+* most improtatn thing is client engagement. how do take n ew user, give them a good intake form. 
+  - create relationship database 
 
 
 ### DS portfoloio 
@@ -48,9 +66,6 @@ https://www.springboard.com/blog/data-scientist-training-college/
 
 -----
 
-* Effort based grading like S20
-    - Where to show grid to students? -> Individual student repo containing R data set of assignments, grades, and % effort. Single RMD file that creates a nice table for them when they knit.
-  
 * class credit for hosting community coding
 
 * github classroom
@@ -67,8 +82,8 @@ https://www.springboard.com/blog/data-scientist-training-college/
     - 321-bridge
     - reading reflections. Ask several questions, ask each student to share one insight from the reading that they want their fellow students to hear. 
     
-* Schedule time/bonus pts for DataFest
-* How to schedule a screening of Coded Bias? 
+* How to schedule a screening of Coded Bias? -- one of a few self-directed activities post RAT discussion
+
 
 
 
