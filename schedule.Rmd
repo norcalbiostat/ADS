@@ -24,16 +24,17 @@ cdat <- raw_detail %>% mutate(Date = format(date, "%m/%d"))
 ```
 
 ```{r, results='asis', echo=FALSE, message=FALSE, warning=FALSE}
-out <- cdat %>% select(Week, Date, Topic, `Learning Objectives` = SLO, Notes)
+out <- cdat %>% select(Week, Date, Topic, `Learning Objectives` = SLO, Prepare, Notes)
 
 knitr::kable(out, align="cclll", escape=FALSE) %>% 
   kable_styling(bootstrap_options = c("hover", "striped", "responsive", "bordered"), 
                 position='center') %>% 
   column_spec(1, width="5%") %>% 
   column_spec(2, width="5%") %>% 
-  column_spec(3, width="30%") %>% 
-  column_spec(4, width="40%") %>% 
-  column_spec(5, width="20%") 
+  column_spec(3, width="20%") %>% 
+  column_spec(4, width="30%") %>% 
+  column_spec(5, width="20%")  %>% 
+  column_spec(6, width="10%") 
 ```
 
 

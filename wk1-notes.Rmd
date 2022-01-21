@@ -110,32 +110,40 @@ This course aims to help students navigate the evolving field of Data Science. W
 * Increasing your Google-fu
 
 
-## Initial Thoughts 
-
-> What is Data Science to you?  
+## Initial Thoughts: What is Data Science to you?  
 
 1. Start a learning journal. This can be on paper, or online such as Google Docs. You will send me the URL this week, I will be checking in on it regularly. Make sure I have write access so I can leave comments. 
 2. [3-2-1 Bridge Activity](https://norcalbiostat.github.io/MATH315/lecture/321_Bridge.html)
 
 
-## Deliverables
-Complete the tasks by Thursday below to get oriented to the course materials.
-
-* Read over the [syllabus](syllabus_485.html) on your own.
-
-```{r}
-read_excel("schedule_485.xlsx", sheet="assignments") %>%
-  filter(floor(task_num)==0) %>% select(Assignment, Location) %>%
-  kable(align="l", escape=FALSE) %>% 
-  kable_styling(bootstrap_options = c("hover", "striped", "responsive", "bordered")) %>% 
-  column_spec(1, width="40%") %>% 
-  column_spec(2, width="30%") 
-```
-
-<img src="fig/get allthethings.jpg" width="40%"/>
+## Open work time
+Head down to the deliverables section below and start working on the items under **Getting Started**
 
 ----
 
 # Thursday: Websites
 
-Using [notes](notes/cn01_Rbased_websites.html) from a half day workshop. 
+We'll be using a combination of notes and github classroom starter repos. 
+
+* Dr D's [notes](notes/cn01_Rbased_websites.html) from a half day workshop. 
+
+---
+
+# Deliverables
+
+<img src="fig/get allthethings.jpg" width="30%"/>
+
+Requested order of approach as listed below.
+
+```{r}
+read_excel("schedule_485.xlsx", sheet="assignments") %>%
+  filter(week==1) %>% arrange(Topic, order) %>%
+  select(Topic, Assignment, Location) %>%
+  kable(align="l", escape=FALSE) %>% 
+  kable_styling(bootstrap_options = c("hover", "striped", "responsive", "bordered")) %>% 
+  column_spec(1, width="20%") %>% 
+  column_spec(2, width="40%") %>% 
+  column_spec(3, width="30%") 
+```
+
+* Also Rread over the [syllabus](syllabus_485.html) on your own.

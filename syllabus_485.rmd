@@ -29,11 +29,11 @@ output:
     * A laptop is nearly invaluable, bring to class every day. 
     * A solid internet connection is a must. We will be using a lot of online resources.
 * **Computer Software**: R 4.1+, RStudio 1.4+, git, Discord. 
-* **Accounts (Free)** Github, Discord
+* **Accounts (Free)** Github, Discord, HackMD
 * **Textbooks** 
     * Introduction to Statistical Learning (ISLR) [[PDF]](https://www.statlearning.com/) [[Slides & Videos]](http://auapps.american.edu/alberto/www/analytics/ISLRLectures.html), [[Code]](https://emilhvitfeldt.github.io/ISLR-tidymodels-labs/index.html)
-    * Doing Data Science (DDS), Cathy O'Neil, Rachel Schutt (2014) ISBN-10 978-1-449-35865-5 [[Library copy]](https://csu-chico.primo.exlibrisgroup.com/permalink/01CALS_CHI/s3tu53/alma991071823573402901)
-    * Benjamin, Ruha. Race after Technology: Abolitionist Tools for the New Jim Code (RAT). Polity, 2019. ISBN 978-1-509-52643-7. [[Library copy]](https://csu-chico.primo.exlibrisgroup.com/permalink/01CALS_CHI/s3tu53/alma991008332949602904)
+    * Doing Data Science (DDS), Cathy O'Neil, Rachel Schutt (2014) ISBN-10 978-1-449-35865-5 [[Free Ebook through campus email]](https://learning.oreilly.com/library/view/doing-data-science/9781449363871)
+    * Benjamin, Ruha. Race after Technology: Abolitionist Tools for the New Jim Code (RAT). Polity, 2019. ISBN 978-1-509-52643-7. [Ebook for $16, Print for $20](https://www.ruhabenjamin.com/race-after-technology) [[One Library copy]](https://csu-chico.primo.exlibrisgroup.com/permalink/01CALS_CHI/s3tu53/alma991008332949602904)
 
 ---
 
@@ -48,8 +48,8 @@ By the end of the course, students will be able to...
 3. Explain how modern automated technology can perpetuate existing structures of discrimination through its design and application.
 4. Introduce fundamental tools for building predictive models & understand the role of model selection and assessment using cross-validation and randomization 
 5. Solve problems using data science tools within the framework of the data science lifecycle.
-5. Professionally engage with a client to assess and potentially 
-6. Know how to find and engage with current trends in Data Science. 
+6. Professionally engage with a client to assess and potentially solve a problem with data or provide a service. 
+7. Know how to find and engage with areas of interest and careers in Data Science. 
 
 
 ## General Outline of Topics
