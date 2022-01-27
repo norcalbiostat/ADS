@@ -137,7 +137,7 @@ Requested order of approach as listed below.
 
 ```{r}
 read_excel("schedule_485.xlsx", sheet="assignments") %>%
-  filter(week==1) %>% arrange(Topic, order) %>%
+  filter(week==1) %>% 
   select(Topic, Assignment, Location) %>%
   kable(align="l", escape=FALSE) %>% 
   kable_styling(bootstrap_options = c("hover", "striped", "responsive", "bordered")) %>% 
