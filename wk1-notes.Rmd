@@ -146,4 +146,4 @@ read_excel("schedule_485.xlsx", sheet="assignments") %>%
   column_spec(3, width="30%") 
 ```
 
-* Also Rread over the [syllabus](syllabus_485.html) on your own.
+* Also read over the [syllabus](syllabus_485.html) on your own.
