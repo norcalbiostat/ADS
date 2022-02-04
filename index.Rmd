@@ -10,6 +10,13 @@ This is the course website for <span style="color:blue">**MATH 485 - Advanced Da
 
 _This course aims to help students navigate the evolving and murky waters of the Data Science landscape. We do so by not only providing training in advanced programming and technical skills, but also by providing opportunities for collaboration with other disciplines and reflection on how Data Science impacts human society._
 
+----
+
+### `r format(wk1.date+2*7, "%m-%d-%Y")` Week 3: Project Introductions
+
+On Tuesday you will get back to coding and work through a case study out of DDS Ch 2, then get an introduction to the consulting projects you will be working on throughout the semester. 
+
+The weekly content pages have been added to the navigation bar. I really ought to convert this page over to a distill based site. 
 
 ----
 

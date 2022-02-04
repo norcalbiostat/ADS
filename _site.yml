@@ -6,12 +6,23 @@ navbar:
   - text: Schedule
     icon: fa-calendar
     href: schedule.html
-#  - text: Materials
-#    icon: fa-folder-open
-#    href: materials.html
-  - text: Github Classroom
-    icon: fa-github
-    href: https://classroom.github.com/classrooms/97549390-data485-s22
+  - text: Weekly Content
+    icon: fa-folder-open
+    menu:
+    - text: Week 1
+      href: wk1-notes.html
+    - text: Week 2
+      href: wk2-notes.html
+  - text: Projects
+    icon: fa-graph
+    menu:
+    - text: Center for Healthy Communities
+      href: projects/chc.html
+    - text: Center for Regenerative Ag & Resiliant Systems
+      href: projects/crars.html
+    - text: Institutional Research
+      href: projects/ir.html
+      
   right:
   - text: Syllabus
     icon: fa-info-circle

@@ -4,7 +4,6 @@ output:
   html_document: 
     toc: yes
     toc_float: true
-  css: style.css
 ---
 
 # Logistics
@@ -14,7 +13,7 @@ output:
 * **Office Location:** Holt 202
 * **E-mail:** rdonatello@csuchico.edu
 * **Best Contact Method:** Discord
-* **Office Hours:** TBD Week 2
+* **Office Hours:** M 7-8pm, F 12-1pm and 2-3p
 * **Meeting time and locations:** TR 9:30-10:45 pm Butte 203, or remotely over Zoom as needed. 
 * **Prerequisites:**
     1. Introduction to Data Science (DATA 385).

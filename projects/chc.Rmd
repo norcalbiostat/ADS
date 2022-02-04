@@ -1,42 +1,43 @@
 ---
-title: "CHC - Predicting Level of Partnership"
-author: "TBD"
-output: html_document
+title: "Center for Healthy Communities"
+output: 
+  html_document: 
+    toc: yes
+    toc_float: true
+    theme: yeti
+    css: style.css
 ---
 
 # Summary
 
-## Background & Justification
-
-One immediate goal that we can help with is to use text mining tactics to pull out key words from the text description to identify which are the common organizations that the subs partner with (financial aid, eop etc) without having to do a manual review of all entries.
-
-
-I know one of the project goals is to review the text information that the subcontractors have provided that describes the activities at that particular partnership event (such as a training or meeting) and attempt to assign levels of partnership to each. Here are my thoughts for that, because these levels do need to be defined/identified for each record by subject matter experts. That is ton of work for sure! What I propose Team Brandon do, is create an unsupervised classification model that will identify groupings of responses based on characteristics of the text responses. These could be characteristics such as length of response, keywords, and subcontractor/campus characteristics (such as CSU vs UC). Unsupervised learning means that we don't know the true classification for those records, we are letting commonalities in the data identify records that are similar to each other. While they are working on this model, Natalie and others can be working on the ground truth labeling - that is assigning the level of partnership to each record.
-
 ## Project Goals
 
-We can then create a supervised classification model (where we know what the true label is) and compare what types of groups emerged from the unsupervised learning models, and the supervised model. These labeled records would also serve as training data for a classification model that can be used on the next contract, to predict level of partnership based on the text responses submitted.
+* Identifying common organizations that the subs partner with. 
+    - Use text mining tactics to pull out key words from the text description to identify which are the common organizations that the subcontractors partner with (financial aid, EOP etc) without having to do a manual review of all entries. 
+* Explore trends over time with regarding to who campuses partner with during different parts of the academic year
+* Create a model to predict partner level
 
-* classify partner level
-* explore trends over time with regarding to who campuses partner with during different parts of the academic year
-* answer the first question about identifying common organizations that the subs partner with - create a clear and reproducible report. 
 
 ## Timeline
 
 _Written by Dr. D and sent to CFO leadership on 1/28 as part of the project scope of work proposal_ 
 
-1. Brandon will create a sheet for expert CFO staff member to use to rate level of partnership by 2/4/2022
-2. Someone from the CFO team come give a 20 minute explanation on 2/10/2022 of CFO partnership level data: why it's collected, how the information is used to make programmatic decisions, what you hope to accomplish with this classification project. Cass is 9:30 to 10:45, we can work on a time certain as the date gets closer. 
-3. Expert CFO staff member fills in level of partnership for 10-20 records to serve as a time estimate by 2/11/2022. 
-    a. We actually have this information for all of Y2 which is approximately 1000 records. We will use that time estimate to decide if a smaller subset is necessary to reduce the burden of the CFO staff member, while allowing Brandon to start working on the code for the prediction model. 
+1. Expert CFO staff member fills in level of partnership for 10-20 records to serve as a time estimate for data labeling by 2/11/2022. 
+    a. We will use that time estimate to decide if a smaller subset is necessary to reduce the burden of the CFO staff member, while allowing DS team to start working on the code for the prediction model. 
     b. The remainder of the records should be rated by 2/25/2022
-4. 10-15 minute project check ins (during class time, we can zoom you in) approximately every two weeks starting 3/10/2022. Brandon will update you on his progress, has the opportunity to ask questions of you and you can ask questions of him. 
-5. Review of a scientific poster created for presentation at the College of Natural Sciences Poster Session, date somewhere in late April or Early May. 
-    a. We are requesting that CHC also cover poster printing costs. 
-6. A final stakeholder presentation to CFO team members/leadership during the week of May 9th, 2022. 
-
-## Deliverables
+2. 10-15 minute project check ins during class time approximately every two weeks starting 3/10/2022. The DS team will provide update you on their progress, has the opportunity to ask questions of you and you can ask questions of them.  
+3. The CFO team will review a scientific poster created by the DS team for presentation at the College of Natural Sciences Poster Session, date somewhere in late April or Early May.  
+4. The DS team will give a final stakeholder presentation to CFO team members/leadership during the week of May 9th, 2022. 
 
 
+## References / Domain learning material
+
+* https://www.csuchico.edu/chc/
+* https://www.chicostatecalfresh.org/
+* https://www.canr.msu.edu/news/five_levels_of_community_partnerships
+
+----
+
+# Project Updates
 
 
