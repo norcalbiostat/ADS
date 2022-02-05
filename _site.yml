@@ -17,11 +17,11 @@ navbar:
     icon: fa-graph
     menu:
     - text: Center for Healthy Communities
-      href: projects/chc.html
+      href: projects/CHC.html
     - text: Center for Regenerative Ag & Resiliant Systems
-      href: projects/crars.html
-    - text: Institutional Research
-      href: projects/ir.html
+      href: projects/CRARS.html
+    - text: Supplemental Instruction
+      href: projects/SI.html
       
   right:
   - text: Syllabus

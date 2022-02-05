@@ -1,0 +1,63 @@
+---
+title: "Assessing impact of Supplemental Instruction on Student Success at Chico State"
+output: 
+  html_document: 
+    toc: yes
+    toc_float: true
+    theme: yeti
+    css: style.css
+---
+
+----
+
+# People
+
+## Clients
+
+* Chico State Chemistry Faculty: Erik Wasinger, Lisa Kendhammer and Tiffany Anderson
+* Data Owner: Tom Rosenow, Institutional Research
+* SLC Coordinator: Dawn Frank
+
+## Data Science Student Team (DSST)
+
+4 - 5 student team
+
+# Summary
+
+It is the top mission of the university to retain and graduate students who are well prepared for careers or graduate school. There has been a major shift in the student body with regards to demographics and preparation in the past 10 or so years. Now more than ever the faces and experiences of the faculty do not match that of their students. Chico State has been struggling with a low 4-year graduation rate, and a high first year drop out rate for first time freshmen. Large CSU system wide initiatives such as the Graduation Initiative 2025 (GI2025) have been formed to research what works and implement innovative changes to remove barriers that impede student success and be more strategic about the way campus serves students.
+
+One approach being taken by Chico State is to implement a student learning program called Supplemental Instruction (SI). This program that has shown to be effective in published research but has yet to be evaluated on our campus.
+
+# Project Goals
+
+Assist the clients in answering the following question:
+
+> What impact does Supplemental Instruction have on student success at Chico State?
+
+This question will be explored through the full data science lifecycle from problem definition, data collection and exploration, visualization, modeling (both for understand relationships and to make predictions), creating recommendations and incorporating feedback.
+
+# Timeline / Milestones
+
+* The client will give a 15-20 minute project introduction at 9:30am on 2/10 in Butte 203
+* The Data Science Student Team (DSST) will complete Data Security and CITI training by 2/18/22
+* DSST will research the problem and generate a list of data sources needed to address the question.
+* The faculty supervisor will work with Institutional Research (IR) to obtain available data for student use. The faculty supervisor is responsible for ensuring the privacy and responsible use of the data.
+* 10-15 minute project check ins during class time approximately every two weeks starting 3/10/2022. The DSST will provide updates to the client on their progress with opportunity to ask questions from both parties.
+* The client will review a scientific poster created by the DSST for presentation at the College of Natural Sciences Poster Session, date somewhere in late April or Early May.  
+* The DSST will give a final stakeholder presentation to the GI Inqury members/leadership during the week of May 9th, 2022. 
+
+
+# References  / Domain Learning
+
+* https://www.calstate.edu/csu-system/why-the-csu-matters/graduation-initiative-2025
+* https://www.csuchico.edu/gradinitiative/index.shtml
+* https://info.umkc.edu/si/
+* https://norcalbiostat.github.io/chem_ss/
+* (Robin get Link to San Diego publication)
+
+
+----
+
+# Project Updates
+
+

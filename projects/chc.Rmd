@@ -1,5 +1,5 @@
 ---
-title: "Center for Healthy Communities"
+title: "Predicting level of partnership"
 output: 
   html_document: 
     toc: yes
@@ -8,9 +8,21 @@ output:
     css: style.css
 ---
 
+----
+
+# People
+
+## Clients
+
+* Chico State Center for Healthy Communities, Cal Fresh Outreach Leadership Team: Brandi Simonaro, Aaron Kunst
+
+## Data Science Student Team (DSST)
+
+2 student team
+
 # Summary
 
-## Project Goals
+# Project Goals
 
 * Identifying common organizations that the subs partner with. 
     - Use text mining tactics to pull out key words from the text description to identify which are the common organizations that the subcontractors partner with (financial aid, EOP etc) without having to do a manual review of all entries. 
@@ -18,7 +30,7 @@ output:
 * Create a model to predict partner level
 
 
-## Timeline
+# Timeline
 
 1. Expert CFO staff member fills in level of partnership for 10-20 records to serve as a time estimate for data labeling by 2/11/2022. 
     a. We will use that time estimate to decide if a smaller subset is necessary to reduce the burden of the CFO staff member, while allowing DS team to start working on the code for the prediction model. 
@@ -28,7 +40,7 @@ output:
 4. The DS team will give a final stakeholder presentation to CFO team members/leadership during the week of May 9th, 2022. 
 
 
-## References / Domain learning material
+# References / Domain learning material
 
 * https://www.csuchico.edu/chc/
 * https://www.chicostatecalfresh.org/
