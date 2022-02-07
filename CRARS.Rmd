@@ -1,0 +1,73 @@
+---
+title: "Build a Data Science Solution for a Soil Processing Lab"
+output: 
+  html_document: 
+    toc: yes
+    toc_float: true
+    theme: yeti
+---
+
+----
+
+# People
+
+## Clients
+
+* [Center for Regenerative Agriculture and Resilient Systems](https://www.csuchico.edu/regenerativeagriculture/)
+* Garrett Liles: Co-Founder, Faculty Affiliate, Soil Scientist
+* Aundrea Asbell: Regenerative Demonstration Lab Manager  
+* Constantin Raether: Staff Research Associate
+
+## Data Science Student Team (DSST)
+
+* 4-5 student team
+
+# Summary 
+Regenerative Agriculture is an approach to farm and ranch management that aims to reverse climate change through practices that restore degraded soils. The Center for Regenerative Agriculture offers soil testing and regenerative practice education services for farmers for a fee. This project is to create and implement a data pipeline and processing system for soil samples coming into the soil lab. 
+
+Example: 
+
+> The RAD Lab team is heading to Blythe to visit a farm and take samples. They would like to have the farmer complete an intake form to collect background information such as type of farm, location etc to build a profile of that client. Then once the samples are taken from the site, they need to be asset tagged, entered into some sort of tracking system, scientifically processed to produce data, which needs to be wrangled into a client facing report. 
+
+
+## Project Goals
+Create a data science solution to streamline lab activities, increase staff efficacy by automating data processing and report generation. 
+
+You are starting from essentially scratch here. Your approach should be to spend a fair amount of time planning and communicating directly with the client to understand the needs and what they have already. You will do a lot of writing and decision making on best way to collect & process data before you get to any type of coding stage where you can start implementing and building the pipeline. 
+
+# Sample Deliverables
+
+* Client relationship database
+    - Intake form that is easy to use by farmers.
+* A playbook for new staff and students to use. 
+    - A conceptual diagram of interrelated data systems. 
+    - A foundation data structure and file organization protocol for the lab. (instead of individual spreadsheets in random places on box) a structured data format with codebook to ensure common headers/data types across data sources
+    - Instructions on how to use scripts/data pipeline
+    - Training of current lab staff
+* A client facing dashboard that shows where the farmer's sample is in the process, possibly a downloadable report with the nutrient profile and suggested conservation/amendment suggestions.
+* A ticket requesting system that allows clients to request lab services outside of direct email. 
+* Reproducible reports that take raw sample processing output and put it into a client facing report that is compiled to PDF. 
+* Aggregated summary of lab activity for funder such as number of samples processed, by type of farm or location etc. 
+
+
+
+
+# Timeline / Milestones
+_Details regarding deliverables to be added by DSST_
+
+* 10-15 minute project check ins during class time approximately every two weeks starting 3/10/2022. The DSST will provide updates to the client on their progress with opportunity to ask questions from both parties.
+* The client will review a scientific poster created by the DSST for presentation at the College of Natural Sciences Poster Session, date somewhere in late April or Early May.  
+* The DSST will give a final stakeholder presentation to the CRARS leadership during the week of May 15th, 2022 (Finals week). 
+
+
+# Domain Learning
+
+* https://www.csuchico.edu/regenerativeagriculture/soil-lab/index.shtml
+
+
+----
+
+# Project Updates
+_Weekly updates done by DSST via PR_
+
+

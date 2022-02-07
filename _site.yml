@@ -3,25 +3,24 @@ output_dir: '.'
 navbar:
   title: DATA 485
   left:
-  - text: Schedule
-    icon: fa-calendar
-    href: schedule.html
-  - text: Weekly Content
+  - text: Weekly Notes
     icon: fa-folder-open
     menu:
     - text: Week 1
-      href: wk1-notes.html
+      href: wk01-notes.html
     - text: Week 2
-      href: wk2-notes.html
+      href: wk02-notes.html
+    - text: Week 3
+      href: wk03-notes.html
   - text: Projects
     icon: fa-graph
     menu:
     - text: Center for Healthy Communities
-      href: projects/CHC.html
+      href: CHC.html
     - text: Center for Regenerative Ag & Resiliant Systems
-      href: projects/CRARS.html
+      href: CRARS.html
     - text: Supplemental Instruction
-      href: projects/SI.html
+      href: SI.html
       
   right:
   - text: Syllabus

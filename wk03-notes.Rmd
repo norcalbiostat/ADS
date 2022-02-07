@@ -1,0 +1,58 @@
+---
+title: "Week 3: Creating data strategies to address business questions."
+date: "`r paste(Sys.Date())`"
+output:   
+  html_document: 
+    highlight: tango
+    theme: yeti
+    toc: yes
+    toc_float: true
+    toc_depth: 2
+---
+
+
+# Housekeeping 
+
+* Mini website overhaul
+* Pull change to your gradebook, modify/recompile the summary report & delete the example gradebook. Check completion status for accuracy, then push changes.
+* We're starting to read Race after Technology next week. Your first assignment is to read the preface and answer the discussion question (link to discussion guide is in the schedule) in your learning journal. 
+
+----
+
+# Learning Path
+
+### Where we've been
+* Exploring the realm of data science from a more experienced place than last semester. 
+
+### Where we're at
+* Ready to put our skills into practice to prepare for a real client work. 
+
+----
+
+# Goals for the week
+
+* Create a data strategy for a case study (not a real client)
+* Meet clients and learn about three projects that you get to choose one to work on this semester. 
+
+----
+
+# Tuesday
+
+* Review the case study, form working teams (2-3 students), obtain the repository. 
+* Learn how to use git with others 
+    - https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow
+    - https://www.atlassian.com/git/tutorials/using-branches
+
+----
+
+# Thursday: 
+
+## Project Introductions
+
+* 9:30 - 9:45 Housekeeping
+* 9:45 - 10:00 Erik Wasinger: Supplemental Instruction
+* 10:05 - 10:20 <CHC or CRARS>
+* 10:25 - 10:40 <CHC or CRARS>
+* 10:40 - 10:50 Wrap up
+
+
