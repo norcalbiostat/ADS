@@ -76,3 +76,9 @@ h5 {
     color: var(--brown);
     background-color: white;
 }
+
+.red {
+  padding: .5em;
+  border-radius: 10px;
+  background: #d9534f;
+}

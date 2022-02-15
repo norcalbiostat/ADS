@@ -12,6 +12,8 @@ navbar:
       href: wk02-notes.html
     - text: Week 3
       href: wk03-notes.html
+    - text: Week 4
+      href: wk04-notes.html
   - text: Projects
     icon: fa-graph
     menu:

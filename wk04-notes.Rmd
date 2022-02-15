@@ -1,0 +1,74 @@
+---
+title: "Week 4: Thinking like a Data Scientist"
+date: "`r paste(Sys.Date())`"
+output:   
+  html_document: 
+    highlight: tango
+    theme: yeti
+    toc: yes
+    toc_float: true
+    toc_depth: 2
+---
+
+
+# Housekeeping 
+
+* Missing project rankings from 4 people. We can't start project work until that's done
+* Data security training added. See Deliverables page. 
+
+----
+
+# Learning Path
+
+### Where we've been
+* Practicing taking a generically defined problem and developing a solution. 
+
+### Where we're at
+* Learning how to make a professional looking report
+
+### Where we're going
+* Starting to view technology, algorithms and AI from a critical lens of who can it harm the most
+
+:::{.red}
+We will be discussing matters that may be sensitive or triggering to some people. You are not required to share out in class, nor speak in specifics in your learning journal. You may be uncomfortable with the topic, and that's okay. Intellectual discomfort is fundamental to a university education - it means our ideas re being challenged as we struggle to resolve cognitive dissonance. This is different from emotional trauma that can be harmful. 
+
+Our classroom provides an open space for the critical and civil exchange of ideas. Some readings and other content in this course will include topics that some students may find triggering. If you believe that you will find the discussion to be traumatizing, you may choose to not participate in the discussion or leave the classroom. You will still, however, be responsible for material. Speak to me if this will be a problem.
+:::
+
+
+I request that all students be sensitive to your classmates' vulnerabilities when we have our discussions. 
+
+----
+
+# Goals for the week
+
+* Think like a Data Scientist
+* Collaborate with others on writing a report
+* Professionalize your data products. 
+
+----
+
+# Tuesday
+
+* Case study share out: 15-20 minute share out as paired groups
+  - What approach are you taking?
+  - What problem are you trying to solve? 
+  - What have you found so far? 
+* Troubleshoot as a class
+  - What questions do you have? 
+  - What can we help you with? 
+* Next steps
+  - What are your plans for next steps? 
+  - What kind of final report are you creating? 
+* Open work time
+
+----
+
+# Thursday: 
+
+* Assign project teams
+* Short discussion on RAT preface (1 page). 
+    - The introduction is long (50 pages).
+    - Jigsaw lecture/discussion on Thursday 2/24. You will be responsible for summarizing one of the discussion questions in HackMD (link forthcoming)
+* Open work time
+
