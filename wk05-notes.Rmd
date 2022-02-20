@@ -1,0 +1,60 @@
+---
+title: "Week 5: "
+date: "`r paste(Sys.Date())`"
+output:   
+  html_document: 
+    highlight: tango
+    theme: yeti
+    toc: yes
+    toc_float: true
+    toc_depth: 2
+---
+
+
+# Housekeeping 
+
+* Thank you for patience & understanding with me missing class last week.
+* If you get no/partial credit for an assignment that you want to redo or complete you can do so but then send me a link directly in Discord to the thing to review and an explanation of what it is you want me to regrade. 
+    - This could be a URL to hackmd, or a repo, with a specific line number. 
+    - The burden to minimize my effort in finding and regrading your late work is on you, since it's late.
+
+
+----
+
+# Learning Path
+
+### Where we've been
+* Practicing the role of a consultant to solve a problem. 
+
+### Where we're at
+* Starting to work with a real client in an organized and professional manner.
+
+### Where we're going
+* Statistical modeling from a DS perspective. 
+ 
+
+----
+
+# Goals for the week
+
+* Complete your data security training
+    - Review the information on [this page](https://www.csuchico.edu/isec/data-protection/index.shtml)
+    - Complete the Data Security and FERPA (Non-Level 1) training through [CSU Learn](https://www.csuchico.edu/hr/pdev/compliance-training.shtml)   
+    - Send a copy of your certificate to Dr. D. via Discord
+* Set some ground rules and team workflow guidelines to ensure project success. 
+
+
+----
+
+# Tuesday
+
+* Obtain your consulting project repo from github classroom. Link in Discord. Review the instructions in the readme. 
+
+
+----
+
+# Thursday: 
+
+* Jigsaw lecture & discussion on RAT introduction. You are responsible for summarizing at least one of the discussion questions in HackMD (https://hackmd.io/@norcalbiostat/rat-intro)
+* Open project work time
+

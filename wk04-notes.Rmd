@@ -62,13 +62,18 @@ I request that all students be sensitive to your classmates' vulnerabilities whe
   - What kind of final report are you creating? 
 * Open work time
 
+## Evaluation rubric for final product
+Here is what I will be looking for from your final report.
+
+* Is it within the page length? 
+* How professional is the look, feel, writing/language? 
+* Is there a clear goal/point of the report? 
+* Are claims backed up by evidence? 
+* If a model is presented, are the results appropriate for the audience? (e.g. don't explain your code to to the CEO)
+* Is your repo organized? Can I find your data management (if any)? Can I follow your work? 
+
 ----
 
 # Thursday: 
 
-* Assign project teams
-* Short discussion on RAT preface (1 page). 
-    - The introduction is long (50 pages).
-    - Jigsaw lecture/discussion on Thursday 2/24. You will be responsible for summarizing one of the discussion questions in HackMD (link forthcoming)
-* Open work time
-
+> Class cancelled. Open work time with your team on the case study. 
