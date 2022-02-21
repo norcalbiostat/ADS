@@ -46,14 +46,14 @@ output:
 
 ----
 
-# Tuesday
+# Tuesday: SQL?
 
 * Obtain your consulting project repo from github classroom. Link in Discord. Review the instructions in the readme. 
 
 
 ----
 
-# Thursday: 
+# Thursday: Reading discussion
 
 * Jigsaw lecture & discussion on RAT introduction. You are responsible for summarizing at least one of the discussion questions in HackMD (https://hackmd.io/@norcalbiostat/rat-intro)
 * Open project work time
