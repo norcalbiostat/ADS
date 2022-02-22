@@ -1,5 +1,5 @@
 ---
-title: "Week 5: "
+title: "Week 5: See quill or ess que ell?"
 date: "`r paste(Sys.Date())`"
 output:   
   html_document: 
@@ -8,6 +8,7 @@ output:
     toc: yes
     toc_float: true
     toc_depth: 2
+always_allow_html: true
 ---
 
 
@@ -38,17 +39,65 @@ output:
 # Goals for the week
 
 * Complete your data security training
-    - Review the information on [this page](https://www.csuchico.edu/isec/data-protection/index.shtml)
-    - Complete the Data Security and FERPA (Non-Level 1) training through [CSU Learn](https://www.csuchico.edu/hr/pdev/compliance-training.shtml)   
-    - Send a copy of your certificate to Dr. D. via Discord
+* Obtain your consulting project repo from github classroom. Link in Discord. Review the instructions in the readme. 
 * Set some ground rules and team workflow guidelines to ensure project success. 
 
+### Data Security Training
+You will be dealing with potentially sensitive data, and so a basic understanding of data protection standards is a must for anyone working with data. 
+
+* Review the information on [this page](https://www.csuchico.edu/isec/data-protection/index.shtml)
+* Complete the Data Security and FERPA (Non-Level 1) training through [CSU Learn](https://www.csuchico.edu/hr/pdev/compliance-training.shtml)   
+* Send a copy of your certificate to Dr. D. via Discord
+    
 
 ----
 
-# Tuesday: SQL?
+# Tuesday: Intro to SQL
 
-* Obtain your consulting project repo from github classroom. Link in Discord. Review the instructions in the readme. 
+##  What is SQL?
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/27axs9dO7AE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<br>
+
+<br>
+
+## It's easier than you may think
+
+It's amazing how many jobs want you to know SQL, and how comparatively EASY it is to learn once you know dplyr. 
+
+This tweet...
+```{r, echo=FALSE}
+tweetrmd::include_tweet(
+  "https://twitter.com/thosjleeper/status/1184572652125589504",
+  plain = TRUE
+)
+```
+
+was in response to this tweet...
+```{r, echo=FALSE}
+tweetrmd::include_tweet(
+  "https://twitter.com/b0rk/status/1184571894722449409",
+  plain = TRUE
+)
+```
+
+which showed this image
+
+
+![](fig/minimal_sql.jpg)
+
+## Practice (Homework)
+
+Go to https://sqlbolt.com/ and work through the interactive tutorial up until lesson 12. 
+Screenshot your answer for the last exercise and send to me via Discord. 
+
+
+## References
+
+* What is SQL [Lego Tutorial Video](https://www.youtube.com/watch?v=27axs9dO7AE)
+* [Workshop materials for MySQL in R](https://beanumber.github.io/mysql-r-webinar/index.html) by [Ben Baumer](http://www.science.smith.edu/~bbaumer/w/) an R super user, developer, and a sabermetrician (sports data scientist) and all around amazing person to follow in the DS realm. 
+* [The many flavors of SQL](https://beanumber.github.io/mysql-r-webinar/index.html)
 
 
 ----
