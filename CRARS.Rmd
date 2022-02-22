@@ -70,4 +70,10 @@ _Details regarding deliverables to be added by DSST_
 # Project Updates
 _Weekly updates done by DSST via PR_
 
+## Roster 
+
+* Joshua Vong - Oversight
+* Ethan Nguyen - Taskmaster
+* Thomas Smale - Liaison
+* Matt Solone - Time Keeper 
 
