@@ -41,6 +41,8 @@ always_allow_html: true
 * Complete your data security training
 * Obtain your consulting project repo from github classroom. Link in Discord. Review the instructions in the readme. 
 * Set some ground rules and team workflow guidelines to ensure project success. 
+* Chat with Dr. D to discuss first steps.
+
 
 ### Data Security Training
 You will be dealing with potentially sensitive data, and so a basic understanding of data protection standards is a must for anyone working with data. 
