@@ -19,7 +19,10 @@ output:
 
 ## Data Science Student Team (DSST)
 
-4 - 5 student team
+* Joseph Shifman: Oversight
+* Rica Rebusit: Taskmaster 
+* Faith Fatchen: Liaison
+* Skip Moses: Time keeper
 
 # Summary
 
@@ -61,3 +64,19 @@ _Details regarding deliverables to be added by DSST_
 # Project Updates
 _Weekly updates done by DSST via PR_
 
+## 02/21/2022
+
+Today, we met for the first time. Roles were assigned, and we discussed what our first steps will be.
+
+* Next Steps:
+
+  1. Complete security training.
+  2. Download data.
+  3. Start exploring and building a codebook.
+
+* Remarks: 
+
+  - Keep separate scratch files.
+  - PR will be flexible.
+  - Respond on discord by end of day.
+  - Add data sets to gitignore file before commiting. 
