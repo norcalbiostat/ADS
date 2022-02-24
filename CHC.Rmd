@@ -11,6 +11,9 @@ output:
 
 # People
 
+Brandon Trahms
+Derek Borders
+
 ## Clients: 
 
 * [Chico State Center for Healthy Communities](https://www.csuchico.edu/chc/)
