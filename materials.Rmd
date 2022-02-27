@@ -1,0 +1,77 @@
+---
+title: "Additional Materials"
+output: html_document
+---
+
+```{r, message=FALSE, warning=FALSE, echo=FALSE, eval=FALSE}
+library(stringr); library(dplyr);library(pander)
+
+note <- data.frame(filenames = paste0('notes/', list.files("notes", pattern='*.pdf|*.html|*.docx')))
+
+out.note <- note %>% mutate(name = gsub("note/|.html|.pdf|.md",  "", filenames), 
+                          link = sprintf("[%s](%s)",name, filenames))
+pander(as.list(out.note$link))
+```
+
+This page contains links to additional notes, including the class collaborative notes via HackMD and a sampling of additional books are reference items. Additional contributions to these lists via github pull request welcome!
+
+----
+
+# Other / Uncategorized notes & materials
+
+* [R based websites](notes/cn01_Rbased_websites.html)
+* [What is DS collab notes](https://hackmd.io/@norcalbiostat/whatisds)
+* [Major Universities Are Using Race as a "High Impact Predictor" of Student Success.](https://themarkup.org/news/2021/03/02/major-universities-are-using-race-as-a-high-impact-predictor-of-student-success))
+
+
+
+----
+
+# Race against Technology
+
+* [Discussion Guide](notes/RAT Discussion Guide.pdf)
+* [Introduction](https://hackmd.io/@norcalbiostat/rat-intro)
+* [Engineered Inequity](https://hackmd.io/@norcalbiostat/engineered_inequity)
+* [Default Discrimination](https://hackmd.io/@norcalbiostat/default_discrimination)
+* [Coded Exposure](https://hackmd.io/@norcalbiostat/coded_exposure)
+* [Technological Benevolence](https://hackmd.io/@norcalbiostat/tech_benevolence)
+* [Retooling Solidarity](https://hackmd.io/@norcalbiostat/retooling_solidarity)
+
+
+# Additional readings on Ethics & Algorithms
+
+
+* [When Data Science Destabilizes Democracy and Facilitates Genocide](http://www.fast.ai/2017/11/02/ethics/)
+* [Activision Patents Matchmaking That Encourages Players To Buy Microtransactions](https://kotaku.com/activision-patents-matchmaking-that-encourages-players-1819630937)
+* [More than a Million Pro-Repeal Net Neutrality Comments were Likely Faked](https://hackernoon.com/more-than-a-million-pro-repeal-net-neutrality-comments-were-likely-faked-e9f0e3ed36a6)
+
+----
+
+# Introduction to Statistical learning
+We are working through the text Introduction to Statistical Learning (ISLR)
+* [PDF of text available here](https://www.statlearning.com/) 
+* [Slides & Videos](http://auapps.american.edu/alberto/www/analytics/ISLRLectures.html) also presented in a different layout at [Data School](https://www.dataschool.io/15-hours-of-expert-machine-learning-videos/) 
+* [EdX version of this course](https://www.edx.org/course/statistical-learning). You can audit the class for free, get access to the same content and materials with some additional benefits like written video transcripts. I am not endorsing nor requiring you to pay for the verified certificate.  
+* [Tidymodels Code](https://emilhvitfeldt.github.io/ISLR-tidymodels-labs/index.html)
+
+
+
+
+
+
+
+
+# Other refs on Data Science
+Note - many of these books are links to a Tweet where the book is promoted/discussed. I leave the tweets in there so you can 1) see the entire context of the post, and 2) you can learn more people involved in the DS world that you may want to follow. 
+
+* DS with R - Garrett Grolemund https://garrettgman.github.io/
+* Another book on Data Science https://www.anotherbookondatascience.com/
+* Text mining with R https://www.tidytextmining.com/
+* Hands on Machine Learning with R https://bradleyboehmke.github.io/HOML/DT.html
+* Create your own DS curriculum https://twitter.com/DataKimist/status/1213855599013830657?s=09
+* "Best Free Data Science ebook" https://twitter.com/kareem_carr/status/1205191083443048448?s=09
+* Building a career in Data Science https://twitter.com/skyetetra/status/1202350563859369984?s=09
+    - might be same book https://twitter.com/robinson_es/status/1207450496019111942?s=09
+* How to be a modern scientist https://twitter.com/alexpghayes/status/1200917769774141442?s=09    
+
+

@@ -1,7 +1,9 @@
 ---
 tags: ADS-S22
 robots: noindex, nofollow
+output: html_document
 ---
+
 # Race against Technology: Introduction 
 Discuss at least one question below, putting your name in brackets in front of your answer. Each question below needs to have at least one discussion, but you can discuss more than one question. During class I will ask on each of you to share out one of your discussion points. 
 
