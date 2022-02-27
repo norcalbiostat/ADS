@@ -1,5 +1,5 @@
 ---
-title: "Week 6: "
+title: "Week 6: Intro to Statistical Learning"
 date: "`r paste(Sys.Date())`"
 output:   
   html_document: 
@@ -14,9 +14,21 @@ always_allow_html: true
 
 # Housekeeping 
 
-* Start to bring headphones to class. You'll be watching short videos during class and taking notes. 
-
-
+* Website organization update. Added materials page. 
+* Start to bring headphones to class. You'll be watching short videos & taking notes during class. 
+* ISLR Logistics
+  - We will use a single ISLR repo for all work. I will add files to it regularly and review your work using the feedback branch. **Don't merge this branch**. Push and pull regularly. 
+  - Before class: Watch videos and prepare answers to selected questions
+  - During class: Discuss and compare answers to questions with classmates, sometimes will watch additional videos and share out. 
+  - After class
+      - Finish answering any remaining questions 
+      - Complete any practice problems and/or activities assigned 
+* Project Logistics
+  - Weekly wednesday updates to the project page on the ADS website. 
+  - First (10 min) project report out on Thursday the 10th. Then every 2 weeks. Present overhead to class and possibly client via Zoom.
+* Reading logistics
+  - Reading discussion every other week
+  - Learning journal updates on off weeks. 
 
 ----
 
@@ -24,22 +36,94 @@ always_allow_html: true
 
 ### Where we've been
 
+* Getting orientated with the semester long project
+* Practicing data wrangling and report writing for a professional audience.
+
 ### Where we're at
+
+* Learning how to balance textbook learning and project based learning while keeping the broader ethical implications in mind. 
+* If you didn't have an organization schedule for your classes yet, you should do so asap. The workload in this class is going to ramp up a bit. 
 
 ### Where we're going
 
+* Digging into mathematical models of statistical learning.
+* Learning new R code methods, practicing building models. 
+
+### Learning Objectives
+
+* Describe the difference between training and testing data sets
+* Describe the difference between a parametric and non-parametric model
+* Identify and describe situations where classification, regression, and clustering models are appropriate. 
+* Explain the concept of overfitting, and bias-variance tradeoff. 
 
 ----
 
-# Goals for the week
+# Tuesday
+
+## Prepare
+
+* Clone your ISLR Repo.
+* Watch or read ISLR Ch 1 on your own before class. [[Full playlist]](https://www.youtube.com/playlist?list=PLAOUn-KLSAVOPE3yQ04EZCbt0ycTib6OH)
+  - [Opening Remarks and Examples](https://www.youtube.com/watch?v=5N9V07EIfIg&list=PL5-da3qGB5ICcUhueCyu25slvsGp8IDTa&index=1) (18:18)
+  - [Supervised and Unsupervised Learning](https://www.youtube.com/watch?v=Z0v9QMkA3dA&list=PL5-da3qGB5ICcUhueCyu25slvsGp8IDTa&index=2) (12:12)
+* Start to work through ISLR Chapter 2. [[Full YouTube video playlist]](https://www.youtube.com/watch?v=p9n2w236B48&list=PLAOUn-KLSAVOwBuphhdi-BT0jjhuWyvPL)
+
+`r emo::ji("busts_in_silhouette")` Discuss these questions in your group and write the answers in the `ch2-statistical-learning.Rmd` file in your ISRL repo. You may not finish all questions in the time allotted during class, you will have to finish outside of class. 
+
+### [Statistical Learning and Regression](https://www.youtube.com/watch?v=p9n2w236B48&list=PL5-da3qGB5IDvuFPNoSqheihPOQNJpzyy&index=1) (11:41)
+
+1. What is f? 
+2. Why do we care about estimating f? 
+3. Describe the two types of errors in a model.  
+4. What concept in 456 does irreducible error portion of the model correspond to? 
 
 
+### [Curse of Dimensionality and Parametric Models](https://www.youtube.com/watch?v=HndOzII4jzs&list=PL5-da3qGB5IDvuFPNoSqheihPOQNJpzyy&index=2) (11:40)
+
+1. Summarize the curse of dimensionality.
+2. What is the difference between a parametric & non-parametric model? Give an example of each. 
+3. What are the advantages & disadvantages of a parametric approach to regression or classification (as opposed to a nonparametric approach)?
+4. Why would we ever choose to use a more restrictive method instead of a very flexible approach?
+5. What is the difference between supervised & unsupervised learning? Give an example of each. 
+
+---
+
+# Thursday
+
+## Prepare
+
+* Finish ISLR Chapter 2
+* Open project work time
+
+
+### [Assessing Model Accuracy and Bias-Variance Trade-off](https://www.youtube.com/watch?v=VaN1RUDuioQ&list=PL5-da3qGB5IDvuFPNoSqheihPOQNJpzyy&index=3) (10:04)
+
+1. What is the primary measure of model accuracy for regression models? 
+2. Compare and contrast a _smoothing spline_ to a _linear regression line_. (What is the same, what is different) 
+3. What's the difference between training and testing data? Why do we need both? 
+4. What is overfitting? 
+5. If we don't have a testing data set, what method can we use to estimate the MSE of the testing data?
+6. What is the bias-variance trade-off? 
+
+### [Classification Problems and K-Nearest Neighbors](https://www.youtube.com/watch?v=TnVRhLqThR4&list=PL5-da3qGB5IDvuFPNoSqheihPOQNJpzyy&index=4) (15:37)
+
+1. What is the primary measure of model accuracy for classification models? 
+2. Describe the Bayes Classifier 
+3. What is the Bayes error rate? 
+4. What is a limitation of the Bayes classifier? 
+5. Describe how the K-Nearest Neighbors classifier works. 
+6. Name a benefit of using a KNN model. 
+7. What happens to the accuracy/bias of the model as the K increases? Why? 
 
 ----
 
-# Tuesday: 
+# Additional Assignments
+Full details in your ISLR repo. 
 
-----
+* ISLR Ch 2 Exercises: 1, 2, 4 (One example each)
+* Learning Tidymodels
+    - Go here https://www.tidymodels.org/ & install the `tidymodels` package
+    - Start a new Rmarkdown file and replicate [Step 1: Build a model](https://www.tidymodels.org/start/models/). 
 
-# Thursday: 
+
 

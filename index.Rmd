@@ -77,7 +77,9 @@ tasks %>%
   pack_rows("Week 2", 10,17, label_row_css = wk.col) %>%
   pack_rows("Week 3", 18,19, label_row_css = wk.col) %>%
   pack_rows("Week 4", 20,22, label_row_css = wk.col) %>%
-  pack_rows("Week 5", 23,26, label_row_css = wk.col) 
+  pack_rows("Week 5", 23,26, label_row_css = wk.col) %>%
+  pack_rows("Week 6", 27,30, label_row_css = wk.col) %>%
+  pack_rows("Week 7", 31,30, label_row_css = wk.col)
 ```
 
 ```{r, eval=FALSE}
