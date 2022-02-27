@@ -16,6 +16,11 @@ out.note <- note %>% mutate(name = gsub("note/|.html|.pdf|.md",  "", filenames),
 pander(as.list(out.note$link))
 ```
 
+## Race against Technology
+
+
+##
+
 # Other Books on Data Science
 Note - many of these books are links to a Tweet where the book is promoted/discussed. I leave the tweets in there so you can 1) see the entire context of the post, and 2) you can learn more people involved in the DS world that you may want to follow. 
 

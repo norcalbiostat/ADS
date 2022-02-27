@@ -17,7 +17,6 @@ navbar:
     - text: Week 5
       href: wk05-notes.html
   - text: Projects
-    icon: fa-graph
     menu:
     - text: Center for Healthy Communities
       href: CHC.html
@@ -25,6 +24,12 @@ navbar:
       href: CRARS.html
     - text: Supplemental Instruction
       href: SI.html
+ - text: Collaborative Notes
+    menu:
+    - text: Race after Technology
+      href: reading.html
+    - text: Intro to Statistical Learning
+      href: islr.html     
       
   right:
   - text: Syllabus
