@@ -9,10 +9,6 @@ output:
 
 ----
 
-# People
-
-Brandon Trahms
-Derek Borders
 
 ## Clients: 
 
@@ -21,7 +17,9 @@ Derek Borders
 
 ## Data Science Student Team (DSST)
 
-2 student team
+* Brandon Trahms
+* Derek Borders
+
 
 # Summary
 

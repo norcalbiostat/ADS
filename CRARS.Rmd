@@ -20,7 +20,10 @@ output:
 
 ## Data Science Student Team (DSST)
 
-* 4-5 student team
+* Joshua Vong
+* Ethan Nguyen
+* Thomas Smale
+* Matt Solone
 
 # Summary 
 Regenerative Agriculture is an approach to farm and ranch management that aims to reverse climate change through practices that restore degraded soils. The Center for Regenerative Agriculture offers soil testing and regenerative practice education services for farmers for a fee. This project is to create and implement a data pipeline and processing system for soil samples coming into the soil lab. 
