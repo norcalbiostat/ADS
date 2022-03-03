@@ -1,0 +1,46 @@
+---
+title: "My grade summary"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(readxl)
+library(dplyr)
+library(kableExtra)
+options(knitr.table.format = "html", knitr.kable.NA = '') 
+
+my_grades <- read_xlsx("example_gradebook.xlsx") %>% rename(complete = username)
+```
+
+# Table of individual assignments
+Adjust showing & filtering by week here as desired. 
+```{r}
+my_grades %>% 
+  filter(week==1) %>% 
+  select(-week, -task_num) %>% 
+  kable(align="l", escape=FALSE) %>% 
+  kable_styling(bootstrap_options = c("hover", "striped", "responsive", "bordered")) %>% 
+  column_spec(1, width="5%") %>% 
+  column_spec(2, width="45%") %>% 
+  column_spec(3, width="30%") %>% 
+  column_spec(4, width="10%") %>%
+  column_spec(5, width="5%")  %>%
+  column_spec(6, width="5%")
+```
+
+
+# Weekly grade
+```{r}
+my_grades %>% 
+  mutate(score = pct_effort * complete) %>% 
+  group_by(week) %>% 
+  summarize(week_score = sum(score)) %>%
+  kable(align="c", escape=FALSE, col.names = c("Week", "Grade")) %>% 
+  kable_styling(bootstrap_options = c("hover", "striped"), 
+                full_width = FALSE, position = "center")
+```
+
+You could create a plot here, or modify this table to track your grades over time. 
+
+
