@@ -46,7 +46,7 @@ _Details regarding deliverables to be added by DSST_
 * DSST will research the problem and generate a list of data sources needed to address the question.
 * The faculty supervisor will work with Institutional Research (IR) to obtain available data for student use. The faculty supervisor is responsible for ensuring the privacy and responsible use of the data.
 * 10-15 minute project check ins during class time approximately every two weeks starting 3/10/2022. The DSST will provide updates to the client on their progress with opportunity to ask questions from both parties.
-* The client will review a scientific poster created by the DSST for presentation at the College of Natural Sciences Poster Session, date somewhere in late April or Early May.  
+* The client will review a scientific poster created by the DSST for presentation at the College of Natural Sciences Poster Session, date somewhere on May 2nd.  
 * The DSST will give a final stakeholder presentation to the GI Inqury members/leadership during the week of May 15th, 2022 (Finals week). 
 
 
@@ -80,3 +80,14 @@ Today, we met for the first time. Roles were assigned, and we discussed what our
   - PR will be flexible.
   - Respond on discord by end of day.
   - Add data sets to gitignore file before commiting. 
+  
+## -3/01/2022
+
+* Milestones 
+ - Data codebooks complete
+ - Started reviewing literature 
+ 
+* Next steps 
+ - Exploratory data analysis 
+ - Discuss literature as group 
+  
