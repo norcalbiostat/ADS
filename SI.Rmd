@@ -56,8 +56,7 @@ _Details regarding deliverables to be added by DSST_
 * https://www.csuchico.edu/gradinitiative/index.shtml
 * https://info.umkc.edu/si/
 * https://norcalbiostat.github.io/chem_ss/
-* (Robin get Link to San Diego publication)
-
+* San Diego Publication in github repo
 
 ----
 
@@ -90,4 +89,4 @@ Today, we met for the first time. Roles were assigned, and we discussed what our
 * Next steps 
  - Exploratory data analysis 
  - Discuss literature as group 
-  
+ - Literature summary
