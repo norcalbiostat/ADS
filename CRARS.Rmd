@@ -77,3 +77,30 @@ _Weekly updates done by DSST via PR_
 * Thomas Smale - Liaison
 * Matt Solone - Time Keeper 
 
+## 02/24/2022 Meeting
+
+Big Idea 
+
+1. *Intake form client relationship form (Website )*
+
+    1a. What fields do we want on this form ? 
+
+    1b. Data processing pipeline, produces file, get that file into a presentable format.
+
+2.  Develop data from that intake form, How to store? Where to access?
+
+3.  Have all types of data types that will need to be tracked on the back-end.
+
+4.  Databases set around a specific ID, where we can track everything back to this ID.
+
+5.  Frontend, what categories do we need to collect that allows us to analyze efficiency?
+
+6.  *Cost estimates based on a few fields, then after then we can send them the true intake form.*
+
+Next Steps
+
+- Work on raw data example, figure out how to clean and organize for more efficient. 
+
+- Schedule lab visit and get idea for the intake form. 
+
+- Implement data an tie into a modeling package, with slight tweaking.
