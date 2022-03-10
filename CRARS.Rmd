@@ -104,3 +104,15 @@ Next Steps
 - Schedule lab visit and get idea for the intake form. 
 
 - Implement data an tie into a modeling package, with slight tweaking.
+
+## 03/10/2022
+
+Project update
+
+Met with members of the RAD lab to focus in on the specifics of our job.
+
+Main objectives - 
+
+* Develop a user friendly online intake form for clients (Auto generation for client when we receive their samples)
+* Develop Automated tracking sheet for RAD lab 
+* Begin to build prototype online intake form and data cleaning/presenting code. 
