@@ -100,3 +100,21 @@ Today, we met for the first time. Roles were assigned, and we discussed what our
  - Discuss literature as group 
  - Literature summary
 
+## 03/10/2022
+
+* Met with Erik to discuss first steps.
+
+  - Still waiting on SI visit data.
+  - Look at Fresno State paper by Hongtao Yue et al.
+  - Look into clinical trial methodologies for techniques. 
+  - Explore GPA data and quantify some of the equity gaps.
+  - Data Still needed:
+  
+    - SI visit level data
+    - Student date (or) year of birth
+    - Flag if student is Pell eligible (Probably can't get)
+    - Flag if student participated in upward bound
+    - Flag if student lived in residence hall
+    - Flag if student is enrolled in honors program
+    - Flag if student is enrolled in EOP
+    - Student permanent address zip (or) county
