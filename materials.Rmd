@@ -17,17 +17,19 @@ This page contains links to additional notes, including the class collaborative 
 
 ----
 
-# Other / Uncategorized notes & materials
+# Other / Uncategorized notes & reading materials
 
 * [R based websites](notes/cn01_Rbased_websites.html)
 * [What is DS collab notes](https://hackmd.io/@norcalbiostat/whatisds)
-* [Major Universities Are Using Race as a "High Impact Predictor" of Student Success.](https://themarkup.org/news/2021/03/02/major-universities-are-using-race-as-a-high-impact-predictor-of-student-success))
+* [Major Universities Are Using Race as a "High Impact Predictor" of Student Success.](https://themarkup.org/news/2021/03/02/major-universities-are-using-race-as-a-high-impact-predictor-of-student-success)
 
 
 
 ----
 
 # Race against Technology
+
+These links go to our collaborative HackMD notes. 
 
 * [Discussion Guide](notes/RAT Discussion Guide.pdf)
 * [Introduction](https://hackmd.io/@norcalbiostat/rat-intro)
@@ -40,7 +42,6 @@ This page contains links to additional notes, including the class collaborative 
 
 # Additional readings on Ethics & Algorithms
 
-
 * [When Data Science Destabilizes Democracy and Facilitates Genocide](http://www.fast.ai/2017/11/02/ethics/)
 * [Activision Patents Matchmaking That Encourages Players To Buy Microtransactions](https://kotaku.com/activision-patents-matchmaking-that-encourages-players-1819630937)
 * [More than a Million Pro-Repeal Net Neutrality Comments were Likely Faked](https://hackernoon.com/more-than-a-million-pro-repeal-net-neutrality-comments-were-likely-faked-e9f0e3ed36a6)
@@ -48,17 +49,15 @@ This page contains links to additional notes, including the class collaborative 
 ----
 
 # Introduction to Statistical learning
-We are working through the text Introduction to Statistical Learning (ISLR)
+We are working through the text Introduction to Statistical Learning (ISLR), answering questions collaboratively in HackMD, and completing assignments in a github repository. Here are some learning material resources for this textbook. 
+
 * [PDF of text available here](https://www.statlearning.com/) 
-* [Slides & Videos](http://auapps.american.edu/alberto/www/analytics/ISLRLectures.html) also presented in a different layout at [Data School](https://www.dataschool.io/15-hours-of-expert-machine-learning-videos/) 
-* [EdX version of this course](https://www.edx.org/course/statistical-learning). You can audit the class for free, get access to the same content and materials with some additional benefits like written video transcripts. I am not endorsing nor requiring you to pay for the verified certificate.  
-* [Tidymodels Code](https://emilhvitfeldt.github.io/ISLR-tidymodels-labs/index.html)
-
-
-
-
-
-
+* [Slides & Videos](http://auapps.american.edu/alberto/www/analytics/ISLRLectures.html)
+    - Presented in a different layout at [Data School](https://www.dataschool.io/15-hours-of-expert-machine-learning-videos/) 
+    - [[Direct YouTube playlist]](https://www.youtube.com/channel/UCB2p-jaoolkv0h22m4I9l9Q/playlists)
+* [EdX version of this course](https://www.edx.org/course/statistical-learning). You can audit the class for free, get access to the same content and materials with some additional benefits like written video transcripts. I am not endorsing this site nor requiring you to pay for the verified certificate. This is just another option that may fit your style. 
+* [Tidymodels Code](https://emilhvitfeldt.github.io/ISLR-tidymodels-labs/index.html). ISLR labs done in the [Tidymodels](https://www.tidymodels.org/) framework
+* [GitHub repository](https://github.com/asadoughi/stat-learning) of solutions provided by students you can use to check your work.
 
 
 # Other refs on Data Science

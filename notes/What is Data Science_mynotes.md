@@ -6,21 +6,6 @@ robots: noindex, nofollow
 > This is an example of collaborative notes. After discussing each topic we will rotate through writing down answers to questions marked with a :question:  
 > Questions marked with a :busts_in_silhouette: answered by all students (put your name in [brackets]). 
 
-# What is Data Science
-You're here, so obviously you have some interest in DS. But let's get a little more concerete about your desires, examine the field a bit more, and start dipping our toes into the online professional world of DS.
-
-
-### Reading/References
-:book: DDS Ch 1, 16, 
-
-### Learning Objectives
-
-* Describe a hype cycle
-* Identify current DS researchers of note. 
-* Discuss how the expectations of a Data Scientists have changed in the last decade
-* Visualize the bigger picture of DS 
-* Start your plan for success
-
 ---
 
 
@@ -54,15 +39,25 @@ You're here, so obviously you have some interest in DS. But let's get a little m
 :busts_in_silhouette: Find an answer to the question "What is a Data Scientist" for each year prior to now. Let's see how far back we can go in a reasonable amount of time. Include the URL of your finding as a link. 
 
 * 2021: [Faith] 
+
 * 2020: [Skip]
+
 * 2019: [Ethan]
+
 * 2018: [Rica]
+
 * 2017: [Joseph]
+
 * 2016: [Thomas]
+
 * 2015: [Matthew]
+
 * 2014: [Brandon]
+
 * 2013: [Joshua]
+
 * 2012: [Derek B.]
+
 * 2011: [Derek H.] 
 
 
@@ -86,10 +81,6 @@ You're here, so obviously you have some interest in DS. But let's get a little m
 
 
 
-
-[Awesome Data Science](https://github.com/academic/awesome-datascience)
-
-
 :question: What is the connection between a Data Scientist and a unicorn? 
 
 
@@ -101,11 +92,15 @@ Class profile: https://docs.google.com/spreadsheets/d/1EUyLcRPlD5jw_IqRFMAeFSpX0
 :busts_in_silhouette: Google "data science skills" and link an image. 
 
 
+(time pending)
 :busts_in_silhouette: Build a mind map of Data Science
 
 
+Go here, and just scroll... and scroll... and scroll (1 minute)
+[Awesome Data Science](https://github.com/academic/awesome-datascience)
 
-# Where do Data Scientists work? 
+
+# Where do Data Scientists work? (Homework)
 
 :busts_in_silhouette: Find a job posting for a Data Scientist. Provide the name of the company, location, position title, salary (if shown), very brief description, required skills/knowledges/degree. Example: 
 
@@ -114,7 +109,7 @@ Class profile: https://docs.google.com/spreadsheets/d/1EUyLcRPlD5jw_IqRFMAeFSpX0
 - **Title**: Data Scientist. 
 - **Salary** $100k or $20/hour _(those don't add up)_
 - **Duties**: Tech lead on modeling project. Work with large complex dat sets. Build prototypes. Data Viz
-- **Reqs**: Deep understanding of domaim. Summarize data. Deploy models. One of (?) R, Python, C++, SQL, Version control
+- **Reqs**: Deep understanding of domain. Summarize data. Deploy models. One of (?) R, Python, C++, SQL, Version control
 - **Edu**: "Advanced Degree preferred" 
 
 ```

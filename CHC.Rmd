@@ -9,10 +9,6 @@ output:
 
 ----
 
-# People
-
-Brandon Trahms
-Derek Borders
 
 ## Clients: 
 
@@ -21,7 +17,13 @@ Derek Borders
 
 ## Data Science Student Team (DSST)
 
-2 student team
+* Brandon Trahms
+  - Liason 
+  - Taskmaster
+* Derek Borders
+  - Oversight
+  - Timekeeper
+
 
 # Summary
 
@@ -29,7 +31,7 @@ Derek Borders
 
 * Identifying common organizations that the subs partner with. 
     - Use text mining tactics to pull out key words from the text description to identify which are the common organizations that the subcontractors partner with (financial aid, EOP etc) without having to do a manual review of all entries. 
-* Explore trends over time with regarding to who campuses partner with during different parts of the academic year
+* Explore trends over time with regard to who campuses partner with during different parts of the academic year
 * Create a model to predict partner level
 
 
@@ -54,4 +56,55 @@ _Details regarding deliverables to be added by DSST_
 
 # Project Updates
 _Weekly updates done by DSST via PR_
+
+## 03/02/2022  
+
+### Milestones
+
+- Open dialogue with client.  
+- Obtain initial few labeled rows.
+
+
+## 03/09/2022  
+
+### Milestones 
+
+- 
+
+## Ongoing  
+
+### Next Steps  
+
+- Complete Data Security Training
+- Follow up with sponsor. 
+  - Clarify Goals
+  - Clarify Levels
+  - Discuss potential avenues of exploration. 
+  
+- (Brandon) Refactor prior work and data to work/knit w/o box access. 
+
+- (Derek) Come up to speed on past project work. 
+
+- Review literature.
+
+- Review sentiment analysis techniques.
+  
+### Potential Upcoming Paths  
+
+- Create model to classify individual meeting instances
+  
+  - Get labeled keyword list OR
+  
+  - Generate common word list and ask for labels on top words
+  
+- Use model to label all activity rows in dataset, find least certain generated labels, get sponsor clarification, input result, iterate model.
+
+- Predict (infer?) level of partnerships over time (subcontractor + partner by quarter). 
+
+- Track overall performance of subcontractors and partners. 
+
+
+
+
+ 
 

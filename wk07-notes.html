@@ -10,8 +10,9 @@
 
 
 
+<meta name="date" content="2022-02-27" />
 
-<title>Assessing impact of Supplemental Instruction on Student Success at Chico State</title>
+<title>Week 7: Linear Regression</title>
 
 <script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
@@ -383,114 +384,66 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">Assessing impact of Supplemental Instruction on Student Success at Chico State</h1>
+<h1 class="title toc-ignore">Week 7: Linear Regression</h1>
+<h4 class="date">2022-02-27</h4>
 
 </div>
 
 
+<div id="housekeeping" class="section level1">
+<h1>Housekeeping</h1>
+<p>We will not cover ISLR Chapter 3: Linear Regression in much detail, as that is one of the main topics in 456. This however is a <strong>GREAT</strong> chapter to read for a different perspective/approach to regression. ⭐ ⭐⭐⭐⭐. Highly recommend.</p>
+<p><a href="https://www.youtube.com/playlist?list=PL5-da3qGB5IBSSCPANhTgrw82ws7w_or9">[Full YouTube playlist]</a></p>
 <hr />
-<div id="people" class="section level1">
-<h1>People</h1>
-<div id="clients" class="section level2">
-<h2>Clients</h2>
+</div>
+<div id="learning-path" class="section level1">
+<h1>Learning Path</h1>
+<div id="where-weve-been" class="section level3">
+<h3>Where we’ve been</h3>
+</div>
+<div id="where-were-at" class="section level3">
+<h3>Where we’re at</h3>
+</div>
+<div id="where-were-going" class="section level3">
+<h3>Where we’re going</h3>
+</div>
+<div id="learning-objectives" class="section level3">
+<h3>Learning Objectives</h3>
+<hr />
+</div>
+</div>
+<div id="tuesday" class="section level1">
+<h1>Tuesday</h1>
 <ul>
-<li>Chico State Chemistry Faculty: Erik Wasinger, Lisa Kendhammer and Tiffany Anderson</li>
-<li>Data Owner: Tom Rosenow, Institutional Research</li>
-<li>SLC Coordinator: Dawn Frank</li>
-</ul>
-</div>
-<div id="data-science-student-team-dsst" class="section level2">
-<h2>Data Science Student Team (DSST)</h2>
-<ul>
-<li>Joseph Shifman: Oversight</li>
-<li>Rica Rebusit: Taskmaster</li>
-<li>Faith Fatchen: Liaison</li>
-<li>Skip Moses: Time keeper</li>
-</ul>
-</div>
-</div>
-<div id="summary" class="section level1">
-<h1>Summary</h1>
-<p>It is the top mission of the university to retain and graduate students who are well prepared for careers or graduate school. There has been a major shift in the student body with regards to demographics and preparation in the past 10 or so years. Now more than ever the faces and experiences of the faculty do not match that of their students. Chico State has been struggling with a low 4-year graduation rate, and a high first year drop out rate for first time freshmen. Large CSU system wide initiatives such as the Graduation Initiative 2025 (GI2025) have been formed to research what works and implement innovative changes to remove barriers that impede student success and be more strategic about the way campus serves students.</p>
-<p>One approach being taken by Chico State is to implement a student learning program called Supplemental Instruction (SI). This program that has shown to be effective in published research but has yet to be evaluated on our campus.</p>
-</div>
-<div id="project-goals" class="section level1">
-<h1>Project Goals</h1>
-<p>Assist the clients in answering the following question:</p>
-<blockquote>
-<p>What impact does Supplemental Instruction have on student success at Chico State?</p>
-</blockquote>
-<p>This question will be explored through the full data science lifecycle from problem definition, data collection and exploration, visualization, modeling (both for understand relationships and to make predictions), creating recommendations and incorporating feedback.</p>
-</div>
-<div id="timeline-milestones" class="section level1">
-<h1>Timeline / Milestones</h1>
-<p><em>Details regarding deliverables to be added by DSST</em></p>
-<div id="completed" class="section level2">
-<h2>Completed</h2>
-<ul>
-<li>The client will give a 15-20 minute project introduction at 9:30am on 2/10 in Butte 203</li>
-<li>The Data Science Student Team (DSST) will complete Data Security and CITI training by 2/18/22</li>
-</ul>
-</div>
-<div id="in-progress" class="section level2">
-<h2>In Progress</h2>
-<ul>
-<li>DSST will research the problem and generate a list of data sources needed to address the question.</li>
-<li>Read/Summarize exact matching paper and 5-10 most recent works. Complete by March 10th.</li>
-<li>Clean Student Profile, Student Program and Course Description data sets. Update code books.</li>
-<li>Acquire SI data set.</li>
-<li>The faculty supervisor will work with Institutional Research (IR) to obtain available data for student use. The faculty supervisor is responsible for ensuring the privacy and responsible use of the data.</li>
-<li>10-15 minute project check ins during class time approximately every two weeks starting 3/10/2022. The DSST will provide updates to the client on their progress with opportunity to ask questions from both parties.</li>
-<li>The client will review a scientific poster created by the DSST for presentation at the College of Natural Sciences Poster Session, on May 2nd.<br />
-</li>
-<li>The DSST will give a final stakeholder presentation to the GI Inqury members/leadership during the week of May 15th, 2022 (Finals week).</li>
-</ul>
-</div>
-</div>
-<div id="domain-learning" class="section level1">
-<h1>Domain Learning</h1>
-<ul>
-<li><a href="https://www.calstate.edu/csu-system/why-the-csu-matters/graduation-initiative-2025" class="uri">https://www.calstate.edu/csu-system/why-the-csu-matters/graduation-initiative-2025</a></li>
-<li><a href="https://www.csuchico.edu/gradinitiative/index.shtml" class="uri">https://www.csuchico.edu/gradinitiative/index.shtml</a></li>
-<li><a href="https://info.umkc.edu/si/" class="uri">https://info.umkc.edu/si/</a></li>
-<li><a href="https://norcalbiostat.github.io/chem_ss/" class="uri">https://norcalbiostat.github.io/chem_ss/</a></li>
-<li>San Diego Publication in github repo</li>
+<li>Reading discussion: Engineered Inequity</li>
+<li>Open work day</li>
 </ul>
 <hr />
 </div>
-<div id="project-updates" class="section level1">
-<h1>Project Updates</h1>
-<p><em>Weekly updates done by DSST via PR</em></p>
-<div id="section" class="section level2">
-<h2>02/21/2022</h2>
-<p>Today, we met for the first time. Roles were assigned, and we discussed what our first steps will be.</p>
+<div id="thursday" class="section level1">
+<h1>Thursday</h1>
 <ul>
-<li><p>Next Steps:</p>
-<ol style="list-style-type: decimal">
-<li>Complete security training.</li>
-<li>Download data.</li>
-<li>Start exploring and building a codebook.</li>
-</ol></li>
-<li><p>Remarks:</p>
-<ul>
-<li>Keep separate scratch files.</li>
-<li>PR will be flexible.</li>
-<li>Respond on discord by end of day.</li>
-<li>Add data sets to gitignore file before commiting.</li>
-</ul></li>
+<li>Project client share out. Prepare a 10 minute presentation to the class and your client on the status of your project.</li>
 </ul>
+<hr />
 </div>
-<div id="section-1" class="section level2">
-<h2>3/01/2022</h2>
-<ul>
-<li><p>Milestones</p></li>
-<li><p>Data codebooks complete</p></li>
-<li><p>Started reviewing literature</p></li>
-<li><p>Next steps</p></li>
-<li><p>Exploratory data analysis</p></li>
-<li><p>Discuss literature as group</p></li>
-<li><p>Literature summary</p></li>
-</ul>
+<div id="assignments" class="section level1">
+<h1>Assignments</h1>
+<div id="learning-tidymodels" class="section level2">
+<h2>Learning Tidymodels</h2>
+<p>Create a new Rmarkdown file and walk through Tidymodels tutorial <a href="https://www.tidymodels.org/start/recipes/">Preprocessing your data with recipies</a></p>
+<p>Don’t just copypasta the tutorial. This is your learning &amp; practice notes file. Write notes to yourself on what you are doing and why.</p>
+</div>
+<div id="write-a-regression-tutorial" class="section level2">
+<h2>Write a Regression tutorial</h2>
+<p>Leverage your knowledge of linear models and write a tutorial on how to fit a regression model in the Tidy models framework. The data and model you fit is your choice.</p>
+<p>Ref: <a href="https://emilhvitfeldt.github.io/ISLR-tidymodels-labs/linear-regression.html">ISLR Tidymodels lab for Chapter 3</a>.</p>
+<p>Post your tutorial URL in Discord.</p>
+</div>
+<div id="peer-review" class="section level2">
+<h2>Peer review</h2>
+<p>You then are asked to review another classmates tutorial and provide comments &amp; feedback in Discord. Is there something that isn’t clear? Did you spot a mistake they can fix? What did you find helpful &amp; useful about their tutorial (be specific).</p>
+<p>Do this as a reply to their tutorial URL post so your replies are easy to find.</p>
 </div>
 </div>
 
@@ -543,7 +496,7 @@ $(document).ready(function ()  {
 
     // establish options
     var options = {
-      selectors: "h1,h2,h3",
+      selectors: "h1,h2",
       theme: "bootstrap3",
       context: '.toc-content',
       hashGenerator: function (text) {

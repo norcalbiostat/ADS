@@ -12,7 +12,7 @@
 
 <meta name="date" content="2022-02-27" />
 
-<title>Week 6:</title>
+<title>Week 6: Intro to Statistical Learning</title>
 
 <script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
@@ -356,29 +356,8 @@ div.tocify {
     </li>
   </ul>
 </li>
-<li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    Race after Technology
-     
-    <span class="caret"></span>
-  </a>
-  <ul class="dropdown-menu" role="menu">
-    <li>
-      <a href="notes/rat_intro.html">Introduction</a>
-    </li>
-  </ul>
-</li>
-<li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    Introduction to Statistical Learning
-     
-    <span class="caret"></span>
-  </a>
-  <ul class="dropdown-menu" role="menu">
-    <li>
-      <a href="notes/islr_ch2.html">ch2</a>
-    </li>
-  </ul>
+<li>
+  <a href="materials.html">Additional Course Materials</a>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -405,7 +384,7 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">Week 6:</h1>
+<h1 class="title toc-ignore">Week 6: Intro to Statistical Learning</h1>
 <h4 class="date">2022-02-27</h4>
 
 </div>
@@ -413,31 +392,149 @@ div.tocify {
 
 <div id="housekeeping" class="section level1">
 <h1>Housekeeping</h1>
+<ul>
+<li>Website organization update. Added materials page.</li>
+<li>Start to bring headphones to class. You’ll be watching short videos &amp; taking notes during class.</li>
+<li>ISLR Logistics
+<ul>
+<li>We will use a single ISLR repo for all work. I will add files to it regularly and review your work using the feedback branch. <strong>Don’t merge this branch</strong>. Push and pull regularly.</li>
+<li>Before class: Watch videos and prepare answers to selected questions</li>
+<li>During class: Discuss and compare answers to questions with classmates, sometimes will watch additional videos and share out.</li>
+<li>After class
+<ul>
+<li>Finish answering any remaining questions</li>
+<li>Complete any practice problems and/or activities assigned</li>
+</ul></li>
+</ul></li>
+<li>Project Logistics
+<ul>
+<li>Weekly wednesday updates to the project page on the ADS website.</li>
+<li>First (10 min) project report out on Thursday the 10th. Then every 2 weeks. Present overhead to class and possibly client via Zoom.</li>
+</ul></li>
+<li>Reading logistics
+<ul>
+<li>Reading discussion every other week</li>
+<li>Learning journal updates on off weeks.</li>
+</ul></li>
+</ul>
 <hr />
 </div>
 <div id="learning-path" class="section level1">
 <h1>Learning Path</h1>
 <div id="where-weve-been" class="section level3">
 <h3>Where we’ve been</h3>
+<ul>
+<li>Getting orientated with the semester long project</li>
+<li>Practicing data wrangling and report writing for a professional audience.</li>
+</ul>
 </div>
 <div id="where-were-at" class="section level3">
 <h3>Where we’re at</h3>
+<ul>
+<li>Learning how to balance textbook learning and project based learning while keeping the broader ethical implications in mind.</li>
+<li>If you didn’t have an organization schedule for your classes yet, you should do so asap. The workload in this class is going to ramp up a bit.</li>
+</ul>
 </div>
 <div id="where-were-going" class="section level3">
 <h3>Where we’re going</h3>
+<ul>
+<li>Digging into mathematical models of statistical learning.</li>
+<li>Learning new R code methods, practicing building models.</li>
+</ul>
+</div>
+<div id="learning-objectives" class="section level3">
+<h3>Learning Objectives</h3>
+<ul>
+<li>Describe the difference between training and testing data sets</li>
+<li>Describe the difference between a parametric and non-parametric model</li>
+<li>Identify and describe situations where classification, regression, and clustering models are appropriate.</li>
+<li>Explain the concept of overfitting, and bias-variance tradeoff.</li>
+</ul>
 <hr />
 </div>
-</div>
-<div id="goals-for-the-week" class="section level1">
-<h1>Goals for the week</h1>
-<hr />
 </div>
 <div id="tuesday" class="section level1">
-<h1>Tuesday:</h1>
+<h1>Tuesday</h1>
+<div id="prepare" class="section level2">
+<h2>Prepare</h2>
+<ul>
+<li>Clone your ISLR Repo.</li>
+<li>Watch or read ISLR Ch 1 on your own before class. <a href="https://www.youtube.com/playlist?list=PLAOUn-KLSAVOPE3yQ04EZCbt0ycTib6OH">[Full playlist]</a>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=5N9V07EIfIg&amp;list=PL5-da3qGB5ICcUhueCyu25slvsGp8IDTa&amp;index=1">Opening Remarks and Examples</a> (18:18)</li>
+<li><a href="https://www.youtube.com/watch?v=Z0v9QMkA3dA&amp;list=PL5-da3qGB5ICcUhueCyu25slvsGp8IDTa&amp;index=2">Supervised and Unsupervised Learning</a> (12:12)</li>
+</ul></li>
+<li>Start to work through ISLR Chapter 2. <a href="https://www.youtube.com/watch?v=p9n2w236B48&amp;list=PLAOUn-KLSAVOwBuphhdi-BT0jjhuWyvPL">[Full YouTube video playlist]</a></li>
+</ul>
+<p>👥 Discuss these questions in your group and write the answers in the <code>ch2-statistical-learning.Rmd</code> file in your ISRL repo. You may not finish all questions in the time allotted during class, you will have to finish outside of class.</p>
+<div id="statistical-learning-and-regression-1141" class="section level3">
+<h3><a href="https://www.youtube.com/watch?v=p9n2w236B48&amp;list=PL5-da3qGB5IDvuFPNoSqheihPOQNJpzyy&amp;index=1">Statistical Learning and Regression</a> (11:41)</h3>
+<ol style="list-style-type: decimal">
+<li>What is f?</li>
+<li>Why do we care about estimating f?</li>
+<li>Describe the two types of errors in a model.<br />
+</li>
+<li>What concept in 456 does irreducible error portion of the model correspond to?</li>
+</ol>
+</div>
+<div id="curse-of-dimensionality-and-parametric-models-1140" class="section level3">
+<h3><a href="https://www.youtube.com/watch?v=HndOzII4jzs&amp;list=PL5-da3qGB5IDvuFPNoSqheihPOQNJpzyy&amp;index=2">Curse of Dimensionality and Parametric Models</a> (11:40)</h3>
+<ol style="list-style-type: decimal">
+<li>Summarize the curse of dimensionality.</li>
+<li>What is the difference between a parametric &amp; non-parametric model? Give an example of each.</li>
+<li>What are the advantages &amp; disadvantages of a parametric approach to regression or classification (as opposed to a nonparametric approach)?</li>
+<li>Why would we ever choose to use a more restrictive method instead of a very flexible approach?</li>
+<li>What is the difference between supervised &amp; unsupervised learning? Give an example of each.</li>
+</ol>
 <hr />
 </div>
+</div>
+</div>
 <div id="thursday" class="section level1">
-<h1>Thursday:</h1>
+<h1>Thursday</h1>
+<div id="prepare-1" class="section level2">
+<h2>Prepare</h2>
+<ul>
+<li>Finish ISLR Chapter 2</li>
+<li>Open project work time</li>
+</ul>
+<div id="assessing-model-accuracy-and-bias-variance-trade-off-1004" class="section level3">
+<h3><a href="https://www.youtube.com/watch?v=VaN1RUDuioQ&amp;list=PL5-da3qGB5IDvuFPNoSqheihPOQNJpzyy&amp;index=3">Assessing Model Accuracy and Bias-Variance Trade-off</a> (10:04)</h3>
+<ol style="list-style-type: decimal">
+<li>What is the primary measure of model accuracy for regression models?</li>
+<li>Compare and contrast a <em>smoothing spline</em> to a <em>linear regression line</em>. (What is the same, what is different)</li>
+<li>What’s the difference between training and testing data? Why do we need both?</li>
+<li>What is overfitting?</li>
+<li>If we don’t have a testing data set, what method can we use to estimate the MSE of the testing data?</li>
+<li>What is the bias-variance trade-off?</li>
+</ol>
+</div>
+<div id="classification-problems-and-k-nearest-neighbors-1537" class="section level3">
+<h3><a href="https://www.youtube.com/watch?v=TnVRhLqThR4&amp;list=PL5-da3qGB5IDvuFPNoSqheihPOQNJpzyy&amp;index=4">Classification Problems and K-Nearest Neighbors</a> (15:37)</h3>
+<ol style="list-style-type: decimal">
+<li>What is the primary measure of model accuracy for classification models?</li>
+<li>Describe the Bayes Classifier</li>
+<li>What is the Bayes error rate?</li>
+<li>What is a limitation of the Bayes classifier?</li>
+<li>Describe how the K-Nearest Neighbors classifier works.</li>
+<li>Name a benefit of using a KNN model.</li>
+<li>What happens to the accuracy/bias of the model as the K increases? Why?</li>
+</ol>
+<hr />
+</div>
+</div>
+</div>
+<div id="assignments" class="section level1">
+<h1>Assignments</h1>
+<p>Full details in your ISLR repo.</p>
+<ul>
+<li>ISLR Ch 2 Exercises: 1, 2, 4 (One example each)</li>
+<li>Learning Tidymodels
+<ul>
+<li>Go here <a href="https://www.tidymodels.org/" class="uri">https://www.tidymodels.org/</a> &amp; install the <code>tidymodels</code> package</li>
+<li>Start a new Rmarkdown file and replicate <a href="https://www.tidymodels.org/start/models/">Step 1: Build a model</a>.</li>
+</ul></li>
+</ul>
 </div>
 
 
