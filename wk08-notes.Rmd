@@ -1,0 +1,38 @@
+---
+title: "Week 7: Classification"
+date: "`r paste(Sys.Date())`"
+output:   
+  html_document: 
+    highlight: tango
+    theme: yeti
+    toc: yes
+    toc_float: true
+    toc_depth: 2
+always_allow_html: true
+---
+
+# Housekeeping
+
+Calendar and schedule have been updated to reflect a plan for the rest of the semester. 
+
+----
+
+
+# Tuesday
+
+* Rotating paired discussion on half of the ISLR Ch 4 classification questions. 
+* Project group work time
+
+----
+
+# Thursday
+
+* Discuss the article [Major Universities Are Using Race as a “High Impact Predictor” of Student Success.](https://themarkup.org/news/2021/03/02/major-universities-are-using-race-as-a-high-impact-predictor-of-student-success) 
+    - What did you find interesting. 
+    - Anything alarming? 
+    - Do you agree with schools using a risk assessment model? 
+    - Who would benefit from a risk model? Who could be harmed? 
+* Rotating paired discussion on second half of the ISLR Ch 4 classification questions. 
+* Project group work time
+
+
