@@ -62,6 +62,16 @@ _Details regarding deliverables to be added by DSST_
 * The client will review a scientific poster created by the DSST for presentation at the College of Natural Sciences Poster Session, date somewhere in late April or Early May.  
 * The DSST will give a final stakeholder presentation to the CRARS leadership during the week of May 15th, 2022 (Finals week). 
 
+## Timeline (Updated)
+
+By 03/29/2022
+
+Prototypes for the 3 options for the intake form.
+
+* Option 1 - Google form <-> Google Sheets
+* Option 2 - Shiny -> Box -> Gmail
+* Option 3 - Jango Web application
+
 
 # Domain Learning
 
