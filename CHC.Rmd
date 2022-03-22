@@ -69,33 +69,32 @@ _Weekly updates done by DSST via PR_
 
 ### Milestones 
 
-- 
+- Read up on literature
+- Reviewed past project work
+- Completed Data Security Training
+- Followed up with client
+  - Requested Keyword List
+
+
+## 03/23/2022  
+
+### Milestones 
+
+- Received Keyword list
+- ...
+- ...
 
 ## Ongoing  
 
 ### Next Steps  
-
-- Complete Data Security Training
-- Follow up with sponsor. 
-  - Clarify Goals
-  - Clarify Levels
-  - Discuss potential avenues of exploration. 
   
 - (Brandon) Refactor prior work and data to work/knit w/o box access. 
-
-- (Derek) Come up to speed on past project work. 
-
-- Review literature.
 
 - Review sentiment analysis techniques.
   
 ### Potential Upcoming Paths  
 
-- Create model to classify individual meeting instances
-  
-  - Get labeled keyword list OR
-  
-  - Generate common word list and ask for labels on top words
+- Create model to classify individual meeting instances using keywords and sentiment analysis techniques.
   
 - Use model to label all activity rows in dataset, find least certain generated labels, get sponsor clarification, input result, iterate model.
 
