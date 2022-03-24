@@ -41,8 +41,14 @@ _Details regarding deliverables to be added by DSST_
 1. Expert CFO staff member fills in level of partnership for 10-20 records to serve as a time estimate for data labeling by 2/11/2022. 
     a. We will use that time estimate to decide if a smaller subset is necessary to reduce the burden of the CFO staff member, while allowing DS team to start working on the code for the prediction model. 
     b. The remainder of the records should be rated by 2/25/2022
+
+
 2. 10-15 minute project check ins during class time approximately every two weeks starting 3/10/2022. The DS team will provide update the client on their progress with opportunity to ask questions from both parties. 
+
+
 3. The CFO team will review a scientific poster created by the DS team for presentation at the College of Natural Sciences Poster Session, date somewhere in late April or Early May.  
+
+
 4. The DS team will give a final stakeholder presentation to CFO team members/leadership during the week of May 15th, 2022 (Finals week). 
 
 
@@ -57,6 +63,8 @@ _Details regarding deliverables to be added by DSST_
 # Project Updates
 _Weekly updates done by DSST via PR_
 
+<br />  
+
 ## 03/02/2022  
 
 ### Milestones
@@ -64,6 +72,7 @@ _Weekly updates done by DSST via PR_
 - Open dialogue with client.  
 - Obtain initial few labeled rows.
 
+<br />  
 
 ## 03/09/2022  
 
@@ -76,27 +85,42 @@ _Weekly updates done by DSST via PR_
   - Requested Keyword List
 
 
+<br />  
+
 ## 03/23/2022  
 
 ### Milestones 
 
-- Received Keyword list
-- ...
-- ...
+- Followed up to get proper keyword list
+  - List Received
+
+- Refactored prior work and data to work and knit without box access. 
+
+- Reviewed sentiment analysis techniques.  
+
+<br />  
 
 ## Ongoing  
 
-### Next Steps  
-  
-- (Brandon) Refactor prior work and data to work/knit w/o box access. 
 
-- Review sentiment analysis techniques.
-  
-### Potential Upcoming Paths  
+## Current Goals  
+
+(This week)
+
+
+- Figure out how best to use the given keyword list for classification  
+  - Try naive brute force classification approach using known, labeled keywords from list
+
+### Next Steps  
+
+(Longer Term)
 
 - Create model to classify individual meeting instances using keywords and sentiment analysis techniques.
   
-- Use model to label all activity rows in dataset, find least certain generated labels, get sponsor clarification, input result, iterate model.
+- Use model to label all activity rows in dataset.  
+- Find least certain generated labels.  
+- Get sponsor clarification for most ambiguous rows.  
+- Input results, update model, repeat 2-3 times until model seems adequate.
 
 - Predict (infer?) level of partnerships over time (subcontractor + partner by quarter). 
 
