@@ -59,6 +59,13 @@ We are working through the text Introduction to Statistical Learning (ISLR), ans
 * [Tidymodels Code](https://emilhvitfeldt.github.io/ISLR-tidymodels-labs/index.html). ISLR labs done in the [Tidymodels](https://www.tidymodels.org/) framework
 * [GitHub repository](https://github.com/asadoughi/stat-learning) of solutions provided by students you can use to check your work.
 
+## Model Selection
+
+There are _MANY_ model types and engines. Here are a few searchable tables
+
+* https://www.tidymodels.org/find/parsnip/
+* https://topepo.github.io/caret/available-models.html
+
 
 # Other refs on Data Science
 Note - many of these books are links to a Tweet where the book is promoted/discussed. I leave the tweets in there so you can 1) see the entire context of the post, and 2) you can learn more people involved in the DS world that you may want to follow. 

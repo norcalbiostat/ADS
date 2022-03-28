@@ -13,7 +13,7 @@
 
 <title>Additional Materials</title>
 
-<script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.13/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/yeti.min.css" rel="stylesheet" />
@@ -47,6 +47,7 @@
 
 
 
+
 <link rel="stylesheet" href="style.css" type="text/css" />
 
 
@@ -71,6 +72,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;
@@ -223,7 +227,7 @@ $(document).ready(function () {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -233,7 +237,7 @@ $(document).ready(function () {
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     <span class="fa fa-folder-open"></span>
      
     Weekly Notes
@@ -241,28 +245,39 @@ $(document).ready(function () {
     <span class="caret"></span>
   </a>
   <ul class="dropdown-menu" role="menu">
-    <li>
-      <a href="wk01-notes.html">Week 1</a>
+    <li class="dropdown-submenu">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Before Break</a>
+      <ul class="dropdown-menu" role="menu">
+        <li>
+          <a href="wk01-notes.html">Week 1</a>
+        </li>
+        <li>
+          <a href="wk02-notes.html">Week 2</a>
+        </li>
+        <li>
+          <a href="wk03-notes.html">Week 3</a>
+        </li>
+        <li>
+          <a href="wk04-notes.html">Week 4</a>
+        </li>
+        <li>
+          <a href="wk05-notes.html">Week 5</a>
+        </li>
+        <li>
+          <a href="wk06-notes.html">Week 6</a>
+        </li>
+        <li>
+          <a href="wk07-notes.html">Week 7</a>
+        </li>
+      </ul>
     </li>
     <li>
-      <a href="wk02-notes.html">Week 2</a>
-    </li>
-    <li>
-      <a href="wk03-notes.html">Week 3</a>
-    </li>
-    <li>
-      <a href="wk04-notes.html">Week 4</a>
-    </li>
-    <li>
-      <a href="wk05-notes.html">Week 5</a>
-    </li>
-    <li>
-      <a href="wk06-notes.html">Week 6</a>
+      <a href="wk08-notes.html">Week 8</a>
     </li>
   </ul>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     Projects
      
     <span class="caret"></span>
@@ -359,6 +374,14 @@ $(document).ready(function () {
 <li><a href="https://emilhvitfeldt.github.io/ISLR-tidymodels-labs/index.html">Tidymodels Code</a>. ISLR labs done in the <a href="https://www.tidymodels.org/">Tidymodels</a> framework</li>
 <li><a href="https://github.com/asadoughi/stat-learning">GitHub repository</a> of solutions provided by students you can use to check your work.</li>
 </ul>
+<div id="model-selection" class="section level2">
+<h2>Model Selection</h2>
+<p>There are <em>MANY</em> model types and engines. Here are a few searchable tables</p>
+<ul>
+<li><a href="https://www.tidymodels.org/find/parsnip/" class="uri">https://www.tidymodels.org/find/parsnip/</a></li>
+<li><a href="https://topepo.github.io/caret/available-models.html" class="uri">https://topepo.github.io/caret/available-models.html</a></li>
+</ul>
+</div>
 </div>
 <div id="other-refs-on-data-science" class="section level1">
 <h1>Other refs on Data Science</h1>
