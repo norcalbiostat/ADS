@@ -72,7 +72,9 @@ Prototypes for the 3 options for the intake form.
 * Option 2 - Shiny -> Box -> Gmail
 * Option 3 - Jango Web application
 
+By 04/05/2022
 
+Have Prototypes ready to present to the AG team
 # Domain Learning
 
 * https://www.csuchico.edu/regenerativeagriculture/soil-lab/index.shtml
@@ -129,3 +131,8 @@ Main objectives -
 * Develop a user friendly online intake form for clients (Auto generation for client when we receive their samples)
 * Develop Automated tracking sheet for RAD lab 
 * Begin to build prototype online intake form and data cleaning/presenting code. 
+
+## 03/29/2022
+
+Began to develop working protoypes of the intake form to present to the AG representatives.
+Waiting on ITSS approval for Shiney App. 
