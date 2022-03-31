@@ -52,12 +52,15 @@ _Details regarding deliverables to be added by DSST_
 * Clean Student Profile, Student Program and Course Description data sets. Update code books. 
 * Acquire SI data set.
 * Created grades for SI courses, clean student profile data, and filtered student profile data to students who have taken at least one SI course for EDA. 
+* Aggregate the course level data (Doesn't seem to be a fruitful approach. On hold for now). 
+* Look at number of extra semesters taken to graduate. Add additional variables (Transfer student, first gen, major program.) Need to address how to handle pandemic/online semesters here. Pandemic seems to limit this approach.
+* Select a poster template by 03/27/2022.
 
 ## In Progress
-* Select a poster template by 03/27/2022.
 * Examine a basic model of the form grades ~ attended SI at least once. 
-* Aggregate the course level data. 
-* Look at number of extra semesters taken to graduate. Add additional variables (Transfer student, first gen, major program.) Need to address how to handle pandemic/online semesters here.  
+* Explorartion of CEM with S.I as a treatment and grade as outcome.
+* Logistic Regression model using different equity gaps to model probability of one year retention. 
+* Prepare/Contact Eric for share out on 04/05/2022.
 
 ## Long term goals.
 * The faculty supervisor will work with Institutional Research (IR) to obtain available data for student use. The faculty supervisor is responsible for ensuring the privacy and responsible use of the data.
