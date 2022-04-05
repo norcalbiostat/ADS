@@ -10,8 +10,9 @@
 
 
 
+<meta name="date" content="2022-04-04" />
 
-<title>Build a Data Science Solution for a Soil Processing Lab</title>
+<title>Week 10: Model Selection and Regularization</title>
 
 <script src="site_libs/header-attrs-2.13/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
@@ -401,140 +402,38 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">Build a Data Science Solution for a Soil Processing Lab</h1>
+<h1 class="title toc-ignore">Week 10: Model Selection and Regularization</h1>
+<h4 class="date">2022-04-04</h4>
 
 </div>
 
 
+<div id="housekeeping" class="section level1">
+<h1>Housekeeping</h1>
+<ul>
+<li>Team Money 🤑 For the DataFest Win!! 🏆 🎉.</li>
+<li>Some gradebook updates have been completed.
+<ul>
+<li>Using the readme as a place for commenting on blog posts.</li>
+</ul></li>
+<li>Race as a high impact predictor reflections.</li>
+</ul>
+<p>Thank you for reflecting on this article in your Learning Journal. I have selected not quite randomly a variety of thoughts and opinions from the class on each of these prompts and posted them on <a href="https://data485.netlify.app/wk08-notes.html">[Week 8 pages]</a>. My goal is to share out informally the wide perspectives that even this small class contains.</p>
 <hr />
-<div id="people" class="section level1">
-<h1>People</h1>
-<div id="clients" class="section level2">
-<h2>Clients</h2>
-<ul>
-<li><a href="https://www.csuchico.edu/regenerativeagriculture/">Center for Regenerative Agriculture and Resilient Systems</a></li>
-<li>Garrett Liles: Co-Founder, Faculty Affiliate, Soil Scientist</li>
-<li>Aundrea Asbell: Regenerative Demonstration Lab Manager<br />
-</li>
-<li>Constantin Raether: Staff Research Associate</li>
-</ul>
 </div>
-<div id="data-science-student-team-dsst" class="section level2">
-<h2>Data Science Student Team (DSST)</h2>
+<div id="tuesday-projects-reading-reflections" class="section level1">
+<h1>Tuesday: Projects &amp; reading reflections</h1>
 <ul>
-<li>Joshua Vong</li>
-<li>Ethan Nguyen</li>
-<li>Thomas Smale</li>
-<li>Matt Solone</li>
-</ul>
-</div>
-</div>
-<div id="summary" class="section level1">
-<h1>Summary</h1>
-<p>Regenerative Agriculture is an approach to farm and ranch management that aims to reverse climate change through practices that restore degraded soils. The Center for Regenerative Agriculture offers soil testing and regenerative practice education services for farmers for a fee. This project is to create and implement a data pipeline and processing system for soil samples coming into the soil lab.</p>
-<p>Example:</p>
-<blockquote>
-<p>The RAD Lab team is heading to Blythe to visit a farm and take samples. They would like to have the farmer complete an intake form to collect background information such as type of farm, location etc to build a profile of that client. Then once the samples are taken from the site, they need to be asset tagged, entered into some sort of tracking system, scientifically processed to produce data, which needs to be wrangled into a client facing report.</p>
-</blockquote>
-<div id="project-goals" class="section level2">
-<h2>Project Goals</h2>
-<p>Create a data science solution to streamline lab activities, increase staff efficacy by automating data processing and report generation.</p>
-<p>You are starting from essentially scratch here. Your approach should be to spend a fair amount of time planning and communicating directly with the client to understand the needs and what they have already. You will do a lot of writing and decision making on best way to collect &amp; process data before you get to any type of coding stage where you can start implementing and building the pipeline.</p>
-</div>
-</div>
-<div id="sample-deliverables" class="section level1">
-<h1>Sample Deliverables</h1>
-<ul>
-<li>Client relationship database
-<ul>
-<li>Intake form that is easy to use by farmers.</li>
-</ul></li>
-<li>A playbook for new staff and students to use.
-<ul>
-<li>A conceptual diagram of interrelated data systems.</li>
-<li>A foundation data structure and file organization protocol for the lab. (instead of individual spreadsheets in random places on box) a structured data format with codebook to ensure common headers/data types across data sources</li>
-<li>Instructions on how to use scripts/data pipeline</li>
-<li>Training of current lab staff</li>
-</ul></li>
-<li>A client facing dashboard that shows where the farmer’s sample is in the process, possibly a downloadable report with the nutrient profile and suggested conservation/amendment suggestions.</li>
-<li>A ticket requesting system that allows clients to request lab services outside of direct email.</li>
-<li>Reproducible reports that take raw sample processing output and put it into a client facing report that is compiled to PDF.</li>
-<li>Aggregated summary of lab activity for funder such as number of samples processed, by type of farm or location etc.</li>
-</ul>
-</div>
-<div id="timeline-milestones" class="section level1">
-<h1>Timeline / Milestones</h1>
-<p><em>Details regarding deliverables to be added by DSST</em></p>
-<ul>
-<li>10-15 minute project check ins during class time approximately every two weeks starting 3/10/2022. The DSST will provide updates to the client on their progress with opportunity to ask questions from both parties.</li>
-<li>The client will review a scientific poster created by the DSST for presentation at the College of Natural Sciences Poster Session, date somewhere in late April or Early May.<br />
-</li>
-<li>The DSST will give a final stakeholder presentation to the CRARS leadership during the week of May 15th, 2022 (Finals week).</li>
-</ul>
-<div id="timeline-updated" class="section level2">
-<h2>Timeline (Updated)</h2>
-<p>By 03/29/2022</p>
-<p>Prototypes for the 3 options for the intake form.</p>
-<ul>
-<li>Option 1 - Google form &lt;-&gt; Google Sheets</li>
-<li>Option 2 - Shiny -&gt; Box -&gt; Gmail</li>
-<li>Option 3 - Jango Web application</li>
-</ul>
-<p>By 04/05/2022</p>
-<p>Have Prototypes ready to present to the AG team # Domain Learning</p>
-<ul>
-<li><a href="https://www.csuchico.edu/regenerativeagriculture/soil-lab/index.shtml" class="uri">https://www.csuchico.edu/regenerativeagriculture/soil-lab/index.shtml</a></li>
+<li>Project report out. 10-15 minutes for each project to talk with their science team. This is done as a whole class to see/learn what each other team is working on. It is expected that you are a good audience member while the other teams are presenting.</li>
+<li>Discuss Race after Technology - Default Discrimination: <a href="https://hackmd.io/@norcalbiostat/default_discrimination" class="uri">https://hackmd.io/@norcalbiostat/default_discrimination</a></li>
 </ul>
 <hr />
 </div>
-</div>
-<div id="project-updates" class="section level1">
-<h1>Project Updates</h1>
-<p><em>Weekly updates done by DSST via PR</em></p>
-<div id="roster" class="section level2">
-<h2>Roster</h2>
+<div id="thursday-model-selection-and-regularization" class="section level1">
+<h1>Thursday: Model selection and regularization</h1>
 <ul>
-<li>Joshua Vong - Oversight</li>
-<li>Ethan Nguyen - Taskmaster</li>
-<li>Thomas Smale - Liaison</li>
-<li>Matt Solone - Time Keeper</li>
+<li>(Monday night update) - By EOD Tuesday i’ll have the Ch 6 videos and exercises pushed to your ISLR repo.</li>
 </ul>
-</div>
-<div id="meeting" class="section level2">
-<h2>02/24/2022 Meeting</h2>
-<p>Big Idea</p>
-<ol style="list-style-type: decimal">
-<li><p><em>Intake form client relationship form (Website )</em></p>
-<p>1a. What fields do we want on this form ?</p>
-<p>1b. Data processing pipeline, produces file, get that file into a presentable format.</p></li>
-<li><p>Develop data from that intake form, How to store? Where to access?</p></li>
-<li><p>Have all types of data types that will need to be tracked on the back-end.</p></li>
-<li><p>Databases set around a specific ID, where we can track everything back to this ID.</p></li>
-<li><p>Frontend, what categories do we need to collect that allows us to analyze efficiency?</p></li>
-<li><p><em>Cost estimates based on a few fields, then after then we can send them the true intake form.</em></p></li>
-</ol>
-<p>Next Steps</p>
-<ul>
-<li><p>Work on raw data example, figure out how to clean and organize for more efficient.</p></li>
-<li><p>Schedule lab visit and get idea for the intake form.</p></li>
-<li><p>Implement data an tie into a modeling package, with slight tweaking.</p></li>
-</ul>
-</div>
-<div id="section" class="section level2">
-<h2>03/10/2022</h2>
-<p>Project update</p>
-<p>Met with members of the RAD lab to focus in on the specifics of our job.</p>
-<p>Main objectives -</p>
-<ul>
-<li>Develop a user friendly online intake form for clients (Auto generation for client when we receive their samples)</li>
-<li>Develop Automated tracking sheet for RAD lab</li>
-<li>Begin to build prototype online intake form and data cleaning/presenting code.</li>
-</ul>
-</div>
-<div id="section-1" class="section level2">
-<h2>03/29/2022</h2>
-<p>Began to develop working protoypes of the intake form to present to the AG representatives. Waiting on ITSS approval for Shiney App.</p>
-</div>
 </div>
 
 
@@ -586,7 +485,7 @@ $(document).ready(function ()  {
 
     // establish options
     var options = {
-      selectors: "h1,h2,h3",
+      selectors: "h1,h2",
       theme: "bootstrap3",
       context: '.toc-content',
       hashGenerator: function (text) {
