@@ -44,6 +44,15 @@ _Details regarding deliverables to be added by DSST_
 # Timeline / Milestones
 _Details regarding deliverables to be added by DSST_
 
+## In Progress
+* Examine a basic model of the form grades ~ attended SI at least once. 
+* Explorartion of CEM with S.I as a treatment and grade as outcome.
+* Logistic Regression model using different equity gaps to model probability of one year retention. 
+* Explore a course level model explaining DWF rates and SI.
+* Prepare some slides for next share out 04/19/2022
+* Start working on Abstract (Due 04/18/2022)
+
+
 ## Completed
 * The client will give a 15-20 minute project introduction at 9:30am on 2/10 in Butte 203
 * The Data Science Student Team (DSST) will complete Data Security and CITI training by 2/18/22
@@ -55,12 +64,6 @@ _Details regarding deliverables to be added by DSST_
 * Aggregate the course level data (Doesn't seem to be a fruitful approach. On hold for now). 
 * Look at number of extra semesters taken to graduate. Add additional variables (Transfer student, first gen, major program.) Need to address how to handle pandemic/online semesters here. Pandemic seems to limit this approach.
 * Select a poster template by 03/27/2022.
-
-## In Progress
-* Examine a basic model of the form grades ~ attended SI at least once. 
-* Explorartion of CEM with S.I as a treatment and grade as outcome.
-* Logistic Regression model using different equity gaps to model probability of one year retention. 
-* Prepare/Contact Eric for share out on 04/05/2022.
 
 ## Long term goals.
 * The faculty supervisor will work with Institutional Research (IR) to obtain available data for student use. The faculty supervisor is responsible for ensuring the privacy and responsible use of the data.
