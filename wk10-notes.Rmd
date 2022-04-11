@@ -1,5 +1,5 @@
 ---
-title: "Week 10: Model Selection and Regularization"
+title: "Week 10: Catch up"
 date: "`r paste(Sys.Date())`"
 output:   
   html_document: 
@@ -21,8 +21,6 @@ always_allow_html: true
 Thank you for reflecting on this article in your Learning Journal. I have selected not quite randomly a variety of thoughts and opinions from the class on each of these prompts and posted them on [[Week 8 pages]](https://data485.netlify.app/wk08-notes.html). My goal is to share out informally the wide perspectives that even this small class contains. 
 
 
-
-
 ----
 
 # Tuesday: Projects & reading reflections
@@ -32,7 +30,5 @@ Thank you for reflecting on this article in your Learning Journal. I have select
 
 ----
 
-# Thursday: Model selection and regularization
-
-* (Monday night update) - By EOD Tuesday i'll have the Ch 6 videos and exercises pushed to your ISLR repo. 
+# Thursday: Open work time
 

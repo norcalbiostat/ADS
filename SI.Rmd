@@ -46,7 +46,7 @@ _Details regarding deliverables to be added by DSST_
 
 ## In Progress
 * Examine a basic model of the form grades ~ attended SI at least once. 
-* Explorartion of CEM with S.I as a treatment and grade as outcome.
+* Exploration of CEM with S.I as a treatment and grade as outcome.
 * Logistic Regression model using different equity gaps to model probability of one year retention. 
 * Explore a course level model explaining DWF rates and SI.
 * Prepare some slides for next share out 04/19/2022

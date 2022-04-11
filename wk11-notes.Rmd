@@ -1,0 +1,52 @@
+---
+title: "Week 10: Tree based Methods"
+date: "`r paste(Sys.Date())`"
+output:   
+  html_document: 
+    highlight: tango
+    theme: yeti
+    toc: yes
+    toc_float: true
+    toc_depth: 2
+always_allow_html: true
+---
+
+# Housekeeping
+
+* Don't forget weekly project updates via PR to the class repo. I'm not getting notifications, so please ping me in Discord when you create the PR. 
+
+---
+
+# Project
+
+* NSC Poster session abstract submission [(link)](https://docs.google.com/forms/d/e/1FAIpQLSen3nfkw4ioTd78Q0rJ4phckzyyP5BoyyJKE2JF1qJG3AE4bg/viewform) session ends "April 18th, or when space is full."
+    - MOST people turn their abstracts in last minute, so let's get ours in next to last minute. 
+    - **GOAL** Have your draft to me by EOD Thursday 4/14 (sooner the better). I will review and have back to you by friday 4/15 AM. 
+        - Write your abstract in google or word so I can use track changes. 
+        - After you review & revise, submit asap. 
+
+* Next Tuesday 4/19 is next client share out. Please schedule this between 9:30-10am (or before if you want to use that time in class to collaborate on the project). 
+    - These will be separate share outs, so plan on having the full 30 minutes of time to work with them.
+    - Plan to go over your abstract with them, and an idea for the poster. At least. You can talk more with them as you see fit. 
+    
+
+----
+
+# In class schedule
+
+* I'm waiting to hear back from someone that may help us get more out of the reading discussions. I don't think i'm doing a good job at holding space and encouraging a variety of voices. We keep hearing from the same folks repeatedly, so I want to step back and consult with faculty who are experts/professionals on moderating these types of critical conversations. 
+    - Still write your responses in HackMD by Thursday
+* Let's start talking over Tree based models on Tuesday
+
+----
+
+# ISLR
+
+* A set of topic questions for you to answer and a corresponding assignment has been added to your ISLR repo. You'll have about 2 weeks to work through these topics
+* The next/last topic is Unsupervised learning, which we'll start in week 14. 
+
+
+
+
+
+

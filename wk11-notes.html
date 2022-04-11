@@ -10,8 +10,9 @@
 
 
 
+<meta name="date" content="2022-04-10" />
 
-<title>Assessing impact of Supplemental Instruction on Student Success at Chico State</title>
+<title>Week 10: Tree based Methods</title>
 
 <script src="site_libs/header-attrs-2.13/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
@@ -356,6 +357,9 @@ div.tocify {
     <li>
       <a href="wk10-notes.html">Week 10</a>
     </li>
+    <li>
+      <a href="wk11-notes.html">Week 11</a>
+    </li>
   </ul>
 </li>
 <li class="dropdown">
@@ -404,157 +408,56 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">Assessing impact of Supplemental Instruction on Student Success at Chico State</h1>
+<h1 class="title toc-ignore">Week 10: Tree based Methods</h1>
+<h4 class="date">2022-04-10</h4>
 
 </div>
 
 
-<hr />
-<div id="people" class="section level1">
-<h1>People</h1>
-<div id="clients" class="section level2">
-<h2>Clients</h2>
+<div id="housekeeping" class="section level1">
+<h1>Housekeeping</h1>
 <ul>
-<li>Chico State Chemistry Faculty: Erik Wasinger, Lisa Kendhammer and Tiffany Anderson</li>
-<li>Data Owner: Tom Rosenow, Institutional Research</li>
-<li>SLC Coordinator: Dawn Frank</li>
-</ul>
-</div>
-<div id="data-science-student-team-dsst" class="section level2">
-<h2>Data Science Student Team (DSST)</h2>
-<ul>
-<li>Joseph Shifman: Oversight</li>
-<li>Rica Rebusit: Taskmaster</li>
-<li>Faith Fatchen: Liaison</li>
-<li>Skip Moses: Time keeper</li>
-</ul>
-</div>
-</div>
-<div id="summary" class="section level1">
-<h1>Summary</h1>
-<p>It is the top mission of the university to retain and graduate students who are well prepared for careers or graduate school. There has been a major shift in the student body with regards to demographics and preparation in the past 10 or so years. Now more than ever the faces and experiences of the faculty do not match that of their students. Chico State has been struggling with a low 4-year graduation rate, and a high first year drop out rate for first time freshmen. Large CSU system wide initiatives such as the Graduation Initiative 2025 (GI2025) have been formed to research what works and implement innovative changes to remove barriers that impede student success and be more strategic about the way campus serves students.</p>
-<p>One approach being taken by Chico State is to implement a student learning program called Supplemental Instruction (SI). This program that has shown to be effective in published research but has yet to be evaluated on our campus.</p>
-</div>
-<div id="project-goals" class="section level1">
-<h1>Project Goals</h1>
-<p>Assist the clients in answering the following question:</p>
-<blockquote>
-<p>What impact does Supplemental Instruction have on student success at Chico State?</p>
-</blockquote>
-<p>This question will be explored through the full data science lifecycle from problem definition, data collection and exploration, visualization, modeling (both for understand relationships and to make predictions), creating recommendations and incorporating feedback.</p>
-</div>
-<div id="timeline-milestones" class="section level1">
-<h1>Timeline / Milestones</h1>
-<p><em>Details regarding deliverables to be added by DSST</em></p>
-</div>
-<div id="timeline-milestones-1" class="section level1">
-<h1>Timeline / Milestones</h1>
-<p><em>Details regarding deliverables to be added by DSST</em></p>
-<div id="in-progress" class="section level2">
-<h2>In Progress</h2>
-<ul>
-<li>Examine a basic model of the form grades ~ attended SI at least once.</li>
-<li>Exploration of CEM with S.I as a treatment and grade as outcome.</li>
-<li>Logistic Regression model using different equity gaps to model probability of one year retention.</li>
-<li>Explore a course level model explaining DWF rates and SI.</li>
-<li>Prepare some slides for next share out 04/19/2022</li>
-<li>Start working on Abstract (Due 04/18/2022)</li>
-</ul>
-</div>
-<div id="completed" class="section level2">
-<h2>Completed</h2>
-<ul>
-<li>The client will give a 15-20 minute project introduction at 9:30am on 2/10 in Butte 203</li>
-<li>The Data Science Student Team (DSST) will complete Data Security and CITI training by 2/18/22</li>
-<li>DSST will research the problem and generate a list of data sources needed to address the question.</li>
-<li>Read/Summarize exact matching paper and 5-10 most recent works. Complete by March 10th.</li>
-<li>Clean Student Profile, Student Program and Course Description data sets. Update code books.</li>
-<li>Acquire SI data set.</li>
-<li>Created grades for SI courses, clean student profile data, and filtered student profile data to students who have taken at least one SI course for EDA.</li>
-<li>Aggregate the course level data (Doesn’t seem to be a fruitful approach. On hold for now).</li>
-<li>Look at number of extra semesters taken to graduate. Add additional variables (Transfer student, first gen, major program.) Need to address how to handle pandemic/online semesters here. Pandemic seems to limit this approach.</li>
-<li>Select a poster template by 03/27/2022.</li>
-</ul>
-</div>
-<div id="long-term-goals." class="section level2">
-<h2>Long term goals.</h2>
-<ul>
-<li>The faculty supervisor will work with Institutional Research (IR) to obtain available data for student use. The faculty supervisor is responsible for ensuring the privacy and responsible use of the data.</li>
-<li>10-15 minute project check ins during class time approximately every two weeks starting 3/10/2022. The DSST will provide updates to the client on their progress with opportunity to ask questions from both parties.</li>
-<li>The client will review a scientific poster created by the DSST for presentation at the College of Natural Sciences Poster Session, on May 2nd.<br />
-</li>
-<li>The DSST will give a final stakeholder presentation to the GI Inqury members/leadership during the week of May 15th, 2022 (Finals week).</li>
-</ul>
-</div>
-</div>
-<div id="domain-learning" class="section level1">
-<h1>Domain Learning</h1>
-<ul>
-<li><a href="https://www.calstate.edu/csu-system/why-the-csu-matters/graduation-initiative-2025" class="uri">https://www.calstate.edu/csu-system/why-the-csu-matters/graduation-initiative-2025</a></li>
-<li><a href="https://www.csuchico.edu/gradinitiative/index.shtml" class="uri">https://www.csuchico.edu/gradinitiative/index.shtml</a></li>
-<li><a href="https://info.umkc.edu/si/" class="uri">https://info.umkc.edu/si/</a></li>
-<li><a href="https://norcalbiostat.github.io/chem_ss/" class="uri">https://norcalbiostat.github.io/chem_ss/</a></li>
-<li>San Diego Publication in github repo</li>
+<li>Don’t forget weekly project updates via PR to the class repo. I’m not getting notifications, so please ping me in Discord when you create the PR.</li>
 </ul>
 <hr />
 </div>
-<div id="project-updates" class="section level1">
-<h1>Project Updates</h1>
-<p><em>Weekly updates done by DSST via PR</em></p>
-<div id="section" class="section level2">
-<h2>02/21/2022</h2>
-<p>Today, we met for the first time. Roles were assigned, and we discussed what our first steps will be.</p>
+<div id="project" class="section level1">
+<h1>Project</h1>
 <ul>
-<li><p>Next Steps:</p>
-<ol style="list-style-type: decimal">
-<li>Complete security training.</li>
-<li>Download data.</li>
-<li>Start exploring and building a codebook.</li>
-</ol></li>
-<li><p>Remarks:</p>
+<li>NSC Poster session abstract submission <a href="https://docs.google.com/forms/d/e/1FAIpQLSen3nfkw4ioTd78Q0rJ4phckzyyP5BoyyJKE2JF1qJG3AE4bg/viewform">(link)</a> session ends “April 18th, or when space is full.”
 <ul>
-<li>Keep separate scratch files.</li>
-<li>PR will be flexible.</li>
-<li>Respond on discord by end of day.</li>
-<li>Add data sets to gitignore file before commiting.</li>
-</ul></li>
-</ul>
-</div>
-<div id="section-1" class="section level2">
-<h2>3/01/2022</h2>
+<li>MOST people turn their abstracts in last minute, so let’s get ours in next to last minute.</li>
+<li><strong>GOAL</strong> Have your draft to me by EOD Thursday 4/14 (sooner the better). I will review and have back to you by friday 4/15 AM.
 <ul>
-<li><p>Milestones</p></li>
-<li><p>Data codebooks complete</p></li>
-<li><p>Started reviewing literature</p></li>
-<li><p>Next steps</p></li>
-<li><p>Exploratory data analysis</p></li>
-<li><p>Discuss literature as group</p></li>
-<li><p>Literature summary</p></li>
-</ul>
-</div>
-<div id="section-2" class="section level2">
-<h2>03/10/2022</h2>
-<ul>
-<li><p>Met with Erik to discuss first steps.</p>
-<ul>
-<li><p>Still waiting on SI visit data.</p></li>
-<li><p>Look at Fresno State paper by Hongtao Yue et al.</p></li>
-<li><p>Look into clinical trial methodologies for techniques.</p></li>
-<li><p>Explore GPA data and quantify some of the equity gaps.</p></li>
-<li><p>Data Still needed:</p>
-<ul>
-<li>SI visit level data</li>
-<li>Student date (or) year of birth</li>
-<li>Flag if student is Pell eligible (Probably can’t get)</li>
-<li>Flag if student participated in upward bound</li>
-<li>Flag if student lived in residence hall</li>
-<li>Flag if student is enrolled in honors program</li>
-<li>Flag if student is enrolled in EOP</li>
-<li>Student permanent address zip (or) county</li>
+<li>Write your abstract in google or word so I can use track changes.</li>
+<li>After you review &amp; revise, submit asap.</li>
 </ul></li>
 </ul></li>
+<li>Next Tuesday 4/19 is next client share out. Please schedule this between 9:30-10am (or before if you want to use that time in class to collaborate on the project).
+<ul>
+<li>These will be separate share outs, so plan on having the full 30 minutes of time to work with them.</li>
+<li>Plan to go over your abstract with them, and an idea for the poster. At least. You can talk more with them as you see fit.</li>
+</ul></li>
 </ul>
+<hr />
 </div>
+<div id="in-class-schedule" class="section level1">
+<h1>In class schedule</h1>
+<ul>
+<li>I’m waiting to hear back from someone that may help us get more out of the reading discussions. I don’t think i’m doing a good job at holding space and encouraging a variety of voices. We keep hearing from the same folks repeatedly, so I want to step back and consult with faculty who are experts/professionals on moderating these types of critical conversations.
+<ul>
+<li>Still write your responses in HackMD by Thursday</li>
+</ul></li>
+<li>Let’s start talking over Tree based models on Tuesday</li>
+</ul>
+<hr />
+</div>
+<div id="islr" class="section level1">
+<h1>ISLR</h1>
+<ul>
+<li>A set of topic questions for you to answer and a corresponding assignment has been added to your ISLR repo. You’ll have about 2 weeks to work through these topics</li>
+<li>The next/last topic is Unsupervised learning, which we’ll start in week 14.</li>
+</ul>
 </div>
 
 
@@ -606,7 +509,7 @@ $(document).ready(function ()  {
 
     // establish options
     var options = {
-      selectors: "h1,h2,h3",
+      selectors: "h1,h2",
       theme: "bootstrap3",
       context: '.toc-content',
       hashGenerator: function (text) {
