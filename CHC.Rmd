@@ -99,6 +99,34 @@ _Weekly updates done by DSST via PR_
 - Reviewed sentiment analysis techniques.  
 
 <br />  
+## 03/30/2022  
+
+### Milestones 
+
+- First pass at classification using basic filtration.
+- Created first list of entries for clarification by client. 
+
+
+<br />  
+## 04/06/2022  
+
+### Milestones 
+
+- First zoom share out.
+- Sent out first list of entries for clarification by client. 
+- Client returned first review list. 
+- Start working on index column and versioning to track verified and predicted labels and list evolution over time. 
+- Laid groundwork for sentiment analysis (created function for predicting class given proper arguments).
+
+
+
+<br />  
+## 04/13/2022  
+
+### Milestones 
+
+- First pass sentiment analysis
+
 
 ## Ongoing  
 
@@ -107,9 +135,10 @@ _Weekly updates done by DSST via PR_
 
 (This week)
 
+- First pass sentiment analysis.
+- Create new clarification list. Target most ambiguous entries after sentiment analysis.
 
-- Figure out how best to use the given keyword list for classification  
-  - Try naive brute force classification approach using known, labeled keywords from list
+
 
 ### Next Steps  
 
