@@ -1,0 +1,74 @@
+---
+title: "Week 7: Classification"
+date: "`r paste(Sys.Date())`"
+output:   
+  html_document: 
+    highlight: tango
+    theme: yeti
+    toc: yes
+    toc_float: true
+    toc_depth: 2
+always_allow_html: true
+---
+
+# Housekeeping
+
+Calendar and schedule have been updated to reflect a plan for the rest of the semester. 
+
+----
+
+
+# Tuesday
+
+* Rotating paired discussion on half of the ISLR Ch 4 classification questions. 
+* Project group work time
+
+----
+
+# Thursday
+
+* Discuss the article [Major Universities Are Using Race as a “High Impact Predictor” of Student Success.](https://themarkup.org/news/2021/03/02/major-universities-are-using-race-as-a-high-impact-predictor-of-student-success) 
+    - What did you find interesting. 
+    - Anything alarming? 
+    - Do you agree with schools using a risk assessment model? 
+    - Who would benefit from a risk model? Who could be harmed? 
+* Rotating paired discussion on second half of the ISLR Ch 4 classification questions. 
+* Project group work time
+
+
+
+## Article feedback/comments
+Thank you for reflecting on this article in your Learning Journal. I have selected not quite randomly a variety of thoughts and opinions from the class on each of these prompts. My goal is to share out informally the wide perspectives that even this small class contains. 
+
+
+**What did you find interesting.**
+
+* I don’t really find this article interesting at all. A program that had proven results is being criticized based on its potential to push minorities into ‘easier’ degree programs. How could you ever quantify this? The only thing we know and can measure is retention rates increased. 
+*  As a believer in math revealing the truth, this could be very discouraging to black students. I also believe this is nonsense though as any one can complete difficult courses if they put their mind to it. My world beliefs and the math are contradicting one another. I believe the university should advise students of their risk scores, but students can complete any major if they put their mind to it.
+* What I found really interesting about the article firstly is how many schools use Navigates risk assessment & how many will probably continue this despite being outed. Then again it was interesting to see that it actually raised Georgia States Graduation rates & how their EAB models do not include race. 
+* According to this risk assessment model some races have a higher chance of failing a field compared to others.
+
+
+**Anything alarming?**
+
+* I find it extremely alarming that this risk assessment is one of the first things a professor could see when looking at a list of students. I think it relates back to when we were talking about names and the inherent biases we associate with things. If you place a label on someone that is perpetuated within a group (those who get to see this number) I believe it would be harder for that student to redefine themselves.
+* The thing I found alarming is how the EAB system might be used as a way for advisors to suggest different paths for students, and how the system could be used in the future as a screening tool for admitting students into college. 
+* I find it alarming that a school would choose to include race but then choose to exclude factors related to financial stability. Financial stability is huge and (I suspect) the primary reason race correlates to success in the first place. Ignoring financial stability would almost certainly inflate the importance of race as a factor by a huge margin.
+
+**Do you agree with schools using a risk assessment model?**
+
+* The idea of a risk assessment model does appear to have good intentions, but I would be uncomfortable if that model was significantly altering how advisors advise their students, especially if race was a variable. 
+* If I found out I was being assessed on a risk score and was advised not to choose a major because of my race and background, I would feel discouraged and confused as to why my race has an effect in what I want to learn.
+* I agree with them using a risk assessment model as long as the “high-impact” predictors are not those of marginalized groups I.e race, ethnicity, or income. 
+* I can see that this might be useful in helping provide support to those students that are at risk of failing, but to use it as a means to not have a certain group of students not to pursue a career in a field doesn’t really sit right with me.
+
+
+**Who would benefit from a risk model? Who could be harmed?**
+
+* In order to deem these risk models as harmful, you need to provide a measure of this harm.
+* I honestly do not see a real benefit to a risk model, unless it gives genuine insight into the shortfalls of the school’s accommodations for minority students. In this case, the school could invest in tangible programs that increase student success and retention. 
+* Beneficiaries of the model would be the school for improving their drop-out and major switching rates along with students potentially saving money by switching out of a major earlier than they would have without the model. Those who are harmed however, are the students who are miscategorized as high risk while in a difficult major and are convinced to switch to an easier major when they could have finished the original.
+* Depending on the model, pretty much anybody could benefit or be harmed. 
+
+
+

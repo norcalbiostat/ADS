@@ -39,7 +39,7 @@ We will not cover ISLR Chapter 3: Linear Regression in much detail, as that is o
 
 ----
 
-# Thursday
+# Thursday (class cancelled)
 
 * Project client share out. Prepare a 10 minute presentation to the class and your client on the status of your project. 
 

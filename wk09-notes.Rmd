@@ -1,0 +1,40 @@
+---
+title: "Week 9: Resampling"
+date: "`r paste(Sys.Date())`"
+output:   
+  html_document: 
+    highlight: tango
+    theme: yeti
+    toc: yes
+    toc_float: true
+    toc_depth: 2
+always_allow_html: true
+---
+
+# Housekeeping
+
+* Schedule updates due to holiday & experience with Ch 4 discussion last week
+    - 1 ch/week for the next 4 weeks or so. 
+    - Reading schedule updates
+* Added more resources to the [materials](materials.html) page. 
+    - Your contributions are very welcome!
+
+Resampling methods really are at the core of modern computational statistics, Bayesian statistics and statistical/machine learning models. 
+
+Eg.: I advise a masters student in Ecology who's thesis is a hierarchical model with random intercepts and slopes on multiple variables. She had to manually implement a bootstrap method to generate confidence intervals for one of her models. 
+
+> Side note. I have a potential paid research position with a public health researcher that involves hierarchical modeling. See me for details. 
+
+----
+
+# Tuesday
+
+* Remember that bridge exercise we did in week 1? Time for a check in. Let's come back to that and see what our thoughts and understandings are now. 
+* Let's start to discuss ISLR Ch 5 - resampling methods. Same process, shared discussion on Tuesday with an assignment. 
+
+----
+
+# Thursday
+
+> No Class! Cesar Chavez day
+

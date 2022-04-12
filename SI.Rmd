@@ -41,22 +41,35 @@ This question will be explored through the full data science lifecycle from prob
 # Timeline / Milestones
 _Details regarding deliverables to be added by DSST_
 
+# Timeline / Milestones
+_Details regarding deliverables to be added by DSST_
+
+## In Progress
+* Examine a basic model of the form grades ~ attended SI at least once. 
+* Exploration of CEM with S.I as a treatment and grade as outcome.
+* Logistic Regression model using different equity gaps to model probability of one year retention. 
+* Explore a course level model explaining DWF rates and SI.
+* Prepare some slides for next share out 04/19/2022
+* Start working on Abstract (Due 04/18/2022)
+
 
 ## Completed
 * The client will give a 15-20 minute project introduction at 9:30am on 2/10 in Butte 203
 * The Data Science Student Team (DSST) will complete Data Security and CITI training by 2/18/22
-
-## In Progress
 * DSST will research the problem and generate a list of data sources needed to address the question.
 * Read/Summarize exact matching paper and 5-10 most recent works. Complete by March 10th.
 * Clean Student Profile, Student Program and Course Description data sets. Update code books. 
 * Acquire SI data set.
+* Created grades for SI courses, clean student profile data, and filtered student profile data to students who have taken at least one SI course for EDA. 
+* Aggregate the course level data (Doesn't seem to be a fruitful approach. On hold for now). 
+* Look at number of extra semesters taken to graduate. Add additional variables (Transfer student, first gen, major program.) Need to address how to handle pandemic/online semesters here. Pandemic seems to limit this approach.
+* Select a poster template by 03/27/2022.
+
+## Long term goals.
 * The faculty supervisor will work with Institutional Research (IR) to obtain available data for student use. The faculty supervisor is responsible for ensuring the privacy and responsible use of the data.
 * 10-15 minute project check ins during class time approximately every two weeks starting 3/10/2022. The DSST will provide updates to the client on their progress with opportunity to ask questions from both parties.
 * The client will review a scientific poster created by the DSST for presentation at the College of Natural Sciences Poster Session, on May 2nd.  
 * The DSST will give a final stakeholder presentation to the GI Inqury members/leadership during the week of May 15th, 2022 (Finals week). 
-
-
 
 # Domain Learning
 
@@ -100,3 +113,21 @@ Today, we met for the first time. Roles were assigned, and we discussed what our
  - Discuss literature as group 
  - Literature summary
 
+## 03/10/2022
+
+* Met with Erik to discuss first steps.
+
+  - Still waiting on SI visit data.
+  - Look at Fresno State paper by Hongtao Yue et al.
+  - Look into clinical trial methodologies for techniques. 
+  - Explore GPA data and quantify some of the equity gaps.
+  - Data Still needed:
+  
+    - SI visit level data
+    - Student date (or) year of birth
+    - Flag if student is Pell eligible (Probably can't get)
+    - Flag if student participated in upward bound
+    - Flag if student lived in residence hall
+    - Flag if student is enrolled in honors program
+    - Flag if student is enrolled in EOP
+    - Student permanent address zip (or) county

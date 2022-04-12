@@ -13,7 +13,7 @@
 
 <title>Predicting level of partnership</title>
 
-<script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.13/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/yeti.min.css" rel="stylesheet" />
@@ -50,6 +50,7 @@
 
 
 
+
 <link rel="stylesheet" href="style.css" type="text/css" />
 
 
@@ -74,6 +75,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;
@@ -299,7 +303,7 @@ div.tocify {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -309,7 +313,7 @@ div.tocify {
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     <span class="fa fa-folder-open"></span>
      
     Weekly Notes
@@ -317,28 +321,39 @@ div.tocify {
     <span class="caret"></span>
   </a>
   <ul class="dropdown-menu" role="menu">
-    <li>
-      <a href="wk01-notes.html">Week 1</a>
+    <li class="dropdown-submenu">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Before Break</a>
+      <ul class="dropdown-menu" role="menu">
+        <li>
+          <a href="wk01-notes.html">Week 1</a>
+        </li>
+        <li>
+          <a href="wk02-notes.html">Week 2</a>
+        </li>
+        <li>
+          <a href="wk03-notes.html">Week 3</a>
+        </li>
+        <li>
+          <a href="wk04-notes.html">Week 4</a>
+        </li>
+        <li>
+          <a href="wk05-notes.html">Week 5</a>
+        </li>
+        <li>
+          <a href="wk06-notes.html">Week 6</a>
+        </li>
+        <li>
+          <a href="wk07-notes.html">Week 7</a>
+        </li>
+      </ul>
     </li>
     <li>
-      <a href="wk02-notes.html">Week 2</a>
-    </li>
-    <li>
-      <a href="wk03-notes.html">Week 3</a>
-    </li>
-    <li>
-      <a href="wk04-notes.html">Week 4</a>
-    </li>
-    <li>
-      <a href="wk05-notes.html">Week 5</a>
-    </li>
-    <li>
-      <a href="wk06-notes.html">Week 6</a>
+      <a href="wk08-notes.html">Week 8</a>
     </li>
   </ul>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     Projects
      
     <span class="caret"></span>
@@ -468,7 +483,24 @@ div.tocify {
 <div id="milestones-1" class="section level3">
 <h3>Milestones</h3>
 <ul>
-<li></li>
+<li>Read up on literature</li>
+<li>Reviewed past project work</li>
+<li>Completed Data Security Training</li>
+<li>Followed up with client
+<ul>
+<li>Requested Keyword List</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="section-2" class="section level2">
+<h2>03/23/2022</h2>
+<div id="milestones-2" class="section level3">
+<h3>Milestones</h3>
+<ul>
+<li>Received Keyword list</li>
+<li>…</li>
+<li>…</li>
 </ul>
 </div>
 </div>
@@ -477,29 +509,16 @@ div.tocify {
 <div id="next-steps" class="section level3">
 <h3>Next Steps</h3>
 <ul>
-<li><p>Complete Data Security Training</p></li>
-<li><p>Follow up with sponsor.</p>
-<ul>
-<li>Clarify Goals</li>
-<li>Clarify Levels</li>
-<li>Discuss potential avenues of exploration.</li>
-</ul></li>
 <li><p>(Brandon) Refactor prior work and data to work/knit w/o box access.</p></li>
-<li><p>(Derek) Come up to speed on past project work.</p></li>
-<li><p>Review literature.</p></li>
 <li><p>Review sentiment analysis techniques.</p></li>
 </ul>
 </div>
 <div id="potential-upcoming-paths" class="section level3">
 <h3>Potential Upcoming Paths</h3>
 <ul>
-<li><p>Create model to classify individual meeting instances</p>
-<ul>
-<li><p>Get labeled keyword list OR</p></li>
-<li><p>Generate common word list and ask for labels on top words</p></li>
-</ul></li>
+<li><p>Create model to classify individual meeting instances using keywords and sentiment analysis techniques.</p></li>
 <li><p>Use model to label all activity rows in dataset, find least certain generated labels, get sponsor clarification, input result, iterate model.</p></li>
-<li><p>Predict (infer?) level of partnerships over time (subcontractor - partner - quarter).</p></li>
+<li><p>Predict (infer?) level of partnerships over time (subcontractor + partner by quarter).</p></li>
 <li><p>Track overall performance of subcontractors and partners.</p></li>
 </ul>
 </div>
