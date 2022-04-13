@@ -136,3 +136,26 @@ Main objectives -
 
 Began to develop working protoypes of the intake form to present to the AG representatives.
 Waiting on ITSS approval for Shiney App. 
+
+# 04/12/2022
+
+## Project Updates
+
+Google Form - 
+
+* Added file download / upload part to the Google form to allow for many samples
+* There is a problem as the sheet is uploaded as a link, could slow down automation
+
+Django -
+
+From 04/05/2022
+* Building out django's back-end abstraction for the intake form
+* Creating a frontend form for intake form
+
+04/12/2022
+* Make intake form front end cleaner
+* Start on internal tracking form
+
+R Shiney / Box - 
+
+* Looking into authentication with ITSS to configure the box API to store their files on a local system.
