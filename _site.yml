@@ -6,18 +6,30 @@ navbar:
   - text: Weekly Notes
     icon: fa-folder-open
     menu:
-    - text: Week 1
-      href: wk01-notes.html
-    - text: Week 2
-      href: wk02-notes.html
-    - text: Week 3
-      href: wk03-notes.html
-    - text: Week 4
-      href: wk04-notes.html
-    - text: Week 5
-      href: wk05-notes.html
-    - text: Week 6
-      href: wk06-notes.html
+    - text: Before Break
+      menu: 
+      - text: Week 1
+        href: wk01-notes.html
+      - text: Week 2
+        href: wk02-notes.html
+      - text: Week 3
+        href: wk03-notes.html
+      - text: Week 4
+        href: wk04-notes.html
+      - text: Week 5
+        href: wk05-notes.html
+      - text: Week 6
+        href: wk06-notes.html
+      - text: Week 7
+        href: wk07-notes.html
+    - text: Week 8
+      href: wk08-notes.html
+    - text: Week 9
+      href: wk09-notes.html
+    - text: Week 10
+      href: wk10-notes.html
+    - text: Week 11
+      href: wk11-notes.html
   - text: Projects
     menu:
     - text: Center for Healthy Communities
