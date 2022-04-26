@@ -159,3 +159,9 @@ From 04/05/2022
 R Shiney / Box - 
 
 * Looking into authentication with ITSS to configure the box API to store their files on a local system.
+
+04/19/2022
+
+* Met with AG group to dicuss updates on prototypes
+* CRARS likes the Django approach best, problem is matinence and full implementation. 
+* Still updating and working on the Google form and Shiney programs.
