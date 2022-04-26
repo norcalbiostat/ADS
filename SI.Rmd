@@ -45,15 +45,21 @@ _Details regarding deliverables to be added by DSST_
 _Details regarding deliverables to be added by DSST_
 
 ## In Progress
-* Examine a basic model of the form grades ~ attended SI at least once. 
-* Exploration of CEM with S.I as a treatment and grade as outcome.
-* Logistic Regression model using different equity gaps to model probability of one year retention. 
-* Explore a course level model explaining DWF rates and SI.
-* Prepare some slides for next share out 04/19/2022
-* Start working on Abstract (Due 04/18/2022)
+* **The poster draft is due next Tuesday, 04/26/2022**
+* Getting these models completed need to be done ASAP
+    - Examine a basic model of the form grades ~ attended SI at least once. 
+    - Logistic Regression model using different equity gaps to model probability of one year retention. 
+    - Explore a course level model explaining DWF rates and SI.
+* We need a table for comparing our sample to the population (2016-present)
+* Create a .rmd file generating all our pictures
+  - Create some visualizations of the distribution of grades faceted on equity gaps
+  - Create similar plot for
 
 
 ## Completed
+* Exploration of CEM with S.I as a treatment and grade as outcome.
+* Prepare some slides for next share out 04/19/2022
+* Start working on Abstract (Due 04/18/2022)
 * The client will give a 15-20 minute project introduction at 9:30am on 2/10 in Butte 203
 * The Data Science Student Team (DSST) will complete Data Security and CITI training by 2/18/22
 * DSST will research the problem and generate a list of data sources needed to address the question.

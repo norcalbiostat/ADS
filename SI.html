@@ -13,7 +13,7 @@
 
 <title>Assessing impact of Supplemental Instruction on Student Success at Chico State</title>
 
-<script src="site_libs/header-attrs-2.13/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/yeti.min.css" rel="stylesheet" />
@@ -33,6 +33,7 @@
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
+<script src="site_libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 
@@ -44,7 +45,6 @@
   div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
   ul.task-list{list-style: none;}
     </style>
-
 
 
 
@@ -75,9 +75,6 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
-}
-details > summary > p:only-child {
-  display: inline;
 }
 pre code {
   padding: 0;
@@ -303,7 +300,7 @@ div.tocify {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -313,7 +310,7 @@ div.tocify {
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
     <span class="fa fa-folder-open"></span>
      
     Weekly Notes
@@ -322,7 +319,7 @@ div.tocify {
   </a>
   <ul class="dropdown-menu" role="menu">
     <li class="dropdown-submenu">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Before Break</a>
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Before Break</a>
       <ul class="dropdown-menu" role="menu">
         <li>
           <a href="wk01-notes.html">Week 1</a>
@@ -362,7 +359,7 @@ div.tocify {
   </ul>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
     Projects
      
     <span class="caret"></span>
@@ -456,17 +453,27 @@ div.tocify {
 <div id="in-progress" class="section level2">
 <h2>In Progress</h2>
 <ul>
+<li><strong>The poster draft is due next Tuesday, 04/26/2022</strong></li>
+<li>Getting these models completed need to be done ASAP
+<ul>
 <li>Examine a basic model of the form grades ~ attended SI at least once.</li>
-<li>Exploration of CEM with S.I as a treatment and grade as outcome.</li>
 <li>Logistic Regression model using different equity gaps to model probability of one year retention.</li>
 <li>Explore a course level model explaining DWF rates and SI.</li>
-<li>Prepare some slides for next share out 04/19/2022</li>
-<li>Start working on Abstract (Due 04/18/2022)</li>
+</ul></li>
+<li>We need a table for comparing our sample to the population (2016-present)</li>
+<li>Create a .rmd file generating all our pictures
+<ul>
+<li>Create some visualizations of the distribution of grades faceted on equity gaps</li>
+<li>Create similar plot for</li>
+</ul></li>
 </ul>
 </div>
 <div id="completed" class="section level2">
 <h2>Completed</h2>
 <ul>
+<li>Exploration of CEM with S.I as a treatment and grade as outcome.</li>
+<li>Prepare some slides for next share out 04/19/2022</li>
+<li>Start working on Abstract (Due 04/18/2022)</li>
 <li>The client will give a 15-20 minute project introduction at 9:30am on 2/10 in Butte 203</li>
 <li>The Data Science Student Team (DSST) will complete Data Security and CITI training by 2/18/22</li>
 <li>DSST will research the problem and generate a list of data sources needed to address the question.</li>
