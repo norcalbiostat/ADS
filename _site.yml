@@ -30,6 +30,10 @@ navbar:
       href: wk10-notes.html
     - text: Week 11
       href: wk11-notes.html
+    - text: Week 14
+      href: wk14-notes.html
+    - text: Week 16
+      href: wk16-notes.html
   - text: Projects
     menu:
     - text: Center for Healthy Communities

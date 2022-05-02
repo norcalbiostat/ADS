@@ -1,0 +1,38 @@
+---
+title: "Week 14: Poster Session & Unsupervised Learning"
+date: "`r paste(Sys.Date())`"
+output:   
+  html_document: 
+    highlight: tango
+    theme: yeti
+    toc: yes
+    toc_float: true
+    toc_depth: 2
+always_allow_html: true
+---
+
+
+# NSC Poster Session 
+
+* [[Schedule]](https://www.csuchico.edu/nsci/event/poster.shtml)
+* Setup your poster in the morning.
+* Dress is business casual. Roughly that means a nice shirt and jeans. Shorts are okay (it is hot) but not like gym shorts. 
+* At least one person needs to be at your poster between 12:20-2:30. 
+    - It would be ideal if at least one person could also be at the awards ceremony from 3-3:30pm
+
+---
+
+# Reading Race after Technology
+
+There was a bit of confusion with scheduling Dr. Magus, so we're back to discussing on our own.
+
+* Part IV Technological Benevolence this Tuesday 5/3
+* Part V: Retooling solidarity next Tuesday 5/10
+
+---
+
+# ISLR
+
+Last chapter we'll cover together: Unsupervised learning. PCA should have been covered during 456, but a refresher is always good. Assignment has been put in your ISLR repo. 
+
+

@@ -1,0 +1,38 @@
+---
+title: "Finals Week: Presentations and reflections"
+output:   
+  html_document: 
+    highlight: tango
+    theme: yeti
+    toc: yes
+    toc_float: true
+    toc_depth: 2
+always_allow_html: true
+---
+
+# Stakeholder Presentation
+
+* During our final block of time (Tuesday 12-2pm) you will formally present your findings to the class and the stakeholders. 
+    - This means you'll need a set of slides. Probably no more than 10. 
+* Aim for 15 minute presentation. Leave 10 minutes for questions. 
+* Be sure to include limitations and next steps. 
+
+# Reflect and recap on the project experience
+
+Learning isn't complete (really, it never is) without reflecting on your practice. There are a lot of positive and challenging aspects to a group project. Some stick with us into professional collaborations, some tend to be limited to classroom-based group dynamics. 
+
+Write a reflective summary of your project experience, where **you** are the center of attention (not your teammates). 
+
+* What did you learn about yourself in this process? 
+* How did you find this particular experience working with a partner/group compared to other experiences? 
+* What do you think you did well, and what could you have done better? 
+* What would you want to tell your Week 2 self? 
+* What learnings, habits or thoughts will you take forward with you to your next adventure? 
+  
+    
+
+
+
+
+
+

@@ -1,0 +1,63 @@
+---
+title: "Week 15: Winding down"
+date: "`r paste(Sys.Date())`"
+output:   
+  html_document: 
+    highlight: tango
+    theme: yeti
+    toc: yes
+    toc_float: true
+    toc_depth: 2
+always_allow_html: true
+---
+
+# Project Finalization
+
+* Document, document, document. 
+* Goal this week is to clean up and organize your project repository. 
+* Create a clear README. Can someone find everything? 
+* Help others understand your materials. 
+* Your goal is to prepare everything so that another person could come in and pick up where you left off at. 
+
+----
+
+# Race after Technology
+
+* We'll have our final in class discussion on this book on Tuesday 5/10
+* What's next? Review the activities in the [Race after Technology Discussion guide]](RAT Discussion Guide.pdf) and think about which one you would most likely engage in and why. Prepare to share out on Thursday. 
+
+---
+
+# Completing the bridge
+
+We'll close out the semester by coming back to the same prompt from the beginning of the semester, "What is Data Science" and complete our **[[3-2-1 learning bridge]](https://norcalbiostat.github.io/MATH315/lecture/321_Bridge.html)**.
+
+---
+
+# Assignment: Contributed Blog post
+
+We've practiced writing for non-technical audiences throughout the semester, now's your chance to write for a technical audience. 
+
+Also think about the blog posts that you have been reading and sharing with the class. What do you like about those? What makes it readable and engaging? How can you write like that? 
+
+### One round of revisions
+
+By the end of this week you need to share a draft with Dr D (with instructions on how to provide feedback)
+
+### Examples to consider: 
+
+* One assignment from ISLR that you are particularly proud of your work. Clean it up, consider reformatting it as a tutorial, possibly cut down the length? Check the prose of discussion to make sure you are explaining each piece. 
+* Complete one of the Activities listed in the [[Race after Technology Discussion guide]](RAT Discussion Guide.pdf) and write about it
+* A summary/intro/overview of your Data Science capstone project
+* Discuss the role of Data Science in media misinformation. 
+* A neat analysis you recently completed. (OK for CHC & Ag team, not for SI)
+* A tutorial on how to do something that interests you!!
+* Not sure? Let's talk. 
+
+**Random assortment of references, examples, guidance**
+
+* https://towardsdatascience.com/how-i-write-a-data-science-blog-62e4108fe478
+* https://medium.com/kiran-santwani/write-a-data-science-blog-post-82bfe33b85d0
+* https://towardsdatascience.com/do-you-want-to-move-to-milan-neighborhoods-sentiment-analysis-using-airbnb-data-72db72ebc070
+* https://github.com/maryamghamdi/p4_Write-A-Data-Science-Blog-Post/blob/master/Project%204%20Write%20A%20Data%20Science%20Blog%20Post.ipynb
+
