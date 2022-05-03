@@ -45,6 +45,12 @@ _Details regarding deliverables to be added by DSST_
 _Details regarding deliverables to be added by DSST_
 
 ## In Progress
+
+* Clean up the github (readme.r, data_management.rmd, take out scratch files)
+* Contact Erik to clarify who to invite to stakeholders meeting, and clarify how much CEM stuff we should include.
+* Start pulling in poster figs and remarks into a powerpoint.
+
+## Completed
 * **The poster draft is due next Tuesday, 04/26/2022**
 * Getting these models completed need to be done ASAP
     - Examine a basic model of the form grades ~ attended SI at least once. 
@@ -54,9 +60,6 @@ _Details regarding deliverables to be added by DSST_
 * Create a .rmd file generating all our pictures
   - Create some visualizations of the distribution of grades faceted on equity gaps
   - Create similar plot for
-
-
-## Completed
 * Exploration of CEM with S.I as a treatment and grade as outcome.
 * Prepare some slides for next share out 04/19/2022
 * Start working on Abstract (Due 04/18/2022)
@@ -72,10 +75,8 @@ _Details regarding deliverables to be added by DSST_
 * Select a poster template by 03/27/2022.
 
 ## Long term goals.
-* The faculty supervisor will work with Institutional Research (IR) to obtain available data for student use. The faculty supervisor is responsible for ensuring the privacy and responsible use of the data.
-* 10-15 minute project check ins during class time approximately every two weeks starting 3/10/2022. The DSST will provide updates to the client on their progress with opportunity to ask questions from both parties.
-* The client will review a scientific poster created by the DSST for presentation at the College of Natural Sciences Poster Session, on May 2nd.  
-* The DSST will give a final stakeholder presentation to the GI Inqury members/leadership during the week of May 15th, 2022 (Finals week). 
+
+* Completed!
 
 # Domain Learning
 
