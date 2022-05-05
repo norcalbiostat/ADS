@@ -16,6 +16,9 @@ always_allow_html: true
 * Document, document, document. 
 * Goal this week is to clean up and organize your project repository. 
 * Create a clear README. Can someone find everything? 
+* Do you have reproducible examples of your analyses? 
+  - Especially your poster!
+* Make sure your poster is in here as well. 
 * Help others understand your materials. 
 * Your goal is to prepare everything so that another person could come in and pick up where you left off at. 
 
@@ -51,7 +54,7 @@ By the end of this week you need to share a draft with Dr D (with instructions o
 * A summary/intro/overview of your Data Science capstone project
 * Discuss the role of Data Science in media misinformation. 
 * A neat analysis you recently completed. (OK for CHC & Ag team, not for SI)
-* A tutorial on how to do something that interests you!!
+* A tutorial on how to do something that interests you!! Must provide code examples.
 * Not sure? Let's talk. 
 
 **Random assortment of references, examples, guidance**

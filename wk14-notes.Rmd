@@ -29,10 +29,4 @@ There was a bit of confusion with scheduling Dr. Magus, so we're back to discuss
 * Part IV Technological Benevolence this Tuesday 5/3
 * Part V: Retooling solidarity next Tuesday 5/10
 
----
-
-# ISLR
-
-Last chapter we'll cover together: Unsupervised learning. PCA should have been covered during 456, but a refresher is always good. Assignment has been put in your ISLR repo. 
-
 
